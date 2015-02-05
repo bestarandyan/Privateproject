@@ -1,0 +1,14 @@
+<resources>
+    <color name="title_bg_color">#0063C1</color>
+    <color name="activity_bg_color">#F5F5F5</color>
+    <color name="activity_title_text_color">#ffffff</color>
+    <color name="input_text_color">#000000</color>
+    <color name="input_hint_color">#999999</color>
+    <color name="black_overlay">#66000000</color>
+	<color name="text_color">#999999</color>
+	<color name="menu_bg1">#3A967D</color>
+    <color name="menu_bg2">#3A967D</color>
+    <color name="menu_bg3">#3A967D</color>
+    <color name="menu_bg4">#3A967D</color>
+    <color name="menu_bg5">#3A967D</color>
+</resources>

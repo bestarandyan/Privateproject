@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/control"
+        android:icon="@drawable/qiehuan"
+        android:title="服务器主机">
+    </item>
+    
+	<item
+        android:id="@+id/chuangkou"
+        android:icon="@drawable/menu03"
+        android:title="服务器同步">
+    </item>
+  <!--   <item
+        android:id="@+id/jopToList"
+        android:icon="@drawable/backtolist"
+        android:title="返回到连接列表">
+    </item> -->
+    <item
+        android:id="@+id/menu_exit"
+        android:icon="@drawable/close"
+        android:title="退出应用程序">
+    </item>
+</menu>

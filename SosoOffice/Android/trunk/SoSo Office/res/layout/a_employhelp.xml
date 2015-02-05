@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+     android:background="#F2F2F2"
+    >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:background="@drawable/soso_top_bg"
+	    >
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/soso_fh_ico"
+	         />
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="使用帮助"
+	        android:textColor="@color/white"
+	        android:textSize="25dp"
+	        />
+      </RelativeLayout>
+	<ListView android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:id="@+id/helpList"
+	    android:background="#F2F2F2"
+	    android:divider="@drawable/soso_zc_line"
+	    ></ListView>
+	</LinearLayout>

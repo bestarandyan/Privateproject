@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/rubaise" >
+
+    <LinearLayout
+        android:id="@+id/linear_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linear_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/sousuo_bg_selector"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/marginsizel" >
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="上海"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizeh" />
+
+            <ImageView
+                android:layout_width="@dimen/marginsizeh"
+                android:layout_height="@dimen/marginsizeh"
+                android:layout_weight="0"
+                android:background="@drawable/product_add_ico" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="3"
+            android:background="@drawable/sousuo_bg_border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/marginsizel" >
+
+            <ImageView
+                android:layout_width="@dimen/marginsizeh"
+                android:layout_height="@dimen/marginsizeh"
+                android:layout_weight="0"
+                android:background="@drawable/product_search_ico" />
+
+            <EditText
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入关键字"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizeh" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.qingfengweb.piaoguanjia.orderSystem.view.XListView
+        android:id="@+id/xlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.qingfengweb.piaoguanjia.orderSystem.view.XListView>
+
+</LinearLayout>

@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f2f2"
+    android:id="@+id/parent"
+    android:focusable="true"  
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+<RelativeLayout	android:id="@+id/top_linear"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/soso_top_bg1"
+	    android:orientation="vertical" >
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/backBtn"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"
+	        android:background="@drawable/soso_fh_ico"/>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:textColor="#ffffff"
+	        android:textSize="22dp"
+	        android:text="发 布 新 房 源"
+	        android:id="@+id/title"
+	        />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:fadingEdge="none"
+        android:scrollbarStyle="outsideOverlay"
+        android:id="@+id/scrollView"
+        >
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="10dp"
+	            >
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="以下带"
+		                android:textColor="#A6A6A6"
+		                android:textSize="16dp"
+		                />
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text=" * "
+		                android:textColor="#ff0000"
+		                android:textSize="16dp"
+		                />
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="号的选项为必填项"
+		                android:textColor="#A6A6A6"
+		                android:textSize="16dp"
+		                />
+		     </LinearLayout>
+		     <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="10dp"
+	            android:visibility="gone"
+	            >
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="房源名称"
+		                android:textColor="#666666"
+		                android:textSize="16dp"
+		                />
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text=" * "
+		                android:textColor="#ff0000"
+		                android:textSize="16dp"
+		                />
+		     </LinearLayout>
+		     <EditText android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:background="@drawable/soso_et_background"
+		         android:id="@+id/RoomName"
+		         android:singleLine="true"
+		         android:visibility="gone"
+		         />
+		     
+		      <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="10dp"
+	            >
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="所属楼盘"
+		                android:textColor="#666666"
+		                android:textSize="16dp"
+		                />
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text=" * "
+		                android:textColor="#ff0000"
+		                android:textSize="16dp"
+		                />
+		     </LinearLayout>
+		     <RelativeLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal"
+	            >
+		         <Button android:layout_width="wrap_content"
+		             android:layout_height="wrap_content"
+		             android:background="@drawable/soso_house_help"
+		             android:id="@+id/searchLoupanBtn"
+		             android:layout_alignParentRight="true"
+		             />   
+		            <Button android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:id="@+id/loupanSpinner"
+		                android:background="@drawable/soso_releasenewroom_et"
+		                android:layout_toLeftOf="@id/searchLoupanBtn"
+		                android:layout_marginRight="6dp"
+		                android:gravity="left|center_vertical"
+		                android:textColor="@color/black"
+		                android:paddingLeft="10dp"
+		                android:textSize="14dp"
+		                />
+		        </RelativeLayout>
+		        <LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:background="@drawable/register_check_background"
+			    android:gravity="center_vertical"
+			    android:padding="5dp"
+			    android:layout_marginLeft="0dp"
+			    android:layout_marginRight="0dp"
+			    android:layout_marginBottom="5dp"
+			    android:layout_marginTop="3dp"
+			    android:id="@+id/loupanCheckLayout"
+			    android:visibility="gone"
+			    >
+		    	<ImageView android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:src="@drawable/register_check1"
+		    	    />
+			    <TextView android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="请选择楼盘"
+				    android:textColor="@color/red"
+				    android:textSize="12dp"
+				    android:layout_marginLeft="5dp"
+				    android:id="@+id/loupanCheck"
+			    />
+		</LinearLayout>
+		      <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="10dp"
+	            >
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="房源类型"
+		                android:textColor="#666666"
+		                android:textSize="16dp"
+		                />
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text=" * "
+		                android:textColor="#ff0000"
+		                android:textSize="16dp"
+		                />
+		     </LinearLayout>
+		     <Button android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:id="@+id/typeSpinner"
+		                android:background="@drawable/soso_releasenewroom_et"
+		                android:gravity="left|center_vertical"
+		                android:textColor="@color/black"
+		                android:paddingLeft="10dp"
+		                android:textSize="14dp"
+		                />
+		     <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="10dp"
+	            >
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="联系方式"
+		                android:textColor="#666666"
+		                android:textSize="16dp"
+		                />
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text=" * "
+		                android:textColor="#ff0000"
+		                android:textSize="16dp"
+		                />
+		     </LinearLayout>
+		     <EditText android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:background="@drawable/soso_et_background"
+		         android:id="@+id/phone"
+		         android:singleLine="true"
+		         android:inputType="phone"
+		         android:textSize="14dp"
+		         />
+		       <LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:background="@drawable/register_check_background"
+			    android:gravity="center_vertical"
+			    android:padding="5dp"
+			    android:layout_marginLeft="0dp"
+			    android:layout_marginRight="0dp"
+			    android:layout_marginBottom="5dp"
+			    android:layout_marginTop="3dp"
+			    android:id="@+id/phoneCheckLayout"
+			    android:visibility="gone"
+			    >
+		    	<ImageView android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:src="@drawable/register_check1"
+		    	    />
+			    <TextView android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="请输入正确的联系方式"
+				    android:textColor="@color/red"
+				    android:textSize="12dp"
+				    android:layout_marginLeft="5dp"
+				    android:id="@+id/phoneCheck"
+			    />
+		</LinearLayout>
+		     <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal"
+	            >
+		      <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            >
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="楼层"
+		                android:textColor="#666666"
+		                android:textSize="16dp"
+		                />
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text=" * "
+		                android:textColor="#ff0000"
+		                android:textSize="16dp"
+		                />
+		     </LinearLayout>
+		      <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            >
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="房间号"
+		                android:textColor="#666666"
+		                android:textSize="16dp"
+		                />
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text=" * "
+		                android:textColor="#ff0000"
+		                android:textSize="16dp"
+		                />
+		     </LinearLayout>
+		     </LinearLayout>
+		     <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal"
+	            >
+		      <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="vertical"
+	            android:layout_weight="1"
+	            >
+		            <EditText android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:background="@drawable/soso_et_background"
+		                android:layout_marginRight="10dp"
+		                android:id="@+id/loucengEt"
+		                android:singleLine="true"
+		                android:inputType="phone"
+		                android:textSize="14dp"
+		                />
+		             <LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:background="@drawable/register_check_background"
+			    android:gravity="center_vertical"
+			    android:padding="5dp"
+			    android:layout_marginLeft="0dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginBottom="5dp"
+			    android:layout_marginTop="3dp"
+			    android:id="@+id/loucengCheckLayout"
+			    android:visibility="gone"
+			    >
+		    	<ImageView android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:src="@drawable/register_check1"
+		    	    />
+			    <TextView android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="楼层错误"
+				    android:textColor="@color/red"
+				    android:textSize="12dp"
+				    android:layout_marginLeft="5dp"
+				    android:id="@+id/loucengCheck"
+			    />
+		</LinearLayout>
+		    </LinearLayout>
+		    <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="vertical"
+	            android:layout_weight="1"
+	            >
+		            <EditText android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:background="@drawable/soso_et_background"
+		                android:id="@+id/roomNumberEt"
+		                android:singleLine="true"
+		                android:inputType="phone"
+		                android:textSize="14dp"
+		                />
+		            		<LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:background="@drawable/register_check_background"
+			    android:gravity="center_vertical"
+			    android:padding="5dp"
+			    android:layout_marginLeft="0dp"
+			    android:layout_marginRight="0dp"
+			    android:layout_marginBottom="5dp"
+			    android:layout_marginTop="3dp"
+			    android:id="@+id/roomNumberCheckLayout"
+			    android:visibility="gone"
+			    >
+		    	<ImageView android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:src="@drawable/register_check1"
+		    	    />
+			    <TextView android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="房间号错误"
+				    android:textColor="@color/red"
+				    android:textSize="12dp"
+				    android:layout_marginLeft="5dp"
+				    android:id="@+id/roomNumberCheck"
+			    />
+		</LinearLayout>
+		      </LinearLayout>
+		     </LinearLayout>
+
+		     <LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:background="@drawable/register_check_background"
+			    android:gravity="center_vertical"
+			    android:padding="5dp"
+			    android:layout_marginLeft="0dp"
+			    android:layout_marginRight="0dp"
+			    android:layout_marginBottom="5dp"
+			    android:layout_marginTop="3dp"
+			    android:id="@+id/typeCheckLayout"
+			    android:visibility="gone"
+			    >
+		    	<ImageView android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:src="@drawable/register_check1"
+		    	    />
+			    <TextView android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="房源类型错误"
+				    android:textColor="@color/red"
+				    android:textSize="12dp"
+				    android:layout_marginLeft="5dp"
+				    android:id="@+id/typeCheck"
+			    />
+		</LinearLayout>
+		   
+		      <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="10dp"
+	            >
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="房租金额(元/平米.天)"
+		                android:textColor="#666666"
+		                android:textSize="16dp"
+		                />
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text=" * "
+		                android:textColor="#ff0000"
+		                android:textSize="16dp"
+		                />
+		     </LinearLayout>
+		     <EditText android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:background="@drawable/soso_et_background"
+		         android:id="@+id/fangzuEt"
+		         android:singleLine="true"
+		         android:inputType="numberDecimal"
+		         android:hint="请输入小于20的房租金额"
+		         android:textSize="14dp"
+		         />
+		     <LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:background="@drawable/register_check_background"
+			    android:gravity="center_vertical"
+			    android:padding="5dp"
+			    android:layout_marginLeft="0dp"
+			    android:layout_marginRight="0dp"
+			    android:layout_marginBottom="5dp"
+			    android:layout_marginTop="3dp"
+			    android:id="@+id/moneyCheckLayout"
+			    android:visibility="gone"
+			    >
+		    	<ImageView android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:src="@drawable/register_check1"
+		    	    />
+			    <TextView android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="房租金额小于20"
+				    android:textColor="@color/red"
+				    android:textSize="12dp"
+				    android:layout_marginLeft="5dp"
+				    android:id="@+id/moneyCheck"
+			    />
+		</LinearLayout>
+		      <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="10dp"
+	            >
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="物业管理费(元/平米.月)"
+		                android:textColor="#666666"
+		                android:textSize="16dp"
+		                />
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text=" * "
+		                android:textColor="#ff0000"
+		                android:textSize="16dp"
+		                />
+		     </LinearLayout>
+		     <EditText android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:background="@drawable/soso_et_background"
+		         android:id="@+id/wuyeEt"
+		         android:singleLine="true"
+		         android:inputType="numberDecimal"
+		         android:textSize="14dp"
+		         />
+		     <LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:background="@drawable/register_check_background"
+			    android:gravity="center_vertical"
+			    android:padding="5dp"
+			    android:layout_marginLeft="0dp"
+			    android:layout_marginRight="0dp"
+			    android:layout_marginBottom="5dp"
+			    android:layout_marginTop="3dp"
+			    android:id="@+id/wuyeCheckLayout"
+			    android:visibility="gone"
+			    >
+		    	<ImageView android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:src="@drawable/register_check1"
+		    	    />
+			    <TextView android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="物业管理费小于100"
+				    android:textColor="@color/red"
+				    android:textSize="12dp"
+				    android:layout_marginLeft="5dp"
+				    android:id="@+id/wuyeCheck"
+			    />
+		</LinearLayout>
+		      <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="10dp"
+	            >
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="面积(平米)"
+		                android:textColor="#666666"
+		                android:textSize="16dp"
+		                />
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text=" * "
+		                android:textColor="#ff0000"
+		                android:textSize="16dp"
+		                />
+		     </LinearLayout>
+			     <EditText android:layout_width="fill_parent"
+			         android:layout_height="wrap_content"
+			         android:background="@drawable/soso_et_background"
+			         android:id="@+id/acreageEt"
+			         android:singleLine="true"
+			         android:inputType="numberDecimal"
+			         android:textSize="14dp"
+			         />
+			     <LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:background="@drawable/register_check_background"
+			    android:gravity="center_vertical"
+			    android:padding="5dp"
+			    android:layout_marginLeft="0dp"
+			    android:layout_marginRight="0dp"
+			    android:layout_marginBottom="5dp"
+			    android:layout_marginTop="3dp"
+			    android:id="@+id/acreageCheckLayout"
+			    android:visibility="gone"
+			    >
+		    	<ImageView android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:src="@drawable/register_check1"
+		    	    />
+			    <TextView android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="面积小于1000㎡"
+				    android:textColor="@color/red"
+				    android:textSize="12dp"
+				    android:layout_marginLeft="5dp"
+				    android:id="@+id/acreageCheck"
+			    />
+		</LinearLayout>
+		            <!-- <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="得房率(%)"
+		                android:textColor="#666666"
+		                android:textSize="16dp"
+		                android:layout_marginLeft="10dp"
+		                android:layout_marginTop="10dp"
+		                />
+		            <EditText android:layout_width="fill_parent"
+				         android:layout_height="wrap_content"
+				         android:background="@drawable/soso_et_background"
+				         android:id="@+id/defanglvEt"
+				         android:singleLine="true"
+				         android:inputType="phone"
+				         /> -->
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="房源简介"
+		                android:textColor="#666666"
+		                android:textSize="16dp"
+		                android:layout_marginLeft="10dp"
+		                android:layout_marginTop="10dp"
+		                />
+		            <EditText android:layout_width="fill_parent"
+				         android:layout_height="150dp"
+				         android:background="@drawable/soso_et_background"
+				         android:id="@+id/jianjieEt"
+				         android:singleLine="false"
+				         android:gravity="top|left"
+				         android:padding="8dp"
+				         android:hint="若简介内容较长可使用电脑登陆网站www.51banban.com进行输入。"
+				         android:textSize="14dp"
+				         />
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="拍摄房源照片"
+		                android:textColor="#666666"
+		                android:textSize="16dp"
+		                android:layout_marginLeft="10dp"
+		                android:layout_marginTop="10dp"
+		                />
+		            <LinearLayout 
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:orientation="horizontal"
+		                android:id="@+id/imageLinear"
+		                android:gravity="left"
+		                >
+		                <com.zhihuigu.sosoOffice.View.RoomImageGallery android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:id="@+id/gallery"
+		                    android:unselectedAlpha="1"
+		                    android:spacing="5dp"
+		                    android:gravity="left"
+		                    />
+		            </LinearLayout>
+		            <Button android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:background="@drawable/soso_button_bg"
+		                android:id="@+id/saveAndSend"
+		                android:text="保存并发布"
+		                android:textColor="#4b5e00"
+		    			android:textSize="22dp"
+		    			android:layout_marginTop="10dp"
+		    			android:layout_marginBottom="10dp"
+		                />
+        </LinearLayout>
+        
+    </ScrollView>
+</LinearLayout>

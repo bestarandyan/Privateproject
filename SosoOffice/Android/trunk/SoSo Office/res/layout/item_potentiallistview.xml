@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F2F2F2"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+     >
+     <ImageView 
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/room_image"
+        android:src="@drawable/soso_gray_logo"
+        android:layout_alignParentLeft="true"
+	    android:layout_centerVertical="true"
+	    android:background="@drawable/room_list_img_bg"
+        />
+     <ImageView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/soso_entire_click"
+	        android:id="@+id/jiantou"
+	        android:visibility="visible"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        />
+	<LinearLayout  android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_centerVertical="true"
+		    android:layout_toLeftOf="@id/jiantou"
+		    android:layout_toRightOf="@id/room_image"
+		    android:layout_marginLeft="10dp"
+		    >
+		    <TextView 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/roomName"
+		        android:text="锦辉大厦办公商用楼"
+		        android:textColor="#84a307"
+		        android:textSize="18dp"
+		        />
+	    <LinearLayout  android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:gravity="center_vertical"
+		    android:layout_marginTop="2dp"
+		    >
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/roomNumber"
+		        android:text="1615室"
+		        android:textColor="#666666"
+		        android:textSize="12dp"
+		        />
+	</LinearLayout>
+	<LinearLayout  android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:gravity="center_vertical"
+		    android:layout_marginTop="2dp"
+		    >
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/roomMoney"
+		        android:text="￥3.5-5.0"
+		        android:textColor="#666666"
+		        android:textSize="12dp"
+		        />
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/roomAcreage"
+		        android:text="1000m²"
+		        android:textColor="#666666"
+		        android:textSize="12dp"
+		        android:layout_marginLeft="5dp"
+		        />
+	</LinearLayout>
+	<LinearLayout  android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:gravity="center_vertical"
+		    android:layout_marginTop="2dp"
+		    android:id="@+id/textLayout"
+		    >
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="刘星星"
+		        android:textColor="#666666"
+		        android:textSize="12dp"
+		        android:id="@+id/people"
+		        />
+		    
+	</LinearLayout>
+	</LinearLayout>
+	    
+	    
+</RelativeLayout>

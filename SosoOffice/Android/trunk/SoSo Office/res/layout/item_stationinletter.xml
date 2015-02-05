@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    				 android:layout_width="wrap_content"
+			   		 android:layout_height="wrap_content"
+			   		 android:gravity="center_vertical"
+			   		 android:paddingTop="5dp"
+			   		 android:paddingBottom="5dp"
+			   		 android:background="#f2f2f2"
+			   		 android:id="@+id/parent_linear"
+			   		 >
+		        <Button android:layout_width="wrap_content"
+			   		 android:layout_height="wrap_content"
+			   		 android:id="@+id/btn1"
+			   		 android:layout_marginLeft="10dp"
+			   		 android:background="@drawable/soso_email_ico_open"/>
+		        <RelativeLayout
+    				 android:layout_width="fill_parent"
+			   		 android:layout_height="wrap_content"
+			   		 android:gravity="center_vertical"
+			   		 android:id="@+id/linear"
+			   		 android:layout_marginLeft="5dp"
+			   		 android:paddingRight="10dp"
+			   		 >
+			   		 <LinearLayout
+	    				 android:layout_width="wrap_content"
+				   		 android:layout_height="wrap_content"
+				   		 android:orientation="horizontal"
+				   		 android:id="@+id/toplinear"
+				   		 android:gravity="center_vertical"
+			   		 >
+				   		  <TextView android:layout_width="wrap_content"
+					   		 android:layout_height="wrap_content"
+					   		 android:textColor="#666666"
+					   		 android:textSize="16dp"
+					   		 android:id="@+id/tv1"/>
+			   		</LinearLayout>
+			   		     
+			   		 <LinearLayout
+	    				 android:layout_width="wrap_content"
+				   		 android:layout_height="wrap_content"
+				   		 android:orientation="horizontal"
+				   		 android:gravity="center_vertical"
+				   		 android:id="@+id/linear1"
+				   		 android:layout_marginTop="3dp"
+				   		 android:layout_below="@id/toplinear"
+			   		 >
+					
+			   		  <TextView android:layout_width="80dp"
+				   		 android:layout_height="wrap_content"
+				   		 android:textColor="#999999"
+				   		 android:textSize="14dp"
+				   		 android:singleLine="true"
+				   		 android:id="@+id/tv2"/>
+			   		
+		        	  <TextView android:layout_width="wrap_content"
+				   		 android:layout_height="wrap_content"
+				   		 android:textColor="#999999"
+				   		 android:textSize="14dp"
+				   		 android:layout_marginLeft="20dp"
+				   		 android:id="@+id/tv3"/>
+			   		</LinearLayout>
+		        <ImageView android:layout_width="wrap_content"
+			   		 android:layout_height="wrap_content"
+			   		 android:layout_alignParentRight="true"
+			   		 android:background="@drawable/soso_entire_click"
+			   		 android:layout_centerVertical="true"
+			   		 android:id="@+id/btn"/>
+		        </RelativeLayout>
+		        
+		    </LinearLayout>

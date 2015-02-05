@@ -1,0 +1,213 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_bg"
+        >
+        <ImageButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top_fanhui_ico"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="10dp"
+            android:id="@+id/backBtn2"
+            />
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_line"
+            android:layout_toRightOf="@id/backBtn2"
+            />
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#ffffff"
+	        android:gravity="center"
+	        android:layout_centerInParent="true"
+	        android:id="@+id/topView"
+	        android:text="宴会信息" />
+    </RelativeLayout>
+			    <RelativeLayout android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:background="@drawable/bg_msg"
+			        android:id="@+id/parentLayout"
+			        >
+			         <ImageView android:layout_width="match_parent"
+			             android:layout_height="match_parent"
+			             android:background="@drawable/bg_msg_frame"
+			             android:layout_margin="5dp"
+			             />       
+			           <LinearLayout android:layout_width="match_parent"
+			               android:layout_height="match_parent"
+			               android:orientation="vertical"
+			               android:background="@null"
+			               android:gravity="center"
+			               >
+			               <ImageView android:layout_width="wrap_content"
+				             android:layout_height="wrap_content"
+				             android:src="@drawable/yaoqing_time"
+				             android:adjustViewBounds="true"
+				             android:id="@+id/infoImg1"
+				             /> 
+				             <LinearLayout android:layout_width="wrap_content"
+					               android:layout_height="wrap_content"
+					               android:orientation="horizontal"
+					               android:background="@null"
+					               android:gravity="center"
+					               >
+					               <View android:layout_width="30dp"
+					                   android:layout_height="0.5dp"
+					                   android:background="#F8FBFA"
+					                   />
+						            <TextView android:layout_width="wrap_content"
+						                 android:layout_height="wrap_content"
+						                 android:text="时间"
+						                 android:layout_marginLeft="10dp"
+						                 android:textColor="#F8FBFA"
+						                 android:textSize="16sp"
+						                 android:id="@+id/text01"
+						                 />    
+					                <View android:layout_width="30dp"
+					                   android:layout_height="0.5dp"
+					                   android:background="#F8FBFA"
+					                   android:layout_marginLeft="10dp"
+					                   />
+				              </LinearLayout>  
+				              <TextView android:layout_width="wrap_content"
+						                 android:layout_height="wrap_content"
+						                 android:text="2013年10月12日  下午5:18"
+						                 android:textColor="#F8FBFA"
+						                 android:textSize="16sp"
+						                 android:id="@+id/dateTv"
+						                 />
+				              <ImageView android:layout_width="wrap_content"
+					             android:layout_height="wrap_content"
+					             android:src="@drawable/yaoqing_seats"
+					             android:adjustViewBounds="true"
+					             android:id="@+id/infoImg2"
+					             /> 
+					             <LinearLayout android:layout_width="wrap_content"
+						               android:layout_height="wrap_content"
+						               android:orientation="horizontal"
+						               android:background="@null"
+						               android:gravity="center"
+						               >
+						               <View android:layout_width="30dp"
+						                   android:layout_height="0.5dp"
+						                   android:background="#F8FBFA"
+						                   />
+							            <TextView android:layout_width="wrap_content"
+							                 android:layout_height="wrap_content"
+							                 android:text="席设"
+							                 android:layout_marginLeft="10dp"
+							                 android:textColor="#F8FBFA"
+							                 android:textSize="16sp"
+							                 android:id="@+id/text02"
+							                 />    
+						                <View android:layout_width="30dp"
+						                   android:layout_height="0.5dp"
+						                   android:background="#F8FBFA"
+						                   android:layout_marginLeft="10dp"
+						                   />
+					              </LinearLayout>  
+					              <TextView android:layout_width="wrap_content"
+							                 android:layout_height="wrap_content"
+							                 android:text="喜马拉雅酒店三楼宴会厅"
+							                 android:textColor="#F8FBFA"
+							                 android:textSize="16sp"
+							                 android:id="@+id/jiudian"
+							                 />
+					                <RelativeLayout android:layout_width="wrap_content"
+					                  android:layout_height="wrap_content"
+					                  >
+					              <ImageView android:layout_width="wrap_content"
+					             android:layout_height="wrap_content"
+					             android:src="@drawable/yaoqing_address"
+					             android:adjustViewBounds="true"
+					             android:layout_centerHorizontal="true"
+					             android:id="@+id/infoImg3"
+					             /> 
+					             <LinearLayout android:layout_width="wrap_content"
+						               android:layout_height="wrap_content"
+						               android:orientation="horizontal"
+						               android:background="@null"
+						               android:id="@+id/relayout2"
+						               android:layout_below="@id/infoImg3"
+						               android:gravity="center"
+						               android:layout_centerHorizontal="true"
+						               >
+						               <View android:layout_width="30dp"
+						                   android:layout_height="0.5dp"
+						                   android:background="#F8FBFA"
+						                   />
+							            <TextView android:layout_width="wrap_content"
+							                 android:layout_height="wrap_content"
+							                 android:text="地址"
+							                 android:layout_marginLeft="10dp"
+							                 android:textColor="#F8FBFA"
+							                 android:textSize="16sp"
+							                 android:id="@+id/text03"
+							                 />    
+						                <View android:layout_width="30dp"
+						                   android:layout_height="0.5dp"
+						                   android:background="#F8FBFA"
+						                   android:layout_marginLeft="10dp"
+						                   />
+					              </LinearLayout>  
+					                   <TextView android:layout_width="wrap_content"
+							                 android:layout_height="wrap_content"
+							                 android:text="上海市凯旋北路1555弄"
+							                 android:textColor="#F8FBFA"
+							                 android:textSize="16sp"
+							                 android:gravity="center_vertical"
+							                 android:id="@+id/addressTv"
+						               		 android:layout_below="@id/relayout2"
+						               		 android:layout_centerHorizontal="true"
+							                 />
+					                   <Button android:layout_width="wrap_content"
+						                    android:layout_height="wrap_content"
+						                    android:background="@drawable/sc_copy"
+						                    android:layout_alignRight="@id/addressTv"
+						                    android:id="@+id/copyBtn"
+						                    android:text="复制"
+						                    android:textColor="#ffffff"
+						                    android:textSize="@dimen/copybtn_text_size"
+						                    android:gravity="center_horizontal|top"
+						                    android:paddingTop="@dimen/copybtn_padding_top"
+						                    android:layout_alignBottom="@id/addressTv"
+						                    android:layout_marginBottom="10dp"
+						                    android:visibility="gone"
+						                    />
+					              </RelativeLayout>
+					             
+					               <ImageView android:layout_width="wrap_content"
+					                  android:layout_height="wrap_content"
+					                  android:src="@drawable/map_btn"
+					                  android:id="@+id/mapBtn"
+					                  />
+					              <ImageView android:layout_width="match_parent"
+					                  android:layout_height="wrap_content"
+					                  android:background="@drawable/bg_pingpu"
+					                  android:layout_marginLeft="30dp"
+					                  android:layout_marginRight="30dp"
+					                  android:layout_marginTop="@dimen/weddinginfo_view_to_top"
+					                  />
+					              <TextView android:layout_width="wrap_content"
+							          android:layout_height="wrap_content"
+							          android:text="地铁直达"
+							          android:textColor="#F8FBFA"
+							          android:textSize="16sp"
+							          android:layout_marginTop="5dp"
+							          android:id="@+id/reachTv"
+							          android:gravity="center"
+							          android:layout_marginLeft="25dp"
+							          android:layout_marginRight="25dp"
+							       />
+			           </LinearLayout>  
+			    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baise"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    tools:context=".BaseActivity" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0"
+        android:background="@color/huise" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0"
+            android:background="@color/huise" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/marginsizeh"
+                android:paddingTop="5dp"
+                android:text="fafdadf"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizeh" />
+
+            <ImageView
+                android:id="@+id/view"
+                android:layout_width="@dimen/marginsizel"
+                android:layout_height="@dimen/marginsizel"
+                android:layout_marginRight="@dimen/marginsizeh"
+                android:layout_weight="0"
+                android:background="@drawable/product_view_ico4" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0"
+            android:background="@color/huise" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0"
+        android:background="@color/huise" />
+
+</LinearLayout>

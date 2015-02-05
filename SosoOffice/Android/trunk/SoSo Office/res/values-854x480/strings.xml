@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources >
+    <string name="room_number">3</string><!-- 房间数量 -->
+    <string name="room_list_gv_height">89</string><!-- 每个房间占的高度 -->
+    <string name="map_overlays_w">0</string>
+  	<string name="map_overlays_h">0</string>
+  	<string name="map_overlays_textsize">25</string>
+  	<string name="map_text_toleft">30</string>
+  	<string name="gallery_first_img">300</string>
+  	<string name="gallery_size">160</string>
+  	<string name="room_scroll_width">155</string>
+  	<string name="main_expendable_height">40</string>
+</resources>

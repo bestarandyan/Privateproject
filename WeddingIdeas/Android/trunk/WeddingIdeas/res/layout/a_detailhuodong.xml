@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_bg1"
+        >
+        <ImageButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top_fanhui_ico"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="10dp"
+            android:id="@+id/backBtn"
+            />
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_line1"
+            android:layout_toRightOf="@id/backBtn"
+            />
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#ffffff"
+	        android:gravity="center"
+	        android:layout_centerInParent="true"
+	        android:id="@+id/topView"
+	        android:text="活动" />
+         <ImageButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top_tel_ico"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="10dp"
+            android:id="@+id/tellBtn"
+            />
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_line1"
+            android:layout_toLeftOf="@id/tellBtn"
+            />
+    </RelativeLayout>
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:id="@+id/parentLayout"
+        >
+        <ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:id="@+id/scrollView"
+            >
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                > 
+                <ImageView android:layout_width="match_parent"
+		             android:layout_height="wrap_content"
+		             android:adjustViewBounds="true"
+		             android:id="@+id/imageView"
+		             />
+             </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

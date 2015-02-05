@@ -1,0 +1,35 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@drawable/clientcase_border"
+              android:padding="5dp"
+              android:layout_marginLeft="5dp"
+              android:layout_marginRight="5dp"
+              android:layout_marginTop="5dp"
+              >
+    <ImageView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/soso"
+        android:id="@+id/img"
+        />          
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:text="SosoOffice"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/intro"
+        android:text="SosoOffice 是一个手机办公楼租凭平台，支持GPS定位，地图搜素......"
+        android:textColor="#666666"
+        android:textSize="10sp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        />
+</LinearLayout>

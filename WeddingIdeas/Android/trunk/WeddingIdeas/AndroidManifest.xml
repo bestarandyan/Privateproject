@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qingfengweb.weddingideas"
+    android:versionCode="1"
+    android:versionName="1.0.2" 
+    android:installLocation="preferExternal"
+    >
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    <application 
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:hardwareAccelerated="true"
+        >
+        <activity android:screenOrientation="portrait"
+            android:name="com.qingfengweb.weddingideas.activity.LoadingActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Translucent" 
+            >
+            
+        </activity>
+        <activity android:name="com.qingfengweb.weddingideas.activity.MainVideoActivity"
+            android:screenOrientation="portrait"
+          android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:configChanges="screenSize"
+            ></activity>
+        <activity android:name="com.qingfengweb.weddingideas.activity.RightMenuActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name="com.qingfengweb.weddingideas.activity.WeddingStoreActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name="com.qingfengweb.weddingideas.activity.DetailYangZhaoActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name="com.qingfengweb.weddingideas.activity.DetailTaoXiActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name="com.qingfengweb.weddingideas.activity.ShareActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name="com.qingfengweb.weddingideas.activity.MainPhotoActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name="com.qingfengweb.weddingideas.activity.DetailHuoDongActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name="com.qingfengweb.weddingideas.activity.WeddingInfoActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name="com.qingfengweb.weddingideas.activity.BlessingActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name="com.qingfengweb.weddingideas.activity.LoginOrSignActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="navigation"
+            ></activity>
+        <activity android:name="com.qingfengweb.weddingideas.activity.PreferenceActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name="com.qingfengweb.weddingideas.activity.AboutUsActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name="com.qingfengweb.weddingideas.activity.VideoPlayActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.qingfengweb.weddingideas.activity.PhotoListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+         <activity android:name="com.qingfengweb.weddingideas.activity.ImageSwitcher"
+            android:screenOrientation="portrait"
+            ></activity>
+          <activity android:name="com.qingfengweb.weddingideas.activity.MarryLogActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+           <activity android:name="com.qingfengweb.weddingideas.activity.GuideActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+            <activity android:name="com.qingfengweb.weddingideas.activity.ErweimaShareActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+            <activity android:name="com.qingfengweb.weddingideas.activity.BaiDuMapActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+           <!--  辅助Activity  加上方向 防止横竖屏切换listener 丢失-->
+  <!-- 		<activity android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+             android:screenOrientation="portrait" />
+        <activity android:name="com.tencent.plus.ImageActivity" />
+        <activity
+            android:name="com.tencent.sample.activitys.DataProviderActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <data android:scheme="tencent222222.data" />
+            </intent-filter>
+        </activity>  
+         <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent222222" />
+            </intent-filter>
+        </activity>
+        
+          <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service> -->
+    </application>
+
+</manifest>

@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    >
+    <RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:background="@drawable/soso_top_bg"
+	    android:id="@+id/topLinear"
+	    >
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:background="@drawable/soso_fh_ico"
+	        android:id="@+id/backBtn"
+	         />
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="图 片 预 览"
+	        android:textColor="@color/white"
+	        android:textSize="25dp"
+	        />
+	</RelativeLayout>
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="center"
+	    >
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/soso_gray_logo"
+        android:scaleType="matrix"
+        android:id="@+id/imageView"/>
+    </LinearLayout>
+    </LinearLayout>

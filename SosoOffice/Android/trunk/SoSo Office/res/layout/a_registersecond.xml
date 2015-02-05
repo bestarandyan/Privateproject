@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:background="@drawable/soso_top_bg"
+	    >
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="身 份 确 认"
+	        android:textColor="@color/white"
+	        android:textSize="25dp"
+	        />
+	</RelativeLayout>
+	<TextView android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="选择以下用户类型"
+	        android:textColor="#999999"
+	        android:layout_marginTop="40dp"
+	    	android:layout_marginLeft="25dp"
+	    	android:textSize="12dp"
+	        />
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    >
+	    <LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_weight="1"
+		    android:gravity="center_horizontal"
+		    >
+		    <RelativeLayout android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        >
+		        <ImageView android:src="@drawable/soso_sf_tu1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:id="@+id/type1"
+		            />
+	        	<ImageView android:src="@drawable/soso_sf_gx"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBottom="@id/type1"
+		            android:layout_alignRight="@id/type1"
+		            android:visibility="gone"
+		            android:id="@+id/image1"/>
+	    	</RelativeLayout>
+	    	<TextView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="业主"
+	    	    android:layout_marginTop="15dp"
+	    	    android:textColor="#666666"
+	    	    android:textSize="22dp"/>
+	    </LinearLayout>
+	    <LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_weight="1"
+		    android:gravity="center_horizontal"
+		    android:layout_marginLeft="10dp"
+		    >
+		    <RelativeLayout android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        >
+		        <ImageView android:src="@drawable/soso_sf_tu2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:id="@+id/type2"
+		            />
+	        	<ImageView android:src="@drawable/soso_sf_gx"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBottom="@id/type2"
+		            android:layout_alignRight="@id/type2"
+		            android:visibility="gone"
+		            android:id="@+id/image2"/>
+	    	</RelativeLayout>
+	    	<TextView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="中介"
+	    	    android:layout_marginTop="15dp"
+	    	    android:textColor="#666666"
+	    	    android:textSize="22dp"/>
+	    </LinearLayout>
+	    <LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_weight="1"
+		    android:gravity="center_horizontal"
+		     android:layout_marginLeft="10dp"
+		    >
+		    <RelativeLayout android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        >
+		        <ImageView android:src="@drawable/soso_sf_tu3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:id="@+id/type3"
+		            />
+	        	<ImageView android:src="@drawable/soso_sf_gx"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBottom="@id/type3"
+		            android:layout_alignRight="@id/type3"
+		            android:visibility="gone"
+		            android:id="@+id/image3"/>
+	    	</RelativeLayout>
+	    	<TextView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="客户"
+	    	    android:layout_marginTop="15dp"
+	    	    android:textColor="#666666"
+	    	    android:textSize="22dp"/>
+	    </LinearLayout>
+	</LinearLayout>
+	<TextView android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/introUserType"
+	    android:textColor="@color/black"
+	    android:textSize="16dp"
+	    android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:layout_marginTop="10dp"
+	    />
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="bottom">
+		<Button android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/submitBtn"
+		    android:text="下 一 步"
+		    android:textColor="#4b5e00"
+		    android:textSize="22dp"
+		    android:background="@drawable/soso_button_bg"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginRight="15dp"
+		    android:padding="10dp"
+		    android:layout_marginBottom="20dp"
+		    />
+	</LinearLayout>
+	</LinearLayout>

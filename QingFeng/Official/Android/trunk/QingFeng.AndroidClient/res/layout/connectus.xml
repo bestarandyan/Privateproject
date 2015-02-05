@@ -1,0 +1,156 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#dbf2ff"
+              >
+              <ImageView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/qf_contact_bg"
+                  />
+              <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:layout_margin="20dp"
+                  >
+                 <TextView android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="上海擎风网络科技有限公司"
+                     android:textColor="#2266B8"
+                     android:textSize="22sp"
+                     /> 
+                     <TextView android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text=""
+                     android:textColor="#333333"
+                     android:textSize="14sp"
+                     android:layout_marginTop="10dp"
+                     android:id="@+id/wayOfConnect"
+                     android:lineSpacingExtra="10dp"
+                     /> 
+                    <!--  <TextView android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="电话：400-021-0998 021-64760769"
+                     android:textColor="#333333"
+                     android:textSize="14dp"
+                     android:layout_marginTop="10dp"
+                     /> 
+                     <TextView android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="传真：021-52377802"
+                    android:textColor="#333333"
+                     android:textSize="14dp"
+                     android:layout_marginTop="10dp"
+                     /> 
+                     <TextView android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="网址：http://www.qingfengweb.com"
+                     android:textColor="#333333"
+                     android:textSize="14dp"
+                     android:layout_marginTop="10dp"
+                     /> 
+                     <TextView android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="邮箱：mail@qingfengweb.com"
+                     android:textColor="#333333"
+                     android:textSize="14dp"
+                     android:layout_marginTop="10dp"
+                     />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="43dp"
+                         android:layout_marginTop="10dp"
+                         android:text="qingfengweb@gmail.com"
+                         android:textColor="#333333"
+                         android:textSize="14dp" /> -->
+                     <LinearLayout android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:orientation="horizontal"
+                         android:layout_marginTop="10dp"
+                         android:gravity="center_vertical"
+                         >
+                         <TextView android:layout_width="wrap_content"
+		                     android:layout_height="wrap_content"
+		                     android:text="收听："
+		                     android:textColor="#333333"
+		                     android:textSize="14dp"
+		                     />
+                         <ImageView android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:src="@drawable/qf_contact_ico1"
+                             android:id="@+id/connectImg1"
+                             />
+                         <ImageView android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:src="@drawable/qf_contact_ico2"
+                             android:id="@+id/connectImg2"
+                             android:layout_marginLeft="20dp"
+                             />
+                         <ImageView android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:src="@drawable/qf_contact_ico3"
+                             android:id="@+id/connectImg3"
+                             android:layout_marginLeft="20dp"
+                             />
+                         <ImageView android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:src="@drawable/qf_contact_ico4"
+                             android:id="@+id/connectImg4"
+                             android:layout_marginLeft="20dp"
+                             />
+                     </LinearLayout>
+  				<LinearLayout android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:orientation="horizontal"
+                         android:layout_marginTop="30dp"
+                         android:gravity="center_vertical"
+                         >
+                         <TextView android:layout_width="wrap_content"
+		                     android:layout_height="wrap_content"
+		                     android:text="收听："
+		                     android:textColor="#333333"
+		                     android:textSize="14dp"
+		                     android:visibility="invisible"
+		                     android:layout_weight="1"
+		                     />
+                         <ImageView android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:src="@drawable/qf_contact_ico5"
+                             android:id="@+id/connectImg5"
+                             android:layout_weight="1"
+                             />
+                         <ImageView android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:src="@drawable/qf_contact_ico6"
+                             android:id="@+id/connectImg6"
+                             android:layout_marginLeft="20dp"
+                             android:layout_weight="1"
+                             />
+                         <ImageView android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:src="@drawable/qf_contact_ico7"
+                             android:id="@+id/connectImg7"
+                             android:layout_marginLeft="20dp"
+                             android:layout_weight="1"
+                             />
+                         <ImageView android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:src="@drawable/qf_contact_ico8"
+                             android:id="@+id/connectImg8"
+                             android:layout_marginLeft="20dp"
+                             android:layout_weight="1"
+                             />
+                         <ImageView android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:src="@drawable/qf_contact_ico9"
+                             android:id="@+id/connectImg9"
+                             android:layout_marginLeft="20dp"
+                             android:layout_weight="1"
+                             />
+                     </LinearLayout>
+                     
+              </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#87C6C2"
+    >
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_bg"
+        >
+        <ImageButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top_fanhui_ico"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="10dp"
+            android:id="@+id/photoListBackBtn"
+            />
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_line"
+            android:layout_toRightOf="@id/backBtn1"
+            />
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#ffffff"
+	        android:gravity="center"
+	        android:layout_centerInParent="true"
+	        android:id="@+id/topView"
+	        android:text="我的婚纱照" />
+    </RelativeLayout>
+	<!-- <ListView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/photoListView"
+            android:divider="#87C6C2"
+            android:dividerHeight="4dp"
+            android:layout_margin="6dp"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:background="@null"
+            android:cacheColorHint="@null"
+            ></ListView> -->
+            <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+				<LinearLayout android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="vertical"
+				    android:id="@+id/imgLayout"
+				    android:gravity="center_horizontal"
+				    >
+				    
+				</LinearLayout>
+		</ScrollView>
+</LinearLayout>

@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent"
+    android:background="@color/rubaise" >
+
+    <RelativeLayout
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/shenrubaise"
+        android:padding="@dimen/marginsizeh" >
+
+        <ImageView
+            android:id="@+id/btn_jiantou"
+            android:layout_width="@dimen/marginsizeh"
+            android:layout_height="@dimen/marginsizeh"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/cz_top_ico" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/heise"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/textsizeh" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="@null" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/view1"
+        android:background="@color/huise" />
+
+    <LinearLayout
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view2"
+        android:layout_margin="@dimen/marginsizem"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#3ABFDE"
+            android:button="@null"
+            android:checked="true"
+            android:textColor="@color/textcolorselecter"
+            android:textSize="@dimen/textsizem" >
+
+            <LinearLayout
+                android:id="@+id/linear1_rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/rl1_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的"
+                    android:textColor="@color/baise"
+                    android:textSize="@dimen/textsizem" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/message_person"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignBottom="@+id/linear1_rb1"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/linear1_rb1"
+                android:background="@drawable/shapecount"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="#ffffffff"
+                android:textSize="13sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radioselecter"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="@dimen/marginsizem"
+            android:textColor="@color/textcolorselecter"
+            android:textSize="@dimen/textsizem" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/rl2_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的"
+                    android:textColor="@color/shenhuise"
+                    android:textSize="@dimen/textsizem" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/marginsizem"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/chengse"
+            android:padding="@dimen/marginsizem"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/textsizem" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:background="#3ABFDE"
+            android:padding="@dimen/marginsizem"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/textsizem" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view4"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/view5"
+        android:layout_below="@id/view3"
+        android:layout_margin="@dimen/marginsizem"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noDataLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/view5"
+        android:layout_below="@id/view3"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/noDataMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无内容"
+            android:textColor="#666666"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</RelativeLayout>

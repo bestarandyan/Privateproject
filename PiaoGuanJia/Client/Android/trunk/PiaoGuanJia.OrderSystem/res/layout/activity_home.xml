@@ -1,0 +1,266 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beijingse"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:weightSum="5" >
+
+    <!-- 第一行 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/xiadan_home_ad" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/xiadan_home_ad" />
+    </LinearLayout>
+
+    <!-- 第二行 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <!-- 第二行的第一行，充值和审核 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/relbtn1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:tag="0"
+                android:background="@color/ziseziuxinchanping"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最新产品"
+                    android:layout_margin="@dimen/marginsizem"
+                    android:textColor="@color/baise"
+                    android:textSize="@dimen/textsizeh" />
+
+                <ImageView
+                    android:layout_width="@dimen/home_icon"
+                    android:layout_height="@dimen/home_icon"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/xiadan_home_ico1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                 android:id="@+id/relbtn2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:tag="1"
+                android:background="@color/shenlanseziyouxing"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自由行"
+                    android:layout_margin="@dimen/marginsizem"
+                    android:textColor="@color/baise"
+                    android:textSize="@dimen/textsizeh" />
+
+                <ImageView
+                    android:layout_width="@dimen/home_icon"
+                    android:layout_height="@dimen/home_icon"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/xiadan_home_ico2" />
+            </RelativeLayout>
+
+           <RelativeLayout
+                 android:id="@+id/relbtn3"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:tag="2"
+                android:background="@color/qianlansejiudian"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="酒店"
+                    android:layout_margin="@dimen/marginsizem"
+                    android:textColor="@color/baise"
+                    android:textSize="@dimen/textsizeh" />
+
+                <ImageView
+                    android:layout_width="@dimen/home_icon"
+                    android:layout_height="@dimen/home_icon"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/xiadan_home_ico3" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- 第二行，2个按钮 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                 android:id="@+id/relbtn4"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/beijingse"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/homemine_icon"
+                    android:layout_height="@dimen/homemine_icon"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/xiadan_home_ico4" />
+            </LinearLayout>
+
+            <RelativeLayout
+                 android:id="@+id/relbtn5"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:tag="3"
+                android:background="@color/lvsejingdianmenpiao"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="景点门票"
+                    android:layout_margin="@dimen/marginsizem"
+                    android:textColor="@color/baise"
+                    android:textSize="@dimen/textsizeh" />
+
+                <ImageView
+                    android:layout_width="@dimen/home_icon"
+                    android:layout_height="@dimen/home_icon"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/xiadan_home_ico5" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 第三行，3个按钮 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                 android:id="@+id/relbtn6"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:tag="4"
+                android:background="@color/fenhonggentuanyou"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="跟团游"
+                    android:layout_margin="@dimen/marginsizem"
+                    android:textColor="@color/baise"
+                    android:textSize="@dimen/textsizeh" />
+
+                <ImageView
+                    android:layout_width="@dimen/home_icon"
+                    android:layout_height="@dimen/home_icon"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/xiadan_home_ico6" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                 android:id="@+id/relbtn7"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/chensekuaijie"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="快捷下单"
+                    android:layout_margin="@dimen/marginsizem"
+                    android:textColor="@color/baise"
+                    android:textSize="@dimen/textsizeh" />
+
+                <ImageView
+                    android:layout_width="@dimen/home_icon"
+                    android:layout_height="@dimen/home_icon"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/xiadan_home_ico7" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                 android:id="@+id/relbtn8"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/qianchengseloading"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="加载中..."
+                    android:layout_margin="@dimen/marginsizem"
+                    android:textColor="@color/baise"
+                    android:textSize="@dimen/textsizeh" />
+
+                <ImageView
+                    android:layout_width="@dimen/home_icon"
+                    android:layout_height="@dimen/home_icon"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/xiadan_home_ico8" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/beijingse"
+    android:orientation="vertical"
+    android:padding="@dimen/marginsizem" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="预定限制"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/textsizem"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginsizel"
+            android:layout_marginTop="@dimen/marginsizel"
+            android:gravity="left"
+            android:text="    发生的肌肤时刻提防垃反对法发顺丰发生法法犯得上法法发发发士大夫圾分厘卡圣诞节法律范江岸路放假啦jfk圣诞节分厘卡似的附近开了多少"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/textsizes" />
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="出行警示及说明"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/textsizem"
+            android:layout_marginTop="@dimen/marginsizeh"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginsizel"
+            android:layout_marginTop="@dimen/marginsizel"
+            android:gravity="left"
+            android:text="    发生的肌肤时刻提防垃反对法发顺丰发生法法犯得上法法发发发士大夫圾分厘卡圣诞节法律范江岸路放假啦jfk圣诞节分厘卡似的附近开了多少"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/textsizes" />
+    </LinearLayout>
+
+</LinearLayout>

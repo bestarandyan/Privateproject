@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources >
+    <color name="main_btn_keydown_text_color">#ffffff</color>
+    <color name="main_btn_keydown_bg_color">#E29000</color>
+    <color name="main_btn_keyup_text_color">#A4A2A3</color>
+    <color name="main_btn_keyup_bg_color">#025BFF</color>
+    <color name="charge_type_text_yellow">#EA5F02</color>
+</resources>

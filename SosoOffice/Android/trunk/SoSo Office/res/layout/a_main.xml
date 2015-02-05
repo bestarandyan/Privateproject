@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/soso_top_bg"
+	    android:orientation="horizontal"
+	    >
+	    <LinearLayout android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:background="@drawable/soso_sz_city_bg"
+	        android:orientation="horizontal"
+	        android:gravity="center"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:id="@+id/mainTopBtnLinear"
+	        >
+	        <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:text="上海"
+		        android:textColor="@color/white"
+		        android:textSize="20dp"
+		        android:id="@+id/mainTopCityText"
+	        />
+	        <ImageView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dp"
+		        android:src="@drawable/soso_sz_city_zktu"/>
+	    </LinearLayout>
+	    <ImageView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/soso_index_logo"/>
+	</LinearLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_marginTop="-3dp"
+	    >
+	    <!-- 
+	    <LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/soso_bottom_bg"
+	        android:id="@+id/bottomLinear"
+	        android:layout_alignParentBottom="true"
+	        android:orientation="horizontal"
+	        android:gravity="center_vertical"
+	        >
+	        <LinearLayout android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:id="@+id/bottomLinear1"
+		        android:orientation="vertical"
+		        android:layout_weight="1"
+		        android:gravity="center"
+		        >
+		        <FrameLayout android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            >
+		            <LinearLayout android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:gravity="bottom|center_horizontal"
+				        android:paddingRight="10dp"
+				        android:paddingTop="10dp"
+				        android:paddingLeft="10dp"
+				        >
+					        <ImageView android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:src="@drawable/soso_bottom_ico1_on"
+					            android:id="@+id/bottomImg1"
+					            />
+			        </LinearLayout>
+			        <Button android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="3"
+			            android:textColor="@color/white"
+			            android:textStyle="bold"
+			            android:textSize="14dp"
+			            android:gravity="center"
+			            android:paddingBottom="5dp"
+			            android:layout_gravity="top|right"
+			            android:background="@drawable/soso_index_xiaoquan"
+			            android:visibility="gone"
+			            android:id="@+id/bottomCircle1"
+			            />
+		        </FrameLayout>
+		        <TextView android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_centerInParent="true"
+				        android:text="首页"
+				        android:textColor="@color/white"
+				        android:textSize="14dp"
+				        android:id="@+id/bottomText1"
+			        />
+		    </LinearLayout>
+		    <LinearLayout android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:id="@+id/bottomLinear2"
+		        android:orientation="vertical"
+		        android:layout_weight="1"
+		        android:gravity="center"
+		        >
+		        <FrameLayout android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            >
+		            <LinearLayout android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:gravity="bottom|center_horizontal"
+				        android:paddingRight="10dp"
+				        android:paddingTop="10dp"
+				        android:paddingLeft="10dp"
+				        >
+					        <ImageView android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:src="@drawable/soso_bottom_ico2"
+					            android:id="@+id/bottomImg2"
+					            />
+			        </LinearLayout>
+			        <Button android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="3"
+			            android:textColor="@color/white"
+			            android:textStyle="bold"
+			            android:textSize="14dp"
+			            android:gravity="center"
+			            android:paddingBottom="5dp"
+			            android:layout_gravity="top|right"
+			            android:background="@drawable/soso_index_xiaoquan"
+			            android:id="@+id/bottomCircle2"
+			            />
+		        </FrameLayout>
+		        <TextView android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_centerInParent="true"
+				        android:text="站内信"
+				        android:textColor="@color/white"
+				        android:textSize="14dp"
+				        android:id="@+id/bottomText2"
+			        />
+		    </LinearLayout>
+		    <LinearLayout android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:id="@+id/bottomLinear3"
+		        android:orientation="vertical"
+		        android:layout_weight="1"
+		        android:gravity="center"
+		        >
+		        <FrameLayout android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            >
+		            <LinearLayout android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:gravity="bottom|center_horizontal"
+				        android:paddingRight="10dp"
+				        android:paddingTop="10dp"
+				        android:paddingLeft="10dp"
+				        >
+					        <ImageView android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:src="@drawable/soso_bottom_ico3"
+					            android:id="@+id/bottomImg3"
+					            />
+			        </LinearLayout>
+			        <Button android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="10"
+			            android:textColor="@color/white"
+			            android:textStyle="bold"
+			            android:textSize="14dp"
+			            android:gravity="center"
+			            android:paddingBottom="5dp"
+			            android:layout_gravity="top|right"
+			            android:background="@drawable/soso_index_xiaoquan"
+			            android:id="@+id/bottomCircle3"
+			            />
+		        </FrameLayout>
+		        <TextView android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_centerInParent="true"
+				        android:text="推送"
+				        android:textColor="@color/white"
+				        android:textSize="14dp"
+				        android:id="@+id/bottomText3"
+			        />
+		    </LinearLayout>
+		    <LinearLayout android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:id="@+id/bottomLinear4"
+		        android:orientation="vertical"
+		        android:layout_weight="1"
+		        android:gravity="center"
+		        >
+		        <FrameLayout android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            >
+		            <LinearLayout android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:gravity="bottom|center_horizontal"
+				        android:paddingRight="10dp"
+				        android:paddingTop="10dp"
+				        android:paddingLeft="10dp"
+				        >
+					        <ImageView android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:src="@drawable/soso_bottom_ico5"
+					            android:id="@+id/bottomImg4"
+					            />
+			        </LinearLayout>
+			        <Button android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="8"
+			            android:textColor="@color/white"
+			            android:textStyle="bold"
+			            android:textSize="14dp"
+			            android:gravity="center"
+			            android:paddingBottom="5dp"
+			            android:layout_gravity="top|right"
+			            android:background="@drawable/soso_index_xiaoquan"
+			            android:id="@+id/bottomCircle4"
+			            />
+		        </FrameLayout>
+		        <TextView android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_centerInParent="true"
+				        android:text="需求"
+				        android:textColor="@color/white"
+				        android:textSize="14dp"
+				        android:id="@+id/bottomText4"
+			        />
+		    </LinearLayout>
+		    <LinearLayout android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:id="@+id/bottomLinear5"
+		        android:orientation="vertical"
+		        android:layout_weight="1"
+		        android:gravity="center"
+		        >
+		        <FrameLayout android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            >
+		            <LinearLayout android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:gravity="bottom|center_horizontal"
+				        android:paddingRight="10dp"
+				        android:paddingTop="10dp"
+				        android:paddingLeft="10dp"
+				        >
+					        <ImageView android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:src="@drawable/soso_bottom_ico7"
+					            android:id="@+id/bottomImg5"
+					            />
+			        </LinearLayout>
+			        <Button android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="3"
+			            android:textColor="@color/white"
+			            android:textStyle="bold"
+			            android:textSize="14dp"
+			            android:gravity="center"
+			            android:paddingBottom="5dp"
+			            android:layout_gravity="top|right"
+			            android:background="@drawable/soso_index_xiaoquan"
+			            android:id="@+id/bottomCircle5"
+			            android:visibility="gone"
+			            />
+		        </FrameLayout>
+		        <TextView android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_centerInParent="true"
+				        android:text="更多"
+				        android:textColor="@color/white"
+				        android:textSize="14dp"
+				        android:id="@+id/bottomText5"
+			        />
+		    </LinearLayout>
+	    </LinearLayout>
+	 
+	    
+	    
+	     -->
+			<FrameLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_above="@id/bottomLinear"
+			    >
+			    <LinearLayout android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:orientation="vertical"
+			        >
+			        <ImageView android:layout_width="fill_parent"
+			            android:layout_height="@dimen/main_img_height"
+			            android:background="@drawable/soso_index_tupan"
+			            android:id="@+id/mainImage"
+			            />
+			        <LinearLayout android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center_horizontal"
+			            android:layout_marginTop="-6dp"
+			            android:orientation="horizontal">
+					   <GridView android:layout_width="wrap_content"
+					       android:layout_height="fill_parent"
+					       android:numColumns="3"
+					       android:layout_gravity="center_horizontal"
+					       android:gravity="center_horizontal"
+					       android:id="@+id/mainGv"
+					       android:layout_marginLeft="10dp"
+					       android:fadingEdge="none"
+					       android:background="#ffffff"
+					       android:overScrollMode="never"
+					       >
+					       
+					   </GridView>    
+			        </LinearLayout>
+			    </LinearLayout>
+			    <LinearLayout android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center_horizontal"
+			        android:orientation="vertical"
+			        >
+			        <RelativeLayout android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:gravity="center_horizontal"
+				        android:orientation="horizontal"
+				        android:layout_marginTop="@dimen/main_input_to_top"
+				        android:paddingLeft="20dp"
+				        android:paddingRight="20dp"
+				        >
+					      <Button android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_marginLeft="10dp"
+				            android:layout_alignParentRight="true"
+				            android:id="@+id/searchBtn"
+				            android:background="@drawable/soso_index_search"/>
+					        <LinearLayout android:layout_width="fill_parent"
+						        android:layout_height="wrap_content"
+						        android:background="@drawable/soso_index_text"
+						        android:gravity="center_vertical"
+						        android:layout_toLeftOf="@id/searchBtn"
+						        android:orientation="vertical"
+						        android:id="@+id/searchEtLinear"
+						        >
+						        <EditText android:layout_width="fill_parent"
+						            android:layout_height="fill_parent"
+						            android:id="@+id/searchRoomEt"
+						            android:singleLine="true"
+						            android:hint="搜索区域房源"
+						            android:focusable="false"
+						            android:background="@null"/>
+				        	</LinearLayout>
+				        <LinearLayout android:layout_width="fill_parent"
+						        android:layout_height="wrap_content"
+						        android:background="@drawable/soso_main_border"
+						        android:layout_toLeftOf="@id/searchBtn"
+						        android:orientation="vertical"
+						        android:id="@+id/searchListLinear"
+						        android:padding="8dp"
+						        android:visibility="gone"
+						        >
+						        <RelativeLayout android:layout_width="fill_parent"
+						        	android:layout_height="wrap_content"
+						        	>
+						            <TextView android:layout_width="wrap_content"
+							            android:layout_height="wrap_content"
+							            android:id="@+id/searchRoomText"
+							            android:text=""
+							            android:textColor="@color/black"
+							            android:textSize="14dp"
+							            android:background="@null"/>
+						            <ImageView android:layout_width="30dp"
+						                android:layout_height="30dp"
+						                android:src="@drawable/soso_index_text_sjfh"
+						                android:layout_alignParentRight="true"
+						                android:id="@+id/mainListJiantou"
+						                />
+						        </RelativeLayout>
+						     <!--    <EditText android:layout_width="fill_parent"
+						            android:layout_height="fill_parent"
+						            android:id="@+id/searchAreaEt"
+						            android:singleLine="true"
+						            android:hint="输入搜素关键字"
+						            android:background="@drawable/main_list_et_border"
+						            android:layout_marginTop="10dp"
+						            /> -->
+						        <TextView android:layout_width="fill_parent"
+						            android:layout_height="wrap_content"
+						            android:text="不限"
+						            android:textColor="#8eae03"
+						            android:layout_marginTop="5dp"
+						            android:textSize="20dp"
+						            android:id="@+id/noLimitText"
+						            />
+						        <LinearLayout android:layout_width="fill_parent"
+							          android:layout_height="200dp"
+							          android:gravity="center"
+							          android:orientation="vertical"
+							          android:background="#ffffff"
+							          android:id="@+id/noDataLayout"
+							          android:padding="15dp"
+							          >
+							          <ImageView android:layout_width="wrap_content"
+							              android:layout_height="wrap_content"
+							              android:src="@drawable/soso_gray_logo"
+							              android:id="@+id/noDataImg"
+							              />
+							          <TextView android:layout_width="wrap_content"
+							              android:layout_height="wrap_content"
+							              android:text="暂无楼盘数据"
+							              android:textColor="#666666"
+							              android:textSize="18dp"
+							              android:id="@+id/noDataMsg"
+							              />
+							      </LinearLayout>
+						        <ExpandableListView android:id="@+id/mainListView"
+						            android:layout_width="fill_parent"
+						            android:layout_height="200dp"
+						            android:cacheColorHint="@null"
+						            android:listSelector="@android:color/transparent"
+						            android:groupIndicator="@null"
+						            android:childIndicator="@null"
+						            android:fadingEdge="none"
+						            android:divider="@null"
+						            android:dividerHeight="1dp"
+						            >
+						        </ExpandableListView>
+				        	</LinearLayout>
+				        
+				    </RelativeLayout>
+			    </LinearLayout>
+			    
+			</FrameLayout>
+	    	</RelativeLayout>
+
+
+</LinearLayout>

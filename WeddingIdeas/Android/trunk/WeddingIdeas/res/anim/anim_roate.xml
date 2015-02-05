@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<set xmlns:android="http://schemas.android.com/apk/res/android">  
+    <rotate  
+        android:fromDegrees="0"  
+        android:toDegrees="1080"  
+        android:duration="300"  
+        android:repeatCount="2"  
+        android:pivotX="50%"  
+        android:pivotY="50%" />  
+</set>   
+<!-- <objectAnimator 
+         android:propertyName="backgroundColor"
+         android:duration="750"
+         android:valueFrom="#009900"
+         android:valueTo="#00ff00"
+         android:startOffset="0"
+         android:repeatCount="-1"
+         android:pivotX="50%"  
+         android:pivotY="50%"
+         android:repeatMode="reverse"
+         android:valueType="intType" />
+</set> -->

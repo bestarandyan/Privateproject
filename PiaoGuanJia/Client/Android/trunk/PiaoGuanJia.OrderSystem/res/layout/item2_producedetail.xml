@@ -1,0 +1,317 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/beijingse"
+    android:orientation="vertical"
+    android:padding="@dimen/marginsizem" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="崇明区东平国家深林公园"
+            android:textColor="@color/heise"
+            android:textStyle="bold"
+            android:textSize="@dimen/textsizem" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginsizem"
+            android:layout_marginBottom="@dimen/marginsizem"
+            android:gravity="left"
+            android:text="    发生的肌肤时刻提防垃反对法发顺丰发生法法犯得上法法发发发士大夫圾分厘卡圣诞节法律范江岸路放假啦jfk圣诞节分厘卡似的附近开了多少"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/textsizes" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ower_border"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginsizel" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0"
+                    android:gravity="left"
+                    android:text="开园时间:"
+                    android:textColor="#034174"
+                    android:textSize="@dimen/textsizeh" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="08:00-17:00"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizes" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginsizel" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0"
+                    android:gravity="left"
+                    android:text="景区地址:"
+                    android:textColor="#034174"
+                    android:textSize="@dimen/textsizeh" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="上海市闸北区广中西路555号"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizes" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ower_border"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linear_btn1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/ower_border_selector1"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginsizel" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:text="订购须知"
+                        android:textColor="#034174"
+                        android:textSize="@dimen/textsizeh" />
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:text="订购须知发生发发发的沙发fasfasfjklajfkashfkaskfj富士康房间了深刻解放啦警方立即 罚款就放了科技时代沙发沙发打算"
+                        android:textColor="@color/heise"
+                        android:textSize="@dimen/textsizes" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:src="@drawable/piaoguanjia_ico12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4" />
+
+            <LinearLayout
+                android:id="@+id/linear_btn2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/ower_border_selector1"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginsizel" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:text="费用说明"
+                        android:textColor="#034174"
+                        android:textSize="@dimen/textsizeh" />
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:text="订购须知发生发发发的沙发fasfasfjklajfkashfkaskfj富士康房间了深刻解放啦警方立即 罚款就放了科技时代沙发沙发打算"
+                        android:textColor="@color/heise"
+                        android:textSize="@dimen/textsizes" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:src="@drawable/piaoguanjia_ico12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4" />
+
+            <LinearLayout
+                android:id="@+id/linear_btn3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/ower_border_selector1"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginsizel" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:text="交通指南"
+                        android:textColor="#034174"
+                        android:textSize="@dimen/textsizeh" />
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:text="订购须知发生发发发的沙发fasfasfjklajfkashfkaskfj富士康房间了深刻解放啦警方立即 罚款就放了科技时代沙发沙发打算"
+                        android:textColor="@color/heise"
+                        android:textSize="@dimen/textsizes" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:src="@drawable/piaoguanjia_ico12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4" />
+
+            <LinearLayout
+                android:id="@+id/linear_btn4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/ower_border_selector1"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginsizel" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:text="退改说明"
+                        android:textColor="#034174"
+                        android:textSize="@dimen/textsizeh" />
+
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:text="订购须知发生发发发的沙发fasfasfjklajfkashfkaskfj富士康房间了深刻解放啦警方立即 罚款就放了科技时代沙发沙发打算"
+                        android:textColor="@color/heise"
+                        android:textSize="@dimen/textsizes" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:src="@drawable/piaoguanjia_ico12" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

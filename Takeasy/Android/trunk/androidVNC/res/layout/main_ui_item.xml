@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_ui_color2"
+    android:orientation="horizontal" >
+
+    <ImageView android:id="@+id/main_ui_image"
+        android:src="@drawable/lists"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:layout_margin="4px"
+        android:layout_weight="1"/>
+    
+    
+    <LinearLayout android:orientation="vertical"
+        android:layout_toRightOf="@id/main_ui_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:layout_weight="4"
+        >
+        <TextView android:id="@+id/main_ui_text1"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/main_ui_text2"
+            android:layout_width="wrap_content"  android:textSize="20sp"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+    
+        
+    <LinearLayout android:orientation="horizontal"
+         android:layout_margin="10px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:gravity="right"
+        android:layout_weight="5"
+        >
+		<Button
+            android:id="@+id/main_ui_btn4"
+            android:text="@string/drawing"
+            android:layout_width="80dip"
+            android:layout_height="60dip"/>
+        
+        <Button
+            android:id="@+id/main_ui_btn2"
+            android:text="@string/btn_connect"
+            android:layout_width="80dip"
+            android:layout_height="60dip"/>
+        <Button
+            android:id="@+id/main_ui_btn1"
+            android:layout_width="80dip"
+            android:layout_height="60dip"
+            android:text="@string/btn_update" />
+
+        <Button
+            android:id="@+id/main_ui_btn3"
+            android:text="@string/btn_delete"
+            android:layout_width="80dip"
+            android:layout_height="60dip"/>
+        
+        
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/baise"
+    android:minWidth="280dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3ABFDE"
+        android:padding="@dimen/marginsizel" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="提示信息"
+            android:textColor="@color/baise"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/textsizeh" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginsizem"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="@dimen/marginsizel"
+            android:text="备注"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/textsizem" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/huise" />
+
+    <RadioGroup
+        android:id="@+id/view5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/huise"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_cancel_selector"
+            android:padding="@dimen/marginsizem"
+            android:text="取消"
+            android:gravity="center"
+            android:button="@null"
+            android:textColor="@color/textcolorselecter"
+            android:textSize="@dimen/textsizem" />
+
+        <RadioButton
+            android:id="@+id/btn2"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/btn_cancel_selector"
+            android:padding="@dimen/marginsizem"
+            android:text="确定"
+            android:textColor="@color/textcolorselecter"
+            android:textSize="@dimen/textsizem" />
+    </RadioGroup>
+
+</LinearLayout>

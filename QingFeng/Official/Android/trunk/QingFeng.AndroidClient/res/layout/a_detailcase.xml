@@ -1,0 +1,97 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#ffffff"
+              >
+  <RelativeLayout android:layout_width="fill_parent"
+      android:layout_height="60dp"
+      android:background="@drawable/qf_top_bg"
+      >
+      <ImageButton android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/qf_fanhui_btn"
+          android:layout_centerVertical="true"
+          android:id="@+id/detailCase_topLeftBtn"
+          android:layout_margin="10dp"
+          />
+      <View android:layout_width="1dp"
+          android:layout_height="fill_parent"
+          android:background="@drawable/qf_top_line"
+          android:layout_toRightOf="@id/detailCase_topLeftBtn"
+          android:layout_marginBottom="2dp"
+          />
+      <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="案例详情"
+          android:layout_centerInParent="true"
+          android:textColor="#ffffff"
+          android:textSize="20dp"
+          />
+      <ImageButton android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/qf_btn5"
+          android:layout_centerVertical="true"
+          android:id="@+id/detailCase_topRightBtn"
+          android:layout_margin="10dp"
+          android:layout_alignParentRight="true"
+          />
+      <View android:layout_width="1dp"
+          android:layout_height="fill_parent"
+          android:background="@drawable/qf_top_line"
+          android:layout_toLeftOf="@id/detailCase_topRightBtn"
+          android:layout_marginBottom="2dp"
+          />
+  </RelativeLayout>
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:background="#ffffff"
+      >
+  <android.support.v4.view.ViewPager android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:id="@+id/caseVP"
+      ></android.support.v4.view.ViewPager>
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center_horizontal"
+      android:layout_margin="10dp"
+      android:id="@+id/dotLayout"
+      >
+      
+  </LinearLayout>
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:padding="10dp"
+      android:background="#ECECEC"
+      >
+      <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="SosoOffice"
+          android:textColor="#000000"
+          android:textSize="16sp"
+          android:id="@+id/name"
+          />
+      <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="项目类型：iOS+Android客户端"
+          android:textColor="#666666"
+          android:textSize="12sp"
+          android:layout_marginTop="5dp"
+          android:id="@+id/type"
+          />
+      <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="项目描述：SosoOffice是一个手机办公室租凭平台，支持GPS定位，地图搜索，利用本系统，业主可以进行房源的出租，中介可以进行房源和客户的查找，租客进行房源和需求的发表，提供站内信实现用户交流，同事也支持消息推送功能。"
+          android:textColor="#666666"
+          android:textSize="12sp"
+          android:layout_marginTop="3dp"
+          android:id="@+id/describe"
+          android:lineSpacingExtra="3dp"
+          />
+  </LinearLayout>
+  </LinearLayout>

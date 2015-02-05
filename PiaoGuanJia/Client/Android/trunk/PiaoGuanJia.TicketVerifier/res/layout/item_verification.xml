@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_list_corner_round"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="@dimen/marginsizem"
+        android:text="端口:东平国家森林公园"
+        android:textColor="@color/heise"
+        android:textSize="@dimen/textsizem" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/huise" />
+
+    <EditText
+        android:id="@+id/et_num"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="请输入游玩人手机、身份证号、订单号或团购劵号"
+        android:inputType="textPassword"
+        android:padding="@dimen/marginsizem"
+        android:singleLine="true"
+        android:textColor="@color/heise"
+        android:textSize="@dimen/textsizel" />
+
+</LinearLayout>

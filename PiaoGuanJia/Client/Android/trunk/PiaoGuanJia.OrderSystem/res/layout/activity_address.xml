@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#EDEBEC"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/marginsizel"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="国内城市"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizeh" />
+
+            <ImageView
+                android:layout_width="@dimen/marginsizel"
+                android:layout_height="@dimen/marginsizel"
+                android:background="@drawable/product_view_ico1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/huise" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             android:gravity="center"
+            android:padding="@dimen/marginsizel"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="海外城市"
+                android:textColor="@color/huise"
+                android:textSize="@dimen/textsizeh" />
+
+            <ImageView
+                android:layout_width="@dimen/marginsizel"
+                android:layout_height="@dimen/marginsizel"
+                android:background="@drawable/product_view_ico2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/huise" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             android:gravity="center"
+            android:padding="@dimen/marginsizel"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="历史选择"
+                android:textColor="@color/huise"
+                android:textSize="@dimen/textsizeh" />
+
+            <ImageView
+                android:layout_width="@dimen/marginsizel"
+                android:layout_height="@dimen/marginsizel"
+                android:background="@drawable/product_view_ico2" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/line_jianbian" />
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/listview1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#EDEBEC"
+            android:layout_marginLeft="5dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:scrollbars="none" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/listview2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/baise"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

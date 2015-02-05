@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:gravity="right"
+    android:id="@+id/parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cz_top_bg"
+        >
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cz_ico1"
+            android:layout_centerVertical="true"
+            android:id="@+id/backBtn"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值记录"
+            android:textColor="#ffffff"
+            android:textSize="40dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#008CFF"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/chargebg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="待审核"
+            android:textColor="#ED6F17"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@null"
+            android:text="历史记录"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            >
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总计"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#ff0000"
+                android:textSize="16sp"
+                android:id="@+id/countItem"
+                android:layout_marginLeft="6dp"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="条"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="15dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <com.piaoguanjia.chargeclient.XListView android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:id="@+id/recordListView"
+          android:cacheColorHint="@null"
+          android:background="#ffffff"
+          android:divider="@drawable/soso_zc_line"
+          android:dividerHeight="1dp"
+          android:fadingEdge="none"
+          >
+          
+      </com.piaoguanjia.chargeclient.XListView>
+    </LinearLayout>

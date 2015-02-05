@@ -1,0 +1,234 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#ffffff"
+              >
+  <RelativeLayout android:layout_width="fill_parent"
+      android:layout_height="60dp"
+      android:background="@drawable/qf_top_bg"
+      >
+      <ImageButton android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/qf_btn1"
+          android:layout_centerVertical="true"
+          android:id="@+id/leftBtn"
+          android:layout_margin="10dp"
+          />
+      <View android:layout_width="1dp"
+          android:layout_height="fill_parent"
+          android:background="@drawable/qf_top_line"
+          android:layout_toRightOf="@id/leftBtn"
+          android:layout_marginBottom="2dp"
+          />
+      <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/menu_tab3_str"
+          android:layout_centerInParent="true"
+          android:textColor="#ffffff"
+          android:textSize="20dp"
+          />
+  </RelativeLayout>
+  <ScrollView android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fadingEdge="none"
+      android:scrollbars="none"
+      android:layout_marginTop="-4dp"
+      >
+      <LinearLayout android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          >
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#A117A8"
+      android:gravity="center"
+      android:orientation="vertical"
+      android:padding="8dp"
+      android:id="@+id/iosLayout"
+      >
+      <ImageView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/qf_fuwu_ico1"
+          />
+      <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="iOS定制开发"
+          android:textColor="#ffffff"
+          android:textSize="22sp"
+          android:layout_marginTop="10dp"
+          />
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="@dimen/service_item_height"
+      android:background="#000000"
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:paddingTop="4dp"
+      android:paddingBottom="4dp"
+      >
+      <LinearLayout android:layout_width="match_parent"
+	      android:layout_height="@dimen/service_item_height"
+	      android:background="#1070C6"
+	      android:gravity="center"
+	      android:orientation="vertical"
+	      android:layout_weight="1"
+	      android:id="@+id/layout1"
+	      >
+	      <ImageView android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:src="@drawable/qf_fuwu_ico2"
+	          />
+	      <TextView android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:text="Android\n定制开发"
+	          android:textColor="#ffffff"
+	          android:textSize="14sp"
+	          android:layout_marginTop="10dp"
+	          android:gravity="center_horizontal"
+	          />
+	  </LinearLayout>
+	  <LinearLayout android:layout_width="match_parent"
+	      android:layout_height="@dimen/service_item_height"
+	      android:background="#F03B1C"
+	      android:gravity="center"
+	      android:orientation="vertical"
+	      android:layout_weight="1"
+	      android:layout_marginLeft="4dp"
+	      android:id="@+id/layout2"
+	      >
+	      <ImageView android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:src="@drawable/qf_fuwu_ico3"
+	          />
+	      <TextView android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:text="WindowsPhone\n定制开发"
+	          android:textColor="#ffffff"
+	          android:textSize="14sp"
+	          android:layout_marginTop="10dp"
+	          android:gravity="center_horizontal"
+	          />
+	  </LinearLayout>
+	  <LinearLayout android:layout_width="match_parent"
+	      android:layout_height="@dimen/service_item_height"
+	      android:background="#0DB3EF"
+	      android:gravity="center"
+	      android:orientation="vertical"
+	      android:layout_weight="1"
+	      android:layout_marginLeft="4dp"
+	      android:id="@+id/layout3"
+	      >
+	      <ImageView android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:src="@drawable/qf_fuwu_ico4"
+	          />
+	      <TextView android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:text="HTML5网站\n定制开发"
+	          android:textColor="#ffffff"
+	          android:textSize="16sp"
+	          android:layout_marginTop="10dp"
+	          android:gravity="center_horizontal"
+	          />
+	  </LinearLayout>
+  </LinearLayout>
+  
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="@dimen/service_item_height"
+      android:background="#000000"
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:paddingBottom="4dp"
+      >
+      <LinearLayout android:layout_width="match_parent"
+	      android:layout_height="@dimen/service_item_height"
+	      android:background="#148D6E"
+	      android:gravity="center"
+	      android:orientation="vertical"
+	      android:layout_weight="1"
+	      android:id="@+id/layout4"
+	      >
+	      <ImageView android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:src="@drawable/qf_fuwu_ico5"
+	          />
+	      <TextView android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:text="传统网站定制开发"
+	          android:textColor="#ffffff"
+	          android:textSize="14sp"
+	          android:layout_marginTop="10dp"
+	          android:gravity="center_horizontal"
+	          />
+	  </LinearLayout>
+	  <LinearLayout android:layout_width="match_parent"
+	      android:layout_height="@dimen/service_item_height"
+	      android:background="#95BC23"
+	      android:gravity="center"
+	      android:orientation="vertical"
+	      android:layout_weight="1"
+	      android:layout_marginLeft="4dp"
+	      android:id="@+id/layout5"
+	      >
+	      <ImageView android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:src="@drawable/qf_fuwu_ico6"
+	          />
+	      <TextView android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:text="项目运营与推广"
+	          android:textColor="#ffffff"
+	          android:textSize="14sp"
+	          android:layout_marginTop="10dp"
+	          android:gravity="center_horizontal"
+	          />
+	  </LinearLayout>
+	  <LinearLayout android:layout_width="match_parent"
+	      android:layout_height="@dimen/service_item_height"
+	      android:background="#C7C501"
+	      android:gravity="center"
+	      android:orientation="vertical"
+	      android:layout_weight="1"
+	      android:layout_marginLeft="4dp"
+	      android:id="@+id/layout6"
+	      >
+	      <ImageView android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:src="@drawable/qf_fuwu_ico7"
+	          />
+	      <TextView android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:text="提交需求"
+	          android:textColor="#ffffff"
+	          android:textSize="16sp"
+	          android:layout_marginTop="10dp"
+	          android:gravity="center_horizontal"
+	          />
+	  </LinearLayout>
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="fill_parent"
+      android:minHeight="100dp"
+      android:background="#1070C6"
+      android:orientation="horizontal"
+      android:gravity="center"
+      >
+	  <ImageView android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:src="@drawable/qf_fuwu_ico8"
+	      />
+     
+  </LinearLayout>
+  </LinearLayout>
+  </ScrollView>
+  </LinearLayout>
+  
+
+
+
+
+
+
+

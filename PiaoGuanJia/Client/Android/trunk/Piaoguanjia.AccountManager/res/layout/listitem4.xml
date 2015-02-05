@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_list_corner_round"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/btn_linear1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingTop="@dimen/marginsizem"
+                android:paddingBottom="@dimen/marginsizem"
+                android:paddingLeft="@dimen/marginsizem"
+                android:text="充值"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizem" />
+
+            <TextView
+                android:id="@+id/message_person1"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="top|left|center"
+                android:background="@drawable/shapecount"
+                android:gravity="center"
+                android:text="8"
+                android:layout_marginTop="8dp"
+                android:textColor="#ffffffff"
+                android:textSize="13sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageview_gou1"
+            android:layout_width="@dimen/marginsizeh"
+            android:layout_height="@dimen/marginsizeh"
+            android:layout_marginRight="@dimen/marginsizem"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/cz_top_ico1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/huise" />
+
+    <LinearLayout
+        android:id="@+id/btn_linear2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingTop="@dimen/marginsizem"
+                android:paddingBottom="@dimen/marginsizem"
+                android:paddingLeft="@dimen/marginsizem"
+                android:text="专用账户"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizem" />
+
+            <TextView
+                android:id="@+id/message_person2"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="top|left|center"
+                android:background="@drawable/shapecount"
+                android:gravity="center"
+                android:text="8"
+                android:layout_marginTop="8dp"
+                android:textColor="#ffffffff"
+                android:textSize="13sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageview_gou2"
+            android:layout_width="@dimen/marginsizeh"
+            android:layout_height="@dimen/marginsizeh"
+            android:layout_marginRight="@dimen/marginsizem"
+            android:layout_weight="0"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/cz_top_ico1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/huise" />
+
+    <LinearLayout
+        android:id="@+id/btn_linear3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingTop="@dimen/marginsizem"
+                android:paddingBottom="@dimen/marginsizem"
+                android:paddingLeft="@dimen/marginsizem"
+                android:text="额度"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizem" />
+
+            <TextView
+                android:id="@+id/message_person3"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="top|left|center"
+                android:background="@drawable/shapecount"
+                android:gravity="center"
+                android:text="8"
+                android:layout_marginTop="8dp"
+                android:textColor="#ffffffff"
+                android:textSize="13sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageview_gou3"
+            android:layout_width="@dimen/marginsizeh"
+            android:layout_height="@dimen/marginsizeh"
+            android:layout_marginRight="@dimen/marginsizem"
+            android:layout_weight="0"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/cz_top_ico1" />
+    </LinearLayout>
+
+</LinearLayout>

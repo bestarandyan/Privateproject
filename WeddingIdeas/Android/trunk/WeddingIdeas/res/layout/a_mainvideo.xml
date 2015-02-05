@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parent"
+    tools:context="com.qingfengweb.weddingideas.activity.MainVideoActivity" >
+    <TextView android:background="@drawable/top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:id="@+id/topView"
+        android:text="桔子摄影" />
+    <!-- <ScrollView android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topView"
+        > -->
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:background="@drawable/bg_video"
+	    android:layout_below="@+id/topView"
+	    >
+	    <LinearLayout android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="#ffffff"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"
+		    android:gravity="center_horizontal"
+		    android:id="@+id/topLayout"
+		    >
+		    <RelativeLayout android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:orientation="vertical"
+		        android:background="@null"
+		        android:id="@+id/videoViewlayout"
+		        >
+		    <RelativeLayout android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/playLayout"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="5dp"
+		        android:layout_marginLeft="7dp"
+		        android:layout_marginRight="7dp"
+		        >
+				<VideoView android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:id="@+id/videoView"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentRight="true"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentBottom="true"
+				/>				
+				<Button android:layout_width="30dp"
+				    android:layout_height="30dp"
+				    android:id="@+id/fullBtn"
+				    android:layout_alignRight="@id/videoView"
+				    android:layout_alignBottom="@id/videoView"
+				    android:background="@drawable/quanpingmu3"
+				    />
+			    <ImageView android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:background="@drawable/img_video_end"
+			        android:adjustViewBounds="true"
+			        android:id="@+id/playVideoImg"
+			        android:layout_alignParentLeft="true"
+					android:layout_alignParentRight="true"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentBottom="true"
+					android:layout_centerInParent="true"
+			        />
+			    <ImageView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/video_play"
+			        android:layout_centerInParent="true"
+			        android:adjustViewBounds="true"
+			        android:id="@+id/playVideoBtn"
+			        />
+		    </RelativeLayout>
+		    </RelativeLayout>
+		    <ImageView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/video_name"
+			        android:adjustViewBounds="true"
+			        android:layout_marginLeft="20dp"
+			        android:layout_marginRight="20dp"
+			        />
+		    <ImageView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/img_video_name_head"
+			        android:adjustViewBounds="true"
+			        android:layout_margin="2dp"
+			        />
+		    <RelativeLayout android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/bg_video_name"
+		        >
+			    <TextView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="张三丰@杨采妮"
+			        android:textColor="#433E3D"
+			        android:textSize="@dimen/mainphoto_text_size"
+			        android:id="@+id/zhuren"
+			        android:layout_centerInParent="true"
+			        android:gravity="center"
+			        />
+		    </RelativeLayout>
+		</LinearLayout>
+		<RelativeLayout android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="#ffffff"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"
+		    android:layout_marginTop="10dp"
+		    android:padding="3dp"
+		    android:orientation="vertical"
+		    android:gravity="center_horizontal"
+		    android:id="@+id/bottomLayout"
+		    >
+		    <ImageView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:src="@drawable/icon_video_content_topview"
+		        android:id="@+id/topImgView"
+		        />
+		    <ImageView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_alignParentBottom="true"
+		        android:src="@drawable/icon_video_content_footview"
+		        android:id="@+id/bottomImgView"
+		        />
+		    <LinearLayout android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		    android:gravity="center_horizontal"
+		    android:layout_below="@id/topImgView"
+		    android:layout_above="@id/bottomImgView"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    >
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="亲爱哒朱鹏小姐"
+		        android:textColor="#433E3D"
+		        android:textSize="@dimen/mainphoto_text_size"
+		        android:layout_marginTop="2dp"
+		        android:id="@+id/kerenName"
+		        />
+		        <ScrollView android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:scrollbars="none"
+				    android:fadingEdge="none"
+		            >
+		            <LinearLayout android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:scrollbars="none"
+			            >
+			             <TextView android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text=""
+						        android:textColor="#433E3D"
+						        android:textSize="@dimen/mainphoto_text_size"
+						        android:id="@+id/yaoqingInfo"
+						        android:layout_marginTop="3dp"
+						        android:lineSpacingExtra="4dp"
+						        />
+			         </LinearLayout>
+		        </ScrollView>
+		        </LinearLayout>
+		  </RelativeLayout>
+	</LinearLayout>
+	<!-- </ScrollView> -->
+	
+</RelativeLayout>

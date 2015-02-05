@@ -1,0 +1,476 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/beijingse"
+    android:orientation="vertical"
+    android:padding="@dimen/marginsizem" >
+
+    <LinearLayout
+        android:id="@+id/linear_pay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@drawable/ower_border_selector2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginsizel"
+            android:layout_marginBottom="@dimen/marginsizel"
+            android:layout_marginRight="@dimen/marginsizel"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="支付方式"
+            android:textColor="#034174"
+            android:textSize="@dimen/textsizeh" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginsizel"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:text="请选择支付方式"
+            android:textColor="#00C1FE"
+            android:textSize="@dimen/textsizel" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="22dp"
+            android:background="@drawable/product_view_ico32"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/huise" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginsizel"
+        android:layout_marginBottom="@dimen/marginsizel"
+        android:text="产品信息"
+        android:textColor="#034174"
+        android:textSize="@dimen/textsizeh" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/huise" />
+
+    <LinearLayout
+        android:id="@+id/linear_rili"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="@drawable/ower_border_selector2"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginsizel"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:text="游玩日期"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/textsizeh" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginsizel"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:text="请选择游玩日期"
+            android:textColor="#00C1FE"
+            android:textSize="@dimen/textsizel" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="22dp"
+            android:background="@drawable/product_view_ico32"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ower_border"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginsizel"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:text="成人票"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizeh" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginsizel"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:text="￥90000"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizeh" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ower_border"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_jian"
+                    android:layout_width="20dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/product_view_jian"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageView
+                    android:id="@+id/iv_jia"
+                    android:layout_width="20dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/product_view_jia"
+                    android:contentDescription="@string/app_name" />
+
+                <EditText
+                    android:id="@+id/et_num1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/iv_jia"
+                    android:layout_toRightOf="@id/iv_jian"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:background="@null"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizem" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/huise" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginsizel"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:text="儿童票"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizeh" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginsizel"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:text="￥90000"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizeh" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ower_border"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_jian1"
+                    android:layout_width="20dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/product_view_jian"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageView
+                    android:id="@+id/iv_jia1"
+                    android:layout_width="20dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/product_view_jia"
+                    android:contentDescription="@string/app_name" />
+
+                <EditText
+                    android:id="@+id/et_num2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/iv_jia1"
+                    android:layout_toRightOf="@id/iv_jian1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizem" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/marginsizel"
+        android:layout_marginTop="@dimen/marginsizeh"
+        android:text="游客信息"
+        android:textColor="#034174"
+        android:textSize="@dimen/textsizeh" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ower_border"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginsizel"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:text="姓名"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizeh" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginsizel"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="请输入姓名"
+                android:paddingLeft="5dp"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizeh" />
+
+            <LinearLayout
+                android:id="@+id/linear_shoucang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/huise" />
+
+                <ImageView
+                    android:id="@+id/iv_lianxiren"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/product_view_xinxi_ico1"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/huise" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginsizel"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:text="手机"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizeh" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginsizel"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="请输入手机号码"
+                android:paddingLeft="5dp"
+                android:inputType="phone"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizeh" />
+
+            <LinearLayout
+                android:id="@+id/linear_shoucang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/huise" />
+
+                <ImageView
+                    android:id="@+id/iv_tongxulu"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/product_view_xinxi_ico2"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/huise" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginsizel"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:text="身份证"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizeh" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginsizel"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="请输入身份证号码"
+                android:paddingLeft="5dp"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizeh" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="invisible" >
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/huise" />
+
+                <ImageView
+                    android:id="@+id/iv_shoucang"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/product_view_xinxi_ico2"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/huise" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginsizel"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:text="配送信息"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizeh" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="@dimen/marginsizel"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:background="@drawable/ower_border"
+                android:gravity="left|top"
+                android:hint="请输入配送信息"
+                android:padding="5dp"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizeh" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

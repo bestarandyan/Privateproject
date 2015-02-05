@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp" 
+    android:orientation="horizontal"
+    android:background="@drawable/bg_room_gv"
+    >
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+         android:background="#F1F1F1"
+          android:id="@+id/roomRight"
+          android:layout_alignParentRight="true"
+          android:gravity="center_vertical"
+        >
+        <ImageView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/soso_house_dianji"
+        />
+    </LinearLayout>
+    
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+	    android:orientation="vertical"
+	    android:background="#ffffff"
+	    android:layout_toLeftOf="@id/roomRight"
+	    android:gravity="center_horizontal"
+	    >
+	    <TextView android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#B4D820"
+	        android:text="1506"
+	        android:textColor="#ffffff"
+	        android:gravity="center"
+	        android:textSize="12dp"
+	        android:id="@+id/roomNumberText"
+	        />
+ 
+	    <RelativeLayout android:layout_marginLeft="@dimen/room_gun_marginx"
+	    	    android:layout_marginTop="9dp"
+	    	    android:layout_marginRight="@dimen/room_gun_marginx"
+	    	    android:layout_marginBottom="9dp"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="fill_parent" >
+
+	    <RelativeLayout android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_centerInParent="true"
+	    	    
+	    	    >
+	    	    <com.zhihuigu.sosoOffice.View.ScrollLayoutView
+					  android:id="@+id/scrollView"  
+					  android:layout_width="wrap_content"  
+					  android:scrollbars="none"
+					  android:fadingEdge="none"
+					  android:layout_height="wrap_content">  
+		    	    <ImageView android:layout_height="wrap_content"
+			    	    android:layout_width="wrap_content"
+			    	    android:id="@+id/imageView"
+			    	    android:background="@drawable/soso_huadong_zufang"
+			    	    />
+		    	    </com.zhihuigu.sosoOffice.View.ScrollLayoutView>
+
+	    		<ImageView
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="wrap_content"
+	    		    android:layout_alignParentLeft="true"
+	    		    android:layout_alignParentRight="true"
+	    		    android:background="@drawable/soso_huadong_zhezhao"
+	    		    android:id="@+id/menImg"
+	    		    android:clickable="false" />
+
+	    	</RelativeLayout>
+	    	</RelativeLayout>
+    </LinearLayout>
+    </RelativeLayout>
+    </LinearLayout>

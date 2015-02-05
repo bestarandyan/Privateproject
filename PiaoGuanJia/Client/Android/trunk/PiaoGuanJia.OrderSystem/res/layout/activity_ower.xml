@@ -1,0 +1,460 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beijingse"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/marginsizeh"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linear_btn1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ower_border_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:padding="@dimen/marginsizel" >
+
+            <ImageView
+                android:layout_width="@dimen/marginsizeh"
+                android:layout_height="@dimen/marginsizeh"
+                android:layout_weight="0"
+                android:src="@drawable/piaoguanjia_ico1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="我的账户"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizeh" />
+
+            <ImageView
+                android:layout_width="@dimen/marginsizeh"
+                android:layout_height="@dimen/marginsizeh"
+                android:layout_weight="0"
+                android:background="@null"
+                android:src="@drawable/piaoguanjia_ico12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ower_border"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linear_btn2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/ower_border_selector1"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginsizel" >
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:src="@drawable/piaoguanjia_ico2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="我的收藏"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizeh" />
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:src="@drawable/piaoguanjia_ico12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4" />
+
+            <LinearLayout
+                android:id="@+id/linear_btn3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/ower_border_selector1"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginsizel" >
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:src="@drawable/piaoguanjia_ico3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="我的游玩人"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizeh" />
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:src="@drawable/piaoguanjia_ico12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ower_border"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linear_btn4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:clickable="true"
+                android:background="@drawable/ower_border_selector1"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginsizel" >
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:src="@drawable/piaoguanjia_ico4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="待支付订单"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizeh" />
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:src="@drawable/piaoguanjia_ico12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4" />
+
+            <LinearLayout
+                android:id="@+id/linear_btn5"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:background="@drawable/ower_border_selector1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginsizel" >
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:src="@drawable/piaoguanjia_ico5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="待处理订单"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizeh" />
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:src="@drawable/piaoguanjia_ico12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4" />
+
+            <LinearLayout
+                android:id="@+id/linear_btn6"
+                android:layout_width="fill_parent"
+                android:clickable="true"
+                android:layout_height="fill_parent"
+                android:background="@drawable/ower_border_selector1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginsizel" >
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:src="@drawable/piaoguanjia_ico6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="景点门票订单"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizeh" />
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:src="@drawable/piaoguanjia_ico12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4" />
+
+            <LinearLayout
+                android:id="@+id/linear_btn7"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/ower_border_selector1"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginsizel" >
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:src="@drawable/piaoguanjia_ico7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="酒店订单"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizeh" />
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:src="@drawable/piaoguanjia_ico12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4" />
+
+            <LinearLayout
+                android:id="@+id/linear_btn8"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:background="@drawable/ower_border_selector1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginsizel" >
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:src="@drawable/piaoguanjia_ico8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="自由行订单"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizeh" />
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:src="@drawable/piaoguanjia_ico12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4" />
+
+            <LinearLayout
+                android:id="@+id/linear_btn9"
+                android:layout_width="fill_parent"
+                android:clickable="true"
+                android:layout_height="fill_parent"
+                android:background="@drawable/ower_border_selector1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginsizel" >
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:src="@drawable/piaoguanjia_ico9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="跟团游订单"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizeh" />
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:src="@drawable/piaoguanjia_ico12" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ower_border"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linear_btn10"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:background="@drawable/ower_border_selector1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginsizel" >
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:src="@drawable/piaoguanjia_ico10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="设置"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizeh" />
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:src="@drawable/piaoguanjia_ico12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4" />
+
+            <LinearLayout
+                android:id="@+id/linear_btn11"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/ower_border_selector1"
+                android:padding="@dimen/marginsizel" >
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:src="@drawable/piaoguanjia_ico11" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="关于票管家"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizeh" />
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:src="@drawable/piaoguanjia_ico12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4e4" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

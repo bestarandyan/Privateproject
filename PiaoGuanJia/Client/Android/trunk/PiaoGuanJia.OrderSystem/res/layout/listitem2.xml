@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearbtn1"
+        android:layout_marginTop="@dimen/marginsizel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ower_border_selector"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/marginsizel" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="编辑个人资料"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/textsizem" />
+
+        <ImageView
+            android:layout_width="@dimen/marginsizeh"
+            android:layout_height="@dimen/marginsizeh"
+            android:layout_weight="0"
+            android:background="@null"
+            android:src="@drawable/piaoguanjia_ico12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearbtn2"
+        android:layout_marginTop="@dimen/marginsizel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ower_border_selector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/marginsizel" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="修改密码"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/textsizem" />
+
+        <ImageView
+            android:layout_width="@dimen/marginsizeh"
+            android:layout_height="@dimen/marginsizeh"
+            android:layout_weight="0"
+            android:background="@null"
+            android:src="@drawable/piaoguanjia_ico12" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginsizel"
+        android:background="@drawable/loginbtnbgselecter"
+        android:padding="@dimen/marginsizel"
+        android:text="退出登录"
+        android:textColor="@color/baise"
+        android:textSize="@dimen/textsizeh"
+        android:textStyle="bold" />
+
+</LinearLayout>

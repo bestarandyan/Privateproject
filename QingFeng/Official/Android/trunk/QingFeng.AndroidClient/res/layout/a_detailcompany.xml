@@ -1,0 +1,43 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#ffffff"
+              >
+  <RelativeLayout android:layout_width="fill_parent"
+      android:layout_height="60dp"
+      android:background="@drawable/qf_top_bg"
+      >
+      <ImageButton android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/qf_fanhui_btn"
+          android:layout_centerVertical="true"
+          android:id="@+id/backBtn"
+          android:layout_margin="10dp"
+          />
+      <View android:layout_width="1dp"
+          android:layout_height="fill_parent"
+          android:background="@drawable/qf_top_line"
+          android:layout_toRightOf="@id/backBtn"
+          android:layout_marginBottom="2dp"
+          />
+      <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="公司介绍"
+          android:layout_centerInParent="true"
+          android:textColor="#ffffff"
+          android:textSize="20dp"
+          />
+  </RelativeLayout>
+  <TextView 
+		android:id="@+id/companyIntro"  
+		android:layout_height="match_parent"  
+		android:layout_width="match_parent"   
+		android:textSize="16sp"  
+		android:textColor="#333333"  
+		android:typeface="serif"
+		android:layout_margin="10dp"
+		android:lineSpacingExtra="5dp"
+      />
+</LinearLayout>

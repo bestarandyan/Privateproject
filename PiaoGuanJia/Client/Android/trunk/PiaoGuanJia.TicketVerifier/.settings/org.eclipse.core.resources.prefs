@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//src/com/qingfengweb/piaoguanjia/ticketverifier/BaseActivity.java=UTF-8
+encoding//src/com/qingfengweb/piaoguanjia/ticketverifier/SplashActivity.java=UTF-8
+encoding//src/com/qingfengweb/piaoguanjia/ticketverifier/TicketApplication.java=UTF-8
+encoding//src/com/qingfengweb/piaoguanjia/ticketverifier/adapter/BidInfoPagerAdapter.java=UTF-8
+encoding//src/com/qingfengweb/piaoguanjia/ticketverifier/adapter/ValidateAdapter.java=UTF-8
+encoding//src/com/qingfengweb/piaoguanjia/ticketverifier/database/DBHelper.java=UTF-8
+encoding//src/com/qingfengweb/piaoguanjia/ticketverifier/database/TableCreate.java=UTF-8
+encoding//src/com/qingfengweb/piaoguanjia/ticketverifier/request/HandleData.java=UTF-8
+encoding//src/com/qingfengweb/piaoguanjia/ticketverifier/request/RequestServerFromHttp.java=UTF-8
+encoding//src/com/qingfengweb/piaoguanjia/ticketverifier/request/UploadData.java=UTF-8
+encoding//src/com/qingfengweb/piaoguanjia/ticketverifier/util/CommonUtils.java=UTF-8
+encoding//src/com/qingfengweb/piaoguanjia/ticketverifier/util/NetworkCheck.java=UTF-8
+encoding//src/com/qingfengweb/piaoguanjia/ticketverifier/view/XListViewFooter.java=UTF-8
+encoding//src/com/qingfengweb/piaoguanjia/ticketverifier/view/XListViewHeader.java=UTF-8

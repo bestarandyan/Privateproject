@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:focusableInTouchMode="false"
+             android:focusable="false"
+             android:layout_height="fill_parent"
+             android:orientation="vertical"
+             android:background="#F3F3F3"
+             >
+     <RelativeLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:padding="15dp"
+         android:background="#096CE3"
+         >
+         <Button android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/piao_top_ico1"
+             android:id="@+id/backBtn"
+             android:layout_centerVertical="true"
+             />
+         <TextView android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="验证记录"
+             android:layout_centerInParent="true"
+             android:textColor="#ffffff"
+             android:textSize="22dp"
+             android:id="@+id/textView"
+             />
+         <ImageView android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/piao_top_ico2"
+             android:layout_toLeftOf="@id/textView"
+             android:layout_centerInParent="true"
+             android:layout_marginRight="10dp"
+             />
+     </RelativeLayout>   
+  	 <LinearLayout android:layout_width="fill_parent"
+  	     android:layout_height="45dp"
+  	     android:orientation="horizontal"
+  	     android:background="#484848"
+  	     android:gravity="center_vertical"
+  	     
+  	     >
+  	     <RelativeLayout android:layout_width="wrap_content"
+	  	     android:layout_height="fill_parent"
+	  	     android:orientation="vertical"
+	  	     android:layout_marginLeft="20dp"
+	  	     android:id="@+id/lastLayout"
+	  	     >
+	  	     <TextView android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:text="最近"
+	             android:layout_centerVertical="true"
+	             android:textColor="#ffffff"
+	             android:textSize="18dp"
+	             android:id="@+id/lastTv"
+             />
+	  	     <ImageView android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:src="@drawable/piao_dakai_ico"
+	             android:layout_alignParentBottom="true"
+	             android:layout_centerHorizontal="true"
+	             android:id="@+id/lastIV"
+             />
+	  	 </RelativeLayout>
+	  	 <RelativeLayout android:layout_width="wrap_content"
+	  	     android:layout_height="fill_parent"
+	  	     android:orientation="vertical"
+	  	     android:layout_marginLeft="20dp"
+	  	     android:id="@+id/historyLayout"
+	  	     >
+	  	     <TextView android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:text="历史"
+	             android:layout_centerVertical="true"
+	             android:textColor="#999999"
+	             android:textSize="18dp"
+	             android:id="@+id/historyTv"
+             />
+	  	     <ImageView android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:src="@drawable/piao_dakai_ico"
+	             android:layout_alignParentBottom="true"
+	             android:layout_centerHorizontal="true"
+	             android:id="@+id/historyIV"
+	             android:visibility="gone"
+             />
+	  	 </RelativeLayout>
+	  	 <RelativeLayout android:layout_width="wrap_content"
+	  	     android:layout_height="wrap_content"
+	  	     android:layout_marginLeft="10dp"
+	  	     android:background="@drawable/history_searchet_bg"
+	  	     android:paddingRight="10dp"
+	  	     >
+	  	     
+	  	     <Button android:layout_width="20dp"
+	             android:layout_height="20dp"
+	             android:background="@drawable/piao_search_photo"
+	             android:layout_alignParentRight="true"
+	             android:layout_centerVertical="true"
+	             android:id="@+id/search"
+	             android:layout_marginRight="10dp"
+             />
+	  	     <EditText android:layout_width="wrap_content"
+	             android:layout_height="30dp"
+	             android:hint="可用订单号/姓名/手机/身份证搜索"
+	             android:layout_centerVertical="true"
+	             android:textColor="#999999"
+	             android:textSize="12dp"
+	             android:id="@+id/et1"
+	             android:background="@null"
+	             android:singleLine="true"
+	             android:layout_alignParentLeft="true"
+	             android:layout_toLeftOf="@id/search"
+	             android:layout_marginLeft="5dp"
+             />
+	  	 </RelativeLayout>
+  	 </LinearLayout>
+    	 <TextView android:layout_width="fill_parent"
+    	    android:layout_height="fill_parent"
+    	    android:text="无 记 录"
+    	    android:gravity="center"
+    	    android:textColor="#666666"
+    	    android:textSize="20dp"
+    	    android:id="@+id/noText"
+    	    android:visibility="gone"
+    	    />
+        <ListView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/soso_zc_line"
+            android:dividerHeight="3dp"
+            android:fadingEdge="none"
+            android:id="@+id/his_listview">
+        </ListView>
+</LinearLayout>

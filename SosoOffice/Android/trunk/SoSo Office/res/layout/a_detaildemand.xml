@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    android:id="@+id/parent"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:background="@drawable/soso_top_bg"
+	    >
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/soso_fh_ico"
+	         />
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="需求详情"
+	        android:textColor="@color/white"
+	        android:textSize="25dp"
+	        android:id="@+id/title"
+	        />
+	</RelativeLayout>
+
+	<ScrollView
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical" >
+
+	        <RelativeLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="-5dp"
+	            android:background="@drawable/soso_house_view_title_bg"
+	            android:orientation="horizontal"
+	            android:paddingBottom="5dp"
+	            android:paddingLeft="10dp"
+	            android:paddingRight="10dp"
+	            android:paddingTop="5dp" >
+
+	            <TextView
+	                android:id="@+id/titleText"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:text="普陀区绿地大厦"
+	                android:textColor="@color/black"
+	                android:textSize="16dp" />
+	            <LinearLayout android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/soso_lianxiren_btn"
+		            android:layout_alignParentRight="true"
+		            android:orientation="horizontal"
+		            android:gravity="center"
+		            android:id="@+id/deleteLayout"
+		            android:layout_centerVertical="true"
+		            >
+		            <Button android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:background="@drawable/soso_house_shoucang"
+		            />
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="删除需求"
+		                android:textColor="@color/black"
+		                android:textSize="12dp"
+		                android:layout_marginLeft="6dp"
+		                />
+		        </LinearLayout>
+	        </RelativeLayout>
+			
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginTop="15dp"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal" >
+
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="联系方式："
+	                android:textColor="#666666"
+	                android:textSize="14dp" />
+
+	            <TextView
+	                android:id="@+id/phone"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="18917216840"
+	                android:textColor="#FF0000"
+	                android:textSize="18dp" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginTop="5dp"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal" >
+
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:gravity="center_vertical"
+	                android:orientation="horizontal" >
+
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="房源类型："
+	                    android:textColor="#666666"
+	                    android:textSize="14dp" />
+
+	                <TextView
+	                    android:id="@+id/roomTypeText"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="纯写字楼"
+	                    android:textColor="@color/black"
+	                    android:textSize="14dp" />
+	            </LinearLayout>
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginTop="5dp"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal" >
+
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:gravity="center_vertical"
+	                android:orientation="horizontal" >
+
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="房租金额："
+	                    android:textColor="#666666"
+	                    android:textSize="14dp" />
+
+	                <TextView
+	                    android:id="@+id/moneyText"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="3-5元/平米/天"
+	                    android:textColor="@color/black"
+	                    android:textSize="14dp" />
+	            </LinearLayout>
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginTop="5dp"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal" >
+
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:gravity="center_vertical"
+	                android:orientation="horizontal" >
+
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="房源面积："
+	                    android:textColor="#666666"
+	                    android:textSize="14dp" />
+
+	                <TextView
+	                    android:id="@+id/acreageText"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="100-200m²"
+	                    android:textColor="@color/black"
+	                    android:textSize="14dp" />
+	            </LinearLayout>
+	        </LinearLayout>
+
+	        <!-- <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginTop="5dp"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal" >
+
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:gravity="center_vertical"
+	                android:orientation="horizontal" >
+
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="简介说明："
+	                    android:textColor="#666666"
+	                    android:textSize="14dp" />
+	            </LinearLayout>
+	        </LinearLayout> -->
+
+	        <TextView
+	            android:id="@+id/jianJieText"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="10dp"
+	            android:text="\t宝华盛世花园位于上海北核心区位，地铁1号线盛桥路站" />
+	    </LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

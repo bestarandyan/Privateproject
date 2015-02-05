@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    android:id="@+id/parent"
+    >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/soso_top_bg"
+	    android:paddingTop="5dp"
+	    android:paddingBottom="5dp"
+	    >
+	    
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:id="@+id/backBtn"
+	        android:layout_marginLeft="5dp"
+	        android:background="@drawable/soso_fh_ico"
+	        android:layout_centerVertical="true"
+	         />
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/bianjiBtn"
+	        android:background="@drawable/soso_right_button"
+	        android:text="编辑"
+	        android:textColor="#ffffff"
+	        android:textSize="16dp"
+	        android:visibility="gone"
+	        android:layout_toRightOf="@id/backBtn"
+	        android:layout_marginLeft="5dp"
+	        android:layout_centerVertical="true"
+	         />
+	    
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/addRoomBtn"
+	        android:background="@drawable/soso_add_btn"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="5dp"
+	        android:layout_centerVertical="true"
+	        />
+	     <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/switchoverBtn"
+	        android:background="@drawable/soso_list_btn"
+	        android:layout_toLeftOf="@id/addRoomBtn"
+	        android:layout_marginRight="5dp"
+	        android:layout_centerVertical="true"
+	        />
+	     <TextView android:layout_width="@dimen/room_manager_top_text_width"
+	        android:layout_height="wrap_content"
+	        android:text="房源管理"
+	        android:textColor="@color/white"
+	        android:textSize="20dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:gravity="center_horizontal"
+	        />
+      </RelativeLayout>
+	
+      <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="-5dp"
+          >
+          <RelativeLayout android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:layout_weight="1"
+	          android:background="@drawable/soso_email_title_bg1"
+	          android:id="@+id/roomListLayout"
+	          >
+	          <TextView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:textColor="#ffffff"
+	              android:text="房源列表"
+	              android:id="@+id/roomListText"
+	              android:layout_centerInParent="true"
+	              />
+	          <ImageView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:src="@drawable/soso_house_sanjiao"
+	              android:layout_alignParentRight="true"
+	              android:layout_centerVertical="true"
+	              android:layout_marginRight="10dp"
+	              android:id="@+id/roomListImg"
+	              />
+          </RelativeLayout>
+          <RelativeLayout android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:layout_weight="1"
+	          android:background="@drawable/soso_email_title_bg2"
+	          android:id="@+id/daishenheLayout"
+	          >
+	          <TextView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:textColor="#666666"
+	              android:text="待审核"
+	              android:id="@+id/daishenheText"
+	              android:layout_centerInParent="true"
+	              />
+	          <ImageView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:src="@drawable/soso_house_sanjiao1"
+	              android:layout_alignParentRight="true"
+	              android:layout_centerVertical="true"
+	              android:layout_marginRight="10dp"
+	              android:id="@+id/daiShenHeImg"
+	              />
+          </RelativeLayout>
+      </LinearLayout>
+      <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="5dp"
+          android:id="@+id/floor_layout"
+          android:background="#F2F2F2"
+          >
+          <TextView android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:text="该楼盘中的房源"
+	          android:id="@+id/address"
+	          android:padding="8dp"
+	          android:background="#F2F2F2"
+	          android:layout_weight="1"
+	          />
+          <ImageView android:src="@drawable/soso_btn_floor"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="15dp"
+              android:id="@+id/floorImg"
+              />
+      </LinearLayout>
+      
+      <View android:layout_width="fill_parent"
+          android:layout_height="1dp"
+          android:background="@drawable/soso_zc_line"
+          />
+      <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:background="#ffffff"
+          android:id="@+id/noDataLayout"
+          android:padding="15dp"
+          >
+          <ImageView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/soso_gray_logo"
+              android:id="@+id/noDataImg"
+              />
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="您暂无任何房源数据，请点击右上角的加号，赶紧发布您的房源吧"
+              android:textColor="#666666"
+              android:textSize="18dp"
+              android:id="@+id/noDataMsg"
+              />
+      </LinearLayout>
+      <com.zhihuigu.sosoOffice.View.XListView android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:divider="@null"
+          android:id="@+id/roomListView"
+          android:cacheColorHint="@null"
+          android:background="#ffffff"
+          android:fadingEdge="none"
+          
+          >
+          
+      </com.zhihuigu.sosoOffice.View.XListView>
+      <RelativeLayout android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+          
+	    <GridView android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:id="@+id/layerGridview"
+	       android:numColumns="4"
+	       android:horizontalSpacing="5dp"
+	       android:verticalSpacing="5dp"
+	       android:stretchMode="columnWidth"
+	       android:fadingEdge="none"
+	       android:background="@null"
+	       android:scrollbars="none"
+	       android:layout_margin="5dp"
+	       android:layout_toRightOf="@+id/layerLayout"
+	       >
+	   </GridView>
+	   
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical"
+	        android:background="@drawable/bg_room_gv"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:paddingTop="2dp"
+	        android:paddingBottom="2dp"
+	        android:id="@+id/layerLayout"
+	        android:visibility="gone"
+	        android:layout_alignBottom="@id/layerGridview"
+	        android:layout_alignTop="@id/layerGridview"
+	        android:layout_marginLeft="1dp"
+	        >
+	         <TextView android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="点击回到楼层列表"
+		        android:textColor="#999999"
+		        android:ems="1"
+		         android:gravity="center_horizontal"
+		         android:visibility="gone"
+		        />
+	         <TextView android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="第"
+		        android:textColor="#999999"
+		        android:ems="1"
+		         android:gravity="center_horizontal"
+		        />
+	         <TextView android:layout_width="fill_parent"
+		        android:layout_height="15dp"
+		        android:text="15"
+		        android:textColor="#000000"
+		        android:id="@+id/layerNumber"
+		        android:gravity="center_horizontal"
+		        android:layout_marginTop="2dp"
+		        />
+	         <TextView android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="层"
+		        android:textColor="#999999"
+		        android:layout_marginTop="2dp"
+		         android:gravity="center_horizontal"
+		        />
+    </LinearLayout>
+      </RelativeLayout>
+      
+	</LinearLayout>

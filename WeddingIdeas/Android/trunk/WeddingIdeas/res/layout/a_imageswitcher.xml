@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+   >
+
+    <!--
+    <com.boluomi.children.util.FlingGallery
+        android:id="@+id/horizontalview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true" >
+    </com.boluomi.children.util.FlingGallery>
+    -->
+  	<ImageSwitcher
+        android:id="@+id/imageswitch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black">
+    </ImageSwitcher>
+<RelativeLayout android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_bg"
+        android:id="@+id/topLayout"
+        android:visibility="visible"
+        >
+        <ImageButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top_fanhui_ico"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="10dp"
+            android:id="@+id/backBtn"
+            />
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_line"
+            android:layout_toRightOf="@id/backBtn"
+            />
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#ffffff"
+	        android:gravity="center"
+	        android:layout_centerInParent="true"
+	        android:id="@+id/topView"
+	        android:text="我的婚纱照" />
+    </RelativeLayout>
+    <!--
+     <com.qingfengweb.view.UGallery android:id="@+id/vf"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    >
+	</com.qingfengweb.view.UGallery>
+    -->
+
+  
+    <!--
+         <ProgressBar
+        android:id="@+id/progress_circular"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dip"
+        android:max="10000" />
+    -->
+    <!--
+        <ZoomControls
+        android:id="@+id/zoomcontrol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+    -->
+
+    <!--  <LinearLayout
+        android:id="@+id/bottomLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp" > -->
+
+        <!-- <Button
+            android:id="@+id/picSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/top_fanhui_ico"
+            android:text="设置"
+            android:textColor="#ffffff"
+            android:textSize="14sp" /> -->
+
+         <ImageButton
+            android:id="@+id/picFront"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@null"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+		></ImageButton>
+        <ImageButton
+            android:id="@+id/autoPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/zhaopian_play_ico"
+            android:layout_marginRight="5dp"
+            android:layout_alignBottom="@id/picFront"
+            android:layout_toLeftOf="@id/picFront"
+            />
+
+    <!--     <ImageButton
+            android:id="@+id/picNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@null"
+            android:src="@drawable/id_photo_ico4"
+      		/> -->
+
+        <ImageButton
+            android:id="@+id/picShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/zhaopian_fenxiang_ico"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBottom="@id/picFront"
+            android:layout_toRightOf="@id/picFront"
+            ></ImageButton>
+   <!--  </LinearLayout>
+ -->
+    <!-- <RelativeLayout
+        android:id="@+id/top_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/photo_bottom_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/top_fanhui_ico"
+            android:background="@null"
+            android:padding="10dp"
+             />
+
+        <TextView
+            android:id="@+id/currentPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:text="第0张（共0张）"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/openMenuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn02"
+            android:src="@drawable/id_paizhao_ico" />
+    </RelativeLayout> -->
+
+</RelativeLayout>

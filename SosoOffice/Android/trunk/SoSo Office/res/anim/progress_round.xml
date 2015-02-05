@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:oneshot="false">
+    <item android:drawable="@drawable/soso_dot1" android:duration="200"/>
+     <item android:drawable="@drawable/soso_dot2" android:duration="200"/>
+    <item android:drawable="@drawable/soso_dot3" android:duration="200"/>
+    <item android:drawable="@drawable/soso_dot4" android:duration="200"/>
+    <item android:drawable="@drawable/soso_dot5" android:duration="200"/>
+    <item android:drawable="@drawable/soso_dot6" android:duration="200"/>
+    <item android:drawable="@drawable/soso_dot7" android:duration="200"/>
+    <item android:drawable="@drawable/soso_dot8" android:duration="200"/>
+    <item android:drawable="@drawable/soso_dot9" android:duration="200"/>
+    <item android:drawable="@drawable/soso_dot10" android:duration="200"/>
+    <item android:drawable="@drawable/soso_dot11" android:duration="200"/>
+    <item android:drawable="@drawable/soso_dot12" android:duration="200"/>
+</animation-list>

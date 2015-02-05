@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_bg1"
+        >
+        <ImageButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top_fanhui_ico"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="10dp"
+            android:id="@+id/backBtn"
+            />
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_line1"
+            android:layout_toRightOf="@id/backBtn"
+            />
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#ffffff"
+	        android:gravity="center"
+	        android:layout_centerInParent="true"
+	        android:id="@+id/topView"
+	        android:text="亲友特惠" />
+         
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+	    <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:padding="15dp"
+	        android:gravity="center_horizontal"
+	        >
+	        <TextView android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text=""
+		        android:textSize="18sp"
+		        android:textColor="#000000"
+		        android:id="@+id/titleTv"
+		        />
+	        <TextView android:text=""
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="#ff0000"
+	            android:layout_marginTop="6dp"
+	            android:textSize="14sp"
+	            android:id="@+id/timeLimit"
+	            />
+	        <TextView android:text=""
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="#333333"
+	            android:layout_marginTop="6dp"
+	            android:textSize="14sp"
+	            android:id="@+id/contentTv"
+	            />
+	        <!-- <WebView android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/description"
+	            android:layout_marginTop="6dp"
+	            android:layerType="software"  
+	            /> -->
+	        <ImageView android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:adjustViewBounds="true"
+	            android:id="@+id/imgView"
+	            android:layout_marginTop="10dp"
+	            />
+	        <TextView android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="特惠咨询"
+		        android:textSize="18sp"
+		        android:textColor="#555555"
+		        android:layout_marginTop="20dp"
+		        />
+	        <Button android:text="购买咨询"
+	            android:textColor="#ffffff"
+	            android:textSize="20sp"
+	            android:gravity="center"
+	            android:background="@drawable/btn_tel_bg"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableLeft="@drawable/btn_tel_icon"
+	            android:id="@+id/goumaiBtn"
+	            android:layout_marginTop="10dp"
+	            android:paddingLeft="5dp"
+	            />
+	        <Button android:text="售后咨询"
+	            android:textColor="#ffffff"
+	            android:textSize="20sp"
+	            android:gravity="center"
+	            android:background="@drawable/btn_tel_bg"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableLeft="@drawable/btn_tel_icon"
+	            android:id="@+id/shouhouBtn"
+	            android:layout_marginTop="10dp"
+	            android:paddingLeft="5dp"
+	            />
+	    </LinearLayout>
+    </ScrollView>
+   
+</LinearLayout>

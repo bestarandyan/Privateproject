@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beijingse" >
+
+    <LinearLayout
+        android:id="@+id/linear_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xdxml_jiazai_bg"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="@dimen/login_logo_width"
+            android:layout_height="@dimen/login_logo_height"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/login_logo_padding"
+            android:src="@drawable/login_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view4"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/linear_title"
+        android:layout_margin="@dimen/marginsizem"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_view_padding"
+            android:background="@drawable/login_bg_border"
+            android:hint="请输入您的用户名"
+            android:text="zhangsan"
+            android:padding="@dimen/marginsizel"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/textsizeh" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:inputType="textPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_bg_border"
+            android:hint="请输入您的密码"
+            android:text="abcd1234"
+            android:layout_marginTop="@dimen/marginsizeh"
+            android:padding="@dimen/marginsizel"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/textsizeh" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/loginbtnbgselecter"
+            android:layout_marginTop="@dimen/headhight"
+            android:padding="@dimen/marginsizel"
+            android:text="登录"
+            android:textStyle="bold"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/textsizexx" />
+    </LinearLayout>
+
+</RelativeLayout>

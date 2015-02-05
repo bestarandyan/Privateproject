@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    android:id="@+id/parent"
+    >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:background="@drawable/soso_top_bg"
+	    >
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/soso_fh_ico"
+	         />
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="呢 称"
+	        android:textColor="@color/white"
+	        android:textSize="25dp"
+	        android:id="@+id/title"
+	        />
+	</RelativeLayout>
+	<ScrollView android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+	    android:orientation="vertical"
+	    >
+	<LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="30dp"
+	        android:orientation="vertical"
+	        android:background="@drawable/linear_background_corner"
+	        >
+	    <LinearLayout android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:padding="15dp"
+	        >
+	    	<TextView android:layout_width="100dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="呢称"
+	    	    android:textColor="@color/black"
+	    	    android:textSize="20dp"
+	    	    android:id="@+id/textView"
+	    	    />
+	    	<EditText android:layout_height="wrap_content"
+	    	    android:layout_width="fill_parent"
+	    	    android:singleLine="true"
+	    	    android:hint="请输入您的呢称"
+	    	    android:id="@+id/NameEt"
+	    	    android:background="@null"
+	    	    android:textSize="16dp"
+	    	    android:inputType="textEmailAddress"
+	    	    />
+		</LinearLayout>
+		
+	    
+	</LinearLayout>
+	<Button android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/submitBtn"
+	    android:text="确  定"
+	    android:textColor="#4b5e00"
+	    android:textSize="22dp"
+	    android:background="@drawable/soso_button_bg"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="30dp"
+	    android:gravity="center"
+	    />
+	</LinearLayout>
+	</ScrollView>
+	</LinearLayout>

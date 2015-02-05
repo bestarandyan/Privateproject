@@ -1,0 +1,322 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/beijingse"
+    android:orientation="vertical"
+    android:padding="@dimen/marginsizel" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/login_logo_height"
+        android:paddingRight="@dimen/login_logo_height"
+        android:src="@drawable/guanyu_logo" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ower_border"
+        android:orientation="vertical"
+        android:padding="0.5dp" >
+
+        <LinearLayout
+            android:id="@+id/btn_linear1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ower_border_selector1"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingBottom="@dimen/marginsizem"
+                    android:paddingLeft="@dimen/marginsizem"
+                    android:paddingTop="@dimen/marginsizem"
+                    android:text="票管家公告"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizem" />
+
+                <TextView
+                    android:id="@+id/message_person1"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="top|left|center"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shapecount"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textColor="#ffffffff"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageview_gou1"
+                android:layout_width="@dimen/marginsizeh"
+                android:layout_height="@dimen/marginsizeh"
+                android:layout_marginRight="@dimen/marginsizem"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/piaoguanjia_ico12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/huise" />
+
+        <LinearLayout
+            android:id="@+id/btn_linear2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ower_border_selector1"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingBottom="@dimen/marginsizem"
+                    android:paddingLeft="@dimen/marginsizem"
+                    android:paddingTop="@dimen/marginsizem"
+                    android:text="升级新版本"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizem" />
+
+                <TextView
+                    android:id="@+id/message_person2"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="top|left|center"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shapecount"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textColor="#ffffffff"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageview_gou2"
+                android:layout_width="@dimen/marginsizeh"
+                android:layout_height="@dimen/marginsizeh"
+                android:layout_marginRight="@dimen/marginsizem"
+                android:layout_weight="0"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/piaoguanjia_ico12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/huise" />
+
+        <LinearLayout
+            android:id="@+id/btn_linear3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ower_border_selector1"
+            android:baselineAligned="false"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingBottom="@dimen/marginsizem"
+                    android:paddingLeft="@dimen/marginsizem"
+                    android:paddingTop="@dimen/marginsizem"
+                    android:text="意见反馈"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizem" />
+
+                <TextView
+                    android:id="@+id/message_person3"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="top|left|center"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shapecount"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textColor="#ffffffff"
+                    android:textSize="13sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageview_gou3"
+                android:layout_width="@dimen/marginsizeh"
+                android:layout_height="@dimen/marginsizeh"
+                android:layout_marginRight="@dimen/marginsizem"
+                android:layout_weight="0"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/piaoguanjia_ico12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/huise" />
+
+        <LinearLayout
+            android:id="@+id/btn_linear4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ower_border_selector1"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingBottom="@dimen/marginsizem"
+                    android:paddingLeft="@dimen/marginsizem"
+                    android:paddingTop="@dimen/marginsizem"
+                    android:text="推荐票管家给好友"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizem" />
+
+                <TextView
+                    android:id="@+id/message_person3"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="top|left|center"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shapecount"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textColor="#ffffffff"
+                    android:textSize="13sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageview_gou3"
+                android:layout_width="@dimen/marginsizeh"
+                android:layout_height="@dimen/marginsizeh"
+                android:layout_marginRight="@dimen/marginsizem"
+                android:layout_weight="0"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/piaoguanjia_ico12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/marginsizeh"
+        android:layout_marginTop="@dimen/marginsizeh"
+        android:background="@drawable/ower_border"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:baselineAligned="false"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/login_logo_height"
+                android:layout_height="@dimen/login_logo_height"
+                android:background="@drawable/guanyu_guanzhu_logo1"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/marginsizem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微博上关注"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizem"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:baselineAligned="false"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/login_logo_height"
+                android:layout_height="@dimen/login_logo_height"
+                android:background="@drawable/guanyu_guanzhu_logo2"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/marginsizem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信上关注"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizem"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:baselineAligned="false"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/login_logo_height"
+                android:layout_height="@dimen/login_logo_height"
+                android:background="@drawable/guanyu_guanzhu_logo3"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/marginsizem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="票管家"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizem"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources >
+    <string name="room_number">3</string><!-- 房间数量 -->
+    <string name="room_list_gv_height">130</string><!-- 每个房间占的高度 -->
+  	<dimen name="room_gun_marginx">2dp</dimen>
+  	<dimen name="room_manager_top_text_width">100dp</dimen>
+  	<string name="map_overlays_w">0</string>
+  	<string name="map_overlays_h">0</string>
+  	<string name="map_overlays_textsize">50</string>
+  	<string name="map_text_toleft">20</string>
+  	<dimen name="city_zimu_size">12dp</dimen>
+  	<dimen name="city_zimu_height">19dp</dimen>
+  	<dimen name="linkman_zimu_size">11dp</dimen>
+  	<dimen name="linkman_zimu_height">16.5dp</dimen>
+  	<string name="gallery_first_img">400</string>
+  	<string name="gallery_size">200</string>
+  	<dimen name="main_input_to_top">60dp</dimen>
+  	<dimen name="main_img_height">200dp</dimen>
+  	<string name="main_gv_size">200</string>
+  	<string name="main_expendable_height">50</string>
+  	<dimen name="login_to_top">30dp</dimen>
+  	<dimen name="linkman_btn_width">100dp</dimen>
+  	<string name="receiver_btn_width">180</string>
+  	<string name="receiver_btn_height">50</string>
+</resources>

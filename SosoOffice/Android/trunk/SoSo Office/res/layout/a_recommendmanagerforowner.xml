@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    android:id="@+id/parent"
+    >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:background="@drawable/soso_top_bg"
+	    >
+	     <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/soso_fh_ico"
+	         /> 
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:layout_marginLeft="15dp"
+	        android:text="推 送"
+	        android:textColor="@color/white"
+	        android:textSize="22dp"
+	        />
+	    
+      </RelativeLayout>
+      <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="-5dp"
+          >
+          <RelativeLayout android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:layout_weight="1"
+	          android:background="@drawable/soso_email_title_bg1"
+	          android:id="@+id/detailLayout"
+	          >
+	          <RelativeLayout android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:layout_centerInParent="true"
+	              >
+	          <TextView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:textColor="#ffffff"
+	              android:text="正在推送"
+	              android:id="@+id/detailText"
+		          android:layout_centerVertical="true"
+	              />
+	          <!-- <Button android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="16"
+						android:textColor="@color/white"
+						android:textStyle="bold"
+						android:textSize="13dp"
+						android:gravity="center"
+						android:paddingBottom="5dp"
+						android:layout_gravity="right"
+						android:background="@drawable/soso_index_xiaoquan"
+						android:id="@+id/detailCircle"
+						android:clickable="false"
+						android:layout_toRightOf="@id/detailText"
+						android:layout_marginBottom="20dp"
+						android:visibility="gone"
+				  /> -->
+	          </RelativeLayout>
+	          <ImageView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:src="@drawable/soso_house_sanjiao"
+	              android:layout_alignParentRight="true"
+	              android:layout_centerVertical="true"
+	              android:layout_marginRight="10dp"
+	              android:id="@+id/detailImg"
+	              />
+          </RelativeLayout>
+          <RelativeLayout android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:layout_weight="1"
+	          android:background="@drawable/soso_email_title_bg2"
+	          android:id="@+id/effectiveLayout"
+	          >
+	          <RelativeLayout android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:layout_centerInParent="true"
+	              >
+	              <TextView android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:textColor="#666666"
+		              android:text="有效性验证"
+		              android:id="@+id/effecttiveText"
+		              android:layout_centerVertical="true"
+		              />
+		          <Button android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="16"
+						android:textColor="@color/white"
+						android:textStyle="bold"
+						android:textSize="13dp"
+						android:gravity="center"
+						android:paddingBottom="5dp"
+						android:layout_gravity="right"
+						android:background="@drawable/soso_index_xiaoquan"
+						android:id="@+id/effectiveCircle"
+						android:clickable="false"
+						android:layout_toRightOf="@id/effecttiveText"
+						android:layout_marginBottom="20dp"
+				  />
+	          </RelativeLayout>
+	          
+	          <ImageView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:src="@drawable/soso_house_sanjiao1"
+	              android:layout_alignParentRight="true"
+	              android:layout_centerVertical="true"
+	              android:layout_marginRight="10dp"
+	              android:id="@+id/effectiveImg"
+	              />
+          </RelativeLayout>
+      </LinearLayout>
+       <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:background="#ffffff"
+          android:id="@+id/noDataLayout"
+          android:padding="15dp"
+          >
+          <ImageView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/soso_gray_logo"
+              android:id="@+id/noDataImg"
+              />
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/nodata_text"
+              android:textColor="#666666"
+              android:textSize="18dp"
+              android:id="@+id/noDataMsg"
+              />
+      </LinearLayout>
+      <com.zhihuigu.sosoOffice.View.XListView android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:divider="@drawable/soso_zc_line"
+          android:id="@+id/listView"
+          android:cacheColorHint="@null"
+          android:background="#ffffff"
+          >
+      </com.zhihuigu.sosoOffice.View.XListView>
+	</LinearLayout>

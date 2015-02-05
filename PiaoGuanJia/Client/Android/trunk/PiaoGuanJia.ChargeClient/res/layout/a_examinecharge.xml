@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    tools:context=".ExamineChargeActivity" >
+
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cz_top_bg"
+        >
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cz_ico1"
+            android:layout_centerVertical="true"
+            android:id="@+id/backBtn"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="审   核"
+            android:textColor="#ffffff"
+            android:textSize="40dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#008CFF"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/chargebg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="审核详情"
+            android:textColor="#ED6F17"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@null"
+            android:text="审核凭证"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/chargeDetialLayout"
+        >
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            
+            >
+        <RelativeLayout android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:text="编号"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<TextView
+                android:id="@+id/idTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="481"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<View android:layout_width="fill_parent"
+			    android:layout_height="1.5dp"
+			    android:background="@drawable/soso_zc_line"
+			    android:layout_below="@id/idTv"
+			    android:layout_marginTop="5dp"
+			    />
+        </RelativeLayout>
+        <RelativeLayout android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:text="用户名"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<TextView
+                android:id="@+id/usernameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="test1"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<View android:layout_width="fill_parent"
+			    android:layout_height="1.5dp"
+			    android:background="@drawable/soso_zc_line"
+			    android:layout_below="@id/usernameTv"
+			    android:layout_marginTop="5dp"
+			    />
+        </RelativeLayout>
+        <RelativeLayout android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:text="充值方式"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<TextView
+                android:id="@+id/chargeTypeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="管理员预充"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<View android:layout_width="fill_parent"
+			    android:layout_height="1.5dp"
+			    android:background="@drawable/soso_zc_line"
+			    android:layout_below="@id/chargeTypeTv"
+			    android:layout_marginTop="5dp"
+			    />
+        </RelativeLayout>
+        <RelativeLayout android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:text="充值账户"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<TextView
+                android:id="@+id/chargeAccountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="专用账户"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<View android:layout_width="fill_parent"
+			    android:layout_height="1.5dp"
+			    android:background="@drawable/soso_zc_line"
+			    android:layout_below="@id/chargeAccountTv"
+			    android:layout_marginTop="5dp"
+			    />
+        </RelativeLayout>
+        <RelativeLayout android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:id="@+id/produceLayout"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:text="充值产品"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<TextView
+                android:id="@+id/chargePrduceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="森林公园"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<View android:layout_width="fill_parent"
+			    android:layout_height="1.5dp"
+			    android:background="@drawable/soso_zc_line"
+			    android:layout_below="@id/chargePrduceTv"
+			    android:layout_marginTop="5dp"
+			    />
+        </RelativeLayout>
+        <RelativeLayout android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:text="充值金额"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<TextView
+                android:id="@+id/chargeMoneyTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="50.00"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<View android:layout_width="fill_parent"
+			    android:layout_height="1.5dp"
+			    android:background="@drawable/soso_zc_line"
+			    android:layout_below="@id/chargeMoneyTv"
+			    android:layout_marginTop="5dp"
+			    />
+        </RelativeLayout>
+        <RelativeLayout android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:text="累计充值"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<TextView
+                android:id="@+id/chargeCountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="5000.00"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<View android:layout_width="fill_parent"
+			    android:layout_height="1.5dp"
+			    android:background="@drawable/soso_zc_line"
+			    android:layout_below="@id/chargeCountTv"
+			    android:layout_marginTop="5dp"
+			    />
+        </RelativeLayout>
+        <RelativeLayout android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:text="账户余额"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<TextView
+                android:id="@+id/accountBalanceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="48100.00"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<View android:layout_width="fill_parent"
+			    android:layout_height="1.5dp"
+			    android:background="@drawable/soso_zc_line"
+			    android:layout_below="@id/accountBalanceTv"
+			    android:layout_marginTop="5dp"
+			    />
+        </RelativeLayout>
+        <RelativeLayout android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:text="充值时间"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:orientation="vertical"
+                android:id="@+id/chargeManagerLayout"
+                >
+			<TextView
+                android:id="@+id/chargeDateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2013-04-22 15:28"
+                android:textColor="#333333"
+                android:layout_marginRight="15dp"
+                android:textSize="16sp" />
+			<TextView
+                android:id="@+id/chargeManagerTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[hrcbc]"
+                android:textColor="#999999"
+                android:layout_marginRight="15dp"
+                android:textSize="16sp" />
+			</LinearLayout>
+			<View android:layout_width="fill_parent"
+			    android:layout_height="1.5dp"
+			    android:background="@drawable/soso_zc_line"
+			    android:layout_below="@id/chargeManagerLayout"
+			    android:layout_marginTop="5dp"
+			    />
+        </RelativeLayout>
+        <RelativeLayout android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:id="@+id/examineLayout"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:text="审核时间"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:orientation="vertical"
+                android:id="@+id/examineManagerLayout"
+                >
+			<TextView
+                android:id="@+id/examineDateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2013-04-22 15:28"
+                android:textColor="#333333"
+               android:layout_marginRight="15dp"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/examineManagerTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[hrcbc]"
+                android:textColor="#999999"
+                android:layout_marginRight="15dp"
+                android:textSize="16sp" />
+			</LinearLayout>
+			<View android:layout_width="fill_parent"
+			    android:layout_height="1.5dp"
+			    android:background="@drawable/soso_zc_line"
+			    android:layout_below="@id/examineManagerLayout"
+			    android:layout_marginTop="5dp"
+			    />
+        </RelativeLayout>
+        <RelativeLayout android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:text="充值状态"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<TextView
+                android:id="@+id/chargeStateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="审核不通过"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<View android:layout_width="fill_parent"
+			    android:layout_height="1.5dp"
+			    android:background="@drawable/soso_zc_line"
+			    android:layout_below="@id/chargeStateTv"
+			    android:layout_marginTop="5dp"
+			    />
+        </RelativeLayout>
+        <LinearLayout android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:id="@+id/reasonLayout"
+            android:orientation="vertical"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:text="不通过原因"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<TextView
+                android:id="@+id/reasonTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="481"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+			<View android:layout_width="fill_parent"
+			    android:layout_height="1.5dp"
+			    android:background="@drawable/soso_zc_line"
+			    android:layout_marginTop="5dp"
+			    />
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备注"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:hint="备注信息"
+            android:padding="5dp"
+            android:id="@+id/remarksEt"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/charge_layout"
+            android:gravity="top"
+            android:textColor="#333333"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textSize="14dp"
+            />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:gravity="center_horizontal"
+		    android:layout_margin="15dp"
+		    >
+		    <Button android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/cz_charge_button1"
+		        android:id="@+id/chargepass"
+		        android:layout_weight="1"
+		        android:text="审核通过"
+		        android:textColor="#ffffff"
+		        android:textSize="20dp"
+		        />
+		    <Button android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/cz_charge_button1"
+		        android:id="@+id/chargerefuse"
+		        android:layout_weight="1"
+		        android:text="审核拒绝"
+		        android:textColor="#ffffff"
+		        android:textSize="20dp"
+		        android:layout_marginLeft="10dp"
+		        />
+		</LinearLayout>
+		</LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:background="#EDEDED"
+		    android:id="@+id/PhotoLayout"
+		    android:visibility="gone"
+		    android:gravity="center_horizontal"
+		    android:orientation="vertical"
+		    >
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="暂无凭证"
+            android:textColor="#B9B9B9"
+            android:textSize="60sp"
+            android:id="@+id/photoTextView"
+            android:visibility="visible"
+            android:background="#EDEDED"
+            android:gravity="center"
+            />
+        <!-- <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewPhoto"
+            /> -->
+        <com.piaoguanjia.chargeclient.ZoomImageView
+			android:id="@+id/imageViewPhoto"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:visibility="gone"
+			/>
+        </LinearLayout>
+    </LinearLayout>

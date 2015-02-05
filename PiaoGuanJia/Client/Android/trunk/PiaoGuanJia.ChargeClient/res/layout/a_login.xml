@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_image"
+    android:gravity="center"
+    tools:context=".LoadingActivity" >
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/logo"
+         />
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="移动充值助手"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            />
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginTop="40dp"
+            >
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名："
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:gravity="right|center_vertical"
+                />
+            <EditText android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                android:hint="请输入用户名"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="lxx2"
+                android:id="@+id/userNameEt"
+                />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密    码："
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:gravity="right|center_vertical"
+                />
+            <EditText android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                android:hint="请输入密码"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:id="@+id/passwordEt"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:text="abcd1234"
+                />
+        </LinearLayout>
+        <Button android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/cz_login_btn_img"
+            android:text="登      陆"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:id="@+id/loadBtn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
+            />
+    </LinearLayout>
+    
+
+</RelativeLayout>

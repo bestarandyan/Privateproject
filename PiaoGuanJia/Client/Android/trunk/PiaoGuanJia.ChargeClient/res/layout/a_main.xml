@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cz_main_bg"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity" >
+    <ImageView android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cz_main_logo" />
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center_horizontal"
+	    android:layout_marginTop="60dp"
+	    >
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/mainBtn1"
+	        android:text="充值"
+	        android:textSize="@dimen/main_btn_text_size"
+	        android:gravity="center"
+	        android:textColor="#ffffff"
+	        android:background="@drawable/cz_main_blur_bg"
+	        />
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/mainBtn2"
+	        android:text="审核"
+	        android:textSize="@dimen/main_btn_text_size"
+	        android:gravity="center"
+	        android:textColor="#ffffff"
+	        android:background="@drawable/cz_main_blur_bg"
+	        android:layout_marginLeft="10dp"
+	        />
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="10dp"
+	    android:gravity="center_horizontal"
+	    >
+	    <LinearLayout android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    
+		    >
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="历史\n记录"
+	        android:textSize="@dimen/main_btn_text_size"
+	        android:textColor="#ffffff"
+	        android:background="@drawable/cz_main_blur_bg"
+	        android:id="@+id/mainBtn3"
+	        />
+	    </LinearLayout>
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/mainBtn4"
+	        android:text="退出"
+	        android:textSize="@dimen/main_btn_text_size"
+	        android:gravity="center"
+	        android:textColor="#ffffff"
+	        android:background="@drawable/cz_main_blur_bg"
+	        android:layout_marginLeft="10dp"
+	        />
+	</LinearLayout>
+</LinearLayout>

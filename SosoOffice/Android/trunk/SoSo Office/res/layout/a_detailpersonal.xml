@@ -1,0 +1,266 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    android:id="@+id/parent"
+    >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:background="@drawable/soso_top_bg"
+	    >
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/soso_fh_ico"
+	         />
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="个人资料"
+	        android:textColor="@color/white"
+	        android:textSize="25dp"
+	        />
+      </RelativeLayout>
+      <ScrollView android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    >
+      <LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+		    android:padding="10dp"
+		    >
+      <LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    >
+	    <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/headLayout"
+		    android:padding="5dp"
+		    >
+		     <ImageView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/headImage"
+		        />
+<!-- 		    <TextView 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="枫林"
+		        android:textColor="#666666"
+		        android:textSize="22dp"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="10dp"
+		        android:layout_toRightOf="@id/headImage"
+		        android:id="@+id/userName"
+		        android:gravity="center_horizontal"
+		         /> -->
+      </RelativeLayout>
+      
+</LinearLayout>
+<LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/linear_background_corner">
+	   
+       <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:id="@+id/userNameLayout"
+		    >
+		    <TextView 
+		        android:layout_width="100dp"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="用户账号:"
+		        android:textColor="#999999"
+		        android:textSize="22dp"
+		        android:id="@+id/birthdayLeft"
+		        android:layout_centerVertical="true"
+		         />
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/birthdayLeft"
+		        android:textColor="#666666"
+		        android:textSize="24dp"
+		        android:id="@+id/userName"
+		        android:text="Bestar"
+		         android:layout_centerVertical="true"
+		        />
+      </RelativeLayout>
+       <View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_margin="1dp"
+		    android:background="@drawable/soso_zc_line"/>
+       <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:id="@+id/nameLayout"
+		    >
+		    <TextView 
+		        android:layout_width="100dp"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="真实姓名:"
+		        android:textColor="#999999"
+		        android:textSize="22dp"
+		        android:id="@+id/nameLeft"
+		         />
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/nameLeft"
+		        android:textColor="#666666"
+		        android:textSize="24dp"
+		        android:id="@+id/name"
+		        android:text="刘星星"
+		        />
+      </RelativeLayout>
+      <View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_margin="1dp"
+		    android:background="@drawable/soso_zc_line"/>
+       <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:id="@+id/typeLayout"
+		    >
+		    <TextView 
+		        android:layout_width="100dp"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="用户类型:"
+		        android:textColor="#999999"
+		        android:textSize="22dp"
+		        android:id="@+id/userTypeTv"
+		         />
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/userTypeTv"
+		        android:textColor="#666666"
+		        android:textSize="24dp"
+		        android:id="@+id/userType"
+		        android:text="业主"
+		        />
+      </RelativeLayout>
+      <View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_margin="1dp"
+		    android:background="@drawable/soso_zc_line"/>
+       <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:id="@+id/genderLayout"
+		    >
+		    <TextView 
+		        android:layout_width="100dp"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="用户性别:"
+		        android:textColor="#999999"
+		        android:textSize="22dp"
+		        android:id="@+id/genderLeft"
+		         />
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/genderLeft"
+		        android:textColor="#666666"
+		        android:textSize="24dp"
+		        android:id="@+id/gender"
+		        android:text="男"
+		        />
+      </RelativeLayout>
+      <View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_margin="1dp"
+		    android:background="@drawable/soso_zc_line"/>
+       <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:id="@+id/birthdayLayout"
+		    >
+		    <TextView 
+		        android:layout_width="100dp"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="用户年龄:"
+		        android:textColor="#999999"
+		        android:textSize="22dp"
+		        android:id="@+id/userAgeTv"
+		         />
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/userAgeTv"
+		        android:textColor="#666666"
+		        android:textSize="24dp"
+		        android:id="@+id/birthday"
+		        android:text="24岁"
+		        />
+      </RelativeLayout>
+      <View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_margin="1dp"
+		    android:background="@drawable/soso_zc_line"/>
+       <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:id="@+id/emailLayout"
+		    >
+		    <TextView 
+		        android:layout_width="100dp"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="电子邮箱:"
+		        android:textColor="#999999"
+		        android:textSize="22dp"
+		        android:id="@+id/emialLeft"
+		         />
+		    
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#666666"
+		        android:textSize="24dp"
+		        android:id="@+id/email"
+		        android:layout_toRightOf="@id/emialLeft"
+		         android:singleLine="true"
+		         android:text="fenglin@163.com"
+		        />
+      </RelativeLayout>
+      <View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_margin="1dp"
+		    android:background="@drawable/soso_zc_line"/>
+       <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:id="@+id/phoneLayout"
+		    >
+		    <TextView 
+		        android:layout_width="100dp"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="手机号码:"
+		        android:textColor="#999999"
+		        android:textSize="22dp"
+		        android:id="@+id/phoneLeft"
+		         />
+		    
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		         android:layout_toRightOf="@id/phoneLeft"
+		        android:textColor="#666666"
+		        android:textSize="24dp"
+		        android:id="@+id/phone"
+		        android:singleLine="true"
+		        android:gravity="right"
+		        android:text="18917216840"
+		        />
+      </RelativeLayout>
+</LinearLayout>
+</LinearLayout>
+</ScrollView>
+	</LinearLayout>

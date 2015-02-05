@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F3F3F3"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:orientation="horizontal" 
+    android:gravity="center_vertical"
+    >
+    <ImageView android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:src="@drawable/piao_photo"
+	             android:id="@+id/historyIV"
+             />
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        >
+       <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        >
+           <TextView  android:layout_width="wrap_content" 
+               android:layout_height="wrap_content"
+		       android:id="@+id/name" 
+		       android:textColor="#999999" 
+		       android:textSize="13dp"
+		       android:text="刘星星"/>
+		    <TextView  android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:id="@+id/phonenumber" 
+		        android:textColor="#999999" 
+		        android:text="[18917216840]"
+		        android:textSize="13dp"
+		        android:layout_marginLeft="5dp"
+		        />
+       	</LinearLayout> 
+       	<LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        >
+           <TextView  android:layout_width="wrap_content" 
+               android:layout_height="wrap_content"
+		       android:textColor="#999999" 
+		       android:textSize="13dp"
+		       android:text="订单号："/>
+		    <TextView  android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:id="@+id/dingdanhao" 
+		        android:textColor="#EF5C41" 
+		        android:text="111111111111111"
+		        android:textSize="13dp"
+		        android:layout_marginLeft="5dp"
+		        />
+       	</LinearLayout> 
+       	<LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        >
+           <TextView  android:layout_width="wrap_content" 
+               android:layout_height="wrap_content"
+		       android:textColor="#999999" 
+		       android:textSize="13dp"
+		       android:id="@+id/ordertime"
+		       android:text="2013-03-01"/>
+		    <TextView  android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:id="@+id/type" 
+		        android:textColor="#999999" 
+		        android:text="成人票"
+		        android:textSize="13dp"
+		        android:layout_marginLeft="5dp"
+		        />
+		    <TextView  android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:id="@+id/amount" 
+		        android:textColor="#999999" 
+		        android:text="5张"
+		        android:textSize="13dp"
+		        android:layout_marginLeft="5dp"
+		        />
+       	</LinearLayout> 
+       </LinearLayout>
+       <ImageView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/piao_jinru"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="10dp"
+           android:layout_centerVertical="true"
+           />
+    </RelativeLayout>
+    
+    </LinearLayout>

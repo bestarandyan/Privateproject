@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="分享给微信好友"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:id="@+id/shareToGoodFriend"
+        />
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dddddd"
+        />
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="分享到朋友圈"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:id="@+id/shareToFriends"
+        />
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dddddd"
+        />
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:id="@+id/cancle"
+        />
+</LinearLayout>

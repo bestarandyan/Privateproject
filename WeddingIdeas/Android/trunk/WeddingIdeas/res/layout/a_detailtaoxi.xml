@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:drawablePadding="0dip"
+    android:ellipsize="marquee"
+    android:fadingEdge="horizontal"
+    android:gravity="top|center_horizontal"
+    android:maxLines="2"
+    android:id="@+id/parent"
+    android:textColor="#000000" >
+<RelativeLayout android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_bg1"
+        android:id="@+id/topLayout"
+        >
+        <ImageButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top_fanhui_ico"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="10dp"
+            android:id="@+id/backBtn"
+            />
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_line1"
+            android:layout_toRightOf="@id/backBtn"
+            />
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#ffffff"
+	        android:gravity="center"
+	        android:layout_centerInParent="true"
+	        android:id="@+id/topView"
+	        android:text="套系详情" />
+         <ImageButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top_tel_ico"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="10dp"
+            android:id="@+id/tellBtn"
+            />
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_line1"
+            android:layout_toLeftOf="@id/tellBtn"
+            />
+    </RelativeLayout>
+	<ScrollView android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@id/topLayout"
+		android:scrollbars="none"
+		android:fadingEdge="none"
+		android:background="#ffffff"
+	    >
+	<LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center_horizontal"
+		>			
+				<ImageView android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:id="@+id/taoxiImg"
+				    android:background="@null"
+				    android:adjustViewBounds="true"
+				    />
+		<LinearLayout 
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:background="#f5f5f5"
+			>		
+			<LinearLayout 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:background="#f5f5f5"
+				android:layout_weight="1"
+				android:padding="10dp"
+				>		
+				<TextView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+				    android:textColor="#000000"
+				    android:textSize="14sp"
+				    android:text=""
+			        android:id="@+id/name"/>
+			    <TextView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+				    android:textColor="#888888"
+				    android:textSize="14sp"
+				    android:text="标签："
+				    android:layout_marginTop="5dp"
+			        android:id="@+id/tagTv"/>
+			</LinearLayout>	
+			<View android:layout_width="1dp"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/id_tanchu_line"
+	            />
+			<LinearLayout 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:background="#f5f5f5"
+				android:layout_weight="1"
+				android:padding="10dp"
+				android:gravity="center_horizontal"
+				>		
+				<TextView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+				    android:textColor="#ff0000"
+				    android:textSize="20sp"
+				    android:text="￥6999"
+			        android:id="@+id/price"/>
+				<TextView 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/btn_consult"
+					android:gravity="center_vertical|right"
+					android:layout_marginTop="5dp"
+					android:id="@+id/telLayout"
+					android:text="咨询详情"
+					android:textColor="#ffffff"
+					android:textSize="16sp"
+					android:paddingRight="10dp"
+					>		
+				</TextView>		
+			</LinearLayout>		
+		</LinearLayout>		
+	 		<LinearLayout 
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:background="#ffffff"
+				android:padding="10dp"
+				>		
+				<TextView android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="套系介绍："
+				    android:textColor="#000000"
+				    android:textSize="16sp"
+				    />
+				<TextView android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="如果你是英伦美食爱好者且钟情于历史与传统，那半岛酒店一楼大堂茶座不可错过。"
+				    android:textColor="#888888"
+				    android:id="@+id/descripTv"
+				    android:textSize="16sp"
+				    />
+			</LinearLayout>
+	</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

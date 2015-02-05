@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="#F2F2F2"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+     >
+     <ImageView 
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/room_image"
+        android:src="@drawable/soso_gray_logo"
+        android:background="@drawable/room_list_img_bg"
+        />
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/state_image"
+        android:src="@drawable/soso_house_weizu"
+        android:visibility="gone"
+        />
+	<LinearLayout  android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_marginLeft="10dp"
+		    >
+		    <LinearLayout  android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:gravity="center_vertical"
+			    >
+			    <TextView 
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:id="@+id/room_name"
+			        android:text="中环名"
+			        android:textColor="#84a307"
+			        android:textSize="18dp"
+			        />
+			    <ImageView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/soso_house_tel"
+			        android:id="@+id/telImg"
+			        android:layout_marginLeft="5dp"
+			        />
+	    </LinearLayout>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/roomNumber"
+	        android:text="1615室"
+	        android:textColor="#666666"
+	        android:textSize="12dp"
+	        android:layout_marginTop="2dp"
+	        />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/roomMoney"
+	        android:text="￥3.5-5.0"
+	        android:textColor="#666666"
+	        android:textSize="12dp"
+	        />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/roomAcreage"
+	        android:text="1000m²"
+	        android:textColor="#666666"
+	        android:textSize="12dp"
+	        />
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="right|center_vertical"
+	    android:orientation="horizontal"
+	    >
+	    <ImageView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/soso_shoucang_email"
+	        android:id="@+id/sendMessage"
+	        />
+	    <ImageView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/soso_shoucang_quxiao"
+	        android:id="@+id/delete"
+	        />
+	    <ImageView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/soso_house_dianji"
+	        android:id="@+id/jiantou"
+	        android:visibility="visible"
+	        />
+	    
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources >
+    <dimen name="main_video_layout_height">200dp</dimen>
+    <dimen name="img_size">30dp</dimen>
+    <dimen name="blessing_to_bottom">120dp</dimen>
+    <string name="main_info_text_size">12</string>
+    <dimen name="weddinginfo_view_to_top">16dp</dimen>
+     <dimen name="weddinginfo_text_size">16sp</dimen>
+     <dimen name="weddinginfo_img_height">30dp</dimen>
+     <dimen name="copybtn_padding_top">5dp</dimen>
+     <dimen name="main_video_height">150dp</dimen>
+     <dimen name="copybtn_text_size">14sp</dimen>
+     <dimen name="loading_text_size">12sp</dimen>
+     <dimen name="blessing_btn_size">14sp</dimen>
+</resources>

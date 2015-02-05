@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+     android:background="#F2F2F2"
+    >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:background="@drawable/soso_top_bg"
+	    >
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/soso_fh_ico"
+	         />
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="意见反馈"
+	        android:textColor="@color/white"
+	        android:textSize="25dp"
+	        />
+      </RelativeLayout>
+        <ScrollView android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    >
+      <LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+		    >
+	<TextView android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#F2F2F2"
+	    android:gravity="left"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="20dp"
+	    android:text="欢迎留下您宝贵的意见："
+	    android:textColor="#333333"
+	    android:textSize="16dp"
+	    ></TextView>
+	<EditText android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/soso_et_background"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginTop="6dp"
+		    android:padding="5dp"
+		    android:id="@+id/titleEt"
+		    android:hint="请输入标题"
+		    android:singleLine="true"
+		    android:gravity="center_vertical"
+		    />
+	<EditText android:layout_width="fill_parent"
+		    android:layout_height="150dp"
+		    android:background="@drawable/soso_et_background"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginTop="6dp"
+		    android:padding="5dp"
+		    android:id="@+id/ideaEt"
+		    android:gravity="left|top"
+		    android:hint="请输入反馈内容"
+		    />
+	<Button android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="10dp"
+		    android:text="提 交 意 见"
+		    android:textColor="#4b5e00"
+		    android:textSize="22dp"
+		    android:id="@+id/submitBtn"
+		    android:background="@drawable/soso_button_bg"
+		    />
+	<LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_margin="10dp"
+		    android:background="@drawable/linear_background_corner">
+	    <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:id="@+id/AllCustomLayout"
+		    >
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="大家提的建议"
+		        android:textColor="#666666"
+		        android:textSize="22dp"
+		         />
+		    
+		    <ImageView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:src="@drawable/soso_entire_click"
+		        android:textColor="@color/white"
+		        android:textSize="25dp"
+		        />
+      </RelativeLayout>
+      <View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_margin="1dp"
+		    android:background="@drawable/soso_zc_line"/>
+       <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:id="@+id/myCustomLayout"
+		    >
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="我提过的建议"
+		        android:textColor="#666666"
+		        android:textSize="22dp"
+		         />
+		    
+		    <ImageView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:src="@drawable/soso_entire_click"
+		        android:textColor="@color/white"
+		        android:textSize="25dp"
+		        />
+      </RelativeLayout>
+</LinearLayout>
+</LinearLayout>
+</ScrollView>
+	</LinearLayout>

@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_bg1"
+        >
+        <ImageButton android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/top_fanhui_ico"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:id="@+id/backBtn"
+            />
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_line1"
+            android:layout_toRightOf="@id/backBtn"
+            />
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#ffffff"
+	        android:gravity="center"
+	        android:layout_centerInParent="true"
+	        android:id="@+id/topView"
+	        android:text="桔子摄影" />
+    </RelativeLayout>
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#459E9A"
+        android:id="@+id/parentLayout"
+        >
+        <LinearLayout 
+		    android:layout_width="50dp"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+		    android:id="@+id/rightMenu"
+		    android:layout_alignParentLeft="true"
+		    android:background="#000000">
+		   	<LinearLayout android:layout_width="match_parent"
+		   	    android:layout_height="match_parent"
+		   	    android:orientation="vertical"
+		   	    android:layout_weight="1"
+		   	    android:background="@drawable/btn_shop_menu_selected"
+		   	    android:gravity="center"
+		   	    android:id="@+id/rightLayout1"
+		   	    android:paddingTop="6dp"
+		   	    android:paddingBottom="6dp"
+		   	    >
+		   	    <ImageView android:layout_width="wrap_content"
+		   	        android:layout_height="wrap_content"
+		   	        android:src="@drawable/shangpu_menu_ico1"
+		   	        android:id="@+id/img1"
+		   	        />
+		   	    <TextView android:layout_width="20dp"
+		   	        android:layout_height="wrap_content"
+		   	        android:text="样照"
+		   	        android:textColor="#ffffff"
+		   	        android:textSize="16sp"
+		   	        android:layout_marginTop="6dp"
+		   	        android:lineSpacingExtra="6dp"
+		   	        android:id="@+id/text1"
+		   	        />
+		   	    
+		   	</LinearLayout>
+		   	<LinearLayout android:layout_width="match_parent"
+		   	    android:layout_height="match_parent"
+		   	    android:orientation="vertical"
+		   	    android:layout_weight="1"
+		   	    android:background="@drawable/shangpu_menu_bg"
+		   	    android:gravity="center"
+		   	    android:paddingTop="6dp"
+		   	    android:paddingBottom="6dp"
+		   	    android:id="@+id/rightLayout2"
+		   	    >
+		   	    <ImageView android:layout_width="wrap_content"
+		   	        android:layout_height="wrap_content"
+		   	        android:src="@drawable/shangpu_menu_ico02"
+		   	        android:id="@+id/img2"
+		   	        />
+		   	    <TextView android:layout_width="20dp"
+		   	        android:layout_height="wrap_content"
+		   	        android:text="套系"
+		   	        android:textColor="#B3B3B3"
+		   	        android:textSize="16sp"
+		   	        android:layout_marginTop="6dp"
+		   	        android:lineSpacingExtra="6dp"
+		   	        android:id="@+id/text2"
+		   	        />
+		   	</LinearLayout>
+		   	<LinearLayout android:layout_width="match_parent"
+		   	    android:layout_height="match_parent"
+		   	    android:orientation="vertical"
+		   	    android:layout_weight="1"
+		   	    android:background="@drawable/shangpu_menu_bg"
+		   	    android:gravity="center"
+		   	    android:id="@+id/rightLayout3"
+		   	    android:paddingTop="6dp"
+		   	    android:paddingBottom="6dp"
+		   	    >
+		   	    <ImageView android:layout_width="wrap_content"
+		   	        android:layout_height="wrap_content"
+		   	        android:src="@drawable/shangpu_menu_ico03"
+		   	        android:id="@+id/img3"
+		   	        />
+		   	    <TextView android:layout_width="20dp"
+		   	        android:layout_height="wrap_content"
+		   	        android:text="活动"
+		   	        android:textColor="#B3B3B3"
+		   	        android:textSize="16sp"
+		   	        android:lineSpacingExtra="6dp"
+		   	        android:layout_marginTop="6dp"
+		   	        android:id="@+id/text3"
+		   	        />
+		   	</LinearLayout>
+		   	<LinearLayout android:layout_width="match_parent"
+		   	    android:layout_height="match_parent"
+		   	    android:orientation="vertical"
+		   	    android:layout_weight="1"
+		   	    android:background="@drawable/shangpu_menu_bg"
+		   	    android:gravity="center"
+		   	    android:id="@+id/rightLayout4"
+		   	    android:paddingTop="6dp"
+		   	    android:paddingBottom="6dp"
+		   	    >
+		   	    <ImageView android:layout_width="wrap_content"
+		   	        android:layout_height="wrap_content"
+		   	        android:src="@drawable/shangpu_menu_ico04"
+		   	        android:id="@+id/img4"
+		   	        />
+		   	    <TextView android:layout_width="20dp"
+		   	        android:layout_height="wrap_content"
+		   	        android:text="咨询"
+		   	        android:textColor="#B3B3B3"
+		   	        android:textSize="16sp"
+		   	        android:layout_marginTop="6dp"
+		   	        android:lineSpacingExtra="6dp"
+		   	        android:id="@+id/text4"
+		   	        />
+		   	</LinearLayout>
+		</LinearLayout>
+         <!-- <ListView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView"
+            android:divider="#459E9A"
+            android:dividerHeight="4dp"
+            android:layout_margin="4dp"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:background="@null"
+            android:cacheColorHint="@null"
+            android:layout_toRightOf="@id/rightMenu"
+            ></ListView> -->
+            <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/rightMenu"
+                android:background="@null"
+                >
+	            <LinearLayout android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:id="@+id/viewList"
+	                android:orientation="vertical"
+	                android:gravity="center_horizontal"
+	                >
+		   	     <LinearLayout android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:id="@+id/yzListView"
+	                android:orientation="vertical"
+	                android:padding="4dp"
+	                android:gravity="center_horizontal"
+	                android:visibility="visible"
+	                >
+		   	    
+	            </LinearLayout>
+	             <LinearLayout android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:id="@+id/txListView"
+	                android:orientation="vertical"
+	                android:padding="4dp"
+	                android:gravity="center_horizontal"
+	                android:visibility="gone"
+	                >
+		   	    
+	            </LinearLayout>
+	             <LinearLayout android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:id="@+id/hdListView"
+	                android:orientation="vertical"
+	                android:padding="4dp"
+	                android:gravity="center_horizontal"
+	                android:visibility="gone"
+	                >
+		   	    
+	            </LinearLayout>
+	            </LinearLayout>
+            </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#ffffff"
+              >
+  <RelativeLayout android:layout_width="fill_parent"
+      android:layout_height="60dp"
+      android:background="@drawable/qf_top_bg"
+      >
+      <ImageButton android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/qf_fanhui_btn"
+          android:layout_centerVertical="true"
+          android:id="@+id/backBtn"
+          android:layout_margin="10dp"
+          />
+      <View android:layout_width="1dp"
+          android:layout_height="fill_parent"
+          android:background="@drawable/qf_top_line"
+          android:layout_toRightOf="@id/backBtn"
+          android:layout_marginBottom="2dp"
+          />
+      <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/detail_join"
+          android:layout_centerInParent="true"
+          android:textColor="#ffffff"
+          android:textSize="20dp"
+          />
+  </RelativeLayout>
+  <ScrollView android:layout_width="fill_parent"
+      android:scrollbars="none"
+      android:fadingEdge="none"
+      android:layout_height="fill_parent">
+  <LinearLayout android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:orientation="vertical"
+      >
+  <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#2365B6"
+      android:textSize="20sp"
+      android:text="android手机开发工程师"
+      android:id="@+id/jobName"
+      android:layout_margin="10dp"
+      />
+  <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#333333"
+      android:textSize="20sp"
+      android:text="岗位描述"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:textStyle="bold"
+      android:id="@+id/title1"
+      />
+  <LinearLayout android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:id="@+id/layout1"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      >
+  </LinearLayout>
+  <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#333333"
+      android:textSize="20sp"
+      android:text="岗位职责"
+      android:layout_marginLeft="10dp"
+       android:layout_marginTop="15dp"
+       android:textStyle="bold"
+       android:id="@+id/title2"
+      />
+  <LinearLayout android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:id="@+id/layout2"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      >
+  </LinearLayout>
+ <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#333333"
+      android:textSize="20sp"
+      android:text="岗位要求"
+      android:layout_marginLeft="10dp"
+       android:layout_marginTop="15dp"
+       android:textStyle="bold"
+       android:id="@+id/title3"
+      />
+ <LinearLayout android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:id="@+id/layout3"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      >
+  </LinearLayout>
+  <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:drawableLeft="@drawable/qf_jiaru_ico2"
+      android:text="申请该职位"
+      android:background="#70A3E2"
+      android:textColor="#ffffff"
+      android:textSize="25sp"
+      android:paddingLeft="20dp"
+      android:paddingRight="20dp"
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp"
+      android:gravity="center"
+      android:drawablePadding="10dp"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="50dp"
+      android:layout_marginBottom="10dp"
+      android:id="@+id/joinBtn"
+      />
+  </LinearLayout>
+  </ScrollView>
+</LinearLayout>

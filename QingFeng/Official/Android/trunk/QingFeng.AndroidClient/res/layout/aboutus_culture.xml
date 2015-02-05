@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#CEF0FA"
+              >
+     <com.qingfengweb.util.ScrollViewExtend android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:fadingEdge="none"
+      android:scrollbars="none"
+      >
+      <LinearLayout android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          >
+        <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="#EBF9FC"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:padding="10dp"
+              android:layout_marginTop="10dp"
+              >
+        	<TextView android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:text="精心"
+        	    android:textColor="#FEA028"
+        	    android:textSize="25dp"
+        	    />
+        	<TextView android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:text="用精湛的技术精心的服务好每一个客户。"
+        	    android:textColor="#55869D"
+        	    android:textSize="15dp"
+        	    android:layout_marginTop="10dp"
+        	    />
+		</LinearLayout>
+		<ImageView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/qf_wenhua_bg"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight ="10dp"
+              />
+		<LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="#EBF9FC"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:padding="10dp"
+              >
+        	<TextView android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:text="诚信"
+        	    android:textColor="#FEA028"
+        	    android:textSize="25dp"
+        	    />
+        	<TextView android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:text="用诚心去做好每件事，用诚信去对待每个人。"
+        	    android:textColor="#55869D"
+        	    android:textSize="15dp"
+        	    android:layout_marginTop="10dp"
+        	    />
+		</LinearLayout>
+		<ImageView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/qf_wenhua_bg"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight ="10dp"
+              />
+		<LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="#EBF9FC"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:padding="10dp"
+              >
+        	<TextView android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:text="创新"
+        	    android:textColor="#FEA028"
+        	    android:textSize="25dp"
+        	    />
+        	<TextView android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:text="关注新的技术，不断创新，不断进取。"
+        	    android:textColor="#55869D"
+        	    android:textSize="15dp"
+        	    android:layout_marginTop="10dp"
+        	    />
+		</LinearLayout>
+		<ImageView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/qf_wenhua_bg"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight ="10dp"
+              />
+		<LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="#EBF9FC"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:padding="10dp"
+              >
+        	<TextView android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:text="团结"
+        	    android:textColor="#FEA028"
+        	    android:textSize="25dp"
+        	    />
+        	<TextView android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:text="尊重互信，用于担当，团结一心，团队至上。"
+        	    android:textColor="#55869D"
+        	    android:textSize="15dp"
+        	    android:layout_marginTop="10dp"
+        	    />
+		</LinearLayout>
+		<ImageView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/qf_wenhua_bg"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight ="10dp"
+              />
+		</LinearLayout>
+		</com.qingfengweb.util.ScrollViewExtend>
+</LinearLayout>

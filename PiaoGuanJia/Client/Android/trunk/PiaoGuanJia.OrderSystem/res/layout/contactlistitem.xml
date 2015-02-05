@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_btn1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ower_border_selector"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginsizel"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:paddingLeft="@dimen/marginsizeh"
+        android:text=""
+        android:textColor="@color/heise"
+        android:textSize="@dimen/textsizeh" />
+
+    <LinearLayout
+        android:id="@+id/linear_shoucang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="@color/huise" />
+
+        <ImageView
+            android:id="@+id/iv_shoucang"
+            android:layout_width="@dimen/marginsizeh"
+            android:layout_height="@dimen/marginsizeh"
+            android:layout_margin="@dimen/marginsizeh"
+            android:background="@drawable/youwan_ico2"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_shoucang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="@color/huise" />
+
+        <ImageView
+            android:id="@+id/iv_shoucang"
+            android:layout_width="@dimen/marginsizeh"
+            android:layout_height="@dimen/marginsizeh"
+            android:layout_margin="@dimen/marginsizeh"
+            android:background="@drawable/youwan_ico4"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+</LinearLayout>

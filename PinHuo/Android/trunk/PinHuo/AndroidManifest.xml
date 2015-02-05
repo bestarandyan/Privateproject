@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qingfengweb.pinhuo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <!-- 电话服务添加 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.qingfengweb.pinhuo.LoadingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.qingfengweb.pinhuo.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.pinhuo.EditInfoActivity"
+            android:label="@string/title_activity_register_driver"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.pinhuo.LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.pinhuo.SelectUserTypeActivity"
+            android:label="@string/title_activity_select_user_type"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.pinhuo.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.pinhuo.SuccessRegisterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.pinhuo.ApproveDriverActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.pinhuo.SuccessApproveActivity"
+            android:label="@string/title_activity_success_approve"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.pinhuo.MyActivity"
+            android:label="@string/title_activity_my"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.pinhuo.WdzlActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.pinhuo.WdrzForDriverActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.pinhuo.WdrzForCompany"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+    </application>
+
+</manifest>

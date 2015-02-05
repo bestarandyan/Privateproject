@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent"
+     >
+    <LinearLayout
+        android:id="@+id/layout_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:gravity="bottom"
+        android:background="#132431"
+        android:orientation="vertical" >
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/more_line"
+            />
+        <com.qingfengweb.weddingideas.customview.MyListView
+            android:id="@+id/lv_set"
+            android:layout_width="match_parent"
+            android:divider="@drawable/more_line"
+            android:dividerHeight="1dp"
+            android:layout_height="wrap_content"
+            android:background="#132431"
+            android:cacheColorHint="@null"
+            android:layout_marginBottom="30dp"
+            >
+        </com.qingfengweb.weddingideas.customview.MyListView>
+    </LinearLayout>
+	<RelativeLayout
+        android:id="@+id/layout_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+		    <com.qingfengweb.weddingideas.customview.CustomViewPager
+		        android:id="@+id/viewPager"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:background="#ffffff"
+		        android:orientation="vertical" >
+		      
+		    </com.qingfengweb.weddingideas.customview.CustomViewPager>
+		<RelativeLayout android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    >
+			    <ImageView android:layout_width="40dp"
+					  android:layout_height="40dp"
+					  android:background="@drawable/icon_menu_playphoto"
+					  android:adjustViewBounds="true"
+					  android:id="@+id/playBtn"
+					  android:layout_alignParentBottom="true"
+					  android:layout_alignParentRight="true"
+					  android:scaleType="center"
+					  android:layout_marginRight="10dp"
+					  android:layout_marginBottom="10dp"
+				/>
+			    <ImageView android:layout_width="40dp"
+					  android:layout_height="40dp"
+					  android:background="@drawable/icon_menu_share"
+					  android:adjustViewBounds="true"
+					  android:id="@+id/shareBtn"
+					  android:layout_alignParentBottom="true"
+					  android:layout_alignParentRight="true"
+					  android:scaleType="center"
+					  android:layout_marginRight="10dp"
+					  android:layout_marginBottom="10dp"
+				/>
+			    <ImageView android:layout_width="40dp"
+					  android:layout_height="40dp"
+					  android:background="@drawable/icon_menu_blessing"
+					  android:adjustViewBounds="true"
+					  android:id="@+id/blessingBtn"
+					  android:layout_alignParentBottom="true"
+					  android:layout_alignParentRight="true"
+					  android:scaleType="center"
+					  android:layout_marginRight="10dp"
+					  android:layout_marginBottom="10dp"
+				/>
+			    <ImageView android:layout_width="40dp"
+					  android:layout_height="40dp"
+					  android:background="@drawable/icon_menu_moremenu"
+					  android:adjustViewBounds="true"
+					  android:id="@+id/menuBtn"
+					  android:layout_alignParentBottom="true"
+					  android:layout_alignParentRight="true"
+					  android:scaleType="center"
+					  android:layout_marginRight="10dp"
+					  android:layout_marginBottom="10dp"
+				/>
+			    <ImageView android:layout_width="40dp"
+					  android:layout_height="40dp"
+					  android:background="@drawable/icon_menu_openmenu"
+					  android:adjustViewBounds="true"
+					  android:id="@+id/openMenuBtn"
+					  android:layout_alignParentBottom="true"
+					  android:layout_alignParentRight="true"
+					  android:scaleType="center"
+					  android:layout_marginRight="10dp"
+					  android:layout_marginBottom="10dp"
+				/>
+			</RelativeLayout>
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <dimen name="login_topimg_totop">20dp</dimen>
+    <dimen name="login_input_totop">0dp</dimen>
+    <dimen name="login_btn_marginbottom">20dp</dimen>
+    <dimen name="login_text_size">80dp</dimen>
+    <dimen name="login_cancle_margin_left">5dp</dimen>
+    <dimen name="detail_text_width">80dp</dimen>
+    <dimen name="capture_canclebtn_to_top">170dp</dimen>
+    <dimen name="capture_openlight_to_top">30dp</dimen>
+    <dimen name="capture_btn_layout_to_right">0dp</dimen>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="shenrubaise">#F6F6F8</color><!-- 深乳白色 -->
+    <color name="rubaise">#F0EFF4</color><!-- 乳白色 -->
+    <color name="tianlanse">#3ABFDE</color><!-- 天蓝色 -->
+    <color name="shenlanse">#3090FE</color><!-- 深蓝色 -->
+    <color name="baise">#ffffff</color><!-- 白色 -->
+    <color name="lanse">#39BEDD</color><!-- 蓝色 -->
+    <color name="shuilanse">#C4E9F2</color><!-- 水蓝色 -->
+    <color name="huise">#A7A6AB</color><!-- 灰色-->
+    <color name="juhongse">#FF6F30</color><!-- 橘红色 -->
+    <color name="chengse">#FF8201</color><!-- 橙色 -->
+    <color name="xuehongse">#FF2E56</color><!-- 血红色 -->
+    <color name="shenhuise">#666666</color><!-- 深灰色 -->
+    <color name="heise">#535353</color><!-- 黑色 -->
+</resources>

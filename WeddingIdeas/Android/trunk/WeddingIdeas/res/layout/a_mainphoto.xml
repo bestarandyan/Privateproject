@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+      android:background="#ffffff"
+      android:gravity="center_horizontal"
+    >
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_bg"
+        >
+        <ImageButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top_fanhui_ico"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="10dp"
+            android:id="@+id/backBtn1"
+            />
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_line"
+            android:layout_toRightOf="@id/backBtn1"
+            />
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#ffffff"
+	        android:gravity="center"
+	        android:layout_centerInParent="true"
+	        android:id="@+id/topView"
+	        android:text="相册封面" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_photo_cover"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+                <ImageView android:layout_width="wrap_content"
+		             android:layout_height="wrap_content"	
+		             android:adjustViewBounds="true"
+		             android:id="@+id/imgView"
+		             android:background="#ffffff"
+		             android:paddingLeft="2dp"
+		             android:paddingRight="2dp"
+		             android:paddingBottom="2dp"
+		             android:src="@drawable/img_photo_user"
+		             /> 
+		              <ScrollView android:layout_width="match_parent"
+				            android:layout_height="match_parent"
+				            android:id="@+id/scrollView"
+				            android:scrollbars="none"
+				            android:fadingEdge="none"
+				            android:background="@drawable/bg_photo_text"
+				            >
+				            <LinearLayout android:layout_width="match_parent"
+				                android:layout_height="match_parent"
+				                android:orientation="vertical"
+				               	android:paddingBottom="10dp"
+				               	android:gravity="center_horizontal"
+				                >
+				                <TextView android:layout_width="wrap_content"
+				                    android:layout_height="wrap_content"
+				                    android:text="爱是一种颜色，一个名字asdfadsf是倒萨发文啊饿啊饿啊饿啊发发"
+				                    android:textColor="#ffffff"
+				                    android:textSize="@dimen/mainphoto_text_size"
+				                    android:id="@+id/photomain_titleTv"
+				                    android:layout_marginTop="6dp"
+				                    android:gravity="center_horizontal"
+				                    android:paddingLeft="10dp"
+				                    android:paddingRight="10dp"
+				                    android:singleLine="true"
+				                    />
+				                <ImageView android:layout_width="wrap_content"
+				                    android:layout_height="wrap_content"
+				                    android:src="@drawable/fengmian_ico"
+				                    />
+				                <RelativeLayout android:layout_width="match_parent"
+				                    android:layout_height="wrap_content"
+				                    >
+				                     <TextView
+					                     android:layout_width="match_parent"
+					                     android:layout_height="wrap_content"
+					                     android:gravity="center_horizontal"
+					                     android:textColor="#ffffff"
+					                     android:textSize="@dimen/mainphoto_text_size" 
+					                     android:lineSpacingExtra="4dp"
+					                     android:id="@+id/msgTv"
+					                     android:layout_marginTop="2dp"
+					                     android:paddingLeft="10dp"
+					                     android:paddingRight="10dp"
+					                     />
+					                <Button android:layout_width="wrap_content"
+					                    android:layout_height="wrap_content"
+					                    android:background="@drawable/sc_copy"
+					                    android:layout_marginTop="20dp"
+					                    android:id="@+id/copyBtn"
+					                    android:text="复制"
+					                    android:textColor="#ffffff"
+					                    android:textSize="@dimen/copybtn_text_size"
+					                    android:gravity="center_horizontal|top"
+					                    android:paddingTop="@dimen/copybtn_padding_top"
+					                    android:visibility="visible"
+					                    android:layout_centerHorizontal="true"
+					                    />
+				                </RelativeLayout>
+			             </LinearLayout>
+			        </ScrollView>
+		</LinearLayout>
+       <!--  <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:alpha="100"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:id="@+id/bottomLayout"
+            >
+            <TextView android:text="真爱是一种颜色，一个名字"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textColor="#ffffff"
+             android:textSize="20sp"
+             android:gravity="center_horizontal"
+             />
+            <TextView android:text="魔力红盒，在开合之间展示一枚订婚钻戒。"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textColor="#ffffff"
+             android:textSize="14sp"
+             android:layout_marginTop="10dp"
+             />
+        </LinearLayout> -->
+</LinearLayout>

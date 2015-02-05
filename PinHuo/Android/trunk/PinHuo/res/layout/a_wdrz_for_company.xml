@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/activity_bg_color"
+    >
+
+   <RelativeLayout android:layout_width="match_parent"
+       android:layout_height="@dimen/title_height"
+       android:padding="5dp"
+       android:background="@color/title_bg_color"
+       >
+       <ImageButton android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/btn_title_back"
+	        android:background="@null"
+	        android:padding="10dp"
+	        android:layout_centerVertical="true"
+	        android:id="@+id/backBtn"
+	        />
+       <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="我的认证"
+           android:textSize="@dimen/activity_title_text_size"
+           android:textColor="@color/activity_title_text_color"
+           android:layout_centerInParent="true"
+           />
+       <Button android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"
+          android:text="保存"
+          android:textColor="#ffffff"
+          android:background="@drawable/btn_save_bg"
+          android:gravity="center"
+          android:textSize="16sp"
+          />
+   </RelativeLayout>
+   <ScrollView android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+   <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/activity_bg_color"
+    >
+    <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:padding="10dp"
+		    >
+			<TextView android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:text="公司名称"
+		           android:textSize="16sp"
+		           android:textColor="@color/text_color"
+		           android:layout_marginTop="10dp"
+		           />
+		    <EditText android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/input_bg"
+		        android:padding="10dp"
+		        android:textColor="@color/input_text_color"
+		        android:textColorHint="@color/input_hint_color"
+		        android:textSize="@dimen/input_text_size"
+		        android:id="@+id/companyEt"
+		        android:singleLine="true"
+		        />
+			<TextView android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:text="经营地址"
+		           android:textSize="16sp"
+		           android:textColor="@color/text_color"
+		           android:layout_marginTop="10dp"
+		           />
+			<EditText android:layout_width="match_parent"
+				   android:layout_height="wrap_content"
+				   android:background="@drawable/input_bg"
+				   android:padding="10dp"
+				   android:textColor="@color/input_text_color"
+				   android:textColorHint="@color/input_hint_color"
+				   android:textSize="@dimen/input_text_size"
+				   android:id="@+id/addressEt"
+				   android:singleLine="true"
+				   />
+			<TextView android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:text="联系人"
+		           android:textSize="16sp"
+		           android:textColor="@color/text_color"
+		           android:layout_marginTop="10dp"
+		           />
+		    <EditText android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/input_bg"
+		        android:padding="10dp"
+		        android:textColor="@color/input_text_color"
+		        android:textColorHint="@color/input_hint_color"
+		        android:textSize="@dimen/input_text_size"
+		        android:id="@+id/connectName"
+		        android:singleLine="true"
+		        />
+			<TextView android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:text="联系电话"
+		           android:textSize="16sp"
+		           android:textColor="@color/text_color"
+		           android:layout_marginTop="10dp"
+		           />
+			<EditText android:layout_width="match_parent"
+				   android:layout_height="wrap_content"
+				   android:background="@drawable/input_bg"
+				   android:padding="10dp"
+				   android:textColor="@color/input_text_color"
+				   android:textColorHint="@color/input_hint_color"
+				   android:textSize="@dimen/input_text_size"
+				   android:id="@+id/connectPhone"
+				   android:singleLine="true"
+				   />
+			</LinearLayout>
+			
+		   <LinearLayout android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:orientation="horizontal"
+		       android:layout_marginTop="10dp"
+		       >
+		       <LinearLayout android:layout_width="match_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="vertical"
+			       android:gravity="center"
+			       android:layout_marginLeft="20dp"
+			       android:layout_marginRight="10dp"
+			       android:id="@+id/idzmLayout"
+			       >
+			       <ImageView android:layout_width="wrap_content"
+			           android:layout_height="100dp"
+			           android:padding="10dp"
+			           android:src="@drawable/idzhengm"
+			           android:background="@drawable/img_bg"
+			           />
+			       <TextView android:layout_width="wrap_content"
+			           android:layout_height="wrap_content"
+			           android:text="身份证正面"
+			           android:textColor="#000000"
+			           android:textSize="14sp"
+			           />
+			   </LinearLayout>
+		   </LinearLayout>
+	
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>

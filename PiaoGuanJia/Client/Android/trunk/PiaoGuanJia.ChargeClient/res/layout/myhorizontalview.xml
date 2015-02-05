@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#ededed"
+	android:drawablePadding="0dip" android:maxLines="2"
+	android:ellipsize="marquee" android:fadingEdge="horizontal"
+	android:gravity="top|center_horizontal">
+<!-- 
+	<com.qingfengweb.baoqi.InsuranceClient.FlingGallery
+		android:layout_width="fill_parent" android:layout_centerVertical="true"
+		android:id="@+id/horizontalview" android:layout_height="fill_parent">
+		
+	</com.qingfengweb.baoqi.InsuranceClient.FlingGallery>
+	
+	 -->
+ <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cz_top_bg"
+        android:id="@+id/topLinear"
+        >
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cz_ico1"
+            android:layout_centerVertical="true"
+            android:id="@+id/backBtn"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="照片预览"
+            android:textColor="#ffffff"
+            android:textSize="40dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            />
+    </RelativeLayout>
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="top"
+	    android:layout_below="@id/topLinear"
+	    >
+		<com.piaoguanjia.chargeclient.ZoomImageView
+			android:id="@+id/zoomview"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			/>
+		</LinearLayout>
+	<ZoomControls  
+    android:id="@+id/zoomcontrol"  
+    android:layout_alignParentBottom="true"  
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content"   
+/>  
+<!--  
+	<ProgressBar android:id="@+id/progress_circular"
+		style="?android:attr/progressBarStyleSmall"
+		android:layout_alignParentRight="true" android:layout_alignParentTop="true"
+		android:max="10000" android:layout_centerVertical="true"
+		android:layout_marginLeft="6dip" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	
+	<ImageView android:id="@+id/removed" android:layout_width="80dp"
+		android:padding="20dp" android:layout_height="80dp"
+		android:layout_alignParentLeft="true" android:visibility="gone"
+		android:onClick="movedClick" android:layout_alignParentBottom="true"
+		android:src="@drawable/thumb" />
+
+	<ImageView android:id="@+id/temp_image" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:visibility="gone"
+		android:src="@drawable/thumb" />
+		
+		-->
+</RelativeLayout>

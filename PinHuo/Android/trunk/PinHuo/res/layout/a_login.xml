@@ -1,0 +1,112 @@
+<!-- @author 刘星星 
+	 @createTime 2014/4/2
+   	      登陆页布局文件
+   -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/activity_bg_color"
+    android:orientation="vertical"
+     >
+	<RelativeLayout android:layout_width="match_parent"
+	    android:layout_height="@dimen/title_height"
+	    android:background="@color/title_bg_color"
+	    >
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/title_login" 
+	        android:textColor="@color/activity_title_text_color"
+	        android:textSize="@dimen/activity_title_text_size"
+	        android:layout_centerInParent="true"
+	        />
+	</RelativeLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/activity_bg_color"
+	    android:orientation="vertical"
+	    android:padding="15dp"
+	     >
+		<RelativeLayout android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/input_bg"
+		    android:layout_marginTop="20dp"
+		    >
+		    <ImageButton android:layout_width="30dp"
+		        android:layout_height="30dp"
+		        android:background="@drawable/close"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="10dp"
+		        android:layout_centerVertical="true"
+		        android:id="@+id/deleteBtn"
+		        android:visibility="invisible"
+		        />
+		    <EditText android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@null"
+		        android:hint="@string/hint_input_phone"
+		        android:layout_centerVertical="true"
+		        android:layout_toLeftOf="@id/deleteBtn"
+		        android:padding="10dp"
+		        android:textColor="@color/input_text_color"
+		        android:textColorHint="@color/input_hint_color"
+		        android:textSize="@dimen/input_text_size"
+		        android:id="@+id/input_phone_et"
+		        android:inputType="phone"
+		        android:maxLength="11"
+		        android:text="13062663602"
+		        />
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/input_bg"
+		    android:layout_marginTop="20dp"
+		    >
+		    <EditText android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@null"
+		        android:hint="密码"
+		        android:layout_centerVertical="true"
+		        android:padding="10dp"
+		        android:textColor="@color/input_text_color"
+		        android:textColorHint="@color/input_hint_color"
+		        android:textSize="@dimen/input_text_size"
+		        android:id="@+id/input_psw_et"
+		        android:inputType="textPassword"
+		        android:text="abcd1234"
+		        />
+		</RelativeLayout>
+		    <Button android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/btn_bg"
+		        android:padding="10dp"
+		        android:textColor="@color/activity_title_text_color"
+		        android:textSize="@dimen/btn_text_size"
+		        android:id="@+id/btn_login"
+		        android:layout_marginTop="30dp"
+		        android:text="@string/btn_login"
+		        android:textDirection="anyRtl"
+		        />
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/title_bg_color"
+		        android:text="@string/text_register_new_account"
+		        android:layout_marginTop="40dp"
+		        android:layout_marginLeft="10dp"
+		        android:textSize="16sp"
+		        android:id="@+id/register_new_account"
+		        />
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/title_bg_color"
+		        android:text="@string/text_forget_psw"
+		        android:layout_marginTop="15dp"
+		        android:layout_marginLeft="10dp"
+		        android:textSize="16sp"
+		        android:id="@+id/forget_psw"
+		        />
+	</LinearLayout>
+</LinearLayout>

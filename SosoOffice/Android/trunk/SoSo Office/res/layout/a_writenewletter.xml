@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/soso_top_bg"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/soso_fh_ico" />
+
+        <TextView
+            android:id="@+id/topTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="写信"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/soso_fasong_btn" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top_linear"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+		<RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+             >
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="收件人："
+                android:textColor="#999999"
+                android:textSize="20dp" />
+            <Button
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/soso_contact_btn" />
+			<LinearLayout android:layout_height="wrap_content"
+			    android:layout_width="fill_parent"
+			    android:orientation="vertical"
+			    android:id="@+id/btnLayout"
+			    android:paddingLeft="2dp"
+			    android:layout_toRightOf="@id/tv"
+			    android:layout_toLeftOf="@id/search"
+			    >
+			    <!-- <GridView android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:id="@+id/btnGv"
+			        android:numColumns="4"
+			        ></GridView> -->
+			</LinearLayout>
+			</RelativeLayout>
+			<RelativeLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/cancleLayout"
+			    android:background="#eeeeee"
+			    android:visibility="gone"
+			    android:layout_marginTop="10dp"
+			    >
+			<View android:layout_width="fill_parent"
+			    android:layout_height="2dp"
+			    android:background="@drawable/soso_zc_line"
+			    android:layout_alignParentTop="true"
+			    />
+			    <LinearLayout android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:orientation="vertical"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginTop="6dp"
+			        android:layout_marginBottom="6dp"
+			        android:gravity="center_vertical"
+			        >
+			        <TextView android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:id="@+id/nameText"
+			            android:textSize="14dp"
+			            android:textColor="@color/black"
+			            android:textStyle="bold"
+			            android:text="刘星星"
+			            />
+			      <!--   <TextView android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:id="@+id/emailText"
+			            android:textSize="12dp"
+			            android:textColor="@color/gray"
+			            android:text="xingxing@qingfengweb.com"
+			            /> -->
+			    </LinearLayout>
+			    <Button android:layout_width="wrap_content"
+			        android:layout_height="30dp"
+			        android:background="@drawable/soso_recommend_item_btn"
+			        android:text="取消"
+			        android:textColor="#666666"
+			        android:textSize="12dp"
+			        android:id="@+id/cancleBtn"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+			        android:layout_marginTop="6dp"
+			        android:layout_marginBottom="6dp"
+			        android:layout_marginRight="10dp"
+			        />
+			    <Button android:layout_width="wrap_content"
+			        android:layout_height="30dp"
+			        android:background="@drawable/soso_recommend_item_btn"
+			        android:text="删除"
+			        android:textColor="#666666"
+			        android:textSize="12dp"
+			        android:layout_toLeftOf="@id/cancleBtn"
+			        android:id="@+id/deleteBtn"
+			        android:layout_marginRight="5dp"
+			        android:layout_centerVertical="true"
+			        android:layout_marginTop="6dp"
+			        android:layout_marginBottom="6dp"
+			        />
+			    
+			</RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:paddingRight="10dp" >
+
+                <!-- <Button
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/soso_contact_btn" /> -->
+
+                <!-- <EditText
+                    android:id="@+id/et1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/search"
+                    android:layout_toRightOf="@id/tv"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:editable="false"
+                    android:background="@drawable/soso_et_background"
+                    android:singleLine="true" /> -->
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="抄送/密送："
+                android:textColor="#999999"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:paddingRight="10dp" >
+
+                <Button
+                    android:id="@+id/search1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/soso_contact_btn"
+                    android:paddingRight="10dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/et2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/search1"
+                    android:layout_toRightOf="@id/tv1"
+                    android:background="@drawable/soso_et_background"
+                    android:singleLine="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="主题："
+                android:textColor="#999999"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/soso_et_background"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="内容："
+                android:textColor="#999999"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et4"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/soso_et_background"
+                android:gravity="left|top" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

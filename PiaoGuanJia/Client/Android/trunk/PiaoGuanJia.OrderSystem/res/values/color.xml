@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="shenrubaise">#F6F6F8</color>
+    <!-- 深乳白色 -->
+    <color name="rubaise">#F0EFF4</color>
+    <!-- 乳白色 -->
+    <!-- <color name="tianlanse">#3ABFDE</color> -->
+    <!-- 天蓝色 -->
+    <!-- <color name="shenlanse">#3090FE</color> -->
+    <!-- 深蓝色 -->
+    <color name="baise">#ffffff</color>
+    <!-- 白色 -->
+    <color name="lanse">#39BEDD</color>
+    <!-- 蓝色 -->
+    <color name="shuilanse">#C4E9F2</color>
+    <!-- 水蓝色 -->
+    <!-- <color name="huise">#A7A6AB</color>灰色 -->
+    <color name="juhongse">#FF6F30</color>
+    <!-- 橘红色 -->
+    <!-- <color name="chengse">#FF8201</color>橙色 -->
+    <color name="xuehongse">#FF2E56</color>
+    <!-- 血红色 -->
+    <!-- <color name="shenhuise">#666666</color>深灰色 -->
+    <!-- <color name="heise">#535353</color>黑色 -->
+
+
+    <!-- 下单用到的颜色 -->
+    <color name="chengse">#FF8201</color>
+    <!-- 橙色 -->
+    <color name="shenchengse">#FF8201</color>
+    <!-- 深橙色 -->
+    <color name="lv">#51B82B</color>
+    <!-- 绿色 -->
+    <color name="shenlvse">#51B82B</color>
+    <!-- 深绿色 -->
+    <color name="qianhuise">#E7E7E7</color>
+    <!-- 浅灰色 -->
+    <color name="huise">#C5C5C5</color>
+    <!-- 灰色 -->
+    <color name="shenhuise">#666666</color>
+    <!-- 深灰色 -->
+    <color name="heise">#535353</color>
+    <!-- 黑色 -->
+    
+    <!-- 天蓝色 -->
+    <color name="tianlanse">#3090FE</color>
+    
+    
+    <!-- 紫色  最新产品 -->
+    <color name="ziseziuxinchanping">#A97CD7</color>
+    <!-- 深蓝色 自由行 -->
+    <color name="shenlanseziyouxing">#309AFE</color>
+    <!-- 浅蓝色 酒店 -->
+    <color name="qianlansejiudian">#30B9FD</color>
+    <!-- 绿色 景点门票 -->
+    <color name="lvsejingdianmenpiao">#64D94F</color>
+    <!-- 粉红色 跟团游 -->
+    <color name="fenhonggentuanyou">#FC5C79</color>
+    <!-- 橙色快捷下单 -->
+    <color name="chensekuaijie">#FC8E19</color>
+    <!-- 浅橙色加载中 -->
+    <color name="qianchengseloading">#F7C219</color>
+    <!-- 大背景 -->
+    <color name="beijingse">#F0EFF4</color>
+
+</resources>

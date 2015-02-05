@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="#132431"
+    android:orientation="horizontal" >
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/more_shangpu_ico"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/ico"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/tv_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#D3D5DA"
+        android:text="掌上商铺"
+        android:layout_toRightOf="@id/ico"
+        android:layout_centerVertical="true"
+        android:textSize="20sp" />
+	<ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/more_dianji_ico"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        />	
+</RelativeLayout>

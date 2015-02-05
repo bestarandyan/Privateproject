@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    android:id="@+id/parent"
+    >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:background="@drawable/soso_top_bg"
+	    >
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/soso_fh_ico"
+	        android:visibility="visible"
+	         />
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/mapBtn"
+	        android:background="@drawable/soso_map_btn"
+	        android:layout_alignParentRight="true"
+	        />
+	    	           
+	  <Button 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:id="@+id/topAddress"
+	        android:background="@drawable/soso_rooms_search_toptitle"
+	        android:layout_toRightOf="@id/backBtn"
+	        android:layout_toLeftOf="@id/mapBtn"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:text="选择商圈"
+	        android:textColor="@color/white"
+	        android:textSize="16dp"
+	        android:gravity="left|center_vertical"
+	         />
+      </RelativeLayout>
+      <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="-5dp"
+          >
+	   <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_weight="1"
+          >
+          <RelativeLayout android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:layout_weight="1"
+	          android:background="@drawable/soso_email_title_bg2"
+	          android:id="@+id/typeLayout"
+	          >
+	          <TextView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:textColor="#666666"
+	              android:text="房源类型"
+	              android:id="@+id/typeText"
+	              android:layout_centerInParent="true"
+	              />
+	          <ImageView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/soso_email_title_line"
+		        android:layout_alignParentRight="true"
+		        android:id="@+id/OneRightImg"
+		        />
+	          <ImageView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:src="@drawable/soso_house_sanjiao1"
+	              android:layout_toLeftOf="@id/OneRightImg"
+	              android:layout_centerVertical="true"
+	              android:layout_marginRight="10dp"
+	              android:id="@+id/typeImg"
+	              />
+	          
+          </RelativeLayout>
+          <RelativeLayout android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:layout_weight="2"
+	          android:background="@drawable/soso_email_title_bg2"
+	          android:id="@+id/priceLayout"
+	          >
+	          <TextView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:textColor="#666666"
+	              android:text="价格"
+	              android:id="@+id/priceText"
+	              android:layout_marginLeft="10dp"
+	              android:layout_centerVertical="true"
+	              />
+	          <ImageView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/soso_email_title_line"
+		        android:layout_alignParentRight="true"
+		        android:id="@+id/TwoRightImg"
+		        />
+	          <ImageView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:src="@drawable/soso_house_sanjiao1"
+	              android:layout_toLeftOf="@id/TwoRightImg"
+	              android:layout_centerVertical="true"
+	              android:id="@+id/priceImg"
+	              />
+          </RelativeLayout>
+          </LinearLayout>
+          <LinearLayout android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:orientation="horizontal"
+	          android:layout_weight="1"
+	          >
+          <RelativeLayout android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:layout_weight="2"
+	          android:background="@drawable/soso_email_title_bg2"
+	          android:id="@+id/acreageLayout"
+	          >
+	          <TextView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:textColor="#666666"
+	              android:text="面积"
+	              android:id="@+id/acreageText"
+	              android:layout_marginLeft="10dp"
+	              android:layout_centerVertical="true"
+	              />
+	          <ImageView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/soso_email_title_line"
+		        android:layout_alignParentRight="true"
+		        android:id="@+id/ThreeRightImg"
+		        />
+	          <ImageView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:src="@drawable/soso_house_sanjiao1"
+	              android:layout_toLeftOf="@id/ThreeRightImg"
+	              android:layout_centerVertical="true"
+	              android:id="@+id/acreageImg"
+	              />
+          </RelativeLayout>
+          <RelativeLayout android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:layout_weight="1"
+	          android:background="@drawable/soso_email_title_bg2"
+	          android:id="@+id/rimLayout"
+	          >
+	          
+	          <ImageView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:src="@drawable/soso_house_sanjiao1"
+	              android:layout_alignParentRight="true"
+	              android:layout_centerVertical="true"
+	              android:id="@+id/rimImg"
+	              android:layout_marginRight="5dp"
+	              />
+	          <TextView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:textColor="#666666"
+	              android:text="查看周边房源"
+	              android:id="@+id/rimText"
+	              android:layout_marginLeft="5dp"
+	              android:layout_centerVertical="true"
+	              android:layout_toLeftOf="@id/rimImg"
+	              />
+          </RelativeLayout>
+          </LinearLayout>
+      </LinearLayout>
+      <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:id="@+id/countLayout"
+          android:visibility="visible"
+          android:background="#ffffff"
+          >
+       <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="30dp"
+          android:orientation="horizontal"
+          android:id="@+id/countLayout"
+          android:visibility="visible"
+          android:gravity="center_vertical"
+          >
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="共搜索到"
+              android:textColor="#666666"
+              android:textSize="14dp"
+              android:layout_marginLeft="20dp"
+              />
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="10"
+              android:textColor="#ff0000"
+              android:textSize="18dp"
+              android:layout_marginLeft="5dp"
+              android:id="@+id/countText"
+              />
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="条房源。"
+              android:textColor="#666666"
+              android:textSize="14dp"
+              android:layout_marginLeft="5dp"
+              />
+      </LinearLayout>
+      <View android:layout_width="fill_parent"
+          android:layout_height="1dp"
+          android:background="@drawable/soso_zc_line"
+          />
+      </LinearLayout>
+      <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:id="@+id/noTextLayout"
+          android:visibility="gone"
+          >
+          <ImageView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/soso_gray_logo"
+              android:id="@+id/noDataImg"
+              />
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/nodata_text"
+              android:textColor="#666666"
+              android:textSize="18dp"
+              android:id="@+id/noDataMsg"
+              />
+      </LinearLayout>
+      
+      <com.zhihuigu.sosoOffice.View.XListView android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:divider="@drawable/soso_zc_line"
+          android:id="@+id/roomListView"
+          android:cacheColorHint="@null"
+          android:background="#ffffff"
+          android:fadingEdge="none"
+          >
+          
+      </com.zhihuigu.sosoOffice.View.XListView>
+      <com.baidu.mapapi.map.MapView android:id="@+id/bmapView"
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent" 
+				android:clickable="true"     
+	   />
+      
+	</LinearLayout>

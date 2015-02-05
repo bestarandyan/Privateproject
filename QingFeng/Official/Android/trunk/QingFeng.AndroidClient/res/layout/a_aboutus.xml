@@ -1,0 +1,113 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#ffffff"
+              android:gravity="center_horizontal"
+              >
+  <RelativeLayout android:layout_width="fill_parent"
+      android:layout_height="60dp"
+      android:background="@drawable/qf_top_bg"
+      >
+      <ImageButton android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/qf_btn1"
+          android:layout_centerVertical="true"
+          android:id="@+id/LeftBtn"
+          android:layout_margin="10dp"
+          />
+      <View android:layout_width="1dp"
+          android:layout_height="fill_parent"
+          android:background="@drawable/qf_top_line"
+          android:layout_toRightOf="@id/LeftBtn"
+          android:layout_marginBottom="2dp"
+          />
+      <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/aboutus_top"
+          android:textColor="#ffffff"
+          android:textSize="20dp"
+          android:layout_centerInParent="true"
+          />
+  </RelativeLayout>
+
+  <LinearLayout android:background="#2E5483"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="40dp" 
+      android:layout_marginTop="-4dp"
+      >
+      <RelativeLayout android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:id="@+id/companyLayout"
+          >
+          <TextView android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:text="公司简介"
+	          android:textColor="#ffffff"
+	          android:textSize="14dp"
+	          android:layout_centerInParent="true"
+	          android:id="@+id/companyTv"
+	          
+          />
+          <ImageView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/qf_ermenu_ico"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"
+              android:id="@+id/companyIv"
+              />
+      </RelativeLayout>
+      <RelativeLayout android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:id="@+id/teamLayout"
+          >
+          <TextView android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:text="团队介绍"
+	          android:textColor="@color/team_text_2"
+	          android:textSize="14dp"
+	          android:layout_centerInParent="true"
+	          android:id="@+id/introTeamTv"
+	          
+          />
+          <ImageView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/qf_ermenu_ico"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"
+              android:visibility="invisible"
+              android:id="@+id/introTeamIv"
+              />
+      </RelativeLayout>
+      <RelativeLayout android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:id="@+id/cultureLayout"
+          >
+          <TextView android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:text="企业文化"
+	          android:textColor="@color/team_text_2"
+	          android:textSize="14dp"
+	          android:layout_centerInParent="true"
+	          android:id="@+id/cultureTv"
+          />
+          <ImageView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/qf_ermenu_ico"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"
+              android:id="@+id/cultureIv"
+              android:visibility="invisible"
+              />
+      </RelativeLayout>
+  </LinearLayout>
+	<com.qingfengweb.util.CustomViewPager android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:id="@+id/aboutUs_vp"
+	    ></com.qingfengweb.util.CustomViewPager>
+</LinearLayout>

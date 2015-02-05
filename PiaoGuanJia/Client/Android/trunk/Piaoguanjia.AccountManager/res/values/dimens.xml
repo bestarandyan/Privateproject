@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="textsizexx">22sp</dimen>
+    <dimen name="textsizex">20sp</dimen>
+    <dimen name="textsizeh">18sp</dimen>
+    <dimen name="textsizem">16sp</dimen>
+    <dimen name="textsizel">14sp</dimen>
+    <dimen name="textsizes">12sp</dimen>
+    
+    
+    <dimen name="marginsizeh">18dp</dimen>
+    <dimen name="marginsizem">14dp</dimen>
+    <dimen name="marginsizel">10dp</dimen>
+
+</resources>

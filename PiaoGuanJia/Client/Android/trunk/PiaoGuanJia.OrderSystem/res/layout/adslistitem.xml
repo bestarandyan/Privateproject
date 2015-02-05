@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_linear1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ower_border"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:padding="0.5dp"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:paddingBottom="@dimen/marginsizem"
+            android:paddingLeft="@dimen/marginsizem"
+            android:paddingTop="@dimen/marginsizem"
+            android:text="崇明岛平国家森林公园森林公园翻开历史交锋是的空间"
+            android:singleLine="true"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/textsizem" />
+
+        <TextView
+            android:id="@+id/message_person1"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="top|left|center"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shapecount"
+            android:gravity="center"
+            android:text="8"
+            android:textColor="#ffffffff"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/marginsizem"
+        android:text="2013-05-16"
+        android:textColor="@color/huise"
+        android:textSize="@dimen/textsizel"/>
+
+</LinearLayout>

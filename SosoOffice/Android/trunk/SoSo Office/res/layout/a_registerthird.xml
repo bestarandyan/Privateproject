@@ -1,0 +1,307 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    android:id="@+id/parent"
+    >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:background="@drawable/soso_top_bg"
+	    >
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/soso_fh_ico"
+	         />
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="完 善 资 料"
+	        android:textColor="@color/white"
+	        android:textSize="25dp"
+	        />
+	</RelativeLayout>
+	<ScrollView android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+	    android:orientation="vertical"
+	    >
+	<LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="10dp"
+	        android:orientation="vertical"
+	        android:background="@drawable/linear_background_corner"
+	        >
+	    <LinearLayout android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:padding="15dp"
+	        >
+	        <LinearLayout android:layout_width="100dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:orientation="horizontal"
+	    	    >
+	    	<TextView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="姓名"
+	    	    android:textColor="@color/black"
+	    	    android:textSize="20dp"
+	    	    />
+	    	<TextView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="*"
+	    	    android:textColor="@color/red"
+	    	    android:textSize="20dp"
+	    	    android:gravity="top"
+	    	    />
+	        </LinearLayout>
+	    	<EditText android:layout_height="fill_parent"
+	    	    android:layout_width="fill_parent"
+	    	    android:singleLine="true"
+	    	    android:hint="请输入您的名字"
+	    	    android:id="@+id/NameEt"
+	    	    android:background="@null"
+	    	    android:textSize="16dp"
+	    	    />
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:background="@drawable/register_check_background"
+		    android:gravity="center_vertical"
+		    android:padding="5dp"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginRight="15dp"
+		    android:layout_marginBottom="5dp"
+		    android:id="@+id/userNameCheckLayout"
+		    android:visibility="gone"
+		    >
+	    	<ImageView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:src="@drawable/register_check1"
+	    	    />
+		    <TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="请填写真实姓名"
+			    android:textColor="@color/red"
+			    android:textSize="12dp"
+			    android:layout_marginLeft="5dp"
+			    android:id="@+id/userNameCheck"
+		    />
+		</LinearLayout>
+		<View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_margin="2dp"
+		    android:background="@drawable/soso_zc_line"/>
+	    <LinearLayout android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:padding="15dp"
+	        >
+	    	<LinearLayout android:layout_width="100dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:orientation="horizontal"
+	    	    >
+	    	 
+	    	<TextView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="公司名称"
+	    	    android:textColor="@color/black"
+	    	    android:textSize="20dp"
+	    	    android:id="@+id/nameText"
+	    	    />
+	    <TextView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="*"
+	    	    android:textColor="@color/red"
+	    	    android:textSize="20dp"
+	    	    android:gravity="top"
+	    	    />
+	       
+	    	</LinearLayout>
+	    	<EditText android:layout_height="fill_parent"
+	    	    android:layout_width="fill_parent"
+	    	    android:singleLine="true"
+	    	    android:hint="请输入公司名称"
+	    	    android:id="@+id/companyNameEt"
+	    	    android:background="@null"
+	    	    android:textSize="14dp"
+	    	    />
+		</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:background="@drawable/register_check_background"
+		    android:gravity="center_vertical"
+		    android:padding="5dp"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginRight="15dp"
+		    android:layout_marginBottom="5dp"
+		    android:id="@+id/companyNameCheckLayout"
+		    android:visibility="gone"
+		    >
+	    	<ImageView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:src="@drawable/register_check1"
+	    	    />
+		    <TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="请填写公司名称"
+			    android:textColor="@color/red"
+			    android:textSize="12dp"
+			    android:layout_marginLeft="5dp"
+			    android:id="@+id/companyNameCheck"
+		    />
+		</LinearLayout>
+		<View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_margin="2dp"
+		    android:background="@drawable/soso_zc_line"/>
+		<LinearLayout android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:padding="15dp"
+	        >
+	    	<TextView android:layout_width="100dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="公司地址"
+	    	    android:textColor="@color/black"
+	    	    android:textSize="20dp"
+	    	    android:id="@+id/addressText"
+	    	    />
+	    
+	    	<EditText android:layout_height="fill_parent"
+	    	    android:layout_width="fill_parent"
+	    	    		android:singleLine="true"
+	    	    android:hint="请输入公司地址"
+	    	    android:id="@+id/companyAddressEt"
+	    	    android:background="@null"
+	    	    android:textSize="14dp"
+	    	    />
+		</LinearLayout>
+		<View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_margin="2dp"
+		    android:background="@drawable/soso_zc_line"/>
+		<LinearLayout android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:padding="15dp"
+	        >
+	    	<LinearLayout android:layout_width="100dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:orientation="horizontal"
+	    	    >
+	    	<TextView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="联系电话"
+	    	    android:textColor="@color/black"
+	    	    android:textSize="20dp"
+	    	    />
+	    	<TextView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="*"
+	    	    android:textColor="@color/red"
+	    	    android:textSize="20dp"
+	    	    android:gravity="top"
+	    	    />
+	    	</LinearLayout>
+	    	<EditText android:layout_height="fill_parent"
+	    	    android:layout_width="fill_parent"
+	    	    android:singleLine="true"
+	    	    android:hint="请输入公司座机号码"
+	    	    android:id="@+id/companyphoneEt"
+	    	    android:background="@null"
+	    	    android:textSize="14dp"
+	    	    android:inputType="phone"
+	    	    />
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:background="@drawable/register_check_background"
+		    android:gravity="center_vertical"
+		    android:padding="5dp"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginRight="15dp"
+		    android:layout_marginBottom="5dp"
+		    android:id="@+id/phoneCheckLayout"
+		    android:visibility="gone"
+		    >
+	    	<ImageView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:src="@drawable/register_check1"
+	    	    />
+		    <TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="请填写手机号码"
+			    android:textColor="@color/red"
+			    android:textSize="12dp"
+			    android:layout_marginLeft="5dp"
+			    android:id="@+id/phoneCheck"
+		    />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_width="200dp"
+	    android:layout_height="200dp"
+	    android:orientation="vertical"
+	    android:background="@drawable/border"
+	    android:layout_gravity="center_horizontal"
+	    android:gravity="center"
+	    android:padding="15dp"
+	    android:layout_marginTop="20dp"
+	    android:id="@+id/linearGetImage"
+	    
+	    >
+		<RelativeLayout android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content">
+	    	<LinearLayout android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_gravity="center_horizontal"
+			    android:gravity="center_horizontal"
+			    android:id="@+id/bottomLinear"
+			    >
+		    <ImageView android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:src="@drawable/soso_sc_tu"
+	    			android:id="@+id/imageView"
+	    			/>
+		    <TextView android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:text="上传营业执照图片"
+	    			android:textColor="#D1D1D1"
+	    			android:textSize="18dp"
+	    			android:layout_marginTop="10dp"
+	    			android:id="@+id/photoTextView"
+	    			/>
+		    </LinearLayout>
+		    <ImageView android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:id="@+id/photoView"
+	    			android:layout_centerInParent="true"
+	    			/>
+		</RelativeLayout>
+	    
+	</LinearLayout>
+	<Button android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/submitBtn"
+	    android:text="完    成"
+	    android:textColor="#4b5e00"
+	    android:textSize="22dp"
+	    android:background="@drawable/soso_button_bg"
+	    android:layout_margin="10dp"
+	    android:gravity="center"
+	    />
+	</LinearLayout>
+	</ScrollView>
+	</LinearLayout>

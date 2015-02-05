@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"  
+    android:focusableInTouchMode="true"
+    android:background="@drawable/dialog_border"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    <LinearLayout  
+				    android:layout_width="300dp"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="10dp"
+				    android:orientation="horizontal"
+				    >
+                <LinearLayout  
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="3dp"
+				    android:orientation="vertical"
+				    android:layout_weight="1"
+				    >
+	                <TextView android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:text="面积下限(平米)"
+			                android:textColor="#ffffff"
+			                android:textSize="16dp"
+			                android:layout_marginLeft="20dp"
+			                />
+	                <EditText android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:background="@drawable/soso_et_background"
+		                android:layout_marginRight="10dp"
+		                android:layout_marginLeft="10dp"
+		                android:id="@+id/minAcreageEt"
+		                android:singleLine="true"
+		                android:inputType="phone"
+		                android:hint="请输入最小面积"
+		                android:textSize="16dp"
+		                />
+                </LinearLayout>
+                <LinearLayout  
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="3dp"
+				    android:orientation="vertical"
+				    android:layout_weight="1"
+				    >
+	                <TextView android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:text="面积上限(平米)"
+			                android:textColor="#ffffff"
+			                android:textSize="16dp"
+			                android:layout_marginLeft="10dp"
+			                />
+	                <EditText android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:background="@drawable/soso_et_background"
+		                android:id="@+id/maxAcreageEt"
+		                android:singleLine="true"
+		                android:inputType="phone"
+		                android:hint="请输入最大面积"
+		                android:textSize="16dp"
+		                android:layout_marginRight="10dp"
+		                />
+                </LinearLayout>
+                </LinearLayout>
+         <TextView android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="选择价格：每平方米每天的价格(元/平方米/天)"
+             android:id="@+id/selectText"
+             android:textColor="@color/white"
+             android:textSize="14dp"
+             android:layout_margin="10dp"
+             />
+   <Button android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="30dp"
+		    android:layout_marginRight="30dp"
+		    android:layout_marginTop="20dp"
+		    android:layout_marginBottom="10dp"
+		    android:text="确认搜索"
+		    android:textColor="#4b5e00"
+		    android:textSize="22dp"
+		    android:id="@+id/sureSearchBtn"
+		    android:background="@drawable/soso_lianxiren_btn"
+		    />
+    </LinearLayout>

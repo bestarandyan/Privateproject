@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	  android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:background="#ffffff"
+          android:id="@+id/noDataLayout"
+          android:padding="15dp"
+          >
+          <ImageView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/soso_gray_logo"
+              android:id="@+id/nodataImg"
+              />
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/nodata_text"
+              android:textColor="#666666"
+              android:textSize="18dp"
+              android:id="@+id/nodataText"
+              />
+      </LinearLayout>

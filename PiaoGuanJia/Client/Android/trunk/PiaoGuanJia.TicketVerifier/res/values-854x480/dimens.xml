@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+    
+    
+    <dimen name="textsizexx">20sp</dimen>
+    <dimen name="textsizex">18sp</dimen>
+    <dimen name="textsizeh">16sp</dimen>
+    <dimen name="textsizem">14sp</dimen>
+    <dimen name="textsizel">12sp</dimen>
+    <dimen name="textsizes">10sp</dimen>
+    
+    
+    <dimen name="marginsizeh">16dp</dimen>
+    <dimen name="marginsizem">12dp</dimen>
+    <dimen name="marginsizel">8dp</dimen>
+    
+</resources>

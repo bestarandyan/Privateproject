@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    android:id="@+id/parent"
+    >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:background="@drawable/soso_top_bg"
+	    >
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/soso_fh_ico"
+	         />
+	   
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:layout_marginLeft="15dp"
+	        android:text="房源收藏管理"
+	        android:textColor="@color/white"
+	        android:textSize="20dp"
+	        />
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/editBtn"
+	        android:background="@drawable/soso_right_button"
+	        android:layout_alignParentRight="true"
+	        android:text="编辑"
+	        android:textColor="@color/white"
+	        android:textSize="16dp"
+	        />
+      </RelativeLayout>
+       <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:background="#ffffff"
+          android:id="@+id/noDataLayout"
+          android:padding="15dp"
+          >
+          <ImageView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/soso_gray_logo"
+              android:id="@+id/noDataImg"
+              />
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="您暂时还没有收藏任何房源，查看房源，有合适的可以放到收藏夹中防止自己忘记哦!"
+              android:textColor="#666666"
+              android:textSize="18dp"
+              android:id="@+id/noDataMsg"
+              
+              />
+      </LinearLayout>
+      <com.zhihuigu.sosoOffice.View.XListView android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:id="@+id/listView"
+          android:divider="@drawable/soso_zc_line"
+          android:layout_marginTop="-2dp"
+          android:cacheColorHint="@null"
+          >
+      </com.zhihuigu.sosoOffice.View.XListView>
+      </LinearLayout>

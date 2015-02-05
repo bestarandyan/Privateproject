@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:id="@+id/bottomLinear1"
+		        android:orientation="vertical"
+		        android:layout_weight="1"
+		        android:gravity="center"
+		        android:background="@drawable/soso_bottom_bg"
+		        android:paddingBottom="5dp"
+		        >
+		        <FrameLayout android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            >
+		            <LinearLayout android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:gravity="bottom|center_horizontal"
+				        android:paddingRight="10dp"
+				        android:paddingTop="10dp"
+				        android:paddingLeft="10dp"
+				        >
+					        <ImageView android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:src="@drawable/soso_bottom_ico1_on"
+					            android:id="@+id/bottomImg"
+					            />
+			        </LinearLayout>
+			        <Button android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text=""
+			            android:textColor="@color/white"
+			            android:textStyle="bold"
+			            android:textSize="14dp"
+			            android:gravity="center"
+			            android:paddingBottom="5dp"
+			            android:layout_gravity="top|right"
+			            android:background="@drawable/soso_index_xiaoquan"
+			            android:visibility="gone"
+			            android:id="@+id/bottomCircle"
+			            />
+		        </FrameLayout>
+		        <TextView android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_centerInParent="true"
+				        android:text="首页"
+				        android:textColor="@color/white"
+				        android:textSize="14dp"
+				        android:id="@+id/bottomText"
+			        />
+		    </LinearLayout>

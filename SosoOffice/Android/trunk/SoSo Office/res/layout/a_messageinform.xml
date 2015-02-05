@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    android:id="@+id/parent"
+    >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:background="@drawable/soso_top_bg"
+	    >
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/soso_fh_ico"
+	         />
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="消息通知"
+	        android:textColor="@color/white"
+	        android:textSize="25dp"
+	        android:id="@+id/title"
+	        />
+	</RelativeLayout>
+	    
+	<RelativeLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="5dp"
+	        android:orientation="vertical"
+	        android:padding="10dp"
+	        android:background="@drawable/linear_background_corner"
+	        >
+	    	<TextView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="新消息通知"
+	    	    android:textColor="#333333"
+	    	    android:textSize="20dp"
+	    	    android:id="@+id/textView"
+	    	    android:singleLine="true"
+	    	    android:layout_centerVertical="true"
+	    	    />
+	    	<RelativeLayout android:layout_width="100dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_alignParentRight="true"
+	    	    >
+	    	    <com.zhihuigu.sosoOffice.View.ScrollLayoutView
+					  android:id="@+id/scrollView"  
+					  android:layout_width="wrap_content"  
+					  android:scrollbars="none"
+					  android:fadingEdge="none"
+					  android:layout_height="wrap_content">  
+		    	    <ImageView android:layout_height="wrap_content"
+			    	    android:layout_width="wrap_content"
+			    	    android:id="@+id/imageView"
+			    	    android:background="@drawable/soso_paddling"
+			    	    />
+		    	    </com.zhihuigu.sosoOffice.View.ScrollLayoutView>
+	    		<ImageView android:layout_height="wrap_content"
+			    	    android:layout_width="wrap_content"
+			    	    android:background="@drawable/soso_paddling_bg"
+			    	    android:clickable="false"
+			    	    android:id="@+id/menImage"
+			    	    />
+	    	</RelativeLayout>
+	</RelativeLayout>
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal"
+	    android:padding="10dp"
+	    android:layout_marginTop="10dp"
+	    >
+	    <TextView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="接受消息通知时段"
+	    	    android:textColor="#999999"
+	    	    android:textSize="16dp"
+	    	    android:id="@+id/textView"
+	    	    android:singleLine="true"
+	    	    />
+	    <View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_marginLeft="5dp"
+		    android:background="@drawable/soso_zc_line"/>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_margin="10dp"
+		    android:background="@drawable/linear_background_corner">
+	    <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:id="@+id/startTimeLinear"
+		    >
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="起始时间："
+		        android:textColor="#666666"
+		        android:textSize="22dp"
+		        android:id="@+id/startLeft"
+		         />
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/startLeft"
+		        android:text="00:00"
+		        android:textColor="#333333"
+		        android:textSize="22dp"
+		        android:id="@+id/startTime"
+		         />
+		    <ImageView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:src="@drawable/soso_entire_click"
+		        android:textColor="@color/white"
+		        android:textSize="25dp"
+		        />
+      </RelativeLayout>
+      <View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_margin="1dp"
+		    android:background="@drawable/soso_zc_line"/>
+       <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:id="@+id/stopTimeLinear"
+		   
+		    >
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="结束时间："
+		        android:textColor="#666666"
+		        android:textSize="22dp"
+		        android:id="@+id/stopLeft"
+		         />
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/stopLeft"
+		        android:text="24:00"
+		        android:textColor="#333333"
+		        android:textSize="22dp"
+		        android:id="@+id/stopTime"
+		         />
+		    <ImageView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:src="@drawable/soso_entire_click"
+		        android:textColor="@color/white"
+		        android:textSize="25dp"
+		        />
+      </RelativeLayout>
+</LinearLayout>
+	<Button android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:text="确   定"
+		    android:textColor="#4b5e00"
+		    android:textSize="22dp"
+		    android:id="@+id/submitBtn"
+		    android:background="@drawable/soso_button_bg"
+		    />
+	</LinearLayout>

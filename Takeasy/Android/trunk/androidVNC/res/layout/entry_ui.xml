@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_ui_color1"
+    android:orientation="vertical" >
+	<ImageButton android:background="@drawable/ico"
+                android:layout_width="34px"
+                android:layout_height="28px"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"/>
+    <RelativeLayout android:id="@+id/relayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50px"
+        android:visibility="visible"
+        android:background="@drawable/bottom_bg"
+        android:layout_alignParentBottom="true">
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            
+            <ImageButton android:background="@drawable/menu01"
+                android:layout_width="50px"
+                android:layout_height="33px"
+                />
+            <ImageButton android:background="@drawable/menu02"
+                android:layout_width="50px"
+                android:layout_height="33px"
+                android:layout_marginLeft="20px"
+               />
+            <ImageButton android:background="@drawable/menu03"
+                android:layout_width="50px"
+                android:layout_height="33px"
+                android:layout_marginLeft="20px"
+               />
+            <ImageButton android:background="@drawable/menu04"
+                android:layout_width="50px"
+                android:layout_height="33px"
+                android:layout_marginLeft="20px"
+                />
+             <ImageButton android:background="@drawable/fd"
+                android:layout_width="50px"
+                android:layout_height="33px"
+                android:layout_marginLeft="20px"
+                />
+              <ImageButton android:background="@drawable/sx"
+                android:layout_width="50px"
+                android:layout_height="33px"
+                android:layout_marginLeft="20px"
+                />
+        </LinearLayout>
+        
+        <ImageButton android:background="@drawable/ico"
+                android:layout_width="34px"
+                android:layout_height="28px"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+        
+    </RelativeLayout>
+    
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+        	<LinearLayout android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            	<ProgressBar android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"></ProgressBar>
+            	<TextView android:id="@+id/entry_ui_addresstext"
+               	 android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:text="正在连接：123.55.36.55"
+                	android:textColor="@color/blue"
+                	android:layout_marginLeft="10px"
+                	android:textSize="24px"/>
+        	</LinearLayout>
+        	<Button android:id="@+id/entry_ui_cancelbtn"
+        	    android:text="@string/btn_cancle"
+        	    android:textColor="@color/white"
+        	    android:textSize="20px"
+           		android:background="@drawable/button"
+           		android:layout_marginTop="20px"
+            	android:layout_width="237px"
+            	android:layout_gravity="center_horizontal"
+            	android:layout_height="36px"/>
+        </LinearLayout>
+
+</RelativeLayout>

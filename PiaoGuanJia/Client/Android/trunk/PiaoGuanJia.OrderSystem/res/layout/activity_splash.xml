@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xiadan_jiazai_bg">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/splash_logo_padding"
+        android:src="@drawable/xiadan_jiazai_logo" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/splash_banben_padding"
+        android:paddingRight="@dimen/splash_banben_padding"
+        android:paddingBottom="@dimen/splash_logo_padding"
+        android:src="@drawable/xiadan_jiazai_foot" />
+
+</RelativeLayout>

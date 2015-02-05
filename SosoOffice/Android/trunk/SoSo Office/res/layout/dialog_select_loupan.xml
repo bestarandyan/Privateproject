@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"  
+    android:focusableInTouchMode="true"
+    android:background="@drawable/dialog_border"
+    android:orientation="vertical" >
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/soso_room_list_top"
+        android:id="@+id/titleLayout"
+        >
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialogBackBtn"
+            android:text="返回"
+            android:background="@drawable/soso_house_tck_btn"
+            android:textColor="@color/white"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="14dp"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="所属地区"
+            android:id="@+id/textView"
+            android:layout_centerInParent="true"
+            />
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/closeBtn"
+            android:text="关闭"
+            android:background="@drawable/soso_house_tck_btn"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="14dp"
+            android:layout_marginRight="5dp"
+            />
+    </RelativeLayout>
+    <TextView 
+		android:text="无" 
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:gravity="center"
+		android:textColor="@color/white"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:id="@+id/noText"
+		android:visibility="gone"
+		></TextView>
+    <ListView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:divider="@drawable/soso_house_tck_line"
+        android:cacheColorHint="@null"
+        android:listSelector="@null"
+        android:background="@null"
+        android:scrollbars="vertical"
+		android:drawSelectorOnTop="false" 
+        >
+    </ListView>
+    
+    
+    </LinearLayout>

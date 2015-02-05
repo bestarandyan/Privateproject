@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    android:id="@+id/parent"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:background="@drawable/soso_top_bg"
+	    >
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/soso_fh_ico"
+	         />
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="房源详情"
+	        android:textColor="@color/white"
+	        android:textSize="25dp"
+	        android:id="@+id/title"
+	        />
+	</RelativeLayout>
+	
+		    <RelativeLayout android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="-3dp"
+		        android:id="@+id/relative"
+		        android:padding="5dp"
+		        >
+		      <!--   <ViewFlipper android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:id="@+id/viewFlipper"
+				        android:focusable="true"
+				        >
+				        </ViewFlipper> -->
+				        <com.zhihuigu.sosoOffice.View.RoomImageGallery android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:id="@+id/gallery"
+		                    android:unselectedAlpha="10"
+		                    android:spacing="5dp"
+		                    android:gravity="left"
+		                    />
+				        <LinearLayout android:layout_width="fill_parent"
+					    		android:layout_height="wrap_content"
+					    		android:orientation="horizontal"
+					    		android:background="@null"
+					    		android:gravity="center"
+					    		android:layout_alignBottom="@id/gallery"
+					    		android:padding="10dp"
+					    		android:id="@+id/bottomGunLinear"
+					    		>
+					    	</LinearLayout>
+		    </RelativeLayout>
+		    <ScrollView android:layout_width="fill_parent"
+			    android:layout_height="fill_parent" >
+				<LinearLayout 
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent" 
+				    android:orientation="vertical"
+				    >
+		    <LinearLayout android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/soso_house_view_title_bg"
+		        android:paddingLeft="15dp"
+		        android:paddingRight="10dp"
+		        android:paddingTop="5dp"
+		        android:paddingBottom="5dp"
+		        android:orientation="horizontal"
+		        android:gravity="center_vertical"
+		        >
+		         <TextView android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:id="@+id/loupanNameText"
+		            android:text="普陀区绿地大厦商务楼"
+		            android:textColor="@color/black"
+		            android:textSize="16dp"
+		            android:singleLine="true"
+		            /> 
+		        <!-- <LinearLayout android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal"
+			        android:gravity="right"
+			        >
+			        <LinearLayout android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/soso_lianxiren_btn"
+		            android:orientation="horizontal"
+		            android:gravity="center"
+		            android:id="@+id/connectionYeZhu"
+		            android:layout_marginRight="5dp"
+		            >
+		            <Button android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:background="@drawable/soso_house_email"
+		            />
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="联系业主"
+		                android:textColor="@color/black"
+		                android:textSize="12dp"
+		                android:layout_marginLeft="6dp"
+		                />
+		        </LinearLayout>
+		        <LinearLayout android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/soso_lianxiren_btn"
+		            android:orientation="horizontal"
+		            android:gravity="center"
+		            android:id="@+id/shoucangLayout"
+		            >
+		            <Button android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:background="@drawable/soso_house_shoucang"
+		            />
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="收藏房源"
+		                android:textColor="@color/black"
+		                android:textSize="12dp"
+		                android:layout_marginLeft="6dp"
+		                />
+		        </LinearLayout>
+		        
+		        </LinearLayout> -->
+		    </LinearLayout>
+		    <LinearLayout android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal"
+			        android:gravity="right"
+			        android:layout_marginTop="10dp"
+			        android:layout_marginRight="10dp"
+			        >
+			        <LinearLayout android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/soso_lianxiren_btn"
+		            android:orientation="horizontal"
+		            android:gravity="center"
+		            android:id="@+id/connectionYeZhu"
+		            android:layout_marginRight="5dp"
+		            >
+		            <Button android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:background="@drawable/soso_house_email"
+		            />
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="联系业主"
+		                android:textColor="@color/black"
+		                android:textSize="12dp"
+		                android:layout_marginLeft="6dp"
+		                />
+		        </LinearLayout>
+		        <LinearLayout android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/soso_lianxiren_btn"
+		            android:orientation="horizontal"
+		            android:gravity="center"
+		            android:id="@+id/shoucangLayout"
+		            >
+		            <Button android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:background="@drawable/soso_house_shoucang"
+		            />
+		            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="收藏房源"
+		                android:textColor="@color/black"
+		                android:textSize="12dp"
+		                android:layout_marginLeft="6dp"
+		                />
+		        </LinearLayout>
+		        
+		        </LinearLayout>
+		   <!--  <TextView android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:id="@+id/loupanNameText"
+		            android:text="普陀区绿地大厦商务楼"
+		            android:textColor="@color/black"
+		            android:textSize="14dp"
+		            android:singleLine="true"
+		            android:layout_marginLeft="15dp"
+	  		    android:layout_marginTop="15dp"
+		            /> -->
+	  		<LinearLayout android:layout_width="fill_parent"
+	  		    android:layout_height="wrap_content"
+	  		    android:layout_marginLeft="15dp"
+	  		    android:layout_marginTop="10dp"
+	  		    android:orientation="horizontal"
+	  		    android:gravity="center_vertical"
+	  		    >
+	  		    <TextView android:layout_width="wrap_content"
+	  		        android:layout_height="wrap_content"
+	  		        android:text="报价："
+	  		        android:textColor="#666666"
+	  		        android:textSize="14dp"
+	  		        />
+	  		    <TextView android:layout_width="wrap_content"
+	  		        android:layout_height="wrap_content"
+	  		        android:text="0"
+	  		        android:textColor="#FF0000"
+	  		        android:textSize="18dp"
+	  		        android:id="@+id/baojiaText"
+	  		        />
+	  		    <TextView android:layout_width="wrap_content"
+	  		        android:layout_height="wrap_content"
+	  		        android:text="元/月"
+	  		        android:textColor="#FF0000"
+	  		        android:textSize="12dp" 
+					android:layout_marginTop="3dp"
+	  		        />
+	  			</LinearLayout>
+		    <LinearLayout android:layout_width="fill_parent"
+	  		    android:layout_height="wrap_content"
+	  		    android:layout_marginLeft="15dp"
+	  		    android:layout_marginTop="5dp"
+	  		    android:orientation="horizontal"
+	  		    android:gravity="center_vertical"
+	  		    >
+	  		    <LinearLayout android:layout_width="fill_parent"
+		  		    android:layout_height="wrap_content"
+		  		    android:orientation="horizontal"
+		  		    android:gravity="center_vertical"
+		  		    android:layout_weight="1"
+		  		    >
+		  		    <TextView android:layout_width="wrap_content"
+		  		        android:layout_height="wrap_content"
+		  		        android:text="单价："
+		  		        android:textColor="#666666"
+		  		        android:textSize="14dp"
+		  		        />
+		  		    <TextView android:layout_width="wrap_content"
+		  		        android:layout_height="wrap_content"
+		  		        android:text="0"
+		  		        android:textColor="@color/black"
+		  		        android:textSize="14dp"
+		  		        android:id="@+id/danjiaText"
+		  		        />
+		  		    <TextView android:layout_width="wrap_content"
+		  		        android:layout_height="wrap_content"
+		  		        android:text="元/平米/天"
+		  		        android:textColor="@color/black"
+		  		        android:textSize="14dp" 
+		  		        />
+	  			</LinearLayout>
+	  			<LinearLayout android:layout_width="fill_parent"
+		  		    android:layout_height="wrap_content"
+		  		    android:orientation="horizontal"
+		  		    android:gravity="center_vertical"
+		  		    android:layout_weight="1"
+		  		    >
+		  		    <TextView android:layout_width="wrap_content"
+		  		        android:layout_height="wrap_content"
+		  		        android:text="物业费："
+		  		        android:textColor="#666666"
+		  		        android:textSize="14dp"
+		  		        />
+		  		    <TextView android:layout_width="wrap_content"
+		  		        android:layout_height="wrap_content"
+		  		        android:text="0"
+		  		        android:textColor="@color/black"
+		  		        android:textSize="14dp"
+		  		        android:id="@+id/wuyeText"
+		  		        />
+		  		    <TextView android:layout_width="wrap_content"
+		  		        android:layout_height="wrap_content"
+		  		        android:text="元/平米/月"
+		  		        android:textColor="@color/black"
+		  		        android:textSize="14dp" 
+		  		        />
+	  			</LinearLayout>
+		        </LinearLayout>
+		        <LinearLayout android:layout_width="fill_parent"
+	  		    android:layout_height="wrap_content"
+	  		    android:layout_marginLeft="15dp"
+	  		    android:layout_marginTop="5dp"
+	  		    android:orientation="horizontal"
+	  		    android:gravity="center_vertical"
+	  		    >
+	  		    <LinearLayout android:layout_width="fill_parent"
+		  		    android:layout_height="wrap_content"
+		  		    android:orientation="horizontal"
+		  		    android:gravity="center_vertical"
+		  		    android:layout_weight="1"
+		  		    >
+		  		    <TextView android:layout_width="wrap_content"
+		  		        android:layout_height="wrap_content"
+		  		        android:text="类型："
+		  		        android:textColor="#666666"
+		  		        android:textSize="14dp"
+		  		        />
+		  		    <TextView android:layout_width="wrap_content"
+		  		        android:layout_height="wrap_content"
+		  		        android:text=""
+		  		        android:textColor="@color/black"
+		  		        android:textSize="14dp"
+		  		        android:id="@+id/typeText"
+		  		        />
+	  			</LinearLayout>
+	  			<LinearLayout android:layout_width="fill_parent"
+		  		    android:layout_height="wrap_content"
+		  		    android:orientation="horizontal"
+		  		    android:gravity="center_vertical"
+		  		    android:layout_weight="1"
+		  		    >
+		  		    <TextView android:layout_width="wrap_content"
+		  		        android:layout_height="wrap_content"
+		  		        android:text="面积："
+		  		        android:textColor="#666666"
+		  		        android:textSize="14dp"
+		  		        />
+		  		    <TextView android:layout_width="wrap_content"
+		  		        android:layout_height="wrap_content"
+		  		        android:text="0"
+		  		        android:textColor="@color/black"
+		  		        android:textSize="14dp"
+		  		        android:id="@+id/acreageText"
+		  		        />
+		  		    <TextView android:layout_width="wrap_content"
+		  		        android:layout_height="wrap_content"
+		  		        android:text="平米"
+		  		        android:textColor="@color/black"
+		  		        android:textSize="14dp" 
+		  		        />
+	  			</LinearLayout>
+		        </LinearLayout>
+		        <LinearLayout android:layout_width="fill_parent"
+		  		    android:layout_height="wrap_content"
+		  		    android:layout_marginLeft="15dp"
+		  		    android:layout_marginTop="5dp"
+		  		    android:orientation="horizontal"
+		  		    android:gravity="center_vertical"
+		  		    >
+		  		    <LinearLayout android:layout_width="fill_parent"
+			  		    android:layout_height="wrap_content"
+			  		    android:orientation="horizontal"
+			  		    android:gravity="center_vertical"
+			  		    android:layout_weight="1"
+			  		    >
+			  		    <TextView android:layout_width="wrap_content"
+			  		        android:layout_height="wrap_content"
+			  		        android:text="楼层："
+			  		        android:textColor="#666666"
+			  		        android:textSize="14dp"
+			  		        />
+			  		    <TextView android:layout_width="wrap_content"
+			  		        android:layout_height="wrap_content"
+			  		        android:text=""
+			  		        android:textColor="@color/black"
+			  		        android:textSize="14dp"
+			  		        android:id="@+id/layerText"
+			  		        />
+	  			</LinearLayout>
+	  			<LinearLayout android:layout_width="fill_parent"
+		  		    android:layout_height="wrap_content"
+		  		    android:orientation="horizontal"
+		  		    android:gravity="center_vertical"
+		  		    android:layout_weight="1"
+		  		    >
+		  		    <TextView android:layout_width="wrap_content"
+		  		        android:layout_height="wrap_content"
+		  		        android:text="房间号："
+		  		        android:textColor="#666666"
+		  		        android:textSize="14dp"
+		  		        />
+		  		    <TextView android:layout_width="wrap_content"
+		  		        android:layout_height="wrap_content"
+		  		        android:text=""
+		  		        android:textColor="@color/black"
+		  		        android:textSize="14dp"
+		  		        android:id="@+id/roomNumberText"
+		  		        />
+	  			</LinearLayout>
+		        </LinearLayout>
+		        <LinearLayout android:layout_width="fill_parent"
+	  		    android:layout_height="wrap_content"
+	  		    android:layout_marginLeft="15dp"
+	  		    android:layout_marginTop="5dp"
+	  		    android:orientation="horizontal"
+	  		    android:gravity="center_vertical"
+	  		    >
+	  		    <LinearLayout android:layout_width="fill_parent"
+		  		    android:layout_height="wrap_content"
+		  		    android:orientation="horizontal"
+		  		    android:gravity="center_vertical"
+		  		    android:layout_weight="1"
+		  		    >
+		  		    <TextView android:layout_width="wrap_content"
+		  		        android:layout_height="wrap_content"
+		  		        android:text="地址："
+		  		        android:textColor="#666666"
+		  		        android:textSize="14dp"
+		  		        />
+		  		    <TextView android:layout_width="wrap_content"
+		  		        android:layout_height="wrap_content"
+		  		        android:text=""
+		  		        android:textColor="@color/black"
+		  		        android:textSize="14dp" 
+		  		        android:id="@+id/addressText"
+		  		        />
+	  			</LinearLayout>
+		        </LinearLayout>
+		        <TextView android:layout_width="fill_parent"
+	  			    android:layout_height="wrap_content"
+	  			    android:text=""
+	  			    android:layout_marginLeft="15dp"
+	  			    android:layout_marginTop="15dp"
+	  			    android:layout_marginRight="15dp"
+	  			    android:id="@+id/jianJieText"
+	  			    />
+		    </LinearLayout>
+		    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"  
+    android:focusableInTouchMode="true"
+    android:background="@drawable/dialog_border"
+    android:gravity="center_vertical"
+    android:paddingBottom="10dp"
+    android:orientation="vertical" >
+         <TextView android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="选择房源类型："
+             android:id="@+id/selectText"
+             android:textColor="@color/white"
+             android:textSize="14dp"
+             android:layout_margin="10dp"
+             />
+   <LinearLayout android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+       <LinearLayout android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:orientation="vertical"
+	       >
+
+           <CheckBox
+               android:id="@+id/checkBox1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+               android:button="@drawable/dialog_roomtype_checkbox"
+               android:text="纯写字楼"
+               android:textColor="#D4FD2B"
+               android:textSize="18dp" />
+
+	       <CheckBox
+			android:id="@+id/checkBox2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:button="@drawable/dialog_roomtype_checkbox"
+			android:text="商务中心"
+			android:textSize="18dp"
+			android:layout_marginLeft="30dp"
+			android:textColor="#D4FD2B"
+			 />
+	   </LinearLayout>
+	   <LinearLayout android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:orientation="vertical"
+	       >
+	       <CheckBox
+			android:id="@+id/checkBox3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:button="@drawable/dialog_roomtype_checkbox"
+			android:text="园区"
+			android:textSize="18dp"
+			android:layout_marginLeft="30dp"
+			android:textColor="#D4FD2B"
+			 />
+	       <CheckBox
+			android:id="@+id/checkBox4"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:button="@drawable/dialog_roomtype_checkbox"
+			android:text="商住两用"
+			android:textSize="18dp"
+			android:layout_marginLeft="30dp"
+			android:textColor="#D4FD2B"
+			 />
+	   </LinearLayout>
+   </LinearLayout>
+   <CheckBox
+               android:id="@+id/checkBox5"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+               android:button="@drawable/dialog_roomtype_checkbox"
+               android:checked="true"
+               android:text="酒店式公寓"
+               android:textColor="#D4FD2B"
+               android:textSize="18dp" />
+   <Button android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="30dp"
+		    android:layout_marginRight="30dp"
+		    android:layout_marginTop="20dp"
+		    android:layout_marginBottom="10dp"
+		    android:text="确认搜索"
+		    android:textColor="#4b5e00"
+		    android:textSize="22dp"
+		    android:id="@+id/sureSearchBtn"
+		    android:background="@drawable/soso_lianxiren_btn"
+		    />
+    </LinearLayout>

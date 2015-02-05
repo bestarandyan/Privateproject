@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+    
+
+<!-- 掌上商铺 -->
+		<!-- 掌上商铺背景颜色 -->
+		<item name="store_bgcolor" value="#459e9a"></item>
+	
+			
+<!--客人签收和主人登陆页-->     
+	<!-- 标题文字的颜色 -->
+ 	 <item name="login_title_text_color" value="#ffffff"></item>
+ 	 	
+ 	 	
+<!--封面一页-->
+	
+	<!--视频和邀请文字是否有白色半透明底板 0代表没有  1代表有-->
+    <item name="video_bg_is_have" value="1"></item>
+    
+    
+
+    <!-- 相册列表背景颜色-->
+    <item name="photo_list_bg_color"  value="#7fcdcd"></item>
+    
+
+   
+		
+		
+<!--封四 页 送祝福页  -->      	 
+	<!-- 标题文字的颜色  要用16进制的-->
+	 <item name="blessing_title_text_color" value="#ffffff"></item>
+
+	 
+<!-- 婚嫁日志 -->	 
+	<item name="log_bgcolor" value="#7fcdcd"></item>
+	
+
+</config>
+ 
+

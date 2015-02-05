@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+    <RelativeLayout	android:id="@+id/top_linear"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/soso_top_bg1"
+	    android:orientation="vertical" >
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/backBtn"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"
+	        android:background="@drawable/soso_fh_ico"/>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:textColor="#ffffff"
+	        android:textSize="22dp"
+	        android:text="查 看 信 件"
+	        />
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/writeNewLetter"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/soso_xiexin_btn"/>
+    </RelativeLayout>
+   <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	     <RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/soso_email_title_bg2"
+		    android:layout_weight="1"
+		     android:id="@+id/upLayout"
+		    >
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/white"
+	        android:textSize="16dp"
+	        android:background="@drawable/soso_up_page"
+	        android:layout_centerInParent="true"
+	        android:id="@+id/inboxText"
+	        android:clickable="false"
+	        />
+	    <ImageView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/soso_email_title_line"
+	        android:layout_alignParentRight="true"
+	        />
+	    </RelativeLayout>
+	   <RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/soso_email_title_bg2"
+		    android:layout_weight="1"
+		    android:id="@+id/nextLayout"
+		    >
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/soso_down_page"
+	        android:layout_centerInParent="true"
+	        android:clickable="false"
+	        />
+	    <ImageView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/soso_email_title_line"
+	        android:layout_alignParentRight="true"
+	        />
+	    </RelativeLayout>
+	    <RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/soso_email_title_bg2"
+		    android:layout_weight="1"
+		    >
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#666666"
+	        android:textSize="16dp"
+	        android:text=""
+	        android:background="@null"
+	        android:layout_centerInParent="true"
+	        />
+	    <ImageView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/soso_email_title_line"
+	        android:layout_alignParentRight="true"
+	        />
+	    </RelativeLayout>
+	    <RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/soso_email_title_bg2"
+		    android:layout_weight="1"
+		    android:id="@+id/replyLayout"
+		    >
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/soso_huifu_email"
+	        android:layout_centerInParent="true"
+	        android:clickable="false"
+	        />
+	    <ImageView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/soso_email_title_line"
+	        android:layout_alignParentRight="true"
+	        />
+	    </RelativeLayout>
+	    <RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/soso_email_title_bg2"
+		    android:layout_weight="1"
+		    android:id="@+id/transpondLayout"
+		    >
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/soso_zhuanfa_email"
+	        android:layout_centerInParent="true"
+	        android:clickable="false"
+	        />
+	    <ImageView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/soso_email_title_line"
+	        android:layout_alignParentRight="true"
+	        />
+	    </RelativeLayout>
+	    <RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/soso_email_title_bg2"
+		    android:layout_weight="1"
+		    android:id="@+id/deleteLayout"
+		    >
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/soso_delete_email"
+	        android:layout_centerInParent="true"
+	        android:clickable="false"
+	        />
+	    </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@color/white"
+	    android:id="@+id/bottomLinear"
+	    android:orientation="vertical" >
+	   <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:layout_margin="10dp"
+	    android:orientation="horizontal" >
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#C25407"
+	        android:textSize="20dp"
+	        android:text="发件人："
+	        android:id="@+id/textView"
+	        />
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#C25407"
+	        android:textSize="20dp"
+	        android:id="@+id/tv1"
+	        android:text="刘叉叉"
+	        />
+	    </LinearLayout>
+	  <View android:layout_width="fill_parent"
+	      android:layout_height="1dp"
+	      android:background="@drawable/soso_zc_line"/>
+	  <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#666666"
+	        android:textSize="20dp"
+	        android:layout_marginTop="10dp"
+	        android:id="@+id/tv2"
+	        android:layout_marginLeft="10dp"
+	        android:text="关于该软件的使用问题反馈"
+	        />
+	  <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#C25407"
+	        android:textSize="14dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="2012-05-17  18:32"
+	        android:id="@+id/tv3"
+	        
+	        />
+	    <TextView android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/mailContent"
+	        android:layout_margin="10dp"
+	        ></TextView>
+        </LinearLayout>
+    </LinearLayout>

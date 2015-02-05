@@ -1,0 +1,276 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rubaise" >
+
+    <RelativeLayout
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/head_bg" >
+
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_jiantou"
+                android:layout_width="@dimen/marginsizeh"
+                android:layout_height="@dimen/marginsizeh"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/yz_top_ico1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="title"
+            android:textColor="@color/baise"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/textsizeh" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/marginsizem"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/view4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全选"
+                android:textColor="@color/juhongse"
+                android:textSize="@dimen/textsizeh" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submitbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chengse"
+            android:padding="@dimen/marginsizem"
+            android:text="submit"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/textsizem" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/view2"
+        android:layout_below="@id/view1"
+        android:layout_margin="@dimen/marginsizem"
+        android:background="@null"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noDataLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/view2"
+        android:layout_below="@id/view1"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/noDataMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无内容"
+            android:textColor="#666666"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="#000000"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="#000000"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_dialog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/dialog_corner_round"
+        android:minWidth="280dip"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/marginsizel" >
+
+            <ImageView
+                android:layout_width="@dimen/marginsizeh"
+                android:layout_height="@dimen/marginsizeh"
+                android:background="@drawable/yz_order_ico" />
+
+            <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginsizel"
+                android:text="是否全部验证？"
+                android:textColor="@color/heise"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/textsizeh" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dialog_content1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginsizem"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="合计订单"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizem" />
+
+                <TextView
+                    android:id="@+id/content_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="1000"
+                    android:textColor="@color/juhongse"
+                    android:textSize="@dimen/textsizem" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="合计数量"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/textsizem" />
+
+                <TextView
+                    android:id="@+id/content_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="1000"
+                    android:textColor="@color/juhongse"
+                    android:textSize="@dimen/textsizem" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/content_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginsizem"
+            android:background="@null"
+            android:text="msg"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/textsizem" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/huise" />
+
+        <LinearLayout
+            android:id="@+id/view5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginsizem"
+            android:layout_marginRight="@dimen/marginsizem"
+            android:background="@color/huise"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/dialog_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@color/baise"
+                android:padding="@dimen/marginsizem"
+                android:text="取消"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizem" />
+
+            <Button
+                android:id="@+id/dialog_btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/baise"
+                android:padding="@dimen/marginsizem"
+                android:text="确定"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizem" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

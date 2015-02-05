@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:background="@drawable/soso_city_top_bg"
+	        android:id="@+id/topLayout"
+	        >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    >
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/soso_fh_ico"
+	         />
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="城市列表"
+	        android:textColor="@color/white"
+	        android:textSize="25dp"
+	        />
+      </RelativeLayout>
+      <LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:background="@drawable/soso_city_search_bg"
+	        android:gravity="center_vertical"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="5dp"
+	        >
+	    <ImageView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/soso_search_tu"
+	        />
+	    <EditText android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:id="@+id/cityEt"
+	        android:background="@null"
+	        android:layout_marginLeft="10dp"
+	        android:hint="输入城市名称进行查询"/>
+	    </LinearLayout>
+	    </LinearLayout>
+	    <LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:background="#ffffff"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="20dp"
+	        android:paddingTop="10dp"
+	        android:paddingBottom="10dp"
+	       	android:id="@+id/cityLayout"
+	       	android:layout_below="@id/topLayout"
+	        >
+				<TextView android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="null"
+				        android:textColor="@color/black"
+				        android:textSize="18dp"
+				        android:id="@+id/currentCityText"
+				        />
+				<TextView android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="GPS定位"
+				        android:textColor="@color/gray"
+				        android:textSize="18dp"
+				        android:layout_marginLeft="10dp"
+				        />
+	</LinearLayout>
+	<View android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="@drawable/soso_zc_line"
+	    android:layout_below="@id/cityLayout"
+	    android:id="@+id/line"
+	    />
+	<TextView android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:text="所有城市"
+				        android:textColor="@color/gray"
+				        android:textSize="18dp"
+				        android:background="@drawable/soso_title_bg"
+				        android:gravity="center_vertical"
+				        android:paddingLeft="20dp"
+				        android:layout_below="@id/cityLayout"
+				        android:id="@+id/allCityText"
+				        android:visibility="gone"
+				        />
+	<ListView android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:id="@+id/cityList"
+	    android:background="#F2F2F2"
+	    android:divider="@drawable/soso_zc_line"
+	    android:layout_below="@id/line"
+	    android:fadingEdge="none"
+	    ></ListView>
+	<ListView   
+			android:divider="@null"
+			android:id="@+id/zimuList"    
+			android:layout_width="30dp"  
+			android:layout_height="fill_parent"  
+			android:layout_alignParentRight="true" 
+			android:scrollbars="none"
+			android:scrollingCache="false"
+			android:background="@null"  
+			android:layout_below="@id/topLayout"
+			android:layout_marginRight="3dp"
+			android:fadingEdge="none"
+			android:overScrollMode="never"
+	/>
+					
+	</RelativeLayout>

@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/beijingse"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <EditText
+        android:layout_marginTop="@dimen/marginsizeh"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/ower_border"
+        android:gravity="left|top"
+        android:hint="请输入您的反馈意见（必填，500字以内）"
+        android:maxLength="500"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginsizeh"
+        android:background="@drawable/loginbtnbgselecter"
+        android:padding="@dimen/marginsizel"
+        android:text="提交"
+        android:textColor="@color/baise"
+        android:textSize="@dimen/textsizexx"
+        android:textStyle="bold" />
+
+</LinearLayout>

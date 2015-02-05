@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- 	 <item  android:alphabeticShortcut="c" android:id="@+id/itemKey"  android:icon="@android:drawable/menu01" />
+    <item android:alphabeticShortcut="d" android:id="@+id/itemExit" android:title="退出" android:icon="@android:drawable/menu02"></item>
+    <item  android:alphabeticShortcut="h" android:id="@+id/itemWarp" android:title="自适应" android:icon="@android:drawable/menu03"/>
+    <item android:alphabeticShortcut="j" android:id="@+id/itemLock" android:title="锁屏" android:icon="@android:drawable/menu04"/>
+     <item  android:alphabeticShortcut="k" android:id="@+id/itemZoomout" android:title="放大" android:icon="@android:drawable/fa"/>
+      <item  android:alphabeticShortcut="l" android:id="@+id/itemZoomin" android:title="缩小" android:icon="@android:drawable/sx"/> -->  
+</menu>

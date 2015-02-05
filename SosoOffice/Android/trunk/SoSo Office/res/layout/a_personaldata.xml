@@ -1,0 +1,292 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    android:id="@+id/parent"
+    >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:background="@drawable/soso_top_bg"
+	    >
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/soso_fh_ico"
+	         />
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="个人资料"
+	        android:textColor="@color/white"
+	        android:textSize="25dp"
+	        />
+      </RelativeLayout>
+      <ScrollView android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    >
+      <LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+		    android:padding="10dp"
+		    >
+      <LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/linear_background_corner">
+	    <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/headLayout"
+		    android:padding="5dp"
+		    >
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="头像"
+		        android:textColor="#666666"
+		        android:textSize="22dp"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="5dp"
+		         />
+		    
+		    <ImageView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:src="@drawable/soso_entire_click"
+		        android:textColor="@color/white"
+		        android:textSize="25dp"
+		        android:id="@+id/touxiangRight"
+		        android:layout_centerVertical="true"
+		         android:layout_marginRight="5dp"
+		        />
+		    <ImageView android:layout_width="60dp"
+		        android:layout_height="60dp"
+		        android:layout_toLeftOf="@id/touxiangRight"
+		        android:id="@+id/headImage"
+		        android:background="@drawable/room_list_img_bg"
+		        />
+      </RelativeLayout>
+      
+</LinearLayout>
+<LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_marginTop="10dp"
+		    android:background="@drawable/linear_background_corner">
+	    
+       <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:id="@+id/nameLayout"
+		    >
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="真实姓名"
+		        android:textColor="#666666"
+		        android:textSize="22dp"
+		         />
+		    
+		    <ImageView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:src="@drawable/soso_entire_click"
+		        android:textColor="@color/white"
+		        android:textSize="25dp"
+		        android:id="@+id/nameRight"
+		        />
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toLeftOf="@id/nameRight"
+		        android:textColor="#ACCF1C"
+		        android:textSize="20dp"
+		        android:id="@+id/name"
+		        />
+      </RelativeLayout>
+      <View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_margin="1dp"
+		    android:background="@drawable/soso_zc_line"/>
+       <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:id="@+id/genderLayout"
+		    >
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="性别"
+		        android:textColor="#666666"
+		        android:textSize="22dp"
+		        
+		         />
+		    
+		    <ImageView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:src="@drawable/soso_entire_click"
+		        android:textColor="@color/white"
+		        android:textSize="25dp"
+		        android:id="@+id/genderRight"
+		        />
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toLeftOf="@id/genderRight"
+		        android:textColor="#ACCF1C"
+		        android:textSize="20dp"
+		        android:id="@+id/gender"
+		        />
+      </RelativeLayout>
+      <View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_margin="1dp"
+		    android:background="@drawable/soso_zc_line"/>
+       <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:id="@+id/birthdayLayout"
+		    >
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="生日"
+		        android:textColor="#666666"
+		        android:textSize="22dp"
+		        
+		         />
+		    
+		    <ImageView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:src="@drawable/soso_entire_click"
+		        android:textColor="@color/white"
+		        android:textSize="25dp"
+		        android:id="@+id/birthdayRight"
+		        />
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toLeftOf="@id/birthdayRight"
+		        android:textColor="#ACCF1C"
+		        android:textSize="20dp"
+		        android:id="@+id/birthday"
+		        />
+      </RelativeLayout>
+      <View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_margin="1dp"
+		    android:background="@drawable/soso_zc_line"/>
+       <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:id="@+id/emailLayout"
+		    >
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="电子邮箱"
+		        android:textColor="#666666"
+		        android:textSize="22dp"
+		        android:id="@+id/emialText"
+		         />
+		    
+		    <ImageView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:src="@drawable/soso_entire_click"
+		        android:textColor="@color/white"
+		        android:textSize="25dp"
+		        android:id="@+id/emailRight"
+		        />
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#ACCF1C"
+		        android:textSize="20dp"
+		        android:id="@+id/email"
+		        android:layout_toRightOf="@id/emialText"
+		         android:layout_toLeftOf="@id/emailRight"
+		         android:gravity="right"
+		         android:singleLine="true"
+		        />
+      </RelativeLayout>
+      <View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_margin="1dp"
+		    android:background="@drawable/soso_zc_line"/>
+       <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:id="@+id/phoneLayout"
+		    >
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="手机号码"
+		        android:textColor="#666666"
+		        android:textSize="22dp"
+		        android:id="@+id/phoneLeft"
+		         />
+		    
+		    <ImageView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:src="@drawable/soso_entire_click"
+		        android:textColor="@color/white"
+		        android:textSize="25dp"
+		        android:id="@+id/phoneRight"
+		        />
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toLeftOf="@id/phoneRight"
+		         android:layout_toRightOf="@id/phoneLeft"
+		        android:textColor="#ACCF1C"
+		        android:textSize="22dp"
+		        android:id="@+id/phone"
+		        android:singleLine="true"
+		        android:gravity="right"
+		        />
+      </RelativeLayout>
+</LinearLayout>
+
+<LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_marginTop="10dp"
+		    android:background="@drawable/linear_background_corner">
+	    <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:id="@+id/detailLayout"
+		    >
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="查看详情"
+		        android:textColor="#666666"
+		        android:textSize="22dp"
+		         />
+		    
+		    <ImageView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:src="@drawable/soso_entire_click"
+		        android:textColor="@color/white"
+		        android:textSize="25dp"
+		        />
+      </RelativeLayout>
+</LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+	</LinearLayout>

@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    android:id="@+id/parent"
+    >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:background="@drawable/soso_top_bg"
+	    >
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/soso_fh_ico"
+	         />
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="设 置"
+	        android:textColor="@color/white"
+	        android:textSize="25dp"
+	        android:id="@+id/title"
+	        />
+	</RelativeLayout>
+	    <TextView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="浏览设置"
+	    	    android:textColor="#545E72"
+	    	    android:textSize="20dp"
+	    	    android:id="@+id/textView"
+	    	    android:singleLine="true"
+	    	    android:layout_marginLeft="20dp"
+	    	    android:layout_marginTop="30dp"
+	    	    />
+	<RelativeLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="5dp"
+	        android:orientation="vertical"
+	        android:padding="10dp"
+	        android:background="@drawable/linear_background_corner"
+	        >
+	    	<TextView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="信息列表显示图片"
+	    	    android:textColor="#666666"
+	    	    android:textSize="20dp"
+	    	    android:id="@+id/textView"
+	    	    android:singleLine="true"
+	    	    android:layout_centerVertical="true"
+	    	    />
+	    	<RelativeLayout android:layout_width="100dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_alignParentRight="true"
+	    	    >
+	    	    <com.zhihuigu.sosoOffice.View.ScrollLayoutView
+					  android:id="@+id/scrollView"  
+					  android:layout_width="wrap_content"  
+					  android:scrollbars="none"
+					  android:fadingEdge="none"
+					  android:layout_height="wrap_content">  
+		    	    <ImageView android:layout_height="wrap_content"
+			    	    android:layout_width="wrap_content"
+			    	    android:id="@+id/imageView"
+			    	    android:background="@drawable/soso_paddling"
+			    	    />
+		    	    </com.zhihuigu.sosoOffice.View.ScrollLayoutView>
+	    		<ImageView android:layout_height="wrap_content"
+			    	    android:layout_width="wrap_content"
+			    	    android:background="@drawable/soso_paddling_bg"
+			    	    android:clickable="false"
+			    	    android:id="@+id/menImage"
+			    	    />
+	    	</RelativeLayout>
+	</RelativeLayout>
+	</LinearLayout>

@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    android:id="@+id/parent"
+    >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/soso_top_bg"
+	    >
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/soso_right_button"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:id="@+id/topBtn"
+	        android:text="取消"
+	        android:textColor="#ffffff"
+	        android:layout_marginRight="10dp"
+	        />
+	    <LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:background="@drawable/soso_city_search_bg"
+	        android:gravity="center_vertical"
+	        android:layout_marginLeft="0dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="5dp"
+	        android:layout_toLeftOf="@id/topBtn"
+	        android:layout_centerVertical="true"
+	        android:id="@+id/searchLayout"
+	        >
+	    <ImageView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/soso_search_tu"
+	        />
+	    <EditText android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:id="@+id/cityEt"
+	        android:textSize="18dp"
+	        android:background="@null"
+	        android:hint="输入关键词"/>
+	    </LinearLayout>
+	</RelativeLayout>
+	<ProgressBar
+	        android:id="@+id/progressBar"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_gravity="center_horizontal"
+	        android:visibility="gone"
+	        ></ProgressBar>
+	<ListView  android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:id="@+id/searchList"
+	    android:divider="@drawable/soso_zc_line"
+	    android:fadingEdge="none"
+	    />
+	</LinearLayout>

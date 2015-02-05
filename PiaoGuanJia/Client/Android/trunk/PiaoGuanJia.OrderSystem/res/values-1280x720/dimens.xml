@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+    <dimen name="textsizexx">22sp</dimen>
+    <dimen name="textsizex">20sp</dimen>
+    <dimen name="textsizeh">18sp</dimen>
+    <dimen name="textsizem">16sp</dimen>
+    <dimen name="textsizel">14sp</dimen>
+    <dimen name="textsizes">12sp</dimen>
+    
+    <dimen name="headhight">60dp</dimen>
+    <dimen name="marginsizeh">18dp</dimen>
+    <dimen name="marginsizem">14dp</dimen>
+    <dimen name="marginsizel">10dp</dimen>
+    
+    
+    <!-- 主界面的界面与字体大小 -->
+    
+    <dimen name="bottom_icon">35dp</dimen>
+    <dimen name="home_icon">50dp</dimen>
+    <dimen name="homemine_icon">70dp</dimen>
+    
+    
+    <!-- 加载页 -->
+    <dimen name="splash_logo_padding">80dp</dimen>
+    <dimen name="splash_banben_padding">120dp</dimen>
+    <dimen name="splash_banben_paddingbottom">0dp</dimen>
+    
+    <!-- 登陆 -->
+    <dimen name="login_logo_width">180dp</dimen>
+    <dimen name="login_logo_height">60dp</dimen>
+    <dimen name="login_logo_padding">10dp</dimen>
+    <dimen name="login_view_padding">30dp</dimen>
+    
+    
+</resources>

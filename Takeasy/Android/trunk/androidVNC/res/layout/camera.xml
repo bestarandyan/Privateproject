@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent" android:layout_height="fill_parent"
+android:orientation="vertical">
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLinear"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+       <Button
+		      android:id="@+id/getPic"
+		      android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="left|bottom"
+              android:background="@drawable/camera"
+              android:textColor="#FFFFFF"
+      />
+    </LinearLayout>
+ 
+	<SurfaceView android:id="@+id/surface_camera"
+	 	android:layout_toLeftOf="@id/btnLinear"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:layout_weight="1">
+	</SurfaceView>
+     
+
+    
+</RelativeLayout>
+
+</FrameLayout> 
+

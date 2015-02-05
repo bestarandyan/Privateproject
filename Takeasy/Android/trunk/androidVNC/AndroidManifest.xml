@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.androidVNC" android:installLocation="auto" android:versionCode="13" android:versionName="0.5.0">
+    <application android:icon="@drawable/logo" android:label="@string/app_name" android:debuggable="true">
+ 		<activity android:label="@string/app_name" android:name="AndroidVNCEntry" android:screenOrientation="landscape">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"></action>
+				<category android:name="android.intent.category.LAUNCHER"></category>
+			</intent-filter>
+		</activity>
+		<activity android:screenOrientation="landscape" android:configChanges="orientation|keyboardHidden" android:name="VncCanvasActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"></action>
+			</intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="vnc" />
+            </intent-filter>
+		</activity>
+       <activity android:name=".ConnectionListActivity" android:label="@string/shortcut_label">
+        	<intent-filter>
+        		<action android:name="android.intent.action.CREATE_SHORTCUT" />
+        		<category android:name="android.intent.category.DEFAULT" />
+        	</intent-filter>
+        </activity>
+        <activity android:name=".InterActivity" android:screenOrientation="landscape"  android:label="@string/app_name"></activity>
+		<activity android:name="com.vnc.draw.activity.MainActivity" android:screenOrientation="landscape"></activity>
+        <activity android:name="com.vnc.draw.activity.PictureSelectActivity" android:screenOrientation="landscape"></activity>
+        <activity android:name="com.vnc.draw.activity.OpenPadActivity" android:screenOrientation="landscape"></activity>
+        <activity android:name="com.vnc.draw.activity.ImageSwitcher" android:screenOrientation="landscape"></activity>
+        <activity android:name="com.vnc.draw.activity.MyCameraActivity" android:screenOrientation="landscape"></activity>
+        <activity android:name="com.vnc.draw.activity.CameraPreview" android:screenOrientation="landscape"></activity>
+	</application>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="4"></uses-sdk>
+	<uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+	
+	
+	<uses-permission android:name="android.permission.RESTART_PACKAGES"></uses-permission>
+    <supports-screens android:anyDensity="true" />
+
+</manifest> 

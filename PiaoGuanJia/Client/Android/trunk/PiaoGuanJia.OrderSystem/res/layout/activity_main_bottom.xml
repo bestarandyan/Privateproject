@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/xdxml_jiazai_bg"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marginsizeh"
+        android:text="title"
+        android:textColor="@color/baise"
+        android:textSize="@dimen/textsizex" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/chengse"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/marginsizel"
+        android:text="提交订单"
+        android:textColor="@color/baise"
+        android:textSize="@dimen/textsizex" />
+
+</LinearLayout>

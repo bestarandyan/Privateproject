@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:background="@drawable/soso_top_bg"
+	    >
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/soso_fh_ico"
+	         />
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="房源列表"
+	        android:textColor="@color/white"
+	        android:textSize="25dp"
+	        />
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/addRoomBtn"
+	        android:background="@drawable/soso_add_btn"
+	        android:layout_alignParentRight="true"
+	        />
+      </RelativeLayout>
+      <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:background="#ffffff"
+          android:id="@+id/noDataLayout"
+          android:padding="15dp"
+          >
+          <ImageView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/soso_gray_logo"
+              android:id="@+id/noDataImg"
+              />
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="您暂无任何房源数据，请点击右上角的加号，赶紧发布您的房源吧"
+              android:textColor="#666666"
+              android:textSize="18dp"
+              android:id="@+id/noDataMsg"
+              />
+      </LinearLayout>
+      <com.zhihuigu.sosoOffice.View.XListView  android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:id="@+id/roomList"
+          android:divider="@drawable/soso_zc_line"
+          android:background="@null"
+          >
+      </com.zhihuigu.sosoOffice.View.XListView>
+	
+	</LinearLayout>

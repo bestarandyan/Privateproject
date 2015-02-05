@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">56拼货网</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_amain">MainActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_register_driver">RegisterDriverActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_login">登录56拼货网</string>
+    <string name="hint_input_phone">手机号码</string>
+    <string name="hint_input_psw">密码由6-20位数字和字母组成</string>
+    <string name="btn_login">登   录</string>
+    <string name="text_register_new_account">注册新账号</string>
+    <string name="text_forget_psw">忘记密码</string>
+    <string name="title_activity_select_user_type">SelectUserTypeActivity</string>
+    <string name="title_select_usertype">选择角色</string>
+    <string name="user_type1">我是货主</string>
+    <string name="user_type2">我是司机</string>
+    <string name="user_type3">我是专线</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_register">注册新用户</string>
+    <string name="text_phonenumber">手机号码</string>
+    <string name="text_username_prompt">您将使用本号码进行登陆和重置密码</string>
+    <string name="text_psw">密码</string>
+    <string name="text_sure_psw">确认密码</string>
+    <string name="text_name">姓名</string>
+    <string name="text_company_name">公司简称</string>
+    <string name="text_code">验证码</string>
+    <string name="title_activity_success_register">SuccessRegisterActivity</string>
+    <string name="success_register_text">恭喜您注册成功，为了确保货主的货物安全，请上传您的身份信息进行身份认证！</string>
+    <string name="success_approve_text">您的认证信息已经上传到服务器，敬请等待系统审核，或拨打</string>
+    <string name="success_approve_phone">400-0404-400</string>
+    <string name="title_activity_approve_driver">司机认证</string>
+    <string name="title_activity_success_approve">SuccessApproveActivity</string>
+    <string name="left_and_right">MainActivity</string>
+    <string name="menu_tab1_str">首页</string>
+    <string name="menu_tab2_str">开奖信息</string>
+    <string name="menu_tab3_str">我的彩票</string>
+    <string name="menu_tab4_str">玩法规则</string>
+    <string name="menu_tab5_str">联系我们</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_wdzl">WdzlActivity</string>
+    <string name="title_activity_wdrz">WdrzActivity</string>
+    <string name="title_activity_wdrz_for_company">WdrzForCompany</string>
+
+</resources>

@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="@dimen/marginsizel"
+        android:text="账户类型"
+        android:textColor="@color/heise"
+        android:textSize="@dimen/textsizem" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_list_corner_round"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/btn_linear1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:padding="@dimen/marginsizem"
+                android:text="总帐户"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizem" />
+
+            <ImageView
+                android:id="@+id/imageview_gou1"
+                android:layout_width="@dimen/marginsizeh"
+                android:layout_height="@dimen/marginsizeh"
+                android:layout_marginRight="@dimen/marginsizem"
+                android:layout_weight="0"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/cz_gouxuan_ico" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/huise" />
+
+        <LinearLayout
+            android:id="@+id/btn_linear2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:padding="@dimen/marginsizem"
+                android:text="专用账户"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizem" />
+
+            <ImageView
+                android:id="@+id/imageview_gou2"
+                android:layout_width="@dimen/marginsizeh"
+                android:layout_height="@dimen/marginsizeh"
+                android:layout_marginRight="@dimen/marginsizem"
+                android:layout_weight="0"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/cz_gouxuan_ico"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/tv_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginsizem"
+        android:background="@drawable/app_list_corner_round"
+        android:hint="分销商用户名"
+        android:padding="@dimen/marginsizem"
+        android:textColor="@color/heise"
+        android:textSize="@dimen/textsizem" />
+
+    <EditText
+        android:id="@+id/tv_produceid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginsizem"
+        android:background="@drawable/app_list_corner_round"
+        android:hint="请输入产品编号"
+        android:padding="@dimen/marginsizem"
+        android:textColor="@color/heise"
+        android:textSize="@dimen/textsizem"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/productname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="产品名称："
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/textsizel"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/tv_money"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginsizem"
+        android:background="@drawable/app_list_corner_round"
+        android:hint="请输入额度金额，用数字表示"
+        android:padding="@dimen/marginsizem"
+        android:textColor="@color/heise"
+        android:textSize="@dimen/textsizem" />
+
+    <EditText
+        android:id="@+id/tv_reason"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/marginsizem"
+        android:background="@drawable/app_list_corner_round"
+        android:gravity="top|left"
+        android:hint="可输入100字符"
+        android:padding="@dimen/marginsizem"
+        android:textColor="@color/heise"
+        android:textSize="@dimen/textsizem" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginsizem"
+        android:background="#3ABFDE"
+        android:padding="@dimen/marginsizel"
+        android:text="确认"
+        android:textColor="@color/baise"
+        android:textSize="@dimen/textsizem" />
+
+</LinearLayout>

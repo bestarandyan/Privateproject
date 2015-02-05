@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:background="#323232">
+   	<LinearLayout android:layout_width="match_parent"
+   	    android:layout_height="match_parent"
+   	    android:orientation="vertical"
+   	    android:layout_weight="1"
+   	    android:background="#459E9A"
+   	    android:layout_marginBottom="6dp"
+   	    android:gravity="center_horizontal"
+   	    android:id="@+id/rightLayout1"
+   	    android:paddingTop="6dp"
+   	    android:paddingBottom="6dp"
+   	    >
+   	    <ImageView android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:src="@drawable/shangpu_menu_ico01"
+   	        />
+   	    <TextView android:layout_width="20dp"
+   	        android:layout_height="wrap_content"
+   	        android:text="样照"
+   	        android:textColor="#aaaaaa"
+   	        android:textSize="18sp"
+   	        android:layout_marginTop="6dp"
+   	        android:lineSpacingExtra="6dp"
+   	        />
+   	    
+   	</LinearLayout>
+   	<LinearLayout android:layout_width="match_parent"
+   	    android:layout_height="match_parent"
+   	    android:orientation="vertical"
+   	    android:layout_weight="1"
+   	    android:background="#1E1E1E"
+   	    android:layout_marginBottom="6dp"
+   	    android:gravity="center_horizontal"
+   	    android:paddingTop="6dp"
+   	    android:paddingBottom="6dp"
+   	    android:id="@+id/rightLayout2"
+   	    >
+   	    <ImageView android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:src="@drawable/shangpu_menu_ico02"
+   	        />
+   	    <TextView android:layout_width="20dp"
+   	        android:layout_height="wrap_content"
+   	        android:text="套系"
+   	        android:textColor="#aaaaaa"
+   	        android:textSize="20sp"
+   	        android:layout_marginTop="6dp"
+   	        android:lineSpacingExtra="6dp"
+   	        />
+   	</LinearLayout>
+   	<LinearLayout android:layout_width="match_parent"
+   	    android:layout_height="match_parent"
+   	    android:orientation="vertical"
+   	    android:layout_weight="1"
+   	    android:background="#1E1E1E"
+   	    android:layout_marginBottom="6dp"
+   	    android:gravity="center_horizontal"
+   	    android:id="@+id/rightLayout3"
+   	    android:paddingTop="6dp"
+   	    android:paddingBottom="6dp"
+   	    >
+   	    <ImageView android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:src="@drawable/shangpu_menu_ico03"
+   	        />
+   	    <TextView android:layout_width="20dp"
+   	        android:layout_height="wrap_content"
+   	        android:text="活动"
+   	        android:textColor="#aaaaaa"
+   	        android:textSize="20sp"
+   	        android:lineSpacingExtra="6dp"
+   	        android:layout_marginTop="6dp"
+   	        />
+   	</LinearLayout>
+   	<LinearLayout android:layout_width="match_parent"
+   	    android:layout_height="match_parent"
+   	    android:orientation="vertical"
+   	    android:layout_weight="1"
+   	    android:background="#1E1E1E"
+   	    android:layout_marginBottom="6dp"
+   	    android:gravity="center_horizontal"
+   	    android:id="@+id/rightLayout4"
+   	    android:paddingTop="6dp"
+   	    android:paddingBottom="6dp"
+   	    >
+   	    <ImageView android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:src="@drawable/shangpu_menu_ico04"
+   	        />
+   	    <TextView android:layout_width="20dp"
+   	        android:layout_height="wrap_content"
+   	        android:text="咨询"
+   	        android:textColor="#aaaaaa"
+   	        android:textSize="20sp"
+   	        android:layout_marginTop="6dp"
+   	        android:lineSpacingExtra="6dp"
+   	        />
+   	</LinearLayout>
+</LinearLayout>

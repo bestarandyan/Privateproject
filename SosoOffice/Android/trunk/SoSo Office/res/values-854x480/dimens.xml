@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources >
+    <dimen name="room_gun_marginx">4dp</dimen>
+    <dimen name="room_manager_top_text_width">50dp</dimen>
+  	<dimen name="city_zimu_size">10dp</dimen>
+  	<dimen name="city_zimu_height">16dp</dimen>
+  	<dimen name="linkman_zimu_size">8dp</dimen>
+  	<dimen name="linkman_zimu_height">13dp</dimen>
+  	<dimen name="main_input_to_top">50dp</dimen>
+  	<dimen name="main_img_height">150dp</dimen>
+  	<string name="main_gv_size">130</string>
+  	<dimen name="login_to_top">30dp</dimen>
+  	<dimen name="linkman_btn_width">90dp</dimen>
+  	<string name="receiver_btn_width">120</string>
+  	<string name="receiver_btn_height">50</string>
+</resources>

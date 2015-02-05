@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp" >
+
+        <com.qingfengweb.piaoguanjia.orderSystem.view.RoomImageGallery
+            android:id="@+id/gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:spacing="5dp"
+            android:unselectedAlpha="10" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/textsizexx"
+            android:alpha="0.5"
+            android:background="#000000" >
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="2dp"
+            android:text="九寨沟自然保护区看法是垃圾焚烧了"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/textsizel" />
+
+        <LinearLayout
+            android:id="@+id/bottomGunLinear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel"
+        android:background="#EDEBEC"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/tab1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ower_border_selector2"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/marginsizel" >
+
+            <TextView
+                android:id="@+id/tv_tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="门票"
+                android:textColor="@color/chengse"
+                android:textSize="@dimen/textsizeh" />
+
+            <ImageView
+                android:id="@+id/iv_tab1"
+                android:layout_width="@dimen/marginsizel"
+                android:layout_height="@dimen/marginsizel"
+                android:background="@drawable/product_view_ico1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/huise" />
+
+        <LinearLayout
+            android:id="@+id/tab2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ower_border_selector2"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/marginsizel" >
+
+            <TextView
+                android:id="@+id/tv_tab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="取票方式"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizeh" />
+
+            <ImageView
+                android:id="@+id/iv_tab2"
+                android:layout_width="@dimen/marginsizel"
+                android:layout_height="@dimen/marginsizel"
+                android:background="@drawable/product_view_ico2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/huise" />
+
+        <LinearLayout
+            android:id="@+id/tab3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ower_border_selector2"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/marginsizel" >
+
+            <TextView
+                android:id="@+id/tv_tab3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="景点介绍"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/textsizeh" />
+
+            <ImageView
+                android:id="@+id/iv_tab3"
+                android:layout_width="@dimen/marginsizel"
+                android:layout_height="@dimen/marginsizel"
+                android:background="@drawable/product_view_ico2" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/linear_tab"
+        android:background="@drawable/line_jianbian" />
+
+    <include
+        android:id="@+id/bottom_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        layout="@layout/activity_main_bottom" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_view"
+        android:layout_below="@id/view_line">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/include_view1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/item1_producedetail" />
+            <include
+                android:id="@+id/include_view2"
+                android:layout_width="fill_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                layout="@layout/item3_producedetail" />
+
+            <include
+                android:id="@+id/include_view3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                layout="@layout/item2_producedetail" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

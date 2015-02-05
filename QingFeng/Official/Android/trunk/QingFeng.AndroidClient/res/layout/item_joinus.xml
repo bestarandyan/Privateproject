@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#ffffff"
+              >
+              <ImageView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/qf_jiaru_ico1"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginRight="5dp"
+                  android:id="@+id/rightImg"
+                  />
+              <LinearLayout 
+	              android:layout_width="match_parent"
+	              android:layout_height="wrap_content"
+	              android:orientation="vertical"
+	              android:layout_toLeftOf="@id/rightImg"
+	              android:layout_centerVertical="true"
+	              android:layout_marginLeft="15dp"
+	              android:layout_marginTop="20dp"
+	              android:layout_marginBottom="20dp"
+	              android:layout_marginRight="10dp"
+	              >
+			       <LinearLayout 
+			              android:layout_width="match_parent"
+			              android:layout_height="wrap_content"
+			              android:orientation="horizontal"
+			              >
+				       <TextView android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="iOS软件开发工程师"
+				           android:textColor="#000000"
+				           android:textSize="18sp"
+				           android:id="@+id/workName"
+				           />
+				       <TextView android:layout_width="match_parent"
+				           android:layout_height="wrap_content"
+				           android:text="2013-06-06"
+				           android:textColor="#666666"
+				           android:textSize="12sp"
+				           android:gravity="right"
+				           android:id="@+id/sendDate"
+				           android:layout_marginBottom="5dp"
+				           />
+					</LinearLayout>
+					<LinearLayout 
+			              android:layout_width="match_parent"
+			              android:layout_height="wrap_content"
+			              android:orientation="horizontal"
+			              android:layout_marginTop="5dp"
+			              >
+				       <TextView android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="工作地址："
+				           android:textColor="#333333"
+				           android:textSize="14sp"
+				           />
+				       <TextView android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="上海市普陀区"
+				           android:textColor="#333333"
+				           android:textSize="14sp"
+				           android:id="@+id/workAddress"
+				           />
+					</LinearLayout>
+					<TextView android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="乐于分享"
+				           android:textColor="#333333"
+				           android:textSize="14sp"
+				           android:id="@+id/content"
+				           android:layout_marginTop="5dp"
+				           android:lineSpacingExtra="3dp"
+				           />
+				</LinearLayout>
+</RelativeLayout>

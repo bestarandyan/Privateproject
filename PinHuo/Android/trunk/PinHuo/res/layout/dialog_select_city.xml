@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+  <!--   <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入查找条件"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:id="@+id/searchEt"
+            />
+    </LinearLayout> -->
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ListView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/provinceListView"
+        android:divider="#D7D7D7"
+        android:dividerHeight="0.5dp"
+        android:background="#E5E5E5"
+        ></ListView>
+	<LinearLayout android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal"
+	    android:layout_alignParentRight="true"
+	    android:baselineAligned="false"
+	    android:background="#ffffff"
+	    >
+	    <ListView android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:id="@+id/cityListView"
+        android:divider="#D7D7D7"
+        android:dividerHeight="0.5dp"
+        android:layout_weight="1"
+        android:background="#F3F3F3"
+        ></ListView>
+	    
+	    <ListView android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:id="@+id/discrictListView"
+        android:divider="#D7D7D7"
+        android:dividerHeight="0.5dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        ></ListView>
+	    
+	</LinearLayout>
+</RelativeLayout>
+</LinearLayout>

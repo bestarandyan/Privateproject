@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources >
+    <color name="menu_bg1">#034357</color>
+    <color name="menu_bg2">#364708</color>
+    <color name="menu_bg3">#40064e</color>
+    <color name="menu_bg4">#53280b</color>
+    <color name="menu_bg5">#074b33</color>
+    <color name="intro_tab_text_color">#3F79C0</color>
+    <color name="team_item_bg_1">#ECECEC</color>
+    <color name="team_item_bg_2">#FFFFFF</color>
+    <color name="team_text_1">#ffffff</color>
+    <color name="team_text_2">#95a9c2</color>
+    <color name="joinus_item_bg">#ECECEC</color>
+    <color name="white">#ffffff</color>
+</resources>

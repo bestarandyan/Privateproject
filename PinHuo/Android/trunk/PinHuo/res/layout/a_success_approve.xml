@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/activity_bg_color"
+    >
+
+   <RelativeLayout android:layout_width="match_parent"
+       android:layout_height="@dimen/title_height"
+       android:padding="5dp"
+       android:background="@color/title_bg_color"
+       >
+       <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="认证提交成功"
+           android:textSize="@dimen/activity_title_text_size"
+           android:textColor="@color/activity_title_text_color"
+           android:layout_centerInParent="true"
+           />
+   </RelativeLayout>
+   <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="20sp"
+           android:textColor="#000000"
+           android:lineSpacingExtra="10dp"
+           android:layout_margin="30dp"
+           android:id="@+id/phoneLayout"
+           />
+   <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/activity_bg_color"
+    android:gravity="bottom|center_horizontal"
+    android:layout_margin="10dp"
+    android:paddingBottom="50dp"
+    >
+       
+	<Button android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="确定"
+           android:gravity="center"
+           android:textSize="@dimen/btn_text_size"
+           android:textColor="@color/activity_title_text_color"
+           android:layout_marginTop="70dp"
+           android:background="@drawable/btn_bg"
+           android:padding="10dp"
+           android:id="@+id/approveBtn"
+           />
+	</LinearLayout>
+</LinearLayout>

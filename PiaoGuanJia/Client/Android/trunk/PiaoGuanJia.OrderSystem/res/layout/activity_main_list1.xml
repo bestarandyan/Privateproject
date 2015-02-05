@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/rubaise" >
+
+    <RelativeLayout
+        android:id="@+id/linear_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xdxml_jiazai_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/marginsizeh"
+            android:text="收藏"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/textsizex"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/product_top_line" />
+
+            <LinearLayout
+                android:id="@+id/linear_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/marginsizeh"
+                    android:layout_height="@dimen/marginsizeh"
+                    android:layout_margin="@dimen/marginsizeh"
+                    android:background="@drawable/product_top_ico2"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.qingfengweb.piaoguanjia.orderSystem.view.XListView
+        android:id="@+id/xlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.qingfengweb.piaoguanjia.orderSystem.view.XListView>
+
+</LinearLayout>

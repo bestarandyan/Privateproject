@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    >
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_bg1"
+        >
+        <ImageButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top_fanhui_ico"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="10dp"
+            android:id="@+id/backBtn"
+            />
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_line1"
+            android:layout_toRightOf="@id/backBtn"
+            />
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#ffffff"
+	        android:gravity="center"
+	        android:layout_centerInParent="true"
+	        android:id="@+id/topView"
+	        android:text="关于桔子摄影" />
+         
+    </RelativeLayout>
+     <com.qingfengweb.weddingideas.customview.MyVerticalScrollView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        >
+	    <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:padding="15dp"
+	        android:gravity="center_horizontal"
+	        >
+	        <LinearLayout android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:gravity="top"
+		        >
+			        <TextView android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="影楼地址："
+				        android:textSize="16sp"
+				        android:textColor="#000000"
+				        />
+			        <TextView android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:text="上海市徐汇区石龙路411弄18号3层（近上海南站）"
+				        android:textSize="14sp"
+				        android:textColor="#666666"
+				        android:id="@+id/addressTv"
+				        android:layout_marginLeft="20dp"
+				        android:layout_marginTop="3dp"
+				        />
+	            </LinearLayout>
+	            <LinearLayout android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:gravity="top"
+		        android:layout_marginTop="6dp"
+		        >
+			        <TextView android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="影楼电话："
+				        android:textSize="16sp"
+				        android:textColor="#000000"
+				        />
+			        <TextView android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:text="021-5448127		54481272"
+				        android:textSize="14sp"
+				        android:textColor="#666666"
+				        android:id="@+id/phoneTv"
+				        android:layout_marginLeft="20dp"
+				        android:layout_marginTop="3dp"
+				        />
+	            </LinearLayout>
+	            <LinearLayout android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:gravity="top"
+		        android:layout_marginTop="6dp"
+		        >
+			        <TextView android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="轨道交通："
+				        android:textSize="16sp"
+				        android:textColor="#000000"
+				        />
+			        <TextView android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:text="轻轨3号线石龙路站下出站右拐，步行约5分钟;\n公交路线:111、144、156、上石线、南南线、上嘉线、上朱线、上奉线、729、867、机场七线、315、973、718、957、上沧线(以上公交线路下车后步行2-7分钟到达桔子摄影)"
+				        android:textSize="14sp"
+				        android:textColor="#666666"
+				        android:id="@+id/trafficTv"
+				        android:layout_marginLeft="20dp"
+				        android:layout_marginTop="3dp"
+				        android:lineSpacingExtra="3dp"
+				        />
+	            </LinearLayout>
+	         <LinearLayout android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_marginTop="6dp"
+		        android:gravity="top"
+		        >
+			        <TextView android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="影楼简介："
+				        android:textSize="16sp"
+				        android:textColor="#000000"
+				        />
+			        <TextView android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:text="桔子摄影在沪上一直被誉为外景婚纱摄影领军品牌及导航者,外景景点最多,特色景点最丰富,拥有沪上最多的独家外景摄影基地。桔子同时拥有超万平米的 3D恒温实景摄影片场。无论尊贵、时尚、浪漫、奢华、韩式，桔子摄影都将满足您对婚纱照的一切遐想。桔子摄影在沪上率先推出了行业标准的服务8大承诺和售后服务跟踪体系，在桔子，桔子人将用我们的服务与品质为您的生活添砖加瓦。"
+				        android:textSize="14sp"
+				        android:textColor="#666666"
+				        android:id="@+id/introTv"
+				        android:layout_marginLeft="10dp"
+				        android:lineSpacingExtra="4dp"
+				        android:layout_marginTop="5dp"
+				        />
+	            </LinearLayout>
+	        <!-- <WebView android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/description"
+	            android:layout_marginTop="6dp"
+	            android:layerType="software"  
+	            /> -->
+	       <com.baidu.mapapi.map.MapView android:id="@+id/bmapView"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="200dp" 
+			    android:clickable="true"     
+			/>
+	        <TextView android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="关于咨询"
+		        android:textSize="18sp"
+		        android:textColor="#555555"
+		        android:layout_marginTop="20dp"
+		        />
+	        <Button android:text="购买咨询"
+	            android:textColor="#ffffff"
+	            android:textSize="20sp"
+	            android:gravity="center"
+	            android:background="@drawable/btn_tel_bg"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableLeft="@drawable/btn_tel_icon"
+	            android:id="@+id/goumaiBtn"
+	            android:layout_marginTop="10dp"
+	            />
+	        <Button android:text="售后咨询"
+	            android:textColor="#ffffff"
+	            android:textSize="20sp"
+	            android:gravity="center"
+	            android:background="@drawable/btn_tel_bg"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableLeft="@drawable/btn_tel_icon"
+	            android:id="@+id/shouhouBtn"
+	            android:layout_marginTop="6dp"
+	            />
+	    </LinearLayout>
+    </com.qingfengweb.weddingideas.customview.MyVerticalScrollView>
+    
+   
+</LinearLayout>

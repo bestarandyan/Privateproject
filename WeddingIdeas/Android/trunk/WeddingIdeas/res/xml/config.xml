@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <item name="appkey" value="ff808081445d8c3c014471d77aec0018"></item>
+  <item name="appid" value="1"></item>
+  <item name="storeid" value="YL5000001"></item>
+  <item name="madeid" value="10000001"></item>
+  <item name="photo_album_is_have" value="0"></item>
+  <item name="server_url" value="http://www.weddingideas.com.cn"></item>
+  <item name="store_name" value="米兰婚纱摄影"></item>
+  <item name="store_address" value="南京市中央路258-27号，在新模范马路的路口，乐天玛特超市的对面"></item>
+  <item name="store_phone_one" value="578  82908"></item>
+  <item name="store_phone_two" value="400-552  21143"></item>
+  <item name="store_traffic" value="地铁：新模范马路站（4号出口），玄武湖隧道路口。    "></item>
+  <item name="store_intro" value="米兰尊荣馆中央路旗舰店是南京最大的单体影楼门店，“电影梦工厂”摄影基地是南京最好的专业婚纱摄影片场，设施豪华、功能完善，是国内首屈一指的超级电影光源摄影棚，致力于服务高端客群。是无数新人心目中的婚纱照拍摄圣地"></item>
+  <item name="store_latitude" value="31.19172"></item>
+  <item name="store_longitude" value="31.19172"></item>
+  <item name="username" value="朱鹏"></item>
+  <item name="invite_msg" value="我们就要结婚了，邀请您参加"></item>
+  <item name="wedding_album_title" value="最浪漫的事"></item>
+  <item name="wedding_album_msg" value="远处群山叠峦,波光粼粼\n茶园翠绿，经典成影\n婚纱照拍摄自然景观中的清新自然\n 或许是每对新人想要的留念。\n不同的镜头指数，不同的光值\n轻按快门下\n发丝都是如此爱意浓浓"></item>
+  <item name="wedding_time" value="2014-03-08 "></item>
+  <item name="wedding_seats" value="清水湾大酒店"></item>
+  <item name="wedding_address" value="上海市凯旋北路1555弄"></item>
+  <item name="traffic_route" value="3、4、13号线地铁,到金沙江路站下车，找到凯旋北路，就能看到清水湾大酒店了"></item>
+  <item name="wedding_hotel_latitude" value="31.2079500186"></item>
+  <item name="wedding_hotel_longitude" value="121.3846414905"></item>
+  <item name="app_url" value="http://www.weddingideas.cn/pages/d/downapp.do?id=ff808081445d8c3c014471d77aec0018"></item>
+  <item name="share_title" value="我们结婚啦！"></item>
+  <item name="share_content" value="我们结婚啦！null的婚礼盛典即将举行，我们诚挚的邀请您见证并分享我们的幸福!赶快点击链接下载我们为您精心准备的婚礼喜帖吧!http://www.weddingideas.cn/pages/d/downapp.do?id=ff808081445d8c3c014471d77aec0018"></item>
+  <item name="app_copyright" value="Copyright© 2014 weddingideas.All Rights Reserved"></item>
+</config>
+

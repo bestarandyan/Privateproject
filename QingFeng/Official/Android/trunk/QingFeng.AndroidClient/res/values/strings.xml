@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="app_name">上海擎风网络</string>
+    <string name="introducation_top">擎风网络科技</string>
+	<string name="aboutus_top">关于我们</string>
+	<string name="menu_tab1_str">首页</string>
+	<string name="menu_tab2_str">关于我们</string>
+	<string name="menu_tab3_str">服务项目</string>
+	<string name="menu_tab4_str">客户案例</string>
+	<string name="menu_tab5_str">联系我们</string>
+	<string name="menu_tab1_Bom_str">HOME</string>
+	<string name="menu_tab2_Bom_str">ABOUT US</string>
+	<string name="menu_tab3_Bom_str">SERVICES</string>
+	<string name="menu_tab4_Bom_str">CUSTOMER STORIES</string>
+	<string name="menu_tab5_Bom_str">CONTACT US</string>
+	<string name="company_intro">\t\t上海擎风网络科技有限公司成立于 2010 年 1 月,公司成立至今,一直专注于互联网以及移动互联网领域内的技术研发和运营。我们拥有一直具有资深开发经验的技术团队，致力于为客户开发成功的产品和提供完美的移动互联网方案，公司目前主要业务为移动客户端应用程序开发( 包括ios应用定制开发、 android应用定制开发、 Windows Phone......</string>
+	<string name="intro_tab1">iOS移动应用定制开发</string>
+	<string name="intro_tab2">Android移动应用定制开发</string>
+	<string name="intro_tab3">Windows Phone移动应用定制开发</string>
+	<string name="intro_tab4">HTML5网站定制开发</string>
+	<string name="aboutus_version">版本号：V2.3.7</string>
+	<string name="aboutus_phone">客服电话：400-021-0998</string>
+	<string name="left_and_right">MainActivity</string>
+	<string name="detail_join">加入我们</string>
+	<string name="job_apply">申请职位</string>
+	<string name="submit_demand">提交需求</string>
+</resources>

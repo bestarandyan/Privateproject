@@ -1,0 +1,338 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:background="@drawable/soso_top_bg"
+	    >
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/soso_fh_ico"
+	         />
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="注   册"
+	        android:textColor="@color/white"
+	        android:textSize="25dp"
+	        />
+	</RelativeLayout>
+	<ScrollView android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+	    android:orientation="vertical"
+	    >
+	<TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="以下带*号的选项为必填项"
+	        android:textColor="@color/gray"
+	        android:textSize="16dp"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginTop="15dp"
+	        />
+	<LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="10dp"
+	        android:orientation="vertical"
+	        android:background="@drawable/linear_background_corner"
+	        >
+	    <LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:padding="10dp"
+	        android:gravity="center_vertical"
+	        >
+	    	<TextView android:layout_width="60dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="用户名"
+	    	    android:textColor="@color/black"
+	    	    android:textSize="20dp"
+	    	    />
+	    	<TextView android:layout_width="40dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="*"
+	    	    android:textColor="@color/red"
+	    	    android:textSize="20dp"
+	    	    android:gravity="top"
+	    	    />
+	    	<EditText android:layout_height="fill_parent"
+	    	    android:layout_width="fill_parent"
+	    	    android:singleLine="true"
+	    	    android:hint="6-12个字符组成"
+	    	    android:id="@+id/userNameEt"
+	    	    android:background="@null"
+	    	    android:textSize="14dp"
+	    	    />
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:background="@drawable/register_check_background"
+		    android:gravity="center_vertical"
+		    android:padding="5dp"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginRight="15dp"
+		    android:layout_marginBottom="5dp"
+		    android:id="@+id/userNameCheckLayout"
+		    android:visibility="gone"
+		    >
+	    	<ImageView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:src="@drawable/register_check1"
+	    	    />
+		    <TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="此用户名已被注册"
+			    android:textColor="@color/red"
+			    android:textSize="12dp"
+			    android:layout_marginLeft="5dp"
+			    android:id="@+id/userNameCheck"
+		    />
+		</LinearLayout>
+		
+		<View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_margin="2dp"
+		    android:background="@drawable/soso_zc_line"/>
+	    <LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:padding="10dp"
+	        android:gravity="center_vertical"
+	        >
+	    	<TextView android:layout_width="65dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="密    码"
+	    	    android:textColor="@color/black"
+	    	    android:textSize="20dp"
+	    	    />
+	    	<TextView android:layout_width="35dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="*"
+	    	    android:textColor="@color/red"
+	    	    android:textSize="20dp"
+	    	    android:gravity="top"
+	    	    />
+	    	<EditText android:layout_height="fill_parent"
+	    	    android:layout_width="fill_parent"
+	    	    android:singleLine="true"
+	    	    android:hint="6-15个字符以内"
+	    	    android:id="@+id/passwordEt"
+	    	    android:background="@null"
+	    	    android:inputType="textPassword"
+	    	    android:textSize="14dp"
+	    	    />
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:background="@drawable/register_check_background"
+		    android:gravity="center_vertical"
+		    android:padding="5dp"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginRight="15dp"
+		    android:layout_marginBottom="5dp"
+		    android:id="@+id/passCheckLayout"
+		    android:visibility="gone"
+		    >
+	    	<ImageView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:src="@drawable/register_check1"
+	    	    />
+		   <TextView android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="密码太过简单"
+			    android:textColor="@color/red"
+			    android:textSize="12dp"
+			    android:id="@+id/passCheck"
+			    android:layout_marginLeft="5dp"
+		    />
+		</LinearLayout>
+		
+		<View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_margin="2dp"
+		    android:background="@drawable/soso_zc_line"/>
+		<LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:padding="10dp"
+	        android:gravity="center_vertical"
+	        >
+	    	<TextView android:layout_width="80dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="确认密码"
+	    	    android:textColor="@color/black"
+	    	    android:textSize="20dp"
+	    	    />
+	    	<TextView android:layout_width="20dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="*"
+	    	    android:textColor="@color/red"
+	    	    android:textSize="20dp"
+	    	    android:gravity="top"
+	    	    />
+	    	<EditText android:layout_height="fill_parent"
+	    	    android:layout_width="fill_parent"
+	    	    android:singleLine="true"
+	    	    android:hint="再次输入密码"
+	    	    android:id="@+id/passwordAgainEt"
+	    	    android:background="@null"
+	    	    android:inputType="textPassword"
+	    	    android:textSize="14dp"
+	    	    />
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:background="@drawable/register_check_background"
+		    android:gravity="center_vertical"
+		    android:padding="5dp"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginRight="15dp"
+		    android:layout_marginBottom="5dp"
+		    android:id="@+id/passAgainCheckLayout"
+		    android:visibility="gone"
+		    >
+	    	<ImageView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:src="@drawable/register_check1"
+	    	    />
+		<TextView android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="和密码不相同"
+		    android:textColor="@color/red"
+		    android:textSize="12dp"
+		    android:layout_marginLeft="5dp"
+		    android:id="@+id/passAgainCheck"
+		    />
+		</LinearLayout>
+		<View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_margin="2dp"
+		    android:background="@drawable/soso_zc_line"/>
+		<LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:padding="10dp"
+	        android:gravity="center_vertical"
+	        >
+	    	<TextView android:layout_width="100dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="邮    箱"
+	    	    android:textColor="@color/black"
+	    	    android:textSize="20dp"
+	    	    />
+	    	
+	    	<EditText android:layout_height="fill_parent"
+	    	    android:layout_width="fill_parent"
+	    	    android:singleLine="true"
+	    	    android:hint="建议填写以便找回密码"
+	    	    android:id="@+id/emailEt"
+	    	    android:background="@null"
+	    	    android:textSize="14dp"
+	    	    android:inputType="textEmailAddress"
+	    	    />
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:background="@drawable/register_check_background"
+		    android:gravity="center_vertical"
+		    android:padding="5dp"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginRight="15dp"
+		    android:layout_marginBottom="5dp"
+		    android:id="@+id/emailCheckLayout"
+		    android:visibility="gone"
+		    >
+	    	<ImageView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:src="@drawable/register_check1"
+	    	    />
+		<TextView android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="输入的邮箱格式不对"
+		    android:textColor="@color/red"
+		    android:textSize="12dp"
+		    android:layout_marginLeft="5dp"
+		    android:id="@+id/emailCheck"
+		    />
+		</LinearLayout>
+		<View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_margin="2dp"
+		    android:background="@drawable/soso_zc_line"/>
+		<LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:padding="10dp"
+	        android:gravity="center_vertical"
+	        >
+	    	<TextView android:layout_width="100dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="手机号"
+	    	    android:textColor="@color/black"
+	    	    android:textSize="20dp"
+	    	    />
+	    	
+	    	<EditText android:layout_height="fill_parent"
+	    	    android:layout_width="fill_parent"
+	    	    android:singleLine="true"
+	    	    android:hint="建议填写以便找回密码"
+	    	    android:id="@+id/phoneEt"
+	    	    android:background="@null"
+	    	    android:textSize="14dp"
+	    	    android:inputType="phone"
+	    	    />
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:background="@drawable/register_check_background"
+		    android:gravity="center_vertical"
+		    android:padding="5dp"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginRight="15dp"
+		    android:layout_marginBottom="5dp"
+		    android:id="@+id/phoneCheckLayout"
+		    android:visibility="gone"
+		    >
+	    	<ImageView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:src="@drawable/register_check1"
+	    	    />
+		<TextView android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="输入的手机号码格式不对"
+		    android:textColor="@color/red"
+		    android:textSize="12dp"
+		    android:layout_marginLeft="5dp"
+		    android:id="@+id/phoneCheck"
+		    />
+		</LinearLayout>
+	</LinearLayout>
+	<Button android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/submitBtn"
+	    android:text="下 一 步"
+	    android:textColor="#4b5e00"
+	    android:textSize="22dp"
+	    android:background="@drawable/soso_button_bg"
+	    android:layout_margin="10dp"
+	    android:padding="10dp"
+	    />
+	</LinearLayout>
+	</ScrollView>
+	</LinearLayout>

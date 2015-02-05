@@ -1,0 +1,67 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="130dp"
+              android:layout_height="130dp"
+              android:background="#ffffff"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              >
+              <RelativeLayout 
+	              android:layout_width="120dp"
+	              android:layout_height="120dp"
+	              android:background="#ffffff"
+	              >
+	              <LinearLayout android:layout_width="120dp"
+	                  android:layout_height="120dp"
+	                  android:padding="15dp"
+	                  android:gravity="center"
+	                  android:layout_centerInParent="true"
+	                  android:background="@drawable/job_fujian_border"
+	                  android:id="@+id/layout"
+	                  android:layout_marginTop="20dp"
+	                  android:layout_marginRight="20dp"
+	                  >
+	              <ImageView android:layout_width="wrap_content"
+	                  android:layout_height="wrap_content"
+	                  android:id="@+id/jianLiImage"
+	                  android:src="@drawable/qf_word"
+	                  />
+              </LinearLayout>
+              <ProgressBar  
+				    android:id="@+id/progressBar" 
+				    android:layout_width="100dp"  
+				    android:layout_height="100dp"  
+				    android:max="100" 
+				    android:progress="0" 
+				    android:indeterminate="false"
+		            android:indeterminateOnly="false"
+				    android:secondaryProgress="0" 
+				    android:layout_alignTop="@id/layout"
+				    android:layout_alignLeft="@id/layout"
+				    android:progressDrawable="@drawable/progress_style"
+				    android:alpha="200"
+				    /> 
+		  	<TextView android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text=""
+		          android:textColor="#000000"
+		          android:textSize="30sp"
+		          android:layout_centerInParent="true"
+		          android:visibility="visible"
+		          android:id="@+id/currentProText"
+		          />
+              <ImageButton android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/qf_close"
+                  android:layout_alignParentTop="true"
+                  android:layout_alignParentRight="true"
+                  android:id="@+id/cancleImgBtn"
+                  />
+              </RelativeLayout>
+              <TextView android:layout_width="100dp"
+	                  android:layout_height="wrap_content"
+	                  android:id="@+id/fileNameTv"
+	                  android:text="aaaa.png"
+	                  />
+</LinearLayout>
+              

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f2f2"
+    android:id="@+id/parent"
+    android:focusable="true"  
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+<RelativeLayout	android:id="@+id/top_linear"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/soso_top_bg1"
+	    android:orientation="vertical" >
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/backBtn"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"
+	        android:background="@drawable/soso_fh_ico"/>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:textColor="#ffffff"
+	        android:textSize="22dp"
+	        android:text="精 确 搜 索"
+	        android:id="@+id/title"
+	        />    
+    </RelativeLayout>
+     <com.zhihuigu.sosoOffice.View.MyScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        >
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="关键词"
+		                android:textColor="#666666"
+		                android:textSize="16dp"
+		                android:layout_marginLeft="5dp"
+		                />
+            <RelativeLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/etParent"
+	            android:background="@drawable/soso_et_background"
+	            >
+	            
+	            <ImageView android:layout_width="20dp"
+	                android:layout_height="20dp"
+	                android:layout_alignParentRight="true"
+	                android:background="@drawable/soso_input_empty"
+	                android:layout_centerVertical="true"
+	                android:id="@+id/cancleBtn"
+	                />
+	            <TextView
+				    android:id="@+id/keytEt"
+				    android:layout_width="fill_parent"
+				    android:layout_height="30dp"
+				    android:background="@null"
+				   	android:textColor="#333333"
+				   	android:text="关键字"
+				   	android:gravity="center_vertical"
+				   	android:textSize="14dp"
+				   	android:layout_centerVertical="true"
+				   	android:layout_toLeftOf="@id/cancleBtn"
+				   	android:layout_marginLeft="10dp"
+				    />
+	            </RelativeLayout>
+            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="房源类型"
+		                android:textColor="#666666"
+		                android:textSize="16dp"
+		                android:layout_marginTop="10dp"
+		                android:layout_marginLeft="5dp"
+		                />
+            <Button android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:id="@+id/typeSpinner"
+		                android:background="@drawable/soso_releasenewroom_et"
+		                android:gravity="left|center_vertical"
+		                android:paddingLeft="10dp"
+		                android:layout_marginTop="3dp"
+		                android:text="纯写字楼"
+		                android:textSize="16dp"
+		                android:textColor="#333333"
+		                />
+            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="区域"
+		                android:textColor="#666666"
+		                android:textSize="16dp"
+		                android:layout_marginTop="10dp"
+		                android:layout_marginLeft="5dp"
+		                />
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                >
+                <Button android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:id="@+id/citySpinner"
+		                android:background="@drawable/soso_releasenewroom_et"
+		                android:gravity="left|center_vertical"
+		                android:paddingLeft="10dp"
+		                android:layout_weight="1"
+		                android:textSize="16dp"
+		                android:text="城市"
+		                android:textColor="#333333"
+		                />
+                <Button android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:id="@+id/areaSpinner"
+		                android:background="@drawable/soso_releasenewroom_et"
+		                android:gravity="left|center_vertical"
+		                android:paddingLeft="10dp"
+		                android:layout_weight="1"
+		                android:layout_marginLeft="5dp"
+		                android:text="区"
+		                android:textSize="16dp"
+		                android:textColor="#333333"
+		                />
+                <Button android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:id="@+id/businessSpinner"
+		                android:background="@drawable/soso_releasenewroom_et"
+		                android:gravity="left|center_vertical"
+		                android:paddingLeft="10dp"
+		                android:layout_weight="1"
+		                android:layout_marginLeft="5dp"
+		                android:text="商圈"
+		                android:textSize="16dp"
+		                android:textColor="#333333"
+		                />
+            </LinearLayout>
+               <LinearLayout  android:id="@+id/acreageLayout"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="10dp"
+				    android:orientation="horizontal"
+				    >
+                <LinearLayout  android:id="@+id/acreageLayout"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="3dp"
+				    android:orientation="vertical"
+				    android:layout_weight="1"
+				    >
+	                <TextView android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:text="面积下限(平米)"
+			                android:textColor="#666666"
+			                android:textSize="16dp"
+			                android:layout_marginLeft="10dp"
+			                />
+	                <EditText android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:background="@drawable/soso_et_background"
+		                android:layout_marginRight="10dp"
+		                android:id="@+id/minAcreageEt"
+		                android:singleLine="true"
+		                android:inputType="phone"
+		                android:hint="请输入最小面积"
+		                android:textSize="16dp"
+		                android:textColor="#333333"
+		                />
+                </LinearLayout>
+                <LinearLayout  android:id="@+id/acreageLayout"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="3dp"
+				    android:orientation="vertical"
+				    android:layout_weight="1"
+				    >
+	                <TextView android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:text="面积上限(平米)"
+			                android:textColor="#666666"
+			                android:textSize="16dp"
+			                android:layout_marginLeft="10dp"
+			                />
+	                <EditText android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:background="@drawable/soso_et_background"
+		                android:id="@+id/maxAcreageEt"
+		                android:singleLine="true"
+		                android:inputType="phone"
+		                android:hint="请输入最大面积"
+		                android:textSize="16dp"
+		                android:textColor="#333333"
+		                />
+                </LinearLayout>
+                </LinearLayout>
+            <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="价格上下限(元/平方米/天)"
+		                android:textColor="#666666"
+		                android:textSize="16dp"
+		                android:layout_marginTop="10dp"
+		                android:layout_marginLeft="5dp"
+		                />
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:id="@+id/priceLayout"
+                >
+                
+               </LinearLayout>
+               
+            
+              
+          <!--   <TextView android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="沿线地铁"
+		                android:textColor="#666666"
+		                android:textSize="16dp"
+		                android:layout_marginTop="10dp"
+		                android:layout_marginLeft="5dp"
+		                />
+            <Button android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:id="@+id/metroSpinner"
+		                android:background="@drawable/soso_releasenewroom_et"
+		                android:gravity="left|center_vertical"
+		                android:paddingLeft="10dp"
+		                android:layout_marginTop="3dp"
+		                android:text="选择地铁线路"
+		                android:textSize="16dp"
+		                /> -->
+            <Button android:layout_width="fill_parent"
+		                android:layout_height="55dp"
+		                android:background="@drawable/soso_button_bg"
+		                android:id="@+id/searchBtn"
+		                android:text="搜索"
+		                android:textColor="#4b5e00"
+		    			android:textSize="22dp"
+		    			android:layout_marginTop="30dp"
+		    			android:layout_marginBottom="10dp"
+		                />
+        </LinearLayout>
+    </com.zhihuigu.sosoOffice.View.MyScrollView>
+</LinearLayout>

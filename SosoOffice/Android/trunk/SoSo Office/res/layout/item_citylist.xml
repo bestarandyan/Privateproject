@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+  android:layout_width="fill_parent"  
+  android:layout_height="fill_parent"
+    android:orientation="vertical"  >   
+     <TextView android:id="@+id/text_first_char_hint"     
+        android:layout_width="fill_parent"     
+        android:layout_height="wrap_content"     
+        android:textSize="20dip"    
+        android:textColor="#999999" 
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"     
+        android:background="@drawable/soso_title_bg"  
+        android:text="A"
+        android:visibility="visible">     
+      </TextView>     
+    <TextView android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+	    android:id="@+id/cityItemText"
+	    android:textColor="@color/black"
+	    android:textSize="18dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    />
+    
+</LinearLayout >  
