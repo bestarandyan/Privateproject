@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:gravity="center_horizontal"
+	android:background="#ffffff"
+	>
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/top_linear"
+	    >
+	    <Button android:layout_width="55dp"
+	        android:layout_height="35dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="返回"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="14dp"
+	        android:paddingLeft="10dp"
+	        android:layout_centerVertical="true"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/btn01"/>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="公司简介"
+	        android:layout_centerHorizontal="true"
+	        android:id="@+id/title"
+	        android:textColor="#ffffff"
+	        android:layout_centerVertical="true"
+	        android:textSize="20dp"
+	        android:textStyle="bold"/>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#ffffff"
+	    android:padding="30dp"
+	    >
+	    <TextView android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:text="\t\t金夫人摄影系上海偶像婚纱摄影有限公司旗下品牌自2010年8月登入上海以来本着打造中国婚纱摄影一流企业为标准。"
+	        android:textColor="#000000"
+	        android:textSize="16sp"
+	        android:lineSpacingExtra="6dp"
+	        android:id="@+id/contentTv"
+	        />
+	</RelativeLayout>
+</LinearLayout>

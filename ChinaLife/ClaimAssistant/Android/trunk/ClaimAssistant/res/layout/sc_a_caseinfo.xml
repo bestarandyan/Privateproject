@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!--
+head 
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_bg"
+    android:orientation="vertical" >
+</LinearLayout>    -->
+
+    <include
+        android:id="@+id/top_image"
+        layout="@layout/sc_a_head" >
+    </include>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/backLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_image"
+        android:background="@drawable/sc_title_bg" >
+
+        <Button
+            android:id="@+id/fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/sc_fh_btn"
+            android:paddingLeft="5dp"
+            android:text="返回"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="赔案详情"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/sc_ly_bottom_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sc_aj_btn2"
+            android:text="返回"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sc_aj_btn3"
+            android:text="赔案处理"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sc_aj_btn3"
+            android:text="案件撤销"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linear"
+        android:layout_below="@id/backLinear"
+        android:layout_marginTop="0dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="fill_parent"
+                    android:background="#d7e6e2"
+                    android:gravity="right"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="8dp"
+                    android:text="理赔专员："
+                    android:textColor="#2c7f6e"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f1f1f1"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:text="张大海"
+                    android:textColor="#004bb2"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@drawable/sc_lines" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="fill_parent"
+                    android:background="#e7f1ee"
+                    android:gravity="right"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="8dp"
+                    android:text="服务热线："
+                    android:textColor="#2c7f6e"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:id="@+id/tv2copy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f8f8f8"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="8dp"
+                        android:text="1881234566"
+                        android:textColor="#004bb2"
+                        android:textSize="14dp" />
+                    <ImageView android:src="@drawable/sc_telephone"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@drawable/sc_lines" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="fill_parent"
+                    android:background="#d7e6e2"
+                    android:gravity="right"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="8dp"
+                    android:text="报案人："
+                    android:textColor="#2c7f6e"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f1f1f1"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:text="黎智萍"
+                    android:textColor="#999999"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@drawable/sc_lines" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="fill_parent"
+                    android:background="#e7f1ee"
+                    android:gravity="right"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="8dp"
+                    android:text="车牌号："
+                    android:textColor="#2c7f6e"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f8f8f8"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:text="莞B 888888"
+                    android:textColor="#999999"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@drawable/sc_lines" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="fill_parent"
+                    android:background="#d7e6e2"
+                    android:gravity="right"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="8dp"
+                    android:text="手机号："
+                    android:textColor="#2c7f6e"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f1f1f1"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp"
+                    android:text="18621008898"
+                    android:textColor="#999999"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@drawable/sc_lines" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="fill_parent"
+                    android:background="#e7f1ee"
+                    android:gravity="right"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="8dp"
+                    android:text="案件事故号："
+                    android:textColor="#2c7f6e"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f8f8f8"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:text="123459878"
+                    android:textColor="#999999"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@drawable/sc_lines" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="fill_parent"
+                    android:background="#d7e6e2"
+                    android:gravity="right"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="8dp"
+                    android:text="出险时间："
+                    android:textColor="#2c7f6e"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f1f1f1"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:text="2012-07-21 13:00"
+                    android:textColor="#999999"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@drawable/sc_lines" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="fill_parent"
+                    android:background="#e7f1ee"
+                    android:gravity="right"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="8dp"
+                    android:text="报案时间："
+                    android:textColor="#2c7f6e"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f8f8f8"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:text="2012-07-21 14:00"
+                    android:textColor="#999999"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@drawable/sc_lines" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="fill_parent"
+                    android:background="#d7e6e2"
+                    android:gravity="right"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="8dp"
+                    android:text="报案地点："
+                    android:textColor="#2c7f6e"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f1f1f1"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:text="深圳市南山区科技园路1234号"
+                    android:textColor="#999999"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@drawable/sc_lines" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="fill_parent"
+                    android:background="#e7f1ee"
+                    android:gravity="right"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="8dp"
+                    android:text="状态："
+                    android:textColor="#2c7f6e"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f8f8f8"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:text="待处理赔案"
+                    android:textColor="#999999"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@drawable/sc_lines" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="fill_parent"
+                    android:background="#d7e6e2"
+                    android:gravity="right"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="8dp"
+                    android:text="状态描述："
+                    android:textColor="#2c7f6e"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f1f1f1"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:text=""
+                    android:textColor="#999999"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@drawable/sc_lines" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="fill_parent"
+                    android:background="#e7f1ee"
+                    android:gravity="right"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="8dp"
+                    android:text="备注："
+                    android:textColor="#2c7f6e"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv12"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f8f8f8"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:text=""
+                    android:textColor="#999999"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@drawable/sc_lines" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

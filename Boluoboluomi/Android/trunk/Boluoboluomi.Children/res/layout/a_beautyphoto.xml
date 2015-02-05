@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    >
+   <RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/babe_top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/top_linear"
+	    >
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="14dp"
+	        android:id="@+id/backBtn"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/babe_fh_btn"/>
+	    <ImageView android:layout_width="1.5dp"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/babe_top_line"
+	        android:layout_toRightOf="@id/backBtn"
+	        android:layout_marginLeft="10dp"
+	        />
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="美图欣赏"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:textColor="#ffffff"
+	        android:textSize="20dp"
+	        android:id="@+id/title"
+	        android:textStyle="bold"/>
+	    <ImageButton android:background="@null"
+	        android:src="@drawable/id_paizhao_ico"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentRight="true"
+	        android:id="@+id/takePhoto"
+	        android:layout_centerVertical="true"
+	        android:padding="10dp"
+	        android:visibility="invisible"
+	        />
+	    <ImageView android:layout_width="1.5dp"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/babe_top_line"
+	        android:layout_toLeftOf="@id/takePhoto"
+	        android:layout_marginLeft="15dp"
+	        android:id="@+id/photoLine"
+	        android:visibility="invisible"
+	        />
+	</RelativeLayout>
+
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center_horizontal"
+	    android:layout_marginTop="15dp"
+	    android:id="@+id/refreshLayout"
+	    >
+	     <ProgressBar
+	       android:id="@+id/progressBar1"
+	       style="?android:attr/progressBarStyleSmall"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content" />
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/refreshDataTv"
+		    android:text="加载数据中，请稍候... ..."
+		    android:textColor="#000000"
+		    android:textSize="14sp"
+		    android:gravity="center_horizontal"
+		    android:layout_marginLeft="10dp"
+		    />
+	</LinearLayout>
+    <ListView android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:divider="#CBCBCB"
+        android:dividerHeight="1dp"
+        android:background="@null"
+        android:id="@+id/beautyPhotoList">
+        
+    </ListView>
+    </LinearLayout>

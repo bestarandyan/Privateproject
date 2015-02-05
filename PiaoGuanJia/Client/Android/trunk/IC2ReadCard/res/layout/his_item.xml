@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:orientation="horizontal" >
+    <TextView  android:layout_width="120dp" android:layout_height="20dp"
+        android:id="@+id/dingdanhao" android:paddingLeft="15dp" android:textColor="#ffffff"/>
+    <TextView  android:layout_width="80dp" android:layout_height="wrap_content"
+        android:id="@+id/name" android:textColor="#ffffff"/>
+    <TextView  android:layout_width="140dp" android:layout_height="wrap_content"
+        android:id="@+id/phonenumber" android:textColor="#ffffff"/>
+    <TextView  android:layout_width="120dp" android:layout_height="wrap_content"
+        android:id="@+id/ordertime" android:textColor="#ffffff"/>
+    <TextView  android:layout_width="200dp" android:layout_height="wrap_content"
+        android:id="@+id/testtime" android:textColor="#ffffff"/>
+    <TextView  android:layout_width="80dp" android:layout_height="wrap_content" android:text="已验证"
+        android:id="@+id/state"  android:textColor="#ffffff"/>
+    <Button  android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/operate" android:textColor="#ffffff" android:background="@drawable/ico02"/>
+    </LinearLayout>

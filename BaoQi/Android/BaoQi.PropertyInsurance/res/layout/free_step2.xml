@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content">
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/step1"
+    >
+        
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="4dp" android:paddingBottom="100dp">
+
+
+        <TextView android:layout_centerVertical="true" android:layout_width="fill_parent" android:layout_height="50dp" android:gravity="center" android:text="*投保人信息"  android:paddingLeft="40dp" android:textColor="@color/red"
+            android:background="@drawable/border_toubaoinfo" android:textSize="20dp" android:id="@+id/text1"/>
+      
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/border_car"
+        android:orientation="horizontal"
+        android:paddingRight="60dp" >
+
+        <TextView
+            android:id="@+id/xing1"
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:background="#EBFAFF"
+            android:gravity="right|center_vertical"
+            android:text="*"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/xing1"
+            android:background="#EBFAFF"
+            android:gravity="right|center_vertical"
+            android:paddingRight="20dp"
+            android:text="姓名:"
+            android:textColor="#4297B4"
+            android:textSize="20dp" />
+			
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/text1"
+            android:singleLine="true" />
+		<RadioGroup
+            android:id="@+id/xingbie"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="170dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/textView1"
+                android:text="男"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="29dp"
+                android:layout_toRightOf="@+id/radioButton1"
+                android:text="女"
+                android:textColor="@color/black" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/xingbie"
+            android:background="#EBFAFF"
+            android:gravity="right|center_vertical"
+            android:paddingRight="20dp"
+            android:text="性别:"
+            android:textColor="#4297B4"
+            android:textSize="20dp" />
+		<TextView
+            android:id="@+id/xing2"
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:background="#EBFAFF"
+             android:gravity="right|center_vertical"
+            android:text="*"
+            android:layout_toLeftOf="@id/textView1"
+            android:textColor="@color/red" />
+        
+
+    </RelativeLayout>
+
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+        <TextView
+            android:id="@+id/xing2"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:background="#EBFAFF"
+             android:gravity="right|center_vertical"
+            android:text="*"
+            android:layout_toLeftOf="@id/textView1"
+            android:textColor="@color/red" />
+        <TextView android:layout_toRightOf="@id/xing2" android:layout_centerVertical="true" android:layout_width="100dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="手机号码:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+        <EditText android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1"/>
+    		<Spinner android:id="@+id/step2_spinner1"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="175dp" android:layout_alignParentRight="true"/>   	
+    	
+    	<TextView android:id="@+id/leixing1" android:layout_centerVertical="true" android:layout_width="120dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="证件类型:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:layout_toLeftOf="@id/step2_spinner1" android:layout_marginRight="30dp"/>
+    	<TextView
+            android:id="@+id/xing3"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="#EBFAFF"
+             android:gravity="right|center_vertical"
+            android:text="*"
+            android:layout_toLeftOf="@id/leixing1"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+        <TextView
+            android:id="@+id/xing3"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="#EBFAFF"
+             android:gravity="right|center_vertical"
+            android:text="*"
+            android:textColor="@color/red" />
+        <TextView android:layout_toRightOf="@id/xing3" android:layout_centerVertical="true" android:layout_width="120dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="出生日期:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+       <EditText android:id="@+id/e_nian" android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1"/>
+    	 <TextView android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="年"  android:paddingRight="20dp" android:textColor="#4297B4"
+           android:textSize="20dp" android:id="@+id/nian" android:layout_toRightOf="@id/e_nian"/>
+       
+    	<EditText android:id="@+id/e_yue" android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="60dp" android:layout_height="wrap_content" android:layout_toRightOf="@id/nian"/>
+    	 <TextView android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="月" android:textColor="#4297B4"
+            android:textSize="20dp" android:id="@+id/yue" android:layout_toRightOf="@id/e_yue"/>
+       
+    	<EditText android:id="@+id/e_ri" android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="60dp" android:layout_height="wrap_content" android:layout_toRightOf="@id/yue"/>
+    	 <TextView android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="日"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:textSize="20dp" android:id="@+id/ri" android:layout_toRightOf="@id/e_ri"/>
+       
+    	<EditText android:id="@+id/zhengjianhaoma" android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="300dp" android:layout_height="wrap_content"  android:layout_alignParentRight="true"/>
+    	   	
+    	<TextView android:id="@+id/leixing2" android:layout_centerVertical="true" android:layout_width="120dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="证件号码:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:layout_toLeftOf="@id/zhengjianhaoma" android:layout_marginRight="30dp"/>
+    	<TextView
+          
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="#EBFAFF"
+             android:gravity="right|center_vertical"
+            android:text="*"
+            android:layout_toLeftOf="@id/leixing2"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+     <TextView
+           android:id="@+id/xing11"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="#EBFAFF"
+             android:gravity="right|center_vertical"
+            android:text="*"
+            android:layout_toLeftOf="@id/leixing2"
+            android:textColor="@color/red" />
+        <TextView android:layout_toRightOf="@id/xing11" android:layout_centerVertical="true" android:layout_width="120dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="常住城市？"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text12"/>
+          <RadioGroup android:id="@+id/changzhuchengshi"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/text12"
+            android:layout_marginRight="60dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/textView1"
+                android:text="北京"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="29dp"
+                android:layout_toRightOf="@+id/radioButton1"
+                android:text="上海"
+                android:textColor="@color/black" />
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/textView1"
+                android:text="广州"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="29dp"
+                android:layout_toRightOf="@+id/radioButton1"
+                android:text="深圳"
+                android:textColor="@color/black" />
+        </RadioGroup>
+        <Spinner android:id="@+id/city1"
+            android:layout_centerVertical="true"  
+            android:background="@drawable/cz_text"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/changzhuchengshi"
+           />
+    	<Spinner android:id="@+id/city2"  
+            android:layout_centerVertical="true"
+            android:background="@drawable/cz_text"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/city1"/>
+    </RelativeLayout>
+    <TextView android:layout_centerVertical="true" android:layout_width="fill_parent" android:layout_height="50dp" android:gravity="center" android:text="*被保人信息"  android:paddingLeft="40dp" android:textColor="@color/red"
+            android:background="@drawable/border_toubaoinfo" android:textSize="20dp" android:id="@+id/text1"/>
+   <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/border_car"
+        android:orientation="horizontal"
+        android:paddingRight="60dp" >
+
+        <TextView
+            android:id="@+id/xing1"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="#EBFAFF"
+            android:gravity="right|center_vertical"
+            android:text="*"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/text15"
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/xing1"
+            android:background="#EBFAFF"
+            android:gravity="right|center_vertical"
+            android:text="被保险人:"
+            android:paddingRight="20dp"
+            android:textColor="#4297B4"
+            android:textSize="20dp" />
+         <TextView
+            android:id="@+id/text16"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/text15"
+            android:layout_marginLeft="20dp"
+            android:gravity="right|center_vertical"
+            android:text="与投保人关系"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+			<Spinner android:id="@+id/guanxi"  
+			    android:layout_centerVertical="true"  
+			    android:background="@drawable/cz_text" 
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:layout_marginLeft="10dp"
+			    android:layout_toRightOf="@id/text16"/>
+      
+    </RelativeLayout>
+   <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/border_car"
+        android:orientation="horizontal"
+        android:paddingRight="60dp" >
+
+        <TextView
+            android:id="@+id/xing1"
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:background="#EBFAFF"
+            android:gravity="right|center_vertical"
+            android:text="*"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/xing1"
+            android:background="#EBFAFF"
+            android:gravity="right|center_vertical"
+            android:paddingRight="20dp"
+            android:text="姓名:"
+            android:textColor="#4297B4"
+            android:textSize="20dp" />
+			
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/text1"
+            android:singleLine="true" />
+		<RadioGroup
+            android:id="@+id/xingbie"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="170dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/textView1"
+                android:text="男"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="29dp"
+                android:layout_toRightOf="@+id/radioButton1"
+                android:text="女"
+                android:textColor="@color/black" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/xingbie"
+            android:background="#EBFAFF"
+            android:gravity="right|center_vertical"
+            android:paddingRight="20dp"
+            android:text="性别:"
+            android:textColor="#4297B4"
+            android:textSize="20dp" />
+		<TextView
+            android:id="@+id/xing2"
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:background="#EBFAFF"
+             android:gravity="right|center_vertical"
+            android:text="*"
+            android:layout_toLeftOf="@id/textView1"
+            android:textColor="@color/red" />
+        
+
+    </RelativeLayout>
+
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+         <TextView
+            android:id="@+id/xing4"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="#EBFAFF"
+             android:gravity="right|center_vertical"
+            android:text="*"
+            android:textColor="@color/red" />
+        <TextView android:layout_toRightOf="@id/xing4" android:layout_centerVertical="true" android:layout_width="120dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="出生日期:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+       <EditText android:id="@+id/e_nian" android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1"/>
+    	 <TextView android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="年"  android:paddingRight="20dp" android:textColor="#4297B4"
+           android:textSize="20dp" android:id="@+id/nian" android:layout_toRightOf="@id/e_nian"/>
+       
+    	<EditText android:id="@+id/e_yue" android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="60dp" android:layout_height="wrap_content" android:layout_toRightOf="@id/nian"/>
+    	 <TextView android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="月" android:textColor="#4297B4"
+            android:textSize="20dp" android:id="@+id/yue" android:layout_toRightOf="@id/e_yue"/>
+       
+    	<EditText android:id="@+id/e_ri" android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="60dp" android:layout_height="wrap_content" android:layout_toRightOf="@id/yue"/>
+    	 <TextView android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="日"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:textSize="20dp" android:id="@+id/ri" android:layout_toRightOf="@id/e_ri"/>
+        	<Spinner android:id="@+id/step2_spinner1"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="175dp" android:layout_alignParentRight="true"/>   	
+    	
+    	<TextView android:id="@+id/leixing1" android:layout_centerVertical="true" android:layout_width="120dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="证件类型:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:layout_toLeftOf="@id/step2_spinner1" android:layout_marginRight="30dp"/>
+    	<TextView
+            android:id="@+id/xing3"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="#EBFAFF"
+             android:gravity="right|center_vertical"
+            android:text="*"
+            android:layout_toLeftOf="@id/leixing1"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+       <TextView
+            android:id="@+id/xing6"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="#EBFAFF"
+             android:gravity="right|center_vertical"
+            android:text="*"
+            android:layout_toLeftOf="@id/leixing1"
+            android:textColor="@color/red" />
+         <TextView android:layout_toRightOf="@id/xing6" android:layout_centerVertical="true" android:layout_width="120dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="手机号码:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+        <EditText android:singleLine="true"  android:layout_centerVertical="true"  android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1"/>
+    	
+    	<EditText android:id="@+id/zhengjianhaoma" android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="300dp" android:layout_height="wrap_content"  android:layout_alignParentRight="true"/>
+    	   	
+    	<TextView android:id="@+id/leixing2" android:layout_centerVertical="true" android:layout_width="120dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="证件号码:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:layout_toLeftOf="@id/zhengjianhaoma" android:layout_marginRight="30dp"/>
+    	<TextView
+          
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="#EBFAFF"
+             android:gravity="right|center_vertical"
+            android:text="*"
+            android:layout_toLeftOf="@id/leixing2"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+    <TextView android:layout_centerVertical="true" android:layout_width="fill_parent" android:layout_height="50dp"  android:text="*受益人       法定"  android:gravity="center_vertical" android:paddingLeft="40dp" android:textColor="@color/red"
+            android:background="@drawable/border_toubaoinfo" android:textSize="20dp" android:id="@+id/text1"/>
+    <TextView android:layout_centerVertical="true" android:layout_width="fill_parent" android:layout_height="50dp" android:gravity="center_vertical" android:text="*保险期限"  android:paddingLeft="40dp" android:textColor="@color/red"
+            android:background="@drawable/border_toubaoinfo" android:textSize="20dp" android:id="@+id/text1"/>
+     
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+      <TextView android:id="@+id/xing8"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:background="#EBFAFF"
+             android:gravity="right|center_vertical"
+            android:text="*"
+            android:layout_toLeftOf="@id/leixing2"
+            android:textColor="@color/red" />
+      <TextView android:id="@+id/tttt1"
+           android:layout_centerVertical="true" 
+           android:layout_width="160dp" 
+           android:layout_height="fill_parent" 
+           android:gravity="right|center_vertical" 
+           android:text="保险生效日期"  
+           android:paddingRight="20dp" 
+           android:textColor="#4297B4"
+           android:background="#EBFAFF"
+           android:textSize="20dp"
+           android:layout_toRightOf="@id/xing8"
+           android:layout_marginRight="30dp"/>
+      <EditText android:id="@+id/shengxiaoriqi" 
+          android:singleLine="true"  
+          android:layout_toRightOf="@id/tttt1"
+          android:layout_centerVertical="true"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"></EditText>
+    	 <TextView
+           android:layout_centerVertical="true" 
+           android:layout_width="wrap_content" 
+           android:layout_height="fill_parent" 
+           android:gravity="right|center_vertical" 
+           android:text="日零时起至2012-04-27日24时止"  
+           android:paddingRight="20dp" 
+           android:textColor="#4297B4"
+           android:background="#EBFAFF"
+           android:textSize="20dp"
+           android:layout_toRightOf="@id/shengxiaoriqi"
+           android:layout_marginRight="30dp"/> 
+    </RelativeLayout>
+    <TextView android:layout_centerVertical="true" android:layout_width="fill_parent" android:layout_height="50dp" android:gravity="center" android:text="*保单及发票寄送"  android:paddingLeft="40dp" android:textColor="@color/red"
+            android:background="@drawable/border_toubaoinfo" android:textSize="20dp" android:id="@+id/text1"/>
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+      <RadioGroup
+            android:id="@+id/xingbie"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="170dp"
+            android:orientation="vertical" >
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/textView1"
+                android:text="支持环保，只需要电子保单（电子保单具有纸质保单相同的法律效力，理赔只需要电子保单号和身份证件）"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/radioButton1"
+                android:text="需要纸质保单或发票（我们会在7个工作日内安排为您免费邮寄，电子保单同时发票）"
+                android:textColor="@color/black" />
+        </RadioGroup>
+     
+    </RelativeLayout>
+    <Button android:layout_marginTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下一步" android:background="@drawable/bj_tag2" android:textColor="@color/white"
+        android:textSize="18sp" android:layout_gravity="center_horizontal" android:id="@+id/nextBtn"/>
+    </LinearLayout>
+   
+    </LinearLayout>
+     </ScrollView>

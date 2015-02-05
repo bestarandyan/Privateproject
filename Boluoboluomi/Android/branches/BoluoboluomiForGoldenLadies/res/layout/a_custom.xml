@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    >
+   <RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/top_linear"
+	    >
+	    <Button android:layout_width="55dp"
+	        android:layout_height="35dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="返回"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="14dp"
+	        android:paddingLeft="10dp"
+	        android:id="@+id/backBtn"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/btn01"/>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="我要定制"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:textColor="#ffffff"
+	        android:textSize="20dp"
+	        android:id="@+id/title"
+	        android:textStyle="bold"/>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/bottom_linear"
+	    android:layout_alignParentBottom="true"
+	    android:padding="4dp"
+	    >
+	    <LinearLayout  android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:layout_marginLeft="20dp"
+	    	android:id="@+id/afreshLinear"
+	    	>
+	        <Button android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:clickable="false"
+		        android:background="@drawable/customize_ico01"/>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="重新选择"
+	        android:textColor="#ffffff"
+	        android:textSize="12dp"
+	        android:clickable="false"
+	        />
+	    </LinearLayout>
+	    <LinearLayout  android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:id="@+id/affirmLinear"
+	    	android:layout_centerInParent="true"
+	    	>
+	        <Button android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:clickable="false"
+		        android:background="@drawable/customize_ico02"/>
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="确认提交"
+		        android:textColor="#ffffff"
+		        android:textSize="12dp"
+		        android:clickable="false"
+		        />
+	    </LinearLayout>
+	    <LinearLayout  android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:layout_marginRight="20dp"
+	    	android:layout_alignParentRight="true"
+	    	android:id="@+id/myCustom"
+	    	>
+	        <Button android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:clickable="false"
+		        android:background="@drawable/customize_ico03"/>
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="我的定制"
+		        android:textColor="#ffffff"
+		        android:textSize="12dp"
+		        android:clickable="false"
+		        />
+	    </LinearLayout>
+	</RelativeLayout>
+	<ScrollView android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_above="@id/bottom_linear"
+	    	android:layout_below="@id/top_linear">
+	    <LinearLayout android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:padding="20dp"
+	    	android:orientation="vertical"
+	    	>
+	   	    <LinearLayout android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal"
+		    	>
+	   	    	<ImageView android:src="@drawable/customize_photo_tuli01"
+	   	    	    android:layout_width="wrap_content"
+	   	    	    android:id="@+id/image1"
+	   	    	    android:layout_height="wrap_content"/>
+	   	    	<LinearLayout android:layout_width="fill_parent"
+				    	android:layout_height="fill_parent"
+				    	android:orientation="vertical"
+				    	android:gravity="bottom"
+				    	android:layout_marginLeft="15dp"
+				    	>
+			   	    	<TextView android:text="拍摄场景"
+			   	    	    android:textColor="#000000"
+			   	    	    android:textStyle="bold"
+			   	    	    android:textSize="16dp"
+			   	    	    android:layout_width="wrap_content"
+			   	    	    android:layout_height="wrap_content"/>
+	   	    			<TextView android:text=""
+			   	    	    android:textColor="#000000"
+			   	    	    android:textSize="11dp"
+			   	    	    android:layout_marginTop="5dp"
+			   	    	    android:id="@+id/content1"
+			   	    	    android:layout_width="wrap_content"
+			   	    	    android:layout_height="wrap_content"/>
+	   		</LinearLayout>
+	   		</LinearLayout>
+	   		<LinearLayout android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal"
+		    	android:layout_marginTop="20dp"
+		    	>
+	   	    	<ImageView android:src="@drawable/customize_photo_tuli02"
+	   	    	    android:layout_width="wrap_content"
+	   	    	    android:id="@+id/image2"
+	   	    	    android:layout_height="wrap_content"/>
+	   	    	<LinearLayout android:layout_width="fill_parent"
+				    	android:layout_height="fill_parent"
+				    	android:orientation="vertical"
+				    	android:gravity="bottom"
+				    	android:layout_marginLeft="15dp"
+				    	>
+			   	    	<TextView android:text="拍摄道具"
+			   	    	    android:textColor="#000000"
+			   	    	    android:textStyle="bold"
+			   	    	    android:textSize="16dp"
+			   	    	    android:layout_width="wrap_content"
+			   	    	    android:layout_height="wrap_content"/>
+	   	    			<TextView android:text=""
+			   	    	    android:textColor="#000000"
+			   	    	    android:textSize="11dp"
+			   	    	    android:layout_marginTop="5dp"
+			   	    	    android:id="@+id/content2"
+			   	    	    android:layout_width="wrap_content"
+			   	    	    android:layout_height="wrap_content"/>
+	   		</LinearLayout>
+	   		</LinearLayout>
+	   		<LinearLayout android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal"
+		    	android:layout_marginTop="20dp"
+		    	>
+	   	    	<ImageView android:src="@drawable/customize_photo_tuli03"
+	   	    	    android:layout_width="wrap_content"
+	   	    	    android:id="@+id/image3"
+	   	    	    android:layout_height="wrap_content"/>
+	   	    	<LinearLayout android:layout_width="fill_parent"
+				    	android:layout_height="fill_parent"
+				    	android:orientation="vertical"
+				    	android:gravity="bottom"
+				    	android:layout_marginLeft="15dp"
+				    	>
+			   	    	<TextView android:text="拍摄服装"
+			   	    	    android:textColor="#000000"
+			   	    	    android:textStyle="bold"
+			   	    	    android:textSize="16dp"
+			   	    	    android:layout_width="wrap_content"
+			   	    	    android:layout_height="wrap_content"/>
+	   	    			<TextView android:text=""
+			   	    	    android:textColor="#000000"
+			   	    	    android:textSize="11dp"
+			   	    	    android:id="@+id/content3"
+			   	    	    android:layout_marginTop="5dp"
+			   	    	    android:layout_width="wrap_content"
+			   	    	    android:layout_height="wrap_content"/>
+	   		</LinearLayout>
+	   		</LinearLayout>
+   	</LinearLayout>
+	</ScrollView>
+   	
+   </RelativeLayout>

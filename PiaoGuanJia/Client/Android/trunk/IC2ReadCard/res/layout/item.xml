@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android= "http://schemas.android.com/apk/res/android"
+android:layout_width= "wrap_content"
+android:layout_height= "wrap_content"
+android:orientation="horizontal" 
+android:paddingTop="10dp"
+android:paddingBottom="10dp">
+
+<ImageView
+	android:id= "@+id/img"
+	android:layout_width="wrap_content"
+	android:layout_height= "wrap_content"
+	android:layout_alignParentLeft="true" 
+	android:src="@drawable/icon"
+	android:layout_marginLeft="20dp"
+	android:layout_centerVertical="true"/>
+
+<TextView
+	android:id= "@+id/tv"
+	android:textSize="16px"
+	android:layout_width="wrap_content"
+	android:layout_height= "wrap_content"
+	android:layout_toRightOf="@+id/img"
+	android:text= "测试"
+	android:textColor="#ffffff"
+	android:layout_marginLeft="10dp"
+	android:layout_centerVertical="true"/>
+
+
+<RadioButton
+	android:id= "@+id/radioButton"
+	android:layout_width= "wrap_content"
+	android:layout_height= "wrap_content"
+	android:layout_alignParentRight="true"   
+	android:layout_centerVertical="true"
+	android:layout_marginRight="20dp"
+	android:button="@drawable/radio_button"
+/>
+
+
+</RelativeLayout>

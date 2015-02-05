@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/step1"
+    >
+     <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+     <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="4dp" android:paddingBottom="100dp">
+     <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="10dp" android:paddingLeft="200dp">
+         <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="选择投保类型：" android:gravity="center_vertical" android:textColor="@color/black" android:textSize="20dp"/>
+    	 <RadioGroup android:layout_width="wrap_content" android:layout_height="fill_parent" android:orientation="horizontal">
+    	     <RadioButton android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="新保车辆" android:textColor="@color/black"/>
+    	     <RadioButton android:layout_marginLeft="20dp"  android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="续保车辆" android:textColor="@color/black"/>
+    	 </RadioGroup>
+         </LinearLayout>
+    <LinearLayout android:paddingLeft="200dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="4dp">
+         <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="        费率选择：" android:gravity="center_vertical" android:textColor="@color/black" android:textSize="20dp"/>
+    	 <RadioGroup android:layout_width="wrap_content" android:layout_height="fill_parent" android:orientation="horizontal">
+    	     <RadioButton android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="电销渠道" android:textColor="@color/black"/>
+    	     <RadioButton android:layout_marginLeft="20dp"  android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="传统渠道" android:textColor="@color/black"/>
+    	 </RadioGroup>
+         </LinearLayout>
+         
+    
+           
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+        <TextView android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="车辆行驶城市:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+        <Spinner android:id="@+id/spinner1"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1"/>
+    	<EditText android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="300dp" android:layout_height="wrap_content" android:id="@+id/edit1" android:layout_alignParentRight="true"/>
+    	<TextView  android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="车牌号:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:layout_toLeftOf="@id/edit1" android:layout_marginRight="30dp"/>
+    	
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+        <TextView android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="车主姓名:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+        <EditText android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1"/>
+    	<Spinner android:id="@+id/step1_spinner2"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="175dp" android:layout_alignParentRight="true"/>   	
+    	
+    	<TextView  android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="车辆品牌:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:layout_toLeftOf="@id/step1_spinner2" android:layout_marginRight="30dp"/>
+    	
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+        <TextView android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="手机号码:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+        <EditText android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1"/>
+    		<Spinner android:id="@+id/step1_spinner3"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="175dp" android:layout_alignParentRight="true"/>   	
+    	<TextView  android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="车辆型号:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:layout_toLeftOf="@id/step1_spinner3" android:layout_marginRight="30dp"/>
+    	
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+        <TextView android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="性别:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+         <RadioGroup  android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:orientation="horizontal">
+    	     <RadioButton android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="男" android:textColor="@color/black"/>
+    	     <RadioButton android:layout_marginLeft="20dp"  android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="女" android:textColor="@color/black"/>
+    	 </RadioGroup>
+    	<Spinner android:id="@+id/step1_spinner4"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="175dp" android:layout_alignParentRight="true"/>   	
+    	<TextView  android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="车型:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:layout_toLeftOf="@id/step1_spinner4" android:layout_marginRight="30dp"/>
+    	
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+        <TextView android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="年龄:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+        <EditText android:singleLine="true"  android:layout_centerVertical="true"  android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1"/>
+    	<EditText android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="300dp" android:layout_height="wrap_content" android:id="@+id/edit1" android:layout_alignParentRight="true"/>
+    	<TextView  android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="发动机号:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:layout_toLeftOf="@id/edit1" android:layout_marginRight="30dp"/>
+    	
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+        <TextView android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="E_mail地址:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+        <EditText android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1"/>
+    	<EditText android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="300dp" android:layout_height="wrap_content" android:id="@+id/edit1" android:layout_alignParentRight="true"/>
+    	<TextView  android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="车架号:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:layout_toLeftOf="@id/edit1" android:layout_marginRight="30dp"/>
+    	
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+        <TextView android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="注册登记日期:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+        <EditText android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1"/>
+    	<EditText android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="300dp" android:layout_height="wrap_content" android:id="@+id/edit1" android:layout_alignParentRight="true"/>
+    	<TextView  android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="排气量:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:layout_toLeftOf="@id/edit1" android:layout_marginRight="30dp"/>
+    	   
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+        <TextView android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="保单生效日期:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+        <EditText android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1"/>
+    	<Spinner android:id="@+id/step1_spinner5"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="175dp" android:layout_alignParentRight="true"/>
+    	<TextView  android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="年平均行驶里程:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:layout_toLeftOf="@id/step1_spinner5" android:layout_marginRight="30dp"/>
+    	
+    </RelativeLayout>
+    <Button android:layout_marginTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下一步" android:background="@drawable/bj_tag2" android:textColor="@color/white"
+        android:textSize="18sp" android:layout_gravity="center_horizontal" android:id="@+id/nextBtn"/>
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout>

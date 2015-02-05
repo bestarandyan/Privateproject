@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#D4E9E4"
+      android:id="@+id/topLayout"
+      >
+      <LinearLayout android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:background="#78B8A7"
+          android:paddingLeft="15dp"
+          android:paddingRight="15dp"
+          android:paddingTop="4dp"
+          android:paddingBottom="6dp"
+          android:gravity="center"
+          android:id="@+id/leftLayout"
+          >
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="11月"
+              android:textSize="12sp"
+              android:textColor="#eeeeee"
+              android:id="@+id/monthTv"
+              />
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="22"
+              android:textSize="20sp"
+              android:textColor="#eeeeee"
+              android:id="@+id/dayTv"
+              />
+      </LinearLayout>
+      <LinearLayout android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:gravity="center_vertical"
+          android:layout_toRightOf="@id/leftLayout"
+          android:layout_marginLeft="5dp"
+          android:layout_centerVertical="true"
+          >
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="新快3"
+              android:textSize="16sp"
+              android:textColor="#959B9B"
+              android:id="@+id/typeCaipiaoTv"
+              />
+          <LinearLayout android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:orientation="horizontal"
+	          android:layout_marginTop="2dp"
+	          >
+	          <TextView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:text="2.00元"
+	              android:textSize="12sp"
+	              android:textColor="#959B9B"
+	              android:id="@+id/payMoneyTv"
+	              />
+	          <TextView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:text="普通订单"
+	              android:textSize="12sp"
+	              android:textColor="#959B9B"
+	              android:id="@+id/typeDingDanTv"
+	              android:layout_marginLeft="10dp"
+	              />
+           </LinearLayout>
+           <LinearLayout android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:orientation="horizontal"
+	          android:layout_marginTop="2dp"
+	          >
+	          <TextView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:text="20140226008期"
+	              android:textSize="12sp"
+	              android:textColor="#959B9B"
+	              android:id="@+id/qihaoTv"
+	              />
+	          <TextView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:text="2014-02-26 9:50"
+	              android:textSize="12sp"
+	              android:textColor="#959B9B"
+	              android:id="@+id/timeTv"
+	              android:layout_marginLeft="10dp"
+	              />
+           </LinearLayout>
+      </LinearLayout>
+      <LinearLayout android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+          android:layout_alignParentRight="true"
+          android:gravity="center_vertical"
+          android:layout_centerVertical="true"
+          >
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="等待付款"
+              android:textSize="16sp"
+              android:textColor="#959B9B"
+              android:id="@+id/stateTv"
+              />
+          <ImageView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:textColor="#71A891"
+              android:layout_marginLeft="5dp"
+              android:src="@drawable/cai_order_ico3"
+              android:layout_marginRight="10dp"
+              android:id="@+id/jiantouIv"
+              />
+      </LinearLayout>
+</RelativeLayout>

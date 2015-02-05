@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	     android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:background="@color/bg_color"
+		android:layout_height="fill_parent">
+		<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/top_linear"
+	    >
+	    <Button android:layout_width="55dp"
+	        android:layout_height="35dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="返回"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="14dp"
+	        android:paddingLeft="10dp"
+	        android:layout_centerVertical="true"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/btn01"/>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="最新积分活动"
+	        android:layout_centerHorizontal="true"
+	        android:id="@+id/title"
+	        android:textColor="#ffffff"
+	        android:layout_centerVertical="true"
+	        android:textSize="20dp"
+	        android:textStyle="bold"/>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/top_linear"
+	    android:id="@+id/companyInfo"
+	    android:padding="10dp"
+	    >
+	    <TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/storeName"
+		    android:textColor="#000000"
+		    android:text="金夫人摄影"
+		    android:textSize="16sp"/>
+	    <TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/QQTv"
+		    android:textColor="#000000"
+		    android:text="QQ咨询：923351045"
+		    android:layout_alignParentRight="true"
+		    android:textSize="16sp"/>
+	</RelativeLayout>
+	<View android:layout_width="match_parent"
+		    android:layout_height="2dp"
+		    android:id="@+id/topLine"
+		    android:background="#B5B5B5"
+		    android:layout_below="@id/companyInfo"
+		    />
+		<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@id/topLine"
+	    android:gravity="center_horizontal"
+	    android:paddingLeft="20dp"
+	    android:paddingRight="20dp"
+	    android:paddingTop="10dp"
+	    android:background="@color/bg_color"
+	    android:orientation="vertical">
+	    <ImageView android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/image"
+	    />
+	    <TextView android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/text"
+		    android:textColor="#000000"
+		    android:textSize="12dp"/>
+	   <!--  <WebView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/wv"
+	        android:textColor="#000000"
+	        android:textSize="15dp"
+	        android:layerType="software"
+	        /> -->
+	 
+	</LinearLayout>
+	<LinearLayout  
+    	android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:orientation="horizontal"
+	    >
+	    <include layout="@layout/integralstore_bottom"
+	        android:layout_width="fill_parent"
+	   	 	android:layout_height="wrap_content"/>
+	    </LinearLayout>
+	</RelativeLayout>

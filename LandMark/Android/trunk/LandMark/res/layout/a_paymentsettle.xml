@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#000000"
+              android:orientation="vertical">
+              <RelativeLayout android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="visible"
+        android:background="@drawable/top_bg" >
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/top_ico1"
+           />
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="新浪微博"
+		    android:textSize="20sp"
+		    android:layout_centerInParent="true"
+		    android:textColor="#ffffff"
+		    android:id="@+id/titleTv"
+		    />
+		<ImageButton
+            android:id="@+id/rightBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/top_ico3"
+            android:visibility="gone"
+           />
+    </RelativeLayout>
+        <WebView android:layout_width="match_parent"
+                   android:layout_height="fill_parent"
+                   android:background="#000000"
+                   android:id="@+id/wv"
+                   android:layout_below="@id/topLayout"
+                   ></WebView>
+ </RelativeLayout>

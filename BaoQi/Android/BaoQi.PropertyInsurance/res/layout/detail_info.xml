@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" 
+    android:id="@+id/right_detail"
+    >
+   
+ <LinearLayout android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+        	>        
+        	 <ImageView android:src="@drawable/ico02"
+        	     android:layout_width="wrap_content"
+        	     android:layout_gravity="center_vertical"
+        	     android:layout_height="wrap_content"/>
+        	 <TextView android:layout_width="wrap_content"
+        	     android:layout_height="wrap_content"
+        	     android:layout_marginLeft="20dp"
+        	     android:textSize="20dp"
+        	     android:id="@+id/leixing_text"
+        	     android:textColor="@color/red"
+        	     android:text="保单详细信息"/>
+	        </LinearLayout> 
+	        <LinearLayout android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:orientation="vertical"
+		        android:padding="5dp"
+        	>   
+        	   <ImageView android:layout_width="fill_parent"
+        	       android:layout_height="fill_parent"
+        	       android:src="@drawable/personal_view_tu"/>
+        	   </LinearLayout>
+        	  
+        	</LinearLayout>
+        

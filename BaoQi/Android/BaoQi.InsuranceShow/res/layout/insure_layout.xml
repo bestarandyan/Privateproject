@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mytaskmainLinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/mytaskTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_title_layout" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <!-- 下面的部分为上面显示的部分 -->
+
+        <LinearLayout
+            android:id="@+id/relative1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <!-- 下面的部分为上面的左边显示的部分 -->
+
+            <LinearLayout
+                android:id="@+id/Ptab1"
+                android:layout_width="220dp"
+                android:layout_height="fill_parent"
+                android:background="@color/hospital_green"
+                android:orientation="vertical"
+                android:padding="7px" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/currentButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/plan_tag"
+                        android:text="电子投保"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/leftbottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/LeftcurrenttaskLinearLayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/bulidIsure"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/personal_nav_bg"
+                                android:text="新建投保书"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/maintainbook"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/personal_nav_bg"
+                                android:text="维护电子投保书"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/searchcard"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/personal_nav_bg"
+                                android:text="投保单状态查询"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/searchcardback"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/personal_nav_bg"
+                                android:text="投保单交回查询"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LefthistorytaskLinearLayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" >
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 下面的模块为右边显示的部分 -->
+ <LinearLayout
+                android:id="@+id/Ptab3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:visibility="gone"
+                android:orientation="vertical" >
+                </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Ptab2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/cusinfo"
+                        android:layout_width="150dip"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/single_tag01_on"
+                        android:gravity="center_vertical|center"
+                        android:text="1.客户资料"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/insureItem"
+                        android:layout_width="150dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        
+                        android:background="@drawable/single_tag01"
+                        android:gravity="center_vertical|center"
+                        android:text="2.投保事项"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/auth"
+                        android:layout_width="150dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                      
+                        android:background="@drawable/single_tag01"
+                        android:gravity="center_vertical|center"
+                        android:text="3.转账授权"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/notify"
+                        android:layout_width="150dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                      
+                        android:background="@drawable/single_tag01"
+                        android:gravity="center_vertical|center"
+                        android:text="4.相关告知"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        />
+                    <TextView
+                        android:id="@+id/sure"
+                        android:layout_width="150dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                      
+                        android:background="@drawable/single_tag01"
+                        android:gravity="center_vertical|center"
+                        android:text="5.确认投保"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/payinfo"
+                        android:layout_width="150dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                       
+                        android:background="@drawable/single_tag01"
+                        android:gravity="center_vertical|center"
+                        android:text="支付信息"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#d0d0d0" />
+                <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            
+                <LinearLayout
+                    android:id="@+id/contents"
+                    android:layout_width="fill_parent" android:orientation="vertical"
+                    android:layout_height="fill_parent" >
+                    
+                             
+                </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+       
+    </RelativeLayout>
+</LinearLayout>

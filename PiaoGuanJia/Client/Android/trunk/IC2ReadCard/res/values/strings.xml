@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">票管家</string>
+    <string name="sReadCard">读卡</string>
+    <string name="sScanDevice">扫描蓝牙设备</string>    
+    <string name="nameLable">姓名</string>    
+</resources>

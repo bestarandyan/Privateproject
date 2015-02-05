@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sp_body_bg"
+    
+    android:orientation="vertical" >
+    <RelativeLayout android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:background="@drawable/sp_top_bg"
+    	>
+       <Button android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:background="@drawable/fh_btn"
+    	android:text="返回"
+    	android:textColor="#ffffff"
+    	android:textSize="18dp"
+    	android:layout_centerVertical="true"
+    	android:layout_marginLeft="10dp"
+    	android:id="@+id/back"
+    	/>
+       <Button android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:background="@drawable/lj_btn"
+    	android:text="连接设备"
+    	android:textColor="#ffffff"
+    	android:textSize="18dp"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentRight="true"
+    	android:layout_marginRight="10dp"
+    	android:id="@+id/connectlanya"
+    	android:visibility="gone"
+    	/>
+    </RelativeLayout>
+      <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            >
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="订单详情："/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:id="@+id/detailText"
+                />
+        </LinearLayout>
+   
+       
+        <!-- 照片页 -->
+         <LinearLayout android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_marginTop="10dip"
+	        android:id="@+id/image_linear"
+	        android:gravity="center_horizontal"
+	        android:layout_height="wrap_content">
+        <ImageView 
+            android:id="@+id/imageView1"
+            android:background="@drawable/photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+         
+        </LinearLayout>
+         <!-- 照片与信息展示项 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal"
+        android:paddingLeft="20dip" >
+
+        <!-- 信息页 -->
+
+        <LinearLayout
+            android:id="@+id/info_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image_linear"
+            android:orientation="vertical"
+            android:paddingLeft="50dip" >
+
+            <!-- 信息部分1 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:text="姓       名："
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <!-- 信息部分2 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:text="身份证号："
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <!-- 信息部分3 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:text="订单编号："
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <!-- 信息部分4 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:text="预定时间："
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <!-- 信息部分5 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:text="门票类型："
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <!-- 信息部分6 -->
+
+            <LinearLayout
+                android:id="@+id/numberLinear"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:text="预定数量："
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text=""
+                    android:textColor="#FFB724"
+                    android:textSize="40sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/info_linear"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <Button
+            android:id="@+id/duka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/linearLayout1"
+            android:layout_centerVertical="true"
+            android:background="@drawable/read"
+            android:textColor="#ffffff" />
+        </LinearLayout>
+
+        
+
+    </RelativeLayout>
+
+    <!-- 底端信息 -->
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/inputLinear"
+	    android:layout_marginTop="20dp"
+	    >
+	    <TextView android:text="请输入身份证号码或者订单编号"
+	        android:id="@+id/btn1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FFFFFF"
+	        android:layout_marginLeft="50dp"
+	        android:textSize="18sp"/>
+	    <EditText android:background="@drawable/text"
+	        android:id="@+id/ed1"
+	        android:paddingLeft="8dip"
+	        android:textSize="16sp"
+	        android:textColor="#333333"
+	        android:layout_marginLeft="50dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@id/btn1"
+	        android:hint="请输入身份证号或订单编号"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	    <Button
+	        android:layout_marginLeft="8dip"
+	        android:id="@+id/btn2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FFFFFF"
+	        android:textSize="18sp"
+	        android:layout_toRightOf="@id/ed1"
+	        android:layout_alignBottom="@id/ed1"
+	        android:background="@drawable/btn1"/>
+	    
+	
+	</RelativeLayout>
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="bottom|center_horizontal">
+	  <TextView android:text="电  子  票  券  验  证  系  统"
+	        android:textColor="#FFFFFF"
+	        android:textSize="25dp"
+	        android:id="@+id/view9"
+	        android:layout_marginBottom="50dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_relative"
+    android:background="@drawable/body_bg">
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/gereninfoLin"
+        >
+   <include layout="@layout/head_title_layout"/>
+   </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/titleinfo"
+        android:layout_below="@id/gereninfoLin"
+        >
+         <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/map" />
+        <Button android:background="@drawable/leftbuttonbg"
+            android:text="@string/shouye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p_backhome_btn"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            />
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+	        android:textColor="@color/white"
+	        android:text=">"/>
+	    <Button android:background="@drawable/leftbuttonbg"
+            android:text="@string/gereninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/geren_info_btn"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            />
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+	        android:textColor="@color/white"
+	        android:text=">"/>
+	    <Button android:background="@drawable/leftbuttonbg"
+            android:text="@string/new_success_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/success_info_btn"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            />
+        </LinearLayout>
+       
+      
+    </LinearLayout>
+    <LinearLayout 
+         android:layout_height="fill_parent"
+		 android:orientation="horizontal"
+		 android:layout_width="fill_parent"
+		 android:layout_below="@id/titleinfo"
+		 android:background="@color/white"
+        >
+     <LinearLayout 
+		        android:layout_height="fill_parent"
+		        android:orientation="vertical"
+		        android:id="@+id/expandle"
+		        android:layout_width="200dp"
+       			android:background="#01b0d3"
+       			android:padding="10dp"
+		        >
+		  <LinearLayout android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:orientation="vertical"
+		        android:background="@drawable/personal_content"
+        	>         
+        	 <Button android:background="@drawable/personal_title"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"/>
+        	<ExpandableListView android:id="@+id/expandableListView"
+				android:layout_width="wrap_content" 
+   				android:layout_height="wrap_content" 
+    			android:drawSelectorOnTop="false"
+   				android:groupIndicator="@null"
+			></ExpandableListView>
+        </LinearLayout> 
+        
+		 
+        </LinearLayout>
+        
+      <LinearLayout android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:padding="20dp"
+		        android:id="@+id/right_linearLayout"
+        	>    
+        	    
+        	</LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/step2"
+    >
+         <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="4dp" android:paddingBottom="100dp">
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+        <TextView android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="车辆损失险:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+        <Spinner android:id="@+id/step2_spinner1"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1"/>   	
+        <EditText android:id="@+id/step2_e1" android:text="￥500" android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp"  android:layout_toRightOf="@id/step2_spinner1"/>
+    	
+        <EditText  android:id="@+id/step2_e2" android:text="￥0" android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_alignParentRight="true"/>
+    	<Spinner android:id="@+id/step2_spinner2"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toLeftOf="@id/step2_e2"/>   	
+    	<TextView  android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="自燃损失险:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:layout_toLeftOf="@id/step2_spinner2" android:layout_marginRight="30dp"/>
+    	
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+        <TextView android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="商业第三者责任险:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+        <Spinner android:id="@+id/step2_spinner3"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1"/>   	
+        <EditText android:id="@+id/step2_e3"   android:text="￥600"  android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp"  android:layout_toRightOf="@id/step2_spinner3"/>
+    	<EditText android:text="￥0"    android:id="@+id/step2_e4"  android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_alignParentRight="true"/>
+    	<Spinner android:id="@+id/step2_spinner4"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toLeftOf="@id/step2_e4"/>   	
+    	<TextView  android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="车辆划痕损失险:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:layout_toLeftOf="@id/step2_spinner4" android:layout_marginRight="30dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+        <TextView android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="全车盗抢险:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+        <Spinner android:id="@+id/step2_spinner5"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1"/>   	
+        <EditText  android:id="@+id/step2_e5" android:text="￥1340"  android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp"  android:layout_toRightOf="@id/step2_spinner5"/>
+    	<EditText android:text="￥0"    android:id="@+id/step2_e6"  android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_alignParentRight="true"/>
+    	<Spinner android:id="@+id/step2_spinner6"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toLeftOf="@id/step2_e6"/>   	
+    	<TextView  android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="车辆损失险:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:layout_toLeftOf="@id/step2_spinner6" android:layout_marginRight="30dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+        <TextView android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="司机座位责任险:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+         <Spinner android:id="@+id/step2_spinner7"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1"/>   	
+        <EditText android:id="@+id/step2_e7"  android:text="￥0"  android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp"  android:layout_toRightOf="@id/step2_spinner7"/>
+    	<EditText android:text="￥0"    android:id="@+id/step2_e8"  android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_alignParentRight="true"/>
+    	<Spinner android:id="@+id/step2_spinner8"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toLeftOf="@id/step2_e8"/>   	
+    	<TextView  android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="商业第三者责任险:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:layout_toLeftOf="@id/step2_spinner8" android:layout_marginRight="30dp"/>	
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+        <TextView android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="乘客座位责任险:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+        <Spinner android:id="@+id/step2_spinner9"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1"/>   	
+        <EditText android:id="@+id/step2_e9"  android:text="￥0"   android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp"  android:layout_toRightOf="@id/step2_spinner9"/>
+    	<EditText android:text="￥0"    android:id="@+id/step2_e10"  android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_alignParentRight="true"/>
+    	<Spinner android:id="@+id/step2_spinner10"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toLeftOf="@id/step2_e10"/>   	
+    	<TextView  android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="全车盗抢险:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:layout_toLeftOf="@id/step2_spinner10" android:layout_marginRight="30dp"/>	
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+        <TextView android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="玻璃单独破碎险:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+        <Spinner android:id="@+id/step2_spinner11"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1"/>   	
+        <EditText android:id="@+id/step2_e11"  android:text="￥0"   android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp"  android:layout_toRightOf="@id/step2_spinner11"/>
+    	<EditText  android:text="￥0"   android:id="@+id/step2_e12"  android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_alignParentRight="true"/>
+    	<Spinner android:id="@+id/step2_spinner12"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toLeftOf="@id/step2_e12"/>   	
+    	<TextView  android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="车上人员责任险:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:layout_toLeftOf="@id/step2_spinner12" android:layout_marginRight="30dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+        <TextView android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="车辆划痕损失险:"  android:paddingRight="20dp" android:textColor="#4297B4"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+        <Spinner android:id="@+id/step2_spinner13"  android:layout_centerVertical="true"  android:background="@drawable/cz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1"/>   	
+        <EditText android:id="@+id/step2_e13"  android:text="￥0"   android:singleLine="true"  android:layout_centerVertical="true" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp"  android:layout_toRightOf="@id/step2_spinner13"/>
+    	
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/border_car" android:paddingRight="60dp" android:layout_width="fill_parent" android:layout_height="60dp" android:orientation="horizontal">
+        <TextView android:layout_centerVertical="true" android:layout_width="200dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="商业险:"  android:paddingRight="20dp" android:textColor="#FF0000"
+            android:background="#EBFAFF" android:textSize="20dp" android:id="@+id/text1"/>
+        <TextView android:id="@+id/value_shangyexian" android:text="00" android:textSize="20dp" android:layout_centerVertical="true" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@id/text1" android:textColor="#FF0000"/>
+    	
+    </RelativeLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_gravity="center_horizontal">
+   <Button  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上一步" android:background="@drawable/bj_tag2" android:textColor="@color/white"
+        android:textSize="18sp"  android:id="@+id/backBtn"/>
+    <Button android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确认" android:background="@drawable/bj_tag2" android:textColor="@color/white"
+        android:textSize="18sp" android:layout_gravity="center_horizontal" android:id="@+id/nextBtn"/>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout>

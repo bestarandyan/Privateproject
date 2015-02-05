@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+            <ScrollView
+                android:id="@+id/part2_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="200dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="保险期限"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/sp1"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip" />
+            </LinearLayout>
+
+
+            
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/border_yiwai"
+                        android:orientation="horizontal"
+                        android:paddingRight="60dp" >
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="400dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:background="#EBFAFF"
+                            android:gravity="right|center_vertical"
+                            android:text="保障范围"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/edit1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:singleLine="true" />
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="30dp"
+                            android:layout_toLeftOf="@id/edit1"
+                            android:background="#EBFAFF"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:text="保险金额"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/border_car"
+                        android:orientation="horizontal"
+                        android:paddingRight="60dp" >
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="300dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:text="房屋"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="200dip"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/text1"
+                            android:gravity="center_vertical"
+                            android:text="承诺范围"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/edit1"
+                            android:layout_width="50dip"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="万元"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <EditText
+                            android:layout_width="200dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@id/edit1"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/border_car"
+                        android:orientation="horizontal"
+                        android:paddingRight="60dp" >
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="300dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:text="房屋装修"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="200dip"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/text1"
+                            android:gravity="center_vertical"
+                            android:text="承诺范围"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/edit1"
+                            android:layout_width="50dip"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="万元"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <EditText
+                            android:layout_width="200dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@id/edit1"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/border_car"
+                        android:orientation="horizontal"
+                        android:paddingRight="60dp" >
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="300dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:text="室内财产"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="200dip"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/text1"
+                            android:gravity="center_vertical"
+                            android:text="承诺范围"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/edit1"
+                            android:layout_width="50dip"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="元/天"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <EditText
+                            android:layout_width="200dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@id/edit1"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+                    
+                    <TextView 
+                        android:layout_marginLeft="400dip"
+                        android:textColor="#000000"
+                        android:textSize="20dip"
+                        android:text="房屋、房屋装修、室内财产至少填写一项,室内财产保额为家用电器、家具、服装、床上用品保额之和"
+                        android:layout_width="400dip"
+                        android:layout_height="wrap_content"/>
+                    <!-- 附加险 -->
+                    
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/border_yiwai"
+                        android:orientation="horizontal"
+                        android:paddingRight="60dp" >
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="400dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:background="#EBFAFF"
+                            android:gravity="right|center_vertical"
+                            android:text="附加险"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/edit1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:singleLine="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/border_car"
+                        android:orientation="horizontal"
+                        android:paddingRight="60dp" >
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="300dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:text="室内财产盗抢综合险"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="200dip"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/text1"
+                            android:gravity="center_vertical"
+                            android:text="承诺范围"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/edit1"
+                            android:layout_width="50dip"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="万"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <Spinner
+                            android:id="@+id/sp2"
+                            android:layout_width="200dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@id/edit1"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/border_car"
+                        android:orientation="horizontal"
+                        android:paddingRight="60dp" >
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="300dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:text="水暖管爆裂损失"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="200dip"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/text1"
+                            android:gravity="center_vertical"
+                            android:text="承诺范围"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/edit1"
+                            android:layout_width="50dip"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="万"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <Spinner
+                            android:id="@+id/sp3"
+                            android:layout_width="200dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@id/edit1"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/border_car"
+                        android:orientation="horizontal"
+                        android:paddingRight="60dp" >
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="300dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:text="家用电器用电安全损失"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="200dip"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/text1"
+                            android:gravity="center_vertical"
+                            android:text="承诺范围"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/edit1"
+                            android:layout_width="50dip"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="元/天"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <Spinner
+                            android:id="@+id/sp4"
+                            android:layout_width="200dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@id/edit1"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/border_car"
+                        android:orientation="horizontal"
+                        android:paddingRight="60dp" >
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="300dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:text="高空坠物责任"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="200dip"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/text1"
+                            android:gravity="center_vertical"
+                            android:text="承诺范围"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/edit1"
+                            android:layout_width="50dip"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="元/天"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <Spinner
+                            android:id="@+id/sp5"
+                            android:layout_width="200dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@id/edit1"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/border_car"
+                        android:orientation="horizontal"
+                        android:paddingRight="60dp" >
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="300dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:text="家庭住户第三者责任"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="200dip"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/text1"
+                            android:gravity="center_vertical"
+                            android:text="承诺范围"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/edit1"
+                            android:layout_width="50dip"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <Spinner
+                            android:id="@+id/sp6"
+                            android:layout_width="200dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@id/edit1"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/border_car"
+                        android:orientation="horizontal"
+                        android:paddingRight="60dp" >
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="300dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:text="保姆人身意外"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="200dip"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/text1"
+                            android:gravity="center_vertical"
+                            android:text="承诺范围"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/edit1"
+                            android:layout_width="50dip"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="元/天"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <Spinner
+                            android:id="@+id/sp7"
+                            android:layout_width="200dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@id/edit1"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/border_car"
+                        android:orientation="horizontal"
+                        android:paddingRight="60dp" >
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="300dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:text="家养宠物责任"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="200dip"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/text1"
+                            android:gravity="center_vertical"
+                            android:text="承诺范围"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/edit1"
+                            android:layout_width="50dip"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="元/天"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <Spinner
+                            android:id="@+id/sp8"
+                            android:layout_width="200dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@id/edit1"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/border_car"
+                        android:orientation="horizontal"
+                        android:paddingRight="60dp" >
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="300dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:text="出租人责任险"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="200dip"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/text1"
+                            android:gravity="center_vertical"
+                            android:text="承诺范围"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/edit1"
+                            android:layout_width="50dip"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="元/天"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <Spinner
+                            android:id="@+id/sp9"
+                            android:layout_width="200dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@id/edit1"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+                    <!--  -->
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/border_yiwai"
+                        android:orientation="horizontal"
+                        android:paddingRight="60dp" >
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dip"
+                            android:background="#EBFAFF"
+                            android:gravity="right|center_vertical"
+                            android:text="保费信息"
+                            android:textColor="#4297B4"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/border_car"
+                        android:orientation="horizontal"
+                        android:paddingRight="60dp" >
+
+                        <RadioButton
+                            android:id="@+id/TextView02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:text="请使用优惠劵"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/TextView01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="原	价：0元"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/border_car"
+                        android:orientation="horizontal"
+                        android:paddingRight="60dp" >
+
+                        <EditText
+                            android:id="@+id/TextView04"
+                            android:layout_width="300dp"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="20dp"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@+id/TextView04"
+                            android:gravity="center_vertical"
+                            android:text="使用"
+                            android:textSize="18dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_centerVertical="true"
+                                android:gravity="right|center_vertical"
+                                android:text="会员价："
+                                android:textColor="#000000"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/TextView03"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_centerVertical="true"
+                                android:gravity="right|center_vertical"
+                                android:singleLine="true"
+                                android:text="0元"
+                                android:textColor="@color/red"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="20dip"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/guo_nextbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bj_tag2"
+                            android:gravity="center"
+                            android:text="立即投保"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="20dip"
+                            android:gravity="center_vertical"
+                            android:text="还不是会员？"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:text="立即注册"
+                            android:textColor="@color/red"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+</LinearLayout>

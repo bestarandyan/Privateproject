@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:background="@drawable/repeat_bg"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent"
+      android:layout_height="50dp"
+      android:background="#023F30"
+      android:id="@+id/topLayout"
+      >
+      <ImageButton android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/cai_top_ico1"
+          android:layout_centerVertical="true"
+          android:id="@+id/openMenuBtn"
+          android:padding="10dp"
+          android:background="@null"
+          />
+      <View android:layout_width="1dp"
+          android:layout_height="fill_parent"
+          android:background="@drawable/cai_yaoyiyao_line"
+          android:layout_toRightOf="@id/openMenuBtn"
+          android:id="@+id/line1"
+          />
+      <ImageView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/cai_top_logo"
+          android:layout_toRightOf="@id/line1"
+          android:layout_marginLeft="10dp"
+          android:id="@+id/topLogoImg"
+          />
+      <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="656彩票行"
+          android:layout_centerInParent="true"
+          android:textColor="#ffffff"
+          android:textSize="20sp"
+          android:id="@+id/titleTv"
+          android:visibility="gone"
+          />
+      <ImageButton android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/cai_top_ico2"
+          android:layout_centerVertical="true"
+          android:id="@+id/openUserBtn"
+          android:padding="10dp"
+          android:layout_alignParentRight="true"
+          android:background="@null"
+          />
+      <View android:layout_width="1dp"
+          android:layout_height="fill_parent"
+          android:background="@drawable/cai_yaoyiyao_line"
+          android:layout_toLeftOf="@id/openUserBtn"
+          android:id="@+id/rightLine"
+          />
+  </RelativeLayout>
+    <FrameLayout
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+</LinearLayout>

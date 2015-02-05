@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sc_body_bg01"
+    android:orientation="vertical" >
+
+     <!-- head 
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_bg"
+    android:orientation="vertical" >
+</LinearLayout>
+-->
+<include layout="@layout/sc_a_head"
+    android:id="@+id/top_image"></include>
+<ImageView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+    <!-- title信息 -->
+
+    <RelativeLayout
+        android:id="@+id/linear1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_image"
+        android:background="@drawable/sc_title_bg" >
+
+        <Button
+            android:id="@+id/fanhui"   
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/sc_fh_btn"
+            android:paddingLeft="5dp"
+            android:text="返回"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="赔案处理"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+		<LinearLayout android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            
+		    >
+		    <RelativeLayout android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/sc_xx_btn"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:gravity="right|top"
+            android:text=""
+            android:layout_alignParentRight="true"
+            android:id="@+id/notifiBtn"
+            android:textSize="10sp" />
+        <Button
+            android:id="@+id/notication"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/sc_home_dot"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text=""
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            android:textSize="10sp" />
+        </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+       
+    <RelativeLayout
+        android:layout_below="@id/linear1"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:id="@+id/linear4"
+        android:gravity="center_horizontal"
+        
+         >
+	<LinearLayout android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal"
+	    android:id="@+id/Btnlinear1"
+	    android:layout_centerVertical="true"
+	    >
+	    <ImageButton
+            android:id="@+id/step1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sc_dot_ls" />
+
+        <ImageButton
+            android:id="@+id/image2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/step1"
+            android:background="@drawable/sc_line_ls" />
+	</LinearLayout>
+        
+<LinearLayout android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal"
+	    android:id="@+id/Btnlinear2"
+	    android:layout_toRightOf="@id/Btnlinear1"
+	    android:layout_centerVertical="true"
+	    >
+        <ImageButton
+            android:id="@+id/step2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_toRightOf="@id/image2"
+            android:src="@drawable/sc_dot_ls" />
+
+
+        <ImageButton
+            android:id="@+id/image6"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/step2"
+            android:background="@drawable/sc_line" />
+        </LinearLayout>
+<LinearLayout android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal"
+	    android:id="@+id/Btnlinear3"
+	    android:layout_toRightOf="@id/Btnlinear2"
+	    android:layout_centerVertical="true"
+	    >
+        <ImageButton
+            android:id="@+id/step4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_toRightOf="@id/image6"
+            android:src="@drawable/sc_dot" />
+
+        <ImageButton
+            android:id="@+id/image8"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/step4"
+            android:background="@drawable/sc_line" />
+
+        <ImageButton
+            android:id="@+id/step5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_toRightOf="@id/image8"
+            android:src="@drawable/sc_dot" />
+        </LinearLayout>
+        <TextView android:textColor="#333333"
+            android:id="@+id/tv30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认服务方式"
+            android:layout_alignLeft="@id/Btnlinear1"
+            android:layout_below="@id/Btnlinear1"
+            android:layout_marginLeft="-10dp"
+            android:textSize="10sp" />
+        <TextView android:textColor="#333333"
+            android:id="@+id/tv31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="现场拍照"
+            android:layout_alignLeft="@id/Btnlinear2"
+            android:layout_below="@id/Btnlinear2"
+            android:layout_marginLeft="-15dp"
+            android:textSize="10sp" />
+
+        <TextView android:textColor="#333333"
+            android:id="@+id/tv33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="申请索赔"
+            android:layout_alignLeft="@id/Btnlinear3"
+            android:layout_below="@id/Btnlinear3"
+            android:layout_marginLeft="-15dp"
+            android:textSize="10sp" />
+
+        <TextView android:textColor="#333333"
+            android:id="@+id/tv34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束"
+            android:layout_alignRight="@id/Btnlinear3"
+            android:layout_below="@id/Btnlinear3"
+            android:layout_marginRight="-5dp"
+            android:textSize="10sp" />
+        
+        <Button
+	        android:id="@+id/step2Btn"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_alignLeft="@id/Btnlinear2"
+	        android:layout_marginLeft="-15dp"
+	        android:background="@null"
+	        android:text="" />
+	    <Button
+	        android:id="@+id/step4Btn"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_alignLeft="@id/Btnlinear3"
+	        android:layout_marginLeft="-15dp"
+	        android:background="@null"
+	         />
+	    <Button
+	        android:id="@+id/step5Btn"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_alignRight="@id/Btnlinear3"
+	        android:layout_marginRight="-10dp"
+	        android:background="@null"
+	        />
+	     <ImageView
+            android:visibility="visible"
+            android:id="@+id/stepImage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/Btnlinear2"
+            android:layout_above="@id/Btnlinear2"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/sc_xsd" />
+	    <ImageView
+            android:visibility="visible"
+            android:id="@+id/stepImage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/Btnlinear3"
+            android:layout_above="@id/Btnlinear3"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/sc_xsd" />
+	    <ImageView
+            android:visibility="visible"
+            android:id="@+id/stepImage3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/Btnlinear3"
+            android:layout_above="@id/Btnlinear3"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/sc_xsd" />
+    </RelativeLayout>
+
+   
+
+    <RelativeLayout
+        android:id="@+id/linear5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear4"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sc_biankuang"
+        android:padding="5dp" >
+
+        <TextView 
+            android:id="@+id/currentStep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:text="现场拍照"
+            android:textColor="#a4343a" />
+
+        <TextView
+            android:id="@+id/detailT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="详情"
+            android:textColor="#a4343a"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/suo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/detailT"
+            android:background="@null"
+            android:padding="5dp"
+            android:src="@drawable/sc_zk01"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- 底部按钮 -->
+
+    <LinearLayout
+        android:id="@+id/linear7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/sc_ly_bottom_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sc_aj_btn2"
+            android:text="提交"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:background="@drawable/sc_aj_btn2"
+            android:text="取消"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/linear7"
+        android:layout_below="@id/linear5"
+        android:divider="@null"
+        android:numColumns="2"
+        android:columnWidth="200dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:paddingTop="10dp"
+        android:fadingEdge="none"
+        android:visibility="visible" >
+    </GridView>
+
+    <LinearLayout
+        android:id="@+id/detailLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linear7"
+        android:layout_below="@id/linear5"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/detailTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="2012-08-20 18:30"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/detailContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="理赔结束，已给您设置的银行账号汇款，请注意查收"
+            android:textColor="#000000" />
+    </LinearLayout>
+<!-- 索赔申请 -->
+
+        <ScrollView  android:layout_above="@id/linear7"
+        	android:layout_below="@id/linear5"
+            android:layout_width="fill_parent"
+            android:id="@+id/suopei"
+            android:visibility="gone"
+            android:layout_height="wrap_content" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         >
+	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear4"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sc_biankuang"
+        android:padding="5dp" >
+
+        <TextView 
+            android:id="@+id/currentStep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:text="赔款信息"
+            android:textColor="#a4343a" />
+
+        <TextView
+            android:id="@+id/detailT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="详情"
+            android:textColor="#a4343a"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/suo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/detailT"
+            android:background="@null"
+            android:padding="5dp"
+            android:src="@drawable/sc_zk01"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+            </LinearLayout>
+       
+<!-- 单证补全 -->
+        <RelativeLayout
+            android:id="@+id/linear8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/sc_biankuang"
+            android:padding="5dp"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="20dp"
+                android:text="单证补全"
+                android:textColor="#a4343a" />
+
+            <TextView
+                android:id="@+id/detailT2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="详情"
+                android:visibility="gone"
+                android:textColor="#a4343a" />
+
+            <ImageButton
+                android:id="@+id/suo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/detailT2"
+                android:background="@null"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:src="@drawable/sc_zk01" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="visible" >
+        </LinearLayout>
+<!-- 确认银行账号 -->
+        <RelativeLayout
+            android:id="@+id/linear9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/sc_biankuang"
+            android:padding="5dp"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="20dp"
+                android:text="确认银行账号"
+                android:textColor="#a4343a" />
+
+            <TextView
+                android:id="@+id/detailT1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="详情"
+                android:visibility="gone"
+                android:textColor="#a4343a" />
+
+            <ImageButton
+                android:id="@+id/suo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/detailT1"
+                android:background="@null"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:src="@drawable/sc_zk01" />
+        </RelativeLayout>
+
+      
+            <LinearLayout
+                android:id="@+id/linear11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="visible" >
+                
+            </LinearLayout>
+        
+    </LinearLayout>
+</ScrollView>
+   
+
+</RelativeLayout>

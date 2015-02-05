@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+      <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <CheckBox
+                            android:id="@+id/p1"
+                            android:layout_width="50dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/p2"
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dip"
+                            android:gravity="center"
+                            android:text="是投保人的"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/p3"
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dip"
+                            android:gravity="center"
+                            android:text="被保人姓名"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/p4"
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dip"
+                            android:gravity="center"
+                            android:text="年龄"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/p5"
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dip"
+                            android:gravity="center"
+                            android:text="性别"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/p6"
+                            android:layout_width="150dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="职业风险等级"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+</LinearLayout>

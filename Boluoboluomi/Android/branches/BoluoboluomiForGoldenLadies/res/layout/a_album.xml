@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:id="@+id/parent"
+    android:orientation="vertical" >
+ 
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/top_linear"
+	    >
+	    <Button android:layout_width="55dp"
+	        android:layout_height="35dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="返回"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="14sp"
+	        android:paddingLeft="10dp"
+	        android:id="@+id/backBtn"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/btn01"/>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="我的相册"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:textColor="#ffffff"
+	        android:textSize="20sp"
+	        android:id="@+id/title"
+	        android:textStyle="bold"/>
+	    <ImageButton android:background="@drawable/btn02"
+	        android:src="@drawable/id_paizhao_ico"
+	        android:layout_width="55dp"
+	        android:layout_height="35dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:id="@+id/openMenuBtn"
+	        android:layout_centerVertical="true"
+	        android:visibility="invisible"
+	        />
+	</RelativeLayout>
+			<RelativeLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/top_linear"
+			    android:layout_marginTop="30dp"
+			    
+			    >
+	     		    <LinearLayout android:layout_width="310dp"
+		    		    android:layout_height="310dp"
+		    		    android:id="@+id/centerlinear1"
+	     		    	android:layout_centerHorizontal="true"
+	     		    	android:layout_marginLeft="30dp"
+	     		    	android:gravity="center"
+		    		    >
+		    		    <RelativeLayout android:layout_width="wrap_content"
+		    		    android:layout_height="wrap_content">
+		    		     <ImageView android:id="@+id/imageBtn"
+		    		         android:layout_width="270dp"
+		    		         android:layout_height="270dp"
+		    		         android:layout_centerInParent="true"
+		    		         android:background="@drawable/image_border"
+		    		          />
+						<!-- <ImageView  android:layout_alignParentLeft="true"
+						    android:layout_alignParentTop="true"
+		    		         android:layout_width="wrap_content"
+		    		         android:layout_height="wrap_content"
+		    		         android:src="@drawable/photo_ico_xie" /> -->
+						<!-- <ImageView   android:layout_alignParentRight="true"
+						    android:layout_alignParentBottom="true"
+		    		         android:layout_width="wrap_content"
+		    		         android:layout_height="wrap_content"
+		    		          android:layout_marginBottom="20dp"
+		    		         android:src="@drawable/photo_ico_xie" /> -->
+						</RelativeLayout>
+		    		</LinearLayout>
+			    <LinearLayout android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@id/centerlinear1"
+			        android:layout_centerHorizontal="true"
+			        android:id="@+id/textLinear"
+			        android:layout_marginTop="20dp"
+			        android:orientation="horizontal">
+			      <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:gravity="right|center_vertical"
+				            android:textColor="#333333"
+				            android:text="尊敬的会员"
+			           		android:textSize="16dp" />
+			      <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:gravity="right|center_vertical"
+				            android:textColor="#568521"
+				            android:text="1388888888"
+				            android:textStyle="bold"
+				            android:id="@+id/userName"
+			           		android:textSize="22dp" />
+			      <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:textColor="#333333"
+				            android:text="您好，"
+			           		android:textSize="16dp" />  
+			    </LinearLayout>
+				<LinearLayout android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@id/textLinear"
+			        android:id="@+id/textLinear2"
+			        android:layout_marginTop="10dp"
+			        android:gravity="center_horizontal"
+			        android:layout_centerHorizontal="true"
+			        android:orientation="horizontal">
+			      <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:gravity="right|center_vertical"
+				            android:textColor="#333333"
+				            android:text="金夫人摄影欢迎您！"
+			           		android:textSize="16dp" />
+			   
+			    </LinearLayout>   
+			         
+			</RelativeLayout>
+</RelativeLayout>

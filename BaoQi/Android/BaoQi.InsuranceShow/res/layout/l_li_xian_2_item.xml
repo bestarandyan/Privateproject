@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dip"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/t2_1"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="保单年度"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t2_2"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="年末年龄"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t2_3"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="年初保费"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t2_4"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="累计保费"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t2_5"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="出生年月"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t2_6"
+                        android:layout_width="180dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="重大疾病保险金"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t2_7"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="残疾保险金"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t2_8"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="年度最高身故保障"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t2_9"
+                        android:layout_width="300dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="退保金（现金价值）（年末）"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+</LinearLayout>

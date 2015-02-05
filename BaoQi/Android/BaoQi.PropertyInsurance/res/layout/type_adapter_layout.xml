@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/p1"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/p2"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:gravity="center"
+        android:text="序号"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/p3"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:gravity="center"
+        android:text="险种卡折代码"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/p4"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:gravity="center"
+        android:text="险种名称"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/p5"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:gravity="center"
+        android:text="保额(元)/份数"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/p6"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:gravity="center"
+        android:text="保费"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/p7"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:gravity="center"
+        android:text="交费方式"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/p8"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:gravity="center"
+        android:text="交费年限"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/p9"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:gravity="center"
+        android:text="额外保费"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</LinearLayout>

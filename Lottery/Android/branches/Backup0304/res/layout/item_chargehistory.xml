@@ -1,0 +1,41 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:background="#D4E9E4"
+              android:gravity="center_vertical"
+              android:padding="10dp"
+              >
+              <TextView android:layout_width="match_parent"
+	              android:layout_height="wrap_content"
+	              android:text="2013-12-05 12:23:22"
+	              android:textColor="#7F8384"
+	              android:textSize="13sp"
+	              android:id="@+id/timeTv"
+	              android:layout_weight="3"
+	              android:gravity="left"
+	              android:singleLine="true"
+	              />
+	          <TextView android:layout_width="match_parent"
+	              android:layout_height="wrap_content"
+	              android:text="￥2000.00"
+	              android:textColor="#7F8384"
+	              android:textSize="13sp"
+	              android:id="@+id/moneyTv"
+	              android:layout_weight="4"
+	              android:layout_marginLeft="5dp"
+	              android:gravity="left"
+	              />
+	          <TextView android:layout_width="match_parent"
+	              android:layout_height="wrap_content"
+	              android:text="￥2020.00"
+	              android:textColor="#7F8384"
+	              android:textSize="13sp"
+	              android:id="@+id/balanceTv"
+	              android:layout_weight="4"
+	              android:layout_marginLeft="5dp"
+	              android:gravity="left"
+	              />
+    
+</LinearLayout>

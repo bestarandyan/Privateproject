@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:background="#ffffff"
+     android:gravity="center_horizontal"
+     >
+     <ImageView android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/cai_jiazai_top"
+         android:adjustViewBounds="true"
+         android:layout_marginLeft="-1dp"
+         android:layout_marginRight="-1dp"
+         />
+    <ImageView android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:src="@drawable/cai_jiazai_logo"
+         android:adjustViewBounds="true"
+         android:layout_marginTop="20dp"
+         />
+    <TextView android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:text="Copyright  © 2002-2013 彩票行 All rights reserved."
+         android:textColor="#C4C4C4"
+         android:gravity="bottom|center_horizontal"
+         android:layout_marginBottom="20dp"
+         android:textSize="12sp"
+         />
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:drawablePadding="0dip"
+    android:ellipsize="marquee"
+    android:fadingEdge="horizontal"
+    android:background="@android:color/black"
+    android:gravity="top|center_horizontal"
+    android:maxLines="2"
+    android:textColor="#000000" >
+
+    <!--
+    <com.boluomi.children.util.FlingGallery
+        android:id="@+id/horizontalview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true" >
+    </com.boluomi.children.util.FlingGallery>
+    -->
+
+
+    <!--
+     <com.qingfengweb.view.UGallery android:id="@+id/vf"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    >
+	</com.qingfengweb.view.UGallery>
+    -->
+
+    <ImageSwitcher
+        android:id="@+id/imageswitch"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/black">
+    </ImageSwitcher>
+    <!--
+         <ProgressBar
+        android:id="@+id/progress_circular"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dip"
+        android:max="10000" />
+    -->
+    <!--
+        <ZoomControls
+        android:id="@+id/zoomcontrol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+    -->
+
+    <LinearLayout
+        android:id="@+id/bottomLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/id_photo_bottom_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp" >
+
+        <Button
+            android:id="@+id/picSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/id_photo_ico1"
+            android:text="设置"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/picFront"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/id_photo_ico2"
+            android:text="上一张"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/autoPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/id_photo_ico3"
+            android:text="播放"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/picNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/id_photo_ico4"
+            android:text="下一张"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/picShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/id_photo_ico5"
+            android:text="分享"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/top_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/photo_bottom_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn01"
+            android:paddingLeft="10dp"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/currentPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:text="第0张（共0张）"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <!-- <ImageButton
+            android:id="@+id/openMenuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn02"
+            android:src="@drawable/id_paizhao_ico" /> -->
+    </RelativeLayout>
+
+</RelativeLayout>

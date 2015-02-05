@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources >
+    <string name="menu_to_top">290</string>
+    <dimen name="integral_1_totop">-5dp</dimen>
+    <dimen name="integral_2_totop">0dp</dimen>
+    <dimen name="integral_3_totop">0dp</dimen>
+    <dimen name="integral_4_totop">5dp</dimen>
+    <string name="feddback_text_width">110</string>
+    <dimen name="linkman_zimu_size">8dp</dimen>
+  	<dimen name="linkman_zimu_height">10dp</dimen>
+  	<dimen name="city_zimu_size">10dp</dimen>
+  	<dimen name="city_zimu_height">14.5dp</dimen>
+  	<dimen name="checkbox_to_left">23dp</dimen>
+</resources>

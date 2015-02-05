@@ -1,0 +1,106 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#D1CD00"
+              android:orientation="vertical">
+         <RelativeLayout android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="visible"
+        android:background="@drawable/top_bg" >
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/top_ico1"
+           />
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="特惠商品"
+		    android:textSize="20sp"
+		    android:layout_centerInParent="true"
+		    android:textColor="#ffffff"
+		    android:id="@+id/titleTv"
+		    />
+		<ImageButton
+            android:id="@+id/rightBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/top_ico3"
+            android:visibility="gone"
+           />
+    </RelativeLayout>
+		    <ImageView android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/th_top_bg"
+		        android:id="@+id/TopImg"
+		        android:layout_below="@id/topLayout"
+		        />
+		    
+    		<ImageView android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/th_bottom_bg"
+		        android:layout_alignParentBottom="true"
+		        android:id="@+id/bottomImg"
+		        />
+    		<GridView android:layout_width="fill_parent"
+    		    android:layout_height="fill_parent"
+    		    android:id="@+id/shopGv"
+    		    android:numColumns="3"
+    		    android:horizontalSpacing="10dp"
+    		    android:verticalSpacing="10dp"
+    		    android:layout_below="@id/TopImg"
+    		    android:layout_above="@id/bottomImg"
+    		    android:layout_marginLeft="5dp"
+    		    android:layout_marginRight="5dp"
+    		    android:layout_centerHorizontal="true"
+    		    android:scrollbars="none"
+    		    android:fadingEdge="none"
+    		    ></GridView>
+    		<TextView android:layout_width="match_parent"
+    		        android:layout_height="match_parent"
+    		        android:text="连接服务器失败，请检查网络或点击屏幕刷新！"
+    		        android:textColor="#ffffff"
+    		        android:textSize="14sp"
+    		        android:gravity="center"
+    		        android:id="@+id/connectFailText"
+    		        android:visibility="gone"
+    		        />
+    		<LinearLayout android:layout_width="fill_parent"
+    		    android:layout_height="wrap_content"
+    		    android:orientation="horizontal"
+    		    android:gravity="center"
+    		    android:layout_below="@id/TopImg"
+    		    android:id="@+id/proLayout"
+    		    android:padding="10dp"
+    		    >
+
+    			<ProgressBar
+    			    android:id="@+id/progressBar1"
+    			    style="?android:attr/progressBarStyleSmall"
+    			    android:layout_width="wrap_content"
+    			    android:layout_height="wrap_content" />
+    			
+    		    <TextView android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:text="正在更新数据..."
+    		        android:textColor="#000000"
+    		        android:textSize="14sp"
+    		        android:layout_marginLeft="15dp"
+    		        android:id="@+id/stateText"
+    		        />
+    		</LinearLayout>
+    		<WebView android:layout_width="match_parent"
+    		    android:layout_height="match_parent"
+    		    android:id="@+id/detailWv"
+    		    android:visibility="gone"
+    		    android:background="#000000"
+    		    />
+</RelativeLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical"
+    android:id="@+id/mytaskmainLinearLayout"
+    >
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/mytaskTop"
+        >
+    <include layout="@layout/head_title_layout"/>
+   </LinearLayout>
+   <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/titleinfo"
+        android:layout_below="@id/gereninfoLin"
+        >
+         <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/map" />
+        <Button android:background="@drawable/leftbuttonbg"
+            android:text="@string/shouye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p_backhome_btn"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            />
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+	        android:textColor="@color/white"
+	        android:text=">"/>
+	    <Button android:background="@drawable/leftbuttonbg"
+            android:text="我的任务"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/geren_info_btn"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            />
+        </LinearLayout>
+       
+      
+    </LinearLayout>
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    
+            <!-- 下面的部分为上面显示的部分 -->
+  <LinearLayout android:id="@+id/relative1"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:orientation="horizontal"
+  
+       >
+       <!-- 下面的部分为上面的左边显示的部分 -->
+          <LinearLayout android:id="@+id/Ptab1"
+              android:layout_width="300dp"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/hospital_green"
+              android:padding="7px"
+              >
+          
+             <LinearLayout android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+              
+                 >
+                 <Button android:id="@+id/currentButton"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/rw_tag"
+                     android:text="当前任务"/>
+                  <Button android:id="@+id/historyButton"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/rw_tag_on"
+                     android:textColor="@color/white"
+                     android:text="历史任务"/>
+             </LinearLayout>
+             <LinearLayout android:id="@+id/leftbottom"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 >
+                <FrameLayout 
+    				android:layout_width="fill_parent"
+   					android:layout_height="fill_parent"
+  					android:orientation="vertical"
+    				android:background="@color/white"
+    
+   				 >
+  						<LinearLayout android:id="@+id/LeftcurrenttaskLinearLayout"
+      						android:layout_width="fill_parent"
+      						android:layout_height="fill_parent">
+    							 <ExpandableListView android:id="@+id/mytask_expandable"
+									android:layout_width="wrap_content" 
+   									android:layout_height="wrap_content" 
+    								android:drawSelectorOnTop="false"
+   									android:groupIndicator="@null"
+								></ExpandableListView>
+								<TextView  
+									android:id="@id/android:empty"
+   				 					android:layout_width="fill_parent" 
+    								android:layout_height="fill_parent" 
+    								android:text="No data"
+    							/>
+  						</LinearLayout>
+  						<LinearLayout android:id="@+id/LefthistorytaskLinearLayout"
+    						android:layout_width="fill_parent"
+      						android:layout_height="fill_parent"
+      						android:visibility="gone"
+      					>
+       						 <ExpandableListView android:id="@+id/mytask_historycurrentexpandable"
+									android:layout_width="wrap_content" 
+   									android:layout_height="wrap_content" 
+    								android:drawSelectorOnTop="false"
+   									android:groupIndicator="@null"
+   									
+								></ExpandableListView>
+  						</LinearLayout>
+				</FrameLayout>
+                </LinearLayout>        
+            </LinearLayout>
+      <!-- 下面的模块为右边显示的部分 -->      
+              <LinearLayout android:id="@+id/Ptab2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                
+                >
+                <FrameLayout android:id="@+id/rightframelayout"
+                	android:layout_width="fill_parent"
+                	android:layout_height="fill_parent"
+                	android:orientation="vertical"
+                	>
+                	
+                
+                 <LinearLayout 
+                 	android:layout_width="fill_parent"
+                 	android:layout_height="fill_parent"
+                 	android:orientation="vertical"
+                 	android:id="@+id/right"
+                 	android:padding="10dp"
+                 	>
+  						<RelativeLayout 
+						    	android:id="@+id/MapRel"
+						  		android:layout_width="wrap_content"
+						  		android:layout_height="wrap_content">
+						        <Button android:id="@+id/lukuangBtn"
+						            android:layout_height="wrap_content"
+						            android:layout_width="wrap_content"
+						            android:background="@drawable/btn03"
+						            android:textColor="@color/white"
+						            android:text="实时路况"/>
+						        <EditText android:id="@+id/qishi"
+						            android:layout_width="100dp"
+						            android:layout_toRightOf="@id/lukuangBtn"
+						            android:layout_marginLeft="20dp"
+						            android:layout_height="40dp"/>
+						        <EditText android:id="@+id/daoda"
+						            android:layout_width="100dp"
+						            android:layout_toRightOf="@id/qishi"
+						            android:layout_marginLeft="20dp"
+						            android:layout_height="40dp"/>
+						        <Button android:id="@+id/searchLuxianBtn"
+						            android:layout_height="wrap_content"
+						            android:layout_width="wrap_content"
+						            android:layout_toRightOf="@id/daoda"
+						            android:layout_marginLeft="20dp"
+						            android:background="@drawable/btn03"
+						            android:textColor="@color/white"
+						            android:text="search"/>
+						  		<com.baidu.mapapi.MapView android:id="@+id/mytask_bmapView"
+						  		    android:layout_below="@id/lukuangBtn"
+									android:layout_width="fill_parent" 
+									android:layout_height="fill_parent" 
+									android:clickable="true"     
+								/>
+						     </RelativeLayout>
+  						<!-- 
+						  	<RelativeLayout 
+						    	android:id="@+id/MapRel"
+						  		android:layout_width="wrap_content"
+						  		android:layout_height="wrap_content">
+						       
+						  		<com.baidu.mapapi.MapView android:id="@+id/bmapView"
+						  		    
+									android:layout_width="fill_parent" 
+									android:layout_height="fill_parent" 
+									android:clickable="true"     
+								/>
+						     </RelativeLayout>
+						      -->
+                 	</LinearLayout>   
+                 	</FrameLayout>           
+            </LinearLayout>
+    </LinearLayout>
+ 
+</RelativeLayout>
+</LinearLayout>

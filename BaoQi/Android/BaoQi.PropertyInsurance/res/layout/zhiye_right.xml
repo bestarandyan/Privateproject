@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/right_1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+            android:background="@drawable/border"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ico02" />
+
+        <TextView
+            android:id="@+id/leixing_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="请输入查询条件："
+            android:textColor="@color/red"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="职业名称："
+                android:textColor="#57C3E9"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/spinner1"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"/>
+
+            <Button
+                android:id="@+id/query_privateInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn03"
+                android:text="查询"
+                android:textColor="@color/white"
+                android:textSize="15px"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ico02" />
+
+        <TextView
+            android:id="@+id/leixing_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="查询结果："
+            android:textColor="@color/red"
+            android:textSize="18sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/baodanxinxi_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/baodanxinxi_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选定职业："
+                    android:textColor="#57C3E9"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/text1"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="职业代码："
+                    android:textColor="#57C3E9"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/text2"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="职业类型："
+                    android:textColor="#57C3E9"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/text3"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

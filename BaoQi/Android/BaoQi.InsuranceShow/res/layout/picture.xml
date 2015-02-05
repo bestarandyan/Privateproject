@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:background="@drawable/body_bg"
+>
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/picture_top">
+    <include layout="@layout/head_title_layout"/>
+</LinearLayout>
+<LinearLayout  
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:background="@color/white"
+	android:id="@+id/picture_center"
+	android:layout_below="@id/picture_top"
+	android:paddingTop="20px"
+	>
+
+	 <Gallery  android:id="@+id/gallery"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:spacing="15dp"
+		android:layout_gravity="left"
+		android:unselectedAlpha="0.4"
+	/>
+   
+</LinearLayout>  
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:gravity="center_horizontal"
+    android:layout_marginBottom="20dp"
+    android:id="@+id/picture_bottom">
+    <Button android:background="@drawable/file_btn01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拍摄"
+        android:padding="10px"
+        android:id="@+id/paishe"/>
+     <Button android:background="@drawable/file_btn01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预览"
+        android:padding="10px"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/picture_yulan"/>
+    <Button android:background="@drawable/file_btn01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:padding="10px"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/picture_delete"/>
+    <Button android:background="@drawable/file_btn01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:padding="10px"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/picture_back"/>
+</LinearLayout>
+		
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="app_name">656彩票行</string>
+	<string name="menu_tab1_str">首页</string>
+	<string name="menu_tab2_str">开奖信息</string>
+	<string name="menu_tab3_str">我的彩票</string>
+	<string name="menu_tab4_str">玩法规则</string>
+	<string name="menu_tab5_str">联系我们</string>
+	<string name="menu_tab1_Bom_str">HOME</string>
+	<string name="menu_tab2_Bom_str">LOTTERY INFORMATION</string>
+	<string name="menu_tab3_Bom_str">MY LOTTERY</string>
+	<string name="menu_tab4_Bom_str">GAME RULES</string>
+	<string name="menu_tab5_Bom_str">CONTACT US</string>
+	<string name="left_and_right">MainActivity</string>
+	<string name="again_login_str">账户已离线或在其他客户端登陆过，请重新登陆！</string>
+	<string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_nodata">暂无记录，您可以下拉刷新！</string>
+    <string name="help_info" >
+    </string>
+</resources>

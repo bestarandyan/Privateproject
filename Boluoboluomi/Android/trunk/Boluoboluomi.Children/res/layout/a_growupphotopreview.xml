@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:id="@+id/parent"
+    android:orientation="vertical" >
+ 
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/babe_top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/top_linear"
+	    >
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:id="@+id/backBtn"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/babe_fh_btn"/>
+	    <ImageView android:layout_width="1.5dp"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/babe_top_line"
+	        android:layout_toRightOf="@id/backBtn"
+	        android:layout_marginLeft="10dp"
+	        />
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="成长备忘录"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:textColor="#ffffff"
+	        android:textSize="20dp"
+	        android:id="@+id/title"
+	        android:textStyle="bold"/>
+	    <ImageButton android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:id="@+id/shareBtn"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:background="@null"
+	        android:src="@drawable/babe_top_fenxiang"/>
+	    <ImageView android:layout_width="1.5dp"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/babe_top_line"
+	        android:layout_toLeftOf="@id/shareBtn"
+	        android:layout_marginLeft="15dp"
+	        />
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="@null"
+	    >
+	    <RelativeLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:background="#555555"
+	        android:layout_alignParentBottom="true"
+	        android:id="@+id/MsgLayout"
+	        >
+	        <TextView android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@null"
+	            android:textColor="#ffffff"
+	            android:text="202"
+	            android:textSize="16sp"
+	            android:layout_alignParentRight="true"
+	            android:id="@+id/msgNumber"
+	            android:layout_centerVertical="true"
+	            android:gravity="center"
+	            />
+	        <ImageView android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toLeftOf="@id/msgNumber"
+	            android:layout_centerVertical="true"
+	            android:background="@drawable/babe_chengzhang_ico"
+	            android:layout_marginRight="5dp"
+	            />
+	    </RelativeLayout>
+	    <LinearLayout android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:padding="10dp"
+	        android:id="@+id/photoInfoLayout"
+	        android:layout_above="@id/MsgLayout"
+	        >
+	        <TextView android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="照片名称"
+		        android:textColor="#ffffff"
+		        android:textSize="16sp"
+		        android:id="@+id/photoName"/>
+    	</LinearLayout>
+		<ImageSwitcher android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:id="@+id/imageswitch"
+		    android:background="@null"
+		    android:cacheColorHint="@null"
+		    android:scrollbars="none"
+		    android:divider="@drawable/soso_zc_line"
+		    android:dividerHeight="1dp"
+		    android:layout_above="@id/photoInfoLayout"
+		    ></ImageSwitcher>
+	</RelativeLayout>
+</LinearLayout>

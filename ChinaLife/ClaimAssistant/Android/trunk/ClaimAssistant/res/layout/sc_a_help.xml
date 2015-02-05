@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sc_body_bg01"
+    android:orientation="vertical" >
+
+    <!-- head -->
+
+     <!-- head 
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_bg"
+    android:orientation="vertical" >
+</LinearLayout>
+-->
+<include layout="@layout/sc_a_head"
+    android:id="@+id/top_image"></include>
+<ImageView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sc_title_bg" >
+
+        <Button
+            android:id="@+id/fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/sc_fh_btn"
+            android:text="返回"
+            android:paddingLeft="5dp"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="帮助列表"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/tab4_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:drawSelectorOnTop="false"
+        android:groupIndicator="@null"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

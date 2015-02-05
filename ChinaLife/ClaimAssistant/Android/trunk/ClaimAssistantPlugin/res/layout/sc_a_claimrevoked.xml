@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sc_body_bg01"
+    android:orientation="vertical" >
+<ImageView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+    <!-- title信息 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/sc_title_bg" >
+
+        <Button
+            android:id="@+id/fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:text="返回"
+            style="@style/sc_title_btn_style"
+            />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="赔案撤销"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="20dp"
+    android:orientation="vertical">
+	<TextView android:text="撤销原因"
+	    android:layout_marginTop="30dp"
+	    android:layout_marginLeft="20dp"
+	    android:textColor="#333333"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"/>
+	<Spinner android:id="@+id/sp1"
+	    android:layout_marginTop="4dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingRight="40dp"
+	    android:background="@drawable/sc_cx_text"/>
+	
+	<TextView android:text="撤销描述"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginTop="20dp"
+	    android:textColor="#333333"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"/>
+	<EditText android:id="@+id/ed1"
+	    android:background="@drawable/sc_bank_border"
+	    android:layout_marginTop="4dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_width="fill_parent"
+	    android:gravity="left|top"
+	    android:padding="6dp"
+	    android:layout_height="150dp"/>
+	</LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- 底部按钮 -->
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/sc_ly_bottom_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sc_aj_btn2"
+                android:text="提交"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:background="@drawable/sc_aj_btn2"
+                android:text="返回"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

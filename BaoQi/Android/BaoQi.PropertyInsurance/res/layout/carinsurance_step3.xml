@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/step3"
+    android:padding="40dp"
+    >
+    <TextView android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="交强险和车船税"  android:textColor="@color/red"
+            android:textSize="30dp" android:id="@+id/text1" android:layout_marginLeft="60dp"/>
+    <LinearLayout android:layout_marginTop="15dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="交强险"  android:textColor="#4297B4"
+            android:textSize="20dp" android:id="@+id/text1" android:layout_gravity="center_vertical"/>
+        <RadioGroup android:id="@+id/step3_radiogroup1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginLeft="20dp">
+    	     <RadioButton android:id="@+id/radio_toubao" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="投保" android:textColor="#4297B4"/>
+    	     <RadioButton android:id="@+id/radio_butoubao" android:layout_marginLeft="20dp"  android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="不投保" android:textColor="#4297B4"/>
+    	 </RadioGroup>
+    </LinearLayout>   
+    
+    <TextView android:layout_marginTop="15dp"  android:layout_width="200dp" android:layout_height="wrap_content"  android:text="￥00"  android:textColor="@color/red"
+            android:textSize="20dp" android:id="@+id/value_jiaoqiangxian"/>
+     <TextView android:layout_marginTop="15dp"  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="车船税（按国家规定，车船税需与交强险同时购买）"  android:textColor="#4297B4"
+            android:textSize="20dp" />
+     <TextView android:layout_marginTop="15dp"  android:layout_width="200dp" android:layout_height="wrap_content"  android:text="￥00"  android:textColor="@color/red"
+            android:textSize="20dp" android:id="@+id/value_chechuanshui"/>
+      <TextView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp"  android:text="交强险和车船税：￥00"  android:textColor="@color/red"
+            android:textSize="20dp" android:id="@+id/value_jiaoche"/>
+       <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:layout_gravity="center_horizontal">
+   <Button  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上一步" android:background="@drawable/bj_tag2" android:textColor="@color/white"
+        android:textSize="18sp"  android:id="@+id/backBtn"/>
+    <Button android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下一步" android:background="@drawable/bj_tag2" android:textColor="@color/white"
+        android:textSize="18sp" android:layout_gravity="center_horizontal" android:id="@+id/nextBtn"/>
+    </LinearLayout>
+    </LinearLayout>

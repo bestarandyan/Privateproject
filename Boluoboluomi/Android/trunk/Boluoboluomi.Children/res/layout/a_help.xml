@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+  <!--   <ImageView android:src="@color/bg_color_hua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        /> -->	
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/babe_top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/top_linear"
+	    >
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="14dp"
+	        android:id="@+id/backBtn"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/babe_fh_btn"/>
+	    <ImageView android:layout_width="1.5dp"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/babe_top_line"
+	        android:layout_toRightOf="@id/backBtn"
+	        android:layout_marginLeft="10dp"
+	        />
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="使用说明"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:textColor="#ffffff"
+	        android:textSize="20dp"
+	        android:id="@+id/title"
+	        android:textStyle="bold"/>
+	</RelativeLayout>
+	<ImageView android:src="@drawable/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        />
+	<WebView android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/webView"
+	    android:layerType="software" 
+	    android:layout_below="@id/top_linear"/>
+	</RelativeLayout>
+	</LinearLayout>

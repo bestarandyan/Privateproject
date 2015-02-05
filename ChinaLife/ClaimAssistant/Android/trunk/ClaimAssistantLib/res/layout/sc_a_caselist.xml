@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+     <!-- head 
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_bg"
+    android:orientation="vertical" >
+</LinearLayout>
+-->
+<!-- <include layout="@layout/a_head"
+    android:id="@+id/top_image"></include> -->
+<ImageView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+    <!-- title信息 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/sc_title_bg" >
+
+        <Button
+            android:id="@+id/fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:text="返回"
+            style="@style/sc_title_btn_style"
+            />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="赔案列表"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        
+    </RelativeLayout>
+	<com.chinaLife.claimAssistant.view.sc_PullToRefreshList
+	    android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#d3d3d3"
+        android:dividerHeight="0.5dp">
+	</com.chinaLife.claimAssistant.view.sc_PullToRefreshList>
+    <!-- <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#d3d3d3"
+        android:dividerHeight="0.5dp" /> -->
+
+</LinearLayout>

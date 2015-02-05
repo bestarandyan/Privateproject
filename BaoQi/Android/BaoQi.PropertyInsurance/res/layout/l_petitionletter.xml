@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_title_layout" />
+    <!-- title 首页条目 -->
+
+    <LinearLayout android:layout_marginLeft="15dip"   android:layout_marginRight="15dip"   android:layout_marginTop="5dip" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+                android:id="@+id/h_backHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/map" 
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="10dip" />
+
+            <Button
+                android:id="@+id/h_backhomebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/leftbuttonbg"
+                android:layout_marginTop="7dip"
+                android:layout_marginRight="10dip"
+                android:textSize="18sp"
+                android:text="首页"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="7dip"
+                android:text=">"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/query_hospitalBtn"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="7dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/leftbuttonbg"
+                android:layout_marginRight="10dip"
+                android:textSize="18sp"
+                android:text="信访"
+                android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_marginLeft="15dip"   android:layout_marginRight="15dip" 
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_marginTop="10dip"
+        android:background="#02AF5F"
+        android:orientation="horizontal" >
+
+        <Button
+            android:textColor="@color/black"
+            android:id="@+id/btn_1"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/single_tag01_on"
+            android:gravity="center"
+            android:text="在线信访"
+            android:textSize="18sp" />
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/btn_2"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/single_tag01"
+            android:gravity="center"
+            android:text="信访查询"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout android:layout_marginLeft="15dip"  
+        android:id="@+id/lowlinear3" 
+        android:visibility="gone"
+        android:layout_marginRight="15dip"
+        android:layout_width="fill_parent"     
+        android:layout_height="fill_parent" android:background="#FFFFFF"
+        android:orientation="horizontal" >
+    <ImageView       
+        android:layout_marginLeft="15dip"   android:layout_marginRight="15dip"
+        android:id="@+id/chaxunresult" 
+        android:background="@drawable/chaxun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_marginLeft="15dip"  
+        android:id="@+id/lowlinear" 
+        android:layout_marginRight="15dip"
+        android:layout_width="fill_parent"     
+        android:layout_height="wrap_content" android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <ImageView  android:layout_marginTop="5dip" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ico05"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/search_23"  android:layout_marginTop="5dip" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:text="新建信访页面"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <!-- sfdsa -->
+
+    <ScrollView  android:layout_marginLeft="15dip"   
+        android:layout_marginRight="15dip"
+        android:id="@+id/lowlinear1" 
+        android:layout_width="fill_parent" android:background="#FFFFFF"  
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"  
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"  android:gravity="center"
+                    android:background="#B0E0E6"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dip"
+                        android:gravity="right"
+                        android:text="信访标题" 
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="500dip"  android:layout_marginLeft="5dip"  android:layout_marginTop="5dip" 
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:background="#B0E0E6"  android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip" android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                      android:layout_marginRight="15dip"
+                        android:gravity="right"
+                        android:text="通讯地址与邮编"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="500dip"  android:layout_marginLeft="5dip"  android:layout_marginTop="5dip" 
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:background="#B0E0E6"  android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2" android:textColor="#000000"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dip"
+                        android:gravity="right"
+                        android:text="联系电话"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="500dip"  android:layout_marginLeft="5dip"  android:layout_marginTop="5dip" 
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:background="#B0E0E6"  android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="right" android:textColor="#000000"
+                        android:text="手机号码"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="500dip"  android:layout_marginLeft="5dip"  android:layout_marginTop="5dip" 
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"  android:gravity="center"
+                    android:background="#B0E0E6"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip" android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dip"
+                        android:gravity="right"
+                        android:text="信访投诉人身份"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <Spinner 
+                    android:layout_marginLeft="5dip" android:prompt="@string/choice"
+                    android:layout_width="500dip" android:layout_marginTop="5dip"   
+                    android:id="@+id/s1"
+                    android:layout_height="wrap_content"
+               />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:background="#B0E0E6"  android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip" android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                      android:layout_marginRight="15dip"
+                        android:gravity="right"
+                        android:text="信访提交公司"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <Spinner     android:id="@+id/s2"
+                    android:layout_width="150dip" android:layout_marginLeft="5dip" android:prompt="@string/choice"
+                    android:layout_height="wrap_content" android:layout_marginTop="5dip" 
+                   />
+                          
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:background="#B0E0E6"  android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                     android:layout_marginRight="15dip"
+                        android:gravity="right" android:textColor="#000000"
+                        android:text="信访投诉人所属渠道"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <Spinner     android:id="@+id/s3"
+                    android:layout_width="150dip" android:layout_marginLeft="5dip" android:prompt="@string/choice"
+                    android:layout_height="wrap_content" android:layout_marginTop="5dip" 
+      />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:background="#B0E0E6"  android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip" android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dip"
+                        android:gravity="right"
+                        android:text="信访投诉反映问题"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <CheckBox
+                    style="@style/MyCheckBox"
+                    android:layout_width="wrap_content" android:layout_marginLeft="5dip"
+                    android:layout_height="wrap_content" android:layout_marginTop="5dip" 
+                    android:text="" />
+                <TextView android:text="投诉类"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <CheckBox
+                    style="@style/MyCheckBox"
+                    android:layout_width="wrap_content" android:layout_marginLeft="10dip"
+                    android:layout_height="wrap_content" android:layout_marginTop="5dip" 
+                    android:text="" />
+                <TextView android:text="建议类"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:background="#B0E0E6"  android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip" android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="right"
+                        android:text="子问题"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <Spinner android:layout_marginLeft="5dip" android:prompt="@string/choice"
+                    android:layout_width="500dip" android:layout_marginTop="5dip"   android:id="@+id/s4"
+                    android:layout_height="wrap_content"
+                 />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:background="#B0E0E6"  android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2" android:textColor="#000000"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dip"
+                        android:gravity="right"
+                        android:text="被投诉人姓名"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="500dip" android:layout_marginLeft="5dip"
+                    android:layout_height="wrap_content" android:layout_marginTop="5dip" 
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:background="#B0E0E6" android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content" android:layout_marginRight="15dip"
+                        android:gravity="right"
+                         android:textColor="#000000"
+                        android:text="被信访单位"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="500dip" android:layout_marginLeft="5dip"
+                    android:layout_height="wrap_content" android:layout_marginTop="5dip" 
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:background="#B0E0E6" android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content" android:layout_marginRight="15dip"
+                        android:gravity="right"
+                         android:textColor="#000000"
+                        android:text="被信访人身份"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <Spinner     android:id="@+id/s5"
+                    android:layout_width="150dip" android:layout_marginLeft="5dip" android:prompt="@string/choice"
+                    android:layout_height="wrap_content" android:layout_marginTop="5dip" 
+                    />
+            </LinearLayout>
+            
+            <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="47dp"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="150dip" android:id="@+id/confirm"  android:textColor="#FFFFFF"
+            android:layout_height="wrap_content" android:background="@drawable/btn02" android:textSize="20sp"
+            android:text="提交" />
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

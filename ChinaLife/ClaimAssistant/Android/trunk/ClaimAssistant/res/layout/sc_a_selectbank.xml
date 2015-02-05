@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <include layout="@layout/sc_a_head"
+    android:id="@+id/top_image"></include>
+    
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:gravity="center"
+	    android:background="@drawable/sc_reviews_search_bg"
+	    android:orientation="horizontal">
+	    
+	    <Button android:layout_width="60dp"
+	        android:layout_height="35dp"
+	        android:id="@+id/searchBtn"
+	        android:background="@drawable/sc_reviews_search_btn"
+	        android:text="搜索"
+	        android:textColor="#ffffff"
+	        android:textSize="14dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginLeft="10dp"
+	        />
+	    <EditText android:layout_width="fill_parent"
+	        android:layout_height="38dp"
+	        android:hint="请输入银行名称进行查询"
+	        android:textSize="14dp"
+	        android:id="@+id/searchEt"
+	        android:layout_marginLeft="20dp"
+	        android:paddingLeft="8dp"
+	        android:singleLine="true"
+	        android:layout_toLeftOf="@id/searchBtn"
+	        android:background="@drawable/sc_reviews_save_et"/>
+	</RelativeLayout>
+	<ListView
+	    android:id="@+id/bankList"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#F2F2F2"
+	    android:divider="#d3d3d3"
+	    android:fadingEdge="none"
+        android:dividerHeight="0.5dp">
+	</ListView>
+
+	</LinearLayout>

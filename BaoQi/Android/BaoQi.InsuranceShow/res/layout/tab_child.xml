@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <TableLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <TableRow>
+        <CheckBox android:id="@+id/che_id"
+                     
+                     
+                    android:layout_width="50px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                    <TextView 
+                        android:id="@+id/text_1"
+                     android:textColor="@color/black"
+                      
+                      
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                    <TextView android:id="@+id/text_2"
+                     android:textColor="@color/black"
+                      
+                      
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                    <TextView android:id="@+id/text_3"
+                     android:textColor="@color/black"
+                       
+                      
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                    <TextView android:id="@+id/text_4"
+                     android:textColor="@color/black"
+                      
+                      
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                    <TextView android:id="@+id/text_5"
+                     android:textColor="@color/black"
+                      
+                      
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                    <TextView android:id="@+id/text_6"
+                     android:textColor="@color/black"
+                      
+                      
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                    <TextView android:id="@+id/text_7"
+                     android:textColor="@color/black"
+                     
+                      
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                    <TextView android:id="@+id/text_8"
+                     android:textColor="@color/black"
+                     
+                      
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                    <TextView android:id="@+id/text_9"
+                     android:textColor="@color/black"
+                     
+                      
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+    </TableRow>
+</TableLayout>
+</LinearLayout>

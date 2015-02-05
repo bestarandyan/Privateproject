@@ -1,0 +1,179 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#D4E9E4"
+               android:layout_marginTop="1dp"
+              >
+    <RelativeLayout android:layout_width="fill_parent"
+      android:layout_height="50dp"
+      android:background="@drawable/cai_top_bg"
+      android:id="@+id/topLayout"
+      >
+      <ImageButton android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/cai_login_top_ico"
+          android:layout_centerVertical="true"
+          android:id="@+id/backBtn"
+          android:padding="10dp"
+          android:background="@null"
+          />
+      <View android:layout_width="1dp"
+          android:layout_height="fill_parent"
+          android:background="@drawable/cai_top_line"
+          android:layout_toRightOf="@id/backBtn"
+          />
+      <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="充值历史"
+          android:layout_centerInParent="true"
+          android:textColor="#ffffff"
+          android:textSize="20sp"
+          android:id="@+id/titleTv"
+          />
+  </RelativeLayout>
+      <LinearLayout android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="5dp"
+          android:background="#F5F5F5"
+          android:gravity="center_vertical"
+          >
+          <ImageView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/headImg"
+              android:layout_marginLeft="15dp"
+              android:src="@drawable/cai_order_photo"
+              />
+          <LinearLayout android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:orientation="vertical"
+	          android:background="@null"
+	          android:gravity="center_vertical"
+	          android:layout_marginLeft="10dp"
+          >
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="meiweis"
+              android:textColor="#333333"
+              android:textSize="20sp"
+              android:id="@+id/userNameTv"
+              />
+          <LinearLayout android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:orientation="horizontal"
+	          android:background="@null"
+	          android:layout_marginTop="6dp"
+         	 >
+         	 <TextView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:text="我的余额:"
+	              android:textColor="#AEAEAE"
+	              android:textSize="14sp"
+	              />
+	          <TextView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:text="560.00元"
+	              android:textColor="#FEAE01"
+	              android:textSize="14sp"
+	              android:id="@+id/myMoneyTv"
+	              android:layout_marginLeft="10dp"
+	              />
+	          <TextView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:text="[充值]"
+	              android:textColor="#FEAE01"
+	              android:textSize="14sp"
+	              android:id="@+id/chongzhiTv"
+	              android:layout_marginLeft="10dp"
+	              />
+          </LinearLayout>
+          </LinearLayout>
+      </LinearLayout>
+      <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#44917D"
+          />
+      <LinearLayout android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:orientation="horizontal"
+	          android:background="#78B8A7"
+	          android:padding="10dp"
+          >
+	          <TextView android:layout_width="match_parent"
+	              android:layout_height="wrap_content"
+	              android:text="充值时间"
+	              android:textColor="#0B2B1E"
+	              android:textSize="14sp"
+	              android:id="@+id/weizhongjiangDDTV"
+	              android:layout_weight="3"
+	              android:gravity="left"
+	              />
+	          <TextView android:layout_width="match_parent"
+	              android:layout_height="wrap_content"
+	              android:text="充值金额"
+	              android:textColor="#0B2B1E"
+	              android:textSize="14sp"
+	              android:id="@+id/daikaijiangDDTV"
+	              android:layout_weight="4"
+	              android:layout_marginLeft="5dp"
+	              android:gravity="left"
+	              />
+	          <TextView android:layout_width="match_parent"
+	              android:layout_height="wrap_content"
+	              android:text="账户余额"
+	              android:textColor="#0B2B1E"
+	              android:textSize="14sp"
+	              android:id="@+id/zhuihaoDDTV"
+	              android:layout_weight="4"
+	              android:layout_marginLeft="5dp"
+	              android:gravity="left"
+	              />
+          </LinearLayout>
+          <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#44917D"
+          />
+          <LinearLayout android:layout_width="match_parent"
+	          android:layout_height="match_parent"
+	          android:orientation="vertical"
+	          android:background="#D4E9E4"
+         	 >
+		  <com.qingfengweb.lottery.view.XListView android:layout_width="match_parent"
+		         android:layout_height="match_parent"
+		         android:id="@+id/listView"
+		         android:divider="#B4C9C4"
+		         android:dividerHeight="1px"
+		         android:cacheColorHint="@null"
+		         android:background="#D4E9E4"
+		         android:layout_marginTop="-2dp"
+		         >
+		  </com.qingfengweb.lottery.view.XListView>
+		  </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,223 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#D4E9E4"
+               android:layout_marginTop="1dp"
+              >
+    <RelativeLayout android:layout_width="fill_parent"
+      android:layout_height="50dp"
+      android:background="@drawable/cai_top_bg"
+      android:id="@+id/topLayout"
+      >
+      <ImageButton android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/cai_login_top_ico"
+          android:layout_centerVertical="true"
+          android:id="@+id/backBtn"
+          android:padding="10dp"
+          android:background="@null"
+          />
+      <View android:layout_width="1dp"
+          android:layout_height="fill_parent"
+          android:background="@drawable/cai_top_line"
+          android:layout_toRightOf="@id/backBtn"
+          android:layout_marginBottom="2dp"
+          />
+      <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="充值"
+          android:layout_centerInParent="true"
+          android:textColor="#ffffff"
+          android:textSize="20sp"
+          android:id="@+id/titleTv"
+          />
+  </RelativeLayout>
+      <LinearLayout android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="5dp"
+          android:background="#F5F5F5"
+          android:gravity="center_vertical"
+          >
+          <ImageView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/headImg"
+              android:layout_marginLeft="15dp"
+              android:src="@drawable/cai_order_photo"
+              />
+          <LinearLayout android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:orientation="vertical"
+	          android:background="@null"
+	          android:gravity="center_vertical"
+	          android:layout_marginLeft="10dp"
+          >
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="meiweis"
+              android:textColor="#333333"
+              android:textSize="20sp"
+              android:id="@+id/userNameTv"
+              />
+          <LinearLayout android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:orientation="horizontal"
+	          android:background="@null"
+	          android:layout_marginTop="6dp"
+         	 >
+         	 <TextView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:text="我的余额:"
+	              android:textColor="#AEAEAE"
+	              android:textSize="16sp"
+	              />
+	          <TextView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:text="560.00元"
+	              android:textColor="#FEAE01"
+	              android:textSize="16sp"
+	              android:id="@+id/myMoneyTv"
+	              android:layout_marginLeft="10dp"
+	              />
+          </LinearLayout>
+          </LinearLayout>
+      </LinearLayout>
+      <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#A2CABF"
+          />
+      <ScrollView android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="#D4E9E4"
+          >
+      <LinearLayout android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:paddingTop="40dp"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp"
+          android:background="#D4E9E4"
+          >
+	        <LinearLayout android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:orientation="vertical"
+	          android:background="@drawable/border_chargemoney_input_bg"
+	          >
+          <LinearLayout android:layout_width="match_parent"
+	          android:layout_height="match_parent"
+	          android:orientation="horizontal"
+	          android:gravity="center_vertical"
+	          android:layout_marginLeft="10dp"
+	          android:layout_weight="1"
+	          >
+	          <TextView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:text="充值方式："
+	              android:textColor="#676767"
+	              android:textSize="16sp"
+	              />
+	          <RelativeLayout android:layout_width="match_parent"
+		          android:layout_height="50dp"
+		          android:gravity="center_vertical"
+		          android:background="@null"
+		          >
+		          <TextView android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:text="支付宝"
+		              android:textColor="#676767"
+		              android:textSize="16sp"
+		              android:layout_centerVertical="true"
+		              android:layout_marginLeft="10dp"
+		              />
+		          <ImageButton android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:layout_centerVertical="true"
+		              android:layout_alignParentRight="true"
+		              android:id="@+id/spinnerBtn"
+		              android:background="@null"
+		              android:src="@drawable/cai_chongzhi_ico1"
+		              android:padding="10dp"
+		              />
+		      </RelativeLayout>
+	      </LinearLayout>
+	      <View android:layout_width="match_parent"
+	          android:layout_height="1px"
+	          android:background="#CBCBCB"
+	          />
+	      <LinearLayout android:layout_width="match_parent"
+	          android:layout_height="match_parent"
+	          android:orientation="horizontal"
+	          android:gravity="center_vertical"
+	          android:layout_weight="1"
+	          android:layout_marginLeft="10dp"
+	          >
+	          <TextView android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:text="充值金额："
+	              android:textColor="#676767"
+	              android:textSize="16sp"
+	              />
+	          <RelativeLayout android:layout_width="match_parent"
+		          android:layout_height="50dp"
+		          android:gravity="center_vertical"
+		          android:background="@null"
+		          >
+		          <EditText android:layout_width="match_parent"
+		              android:layout_height="match_parent"
+		              android:hint="请输入此次充值的金额"
+		              android:textColorHint="#D6D6D6"
+		              android:textCursorDrawable="@null"
+		              android:textColor="#676767"
+		              android:textSize="16sp"
+		              android:background="@null"
+		              android:singleLine="true"
+		              android:id="@+id/moneyEt"
+		              android:layout_marginLeft="10dp"
+		              android:inputType="numberDecimal"
+		              android:gravity="center_vertical"
+		              />
+		      </RelativeLayout>
+	      </LinearLayout>
+	      </LinearLayout>
+		          <Button android:layout_width="match_parent"
+		              android:layout_height="wrap_content"
+		              android:text="立 即 充 值"
+		              android:gravity="center"
+		              android:textColor="#ffffff"
+		              android:textSize="20sp"
+		              android:background="@drawable/cai_login_btn"
+		              android:id="@+id/chargeBtn"
+		              android:layout_marginTop="35dp"
+		              android:paddingTop="10dp"
+        			  android:paddingBottom="10dp"
+		              />
+      </LinearLayout>
+      </ScrollView>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <!-- tab4 -->
+    
+    <!-- 0 -->
+    <LinearLayout android:orientation="vertical"
+        android:layout_margin="10dip"
+        android:padding="5dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border1">
+        <TextView android:text="长险告知事项"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#4A708B"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+        <TextView android:text="(若投保险种保险条款中列明有“免交未到期保险责任”的，须同时填写“投保人”项下告知事项)"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#4A708B"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <!-- 1 -->
+    <LinearLayout android:orientation="horizontal"
+        android:layout_margin="10dip"
+        android:padding="5dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border1">
+        <TextView android:text="1.被保险人的身高："
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText android:layout_width="50dip"
+            android:layout_height="wrap_content"/>
+        <TextView android:text="厘米"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView android:text="体重："
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText android:layout_width="50dip"
+            android:layout_height="wrap_content"/>
+        <TextView android:text="公斤,投保人的身高："
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText android:layout_width="50dip"
+            android:layout_height="wrap_content"/>
+        <TextView android:text="厘米"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView android:text="体重："
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText android:layout_width="50dip"
+            android:layout_height="wrap_content"/>
+        <TextView android:text="公斤"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <!-- 2 -->
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:padding="5dip"
+        android:orientation="vertical">
+        <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border1">
+        <TextView android:text="2.平均年收入（填写过去三年大约的平均年收入值）"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>  
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="说明对象"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"/> 
+            <TextView android:text="职务"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"/>
+            <TextView android:text="固定年收入"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"/>
+            <TextView android:text="收入来源"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"/> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="被保险人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="200dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/guo_s1" 
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/guo_e1" 
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"/>
+            <TextView android:text="元"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/guo_s2" 
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"/>
+            </LinearLayout> 
+    	</LinearLayout>
+    	
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="投保人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="200dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/guo_s3" 
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/guo_e1" 
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"/>
+            <TextView android:text="元"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/guo_s4" 
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"/>
+            </LinearLayout> 
+    	</LinearLayout>
+    </LinearLayout>
+    <!-- 3 -->
+
+	<LinearLayout android:orientation="horizontal"
+        android:layout_margin="10dip"
+        android:padding="5dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border1">
+        <TextView android:text="3.吸烟习惯"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#27408B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView android:text="被保人已吸烟"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dip"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText android:layout_width="50dip"
+            android:layout_height="wrap_content"/>
+        <TextView android:text="厘米"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView android:text="体重："
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText android:layout_width="50dip"
+            android:layout_height="wrap_content"/>
+        <TextView android:text="公斤,投保人的身高："
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText android:layout_width="50dip"
+            android:layout_height="wrap_content"/>
+        <TextView android:text="厘米"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView android:text="体重："
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText android:layout_width="50dip"
+            android:layout_height="wrap_content"/>
+        <TextView android:text="公斤"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <!-- 4 -->
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:padding="5dip"
+        android:orientation="vertical">
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="4.生活习惯"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#27408B"
+            android:layout_width="500dip"
+            android:layout_height="wrap_content"/> 
+            <TextView android:text="被保险人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"/>
+            <TextView android:text="投保人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"/> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="A.饮酒习惯；是否平均每天饮白酒等烈性酒50克以上"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="B.是否参加潜水、拳击、攀岩、飞机、赛车、漂流等危险运动或有此类嗜好"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="C.是否服食任何成瘾药物或吸毒"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="D.是否计划两年内出国"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	
+    	
+    </LinearLayout>
+    <!-- 5 -->
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:padding="5dip"
+        android:orientation="vertical">
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="5.身体残缺"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#27408B"
+            android:layout_width="500dip"
+            android:layout_height="wrap_content"/> 
+            <TextView android:text="被保险人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"/>
+            <TextView android:text="投保人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"/> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="A.是否曾患听力、视力、语言、咀嚼障碍、智力障碍"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="B.是否曾患有脊柱、胸廓畸形、四肢、手、足、指残缺"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	
+    	
+    </LinearLayout>
+
+	<!-- 6 -->
+	<LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:padding="5dip"
+        android:orientation="vertical">
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="6.症状体征：是否患有或被告知有下列症状，或因下列症状接受治疗"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#27408B"
+            android:layout_width="500dip"
+            android:layout_height="wrap_content"/> 
+            <TextView android:text="被保险人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"/>
+            <TextView android:text="投保人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"/> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="慢性咳嗽、咳血、胸闷、心慌、气短、浮肿、声嘶哑、吞咽困难、呕血、贫血、高度近视、黑便、血尿、蛋白尿、昏迷"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	
+    	
+    </LinearLayout>
+	<!-- 7 -->
+	<LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:padding="5dip"
+        android:orientation="vertical">
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="7.身体残缺"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#27408B"
+            android:layout_width="500dip"
+            android:layout_height="wrap_content"/> 
+            <TextView android:text="被保险人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"/>
+            <TextView android:text="投保人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"/> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="A.高血压、先天性心脏病、风湿性心脏病、心内膜炎、冠心病、心肌梗塞、心律失常、心肌炎、脑血管意外"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="B.帕金森氏病、癫癞、脑部疾病、脊髓疾病、精神病"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="C.哮喘、肺结核、肺气肿、支气管扩张、尘肺、矽肺、肺原性心脏病 "
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="D.消化性溃疡、萎缩性胃炎、胰腺炎、肝硬化、肝炎、肝炎病毒感染、胆道感染或胆结石"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="E.尿道结石或畸形、肾炎、肾病、肾功能不全、多囊肾、肾盂积水、前列腺疾病"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="F.囊肿(包括恶性囊肿瘤及尚未确证为两性或恶性之息肉、肿瘤、囊肿、结节、赘生物)"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="G. 糖尿病、痛风、垂体机能亢进或减退、肾上腺机能亢进或减退"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="H.系统性红斑狼疮、风湿或类风湿病、胶原性疾病及结缔组织疾病、椎间盘突出、疝、痔"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="I.贫血、血小板减少性紫癜、过敏性紫癜、血友病、白血病、被建议不宜献血"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="J.白内障、视网膜疾病、角膜疾病、青光眼、中耳炎及其它眼、耳、鼻、喉或口腔疾病"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="K.先天性疾病、遗传性疾病、地方病、职业病、药物过敏史 "
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="L.是否还有以上未列明的疾病"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	
+    </LinearLayout>
+	<!-- 8 -->
+	<LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:padding="5dip"
+        android:orientation="vertical">
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="8.诊疗、检查经历"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#27408B"
+            android:layout_width="500dip"
+            android:layout_height="wrap_content"/> 
+            <TextView android:text="被保险人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"/>
+            <TextView android:text="投保人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"/> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="A.过去３个月内是否接受过医生的诊断、检查和治疗"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="B.过去５年内是否因疾病或受伤住院或手术"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="C.过去5年内除健康普查外有否做过下列检查：X光、脑电图、血液化验、胃 镜、肠镜等内窥镜检查、病理活检、眼底检查"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	
+    	
+    </LinearLayout>
+	<!-- 9 -->
+	<LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:padding="5dip"
+        android:orientation="vertical">
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="9"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#27408B"
+            android:layout_width="500dip"
+            android:layout_height="wrap_content"/> 
+            <TextView android:text="被保险人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"/>
+            <TextView android:text="投保人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"/> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="你及你的配偶是否曾接受或试图接受与艾滋病有关的诊察或治疗？"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	
+    	
+    </LinearLayout>
+	<!-- 10 -->
+	<LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:padding="5dip"
+        android:orientation="vertical">
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="10"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#27408B"
+            android:layout_width="500dip"
+            android:layout_height="wrap_content"/> 
+            <TextView android:text="被保险人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"/>
+            <TextView android:text="投保人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"/> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="父母兄弟姐妹中是否有人曾患有遗传性疾病、结核病、肝炎、肝硬化、癌症、糖尿病、肾病"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	
+    	
+    </LinearLayout>
+	<!-- 11 -->
+	<LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:padding="5dip"
+        android:orientation="vertical">
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="11.妇女专项"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#27408B"
+            android:layout_width="500dip"
+            android:layout_height="wrap_content"/> 
+            <TextView android:text="被保险人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"/>
+            <TextView android:text="投保人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"/> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="A.是否正在怀孕?"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="B.是否患有子宫肌瘤、子宫颈癌、卵巢囊肿、卵巢癌、异位孕娠、乳腺增生(包块、肿块)、乳腺 "
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	
+    	
+    </LinearLayout>
+	<!-- 12 -->
+	<LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:padding="5dip"
+        android:orientation="vertical">
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="12.投保记录"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#27408B"
+            android:layout_width="500dip"
+            android:layout_height="wrap_content"/> 
+            <TextView android:text="被保险人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"/>
+            <TextView android:text="投保人"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"/> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="A.过去两年内是否曾被保险公司解除合同或申请人身保险而被延期、拒保或附加条件承包"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="B.过去有无向我公司或其它人身保险公司索赔"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="C.目前是否已经参加或正在申请中的其他保险公司包含身故保险责任的人身保险？如有，请告知已投保的有效身故保险金总额和为元。"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="500dip"
+            android:layout_height="fill_parent"/> 
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content">
+            <RadioGroup android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                	<RadioButton 
+                	    android:id="@+id/radiobtn1"
+                	    android:text="是"
+                	    android:textColor="@color/black"
+                	    android:layout_marginRight="20dip"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                	<RadioButton 
+                	    android:id="@+id/radiobtn2"
+                	    android:text="否"
+                	    android:textColor="@color/black"
+                	    android:textSize="20dip"
+                	    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RadioGroup>
+            </LinearLayout>
+            </LinearLayout> 
+    	</LinearLayout>  	
+    </LinearLayout>
+    
+	<!-- 13 -->
+	
+	<LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:padding="5dip"
+        android:orientation="vertical">
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="13.说明(以上４－１２项如,是，请在备注栏内列明问题编号及有关需说明的内容，包括疾病诊治日期、诊治结果、诊治医院名称、债务情况等。对投保单及告知内容，我公司承担保密责任)"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#27408B"
+            android:layout_width="500dip"
+            android:layout_height="wrap_content"/> 
+    	</LinearLayout>
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guo_border2">
+        <TextView android:text="备注："
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"/> 
+		<EditText android:layout_width="fill_parent"
+		    android:layout_height="200dip"/>
+    	</LinearLayout>
+    </LinearLayout>
+    
+	
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="right">
+	    <Button android:layout_width="wrap_content" android:id="@+id/next"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/btn02"
+	        android:text="下一步"
+	        android:layout_marginRight="50dip"/>
+	</LinearLayout>
+    
+</LinearLayout>

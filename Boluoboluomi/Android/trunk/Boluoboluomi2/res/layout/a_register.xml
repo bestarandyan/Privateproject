@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color" >
+
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" >
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ <!--    <ImageView android:src="@color/bg_color_hua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        /> -->
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/top_linear"
+	    >
+	    <Button android:layout_width="55dp"
+	        android:layout_height="35dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="返回"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="14dp"
+	        android:paddingLeft="10dp"
+	        android:id="@+id/backBtn"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/btn01"/>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="免费注册"
+	        android:layout_centerHorizontal="true"
+	        android:textColor="#ffffff"
+	        android:textSize="20dp"
+	        android:layout_centerVertical="true"
+	        android:textStyle="bold"/>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/top_linear"
+	    >
+	    <ImageView android:src="@drawable/logo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="30dp"
+	        android:layout_centerHorizontal="true"
+	        android:id="@+id/centerlinear1"
+	        />
+	    <TableLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@id/centerlinear1"
+	        android:orientation="vertical" >
+	        <TableRow
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@null"
+			        android:orientation="horizontal" >
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:gravity="right|center_vertical"
+			            android:textColor="#333333"
+			            android:text="所选门店:"
+			            android:textStyle="bold"
+			            android:textSize="18dp" />
+		            <TextView
+		                android:id="@+id/storeTextView"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="10dp"
+		                android:singleLine="true"
+		                android:text="金夫人摄影时尚机构"
+		                android:textSize="14dp" >
+		            </TextView>
+		     </TableRow>
+				<TableRow
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@id/centerlinear1"
+			        android:background="@null"
+			        android:layout_marginTop="5dp"
+			        android:orientation="horizontal" >
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:gravity="right|center_vertical"
+			            android:textColor="#333333"
+			            android:text="手机号码:"
+			            android:textStyle="bold"
+			            android:textSize="18dp" />
+		            <EditText
+		                android:id="@+id/unsername"
+		                android:layout_width="185dp"
+		                android:layout_height="40dp"
+		                android:layout_marginLeft="10dp"
+		                android:background="@drawable/text_bg"
+		                android:hint="请输入手机号码(11位)"
+		                android:inputType="phone"
+		                android:paddingLeft="8dp"
+		                android:singleLine="true"
+		                android:textSize="14dp" >
+		            </EditText>
+		     </TableRow>
+		     <TableRow
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@id/centerlinear1"
+			        android:background="@null"
+			        android:layout_marginTop="5dp"
+			        android:gravity="center_vertical"
+			        android:id="@+id/codeLayout"
+			        android:visibility="gone"
+			        android:orientation="horizontal" >
+		            
+				        <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:gravity="right|center_vertical"
+				            android:textColor="#333333"
+				            android:text="验证码:"
+				            android:textStyle="bold"
+				            android:textSize="18dp" />
+				        <LinearLayout android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:orientation="horizontal"
+			                >
+				            <EditText
+				                android:id="@+id/inputMessageEt"
+				                android:layout_width="100dp"
+				                android:layout_height="40dp"
+				                android:layout_marginLeft="10dp"
+				                android:background="@drawable/text_bg"
+				                android:hint="短信验证码"
+				                android:inputType="phone"
+				                android:paddingLeft="8dp"
+				                android:singleLine="true"
+				                android:textSize="14dp" >
+				            </EditText>
+			            
+			            		<Button
+					                android:id="@+id/getMessageBtn"
+					                android:layout_width="wrap_content"
+					                android:layout_height="40dp"
+					                android:layout_marginLeft="5dp"
+					                android:background="@drawable/wedding_id_yz_btn"
+					                android:text="获取验证码"
+					                android:textColor="#ffffff"
+					                android:singleLine="true"
+					                android:textSize="16dp" >
+					            </Button>
+				            </LinearLayout>
+		     </TableRow>
+			<TableRow
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_vertical"
+		        >
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:textColor="#333333"
+			            android:layout_height="wrap_content"
+			            android:gravity="right|center_vertical"
+			            android:text="性别:"
+			            android:textStyle="bold"
+			            android:textSize="18dp" />
+				
+				        <RadioGroup android:id="@+id/radioGroup"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_marginLeft="20dp"
+					        android:orientation="horizontal" >
+					        <RadioButton
+					            android:id="@+id/man"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:button="@drawable/radiobutton"
+					            android:text="男"
+					            android:textColor="#666666"
+					            android:checked="true"
+					            android:paddingLeft="23dp"
+					            android:textStyle="bold" />
+					        <RadioButton
+					            android:id="@+id/female"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:button="@drawable/radiobutton"
+					            android:text="女"
+					            android:textColor="#666666"
+					            android:paddingLeft="23dp"
+					            android:layout_marginLeft="30dp"
+					            android:textStyle="bold" />
+				    	</RadioGroup>
+		    </TableRow>
+    		<TableRow
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@id/centerlinear1"
+			        android:background="@null"
+			        android:orientation="horizontal" >
+				        <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:gravity="right|center_vertical"
+				            android:textColor="#333333"
+				            android:text="密码:"
+				            android:textStyle="bold"
+			            	android:textSize="18dp"/>
+				            <EditText
+				                android:id="@+id/password"
+				                android:layout_width="150dp"
+				                android:layout_height="40dp"
+				                android:layout_marginLeft="10dp"
+				                android:background="@drawable/text_bg"
+				                android:hint="请输入密码(10位以内)"
+				                android:paddingLeft="8dp"
+				                android:inputType="textPassword"
+				                android:singleLine="true"
+				                android:textSize="14dp" >
+				            </EditText>
+		    	</TableRow>
+		    	<TableRow
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@id/centerlinear1"
+			        android:background="@null"
+			        android:layout_marginTop="5dp"
+			        android:orientation="horizontal" >
+				        <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:gravity="right|center_vertical"
+				            android:textColor="#333333"
+				            android:text="确认密码:"
+				            android:textStyle="bold"
+			           		android:textSize="18dp" />
+		
+				            <EditText
+				                android:id="@+id/againPassword"
+				                android:layout_width="170dp"
+				                android:layout_height="40dp"
+				                android:layout_marginLeft="10dp"
+				                android:background="@drawable/text_bg"
+				                android:hint="再次输入密码(10位以内)"
+				                android:paddingLeft="8dp"
+				                android:singleLine="true"
+				                android:inputType="textPassword"
+				                android:textSize="14dp" >
+		
+				            </EditText>
+		    	</TableRow>
+   				<TableRow
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@null"
+			        android:layout_marginTop="15dp"
+			        android:orientation="horizontal" >
+				        <TextView
+				            android:layout_width="62dp"
+				            android:layout_height="42dp"
+				            android:gravity="right|center_vertical"
+				            android:textColor="#333333"
+				            android:text=""
+				            android:textSize="14dp" />
+		
+				            <Button
+				                android:id="@+id/registerBtn"
+				                android:layout_width="wrap_content"
+				                android:layout_height="40dp"
+				                android:layout_marginLeft="10dp"
+				                android:background="@drawable/btn_bg"
+				                android:inputType="phone"
+				                android:text="立即注册"
+				                android:textColor="#ffffff"
+				                android:paddingLeft="8dp"
+				                android:singleLine="true"
+				                android:textSize="18dp" >
+		
+				            </Button>
+		    	</TableRow>
+
+	</TableLayout>
+	</RelativeLayout>
+</RelativeLayout>
+  </LinearLayout>
+</ScrollView>

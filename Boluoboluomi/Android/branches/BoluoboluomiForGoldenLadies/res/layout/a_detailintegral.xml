@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	     android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:id="@+id/parent"
+		android:layout_height="fill_parent">
+		<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/top_linear"
+	    >
+	    <Button android:layout_width="55dp"
+	        android:layout_height="35dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="返回"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="14dp"
+	        android:paddingLeft="10dp"
+	        android:id="@+id/backBtn"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/btn01"/>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="积分兑换"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:textColor="#ffffff"
+	        android:textSize="20dp"
+	        android:id="@+id/title"
+	        android:textStyle="bold"/>
+	</RelativeLayout>
+	<LinearLayout  
+    	android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:orientation="horizontal"
+	    android:id="@+id/bottomLinear"
+	    >
+	    <include layout="@layout/integralstore_bottom"
+	        android:layout_width="fill_parent"
+	   	 	android:layout_height="wrap_content"/>
+	</LinearLayout>
+	<ScrollView android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@id/top_linear"
+			android:background="@color/bg_color"
+			android:layout_above="@id/bottomLinear"
+			>
+		<LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="match_parent"
+			    android:background="@color/bg_color"
+			    android:padding="10dp"
+			    android:gravity="top"
+			    android:orientation="vertical">
+	    <LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/linear1"
+			    android:orientation="vertical"
+			    android:visibility="visible"
+			    android:gravity="center_horizontal"
+			    >
+	    		<ImageView android:layout_width="wrap_content"
+	    		    android:layout_height="wrap_content"
+	    		    android:background="@null"
+	    		    android:id="@+id/topImage"/>
+	    		
+	 			<WebView android:layout_width="match_parent"
+	 			    android:layout_height="wrap_content"
+	 			    android:id="@+id/content"
+	 			    android:textColor="#000000"
+	 			    android:layerType="software"
+	 			    android:layout_marginTop="15dp"
+	 			    />
+	 			
+	 			<Button android:layout_width="wrap_content"
+	 			    android:layout_height="wrap_content"
+	 			    android:id="@+id/exchangeBtn"
+	 			    android:background="@drawable/btn_bg"
+	 			    android:text="申请兑换"
+	 			    android:textColor="#FFFFFF"
+	 			    android:textSize="16sp"
+	 			    android:layout_gravity="center_horizontal"
+	 			    android:paddingLeft="35dp"
+	 			    android:layout_marginTop="35dp"
+	 			    android:paddingRight="35dp"/>
+	 			</LinearLayout>
+	 			
+	 			<LinearLayout android:layout_width="fill_parent"
+			   		 android:layout_height="wrap_content"
+			   		 android:id="@+id/linear2"
+			   		 android:orientation="vertical"
+			   		 android:visibility="gone"
+			   		 >
+	 			<WebView android:layout_width="fill_parent"
+	 			    android:layout_height="wrap_content"
+	 			    android:id="@+id/content1"
+	 			    android:layerType="software"
+	 			    android:layout_weight="3"
+	 			    />
+	 			
+	 			<LinearLayout android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:background="@drawable/et_bg"
+					    android:orientation="vertical"
+			    >
+	    		    <LinearLayout android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="center_vertical"
+					    android:padding="10dp"
+			    >
+	    		    <TextView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="会    员    号："
+					        android:textColor="#000000"
+					        android:textSize="14dp"
+					        />
+	    		    <TextView android:layout_width="fill_parent"
+					        android:layout_height="30dp"
+					        android:id="@+id/name"
+					        android:textColor="#000000"
+					        android:textSize="22dp"
+					        android:inputType="number"
+					        android:background="@null"
+					        android:singleLine="true"
+					        />
+	    		</LinearLayout>
+	    		    <TextView android:layout_width="fill_parent"
+					        android:layout_height="1dp"
+					        android:background="#AAAD9C"/>
+	    		     <LinearLayout android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="center_vertical"
+					    android:padding="10dp"
+			    >
+	    		    <TextView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="收货人地址："
+					        android:textColor="#000000"
+					        android:textSize="14dp"
+					        />
+	    		    <EditText android:layout_width="fill_parent"
+					        android:layout_height="30dp"
+					        android:id="@+id/address"
+					        android:textColor="#000000"
+					        android:textSize="14dp"
+					        android:background="@null"
+					        android:singleLine="true"
+					        />
+	    		</LinearLayout>
+	    		    <TextView android:layout_width="fill_parent"
+					        android:layout_height="1dp"
+					        android:background="#AAAD9C"/>
+	    		
+	    		 <LinearLayout android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="center_vertical"
+					    android:padding="10dp"
+			    >
+	    		    <TextView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="收货人电话："
+					        android:textColor="#000000"
+					        android:textSize="14dp"
+					        />
+	    		    <EditText android:layout_width="fill_parent"
+					        android:layout_height="30dp"
+					        android:id="@+id/phone"
+					        android:inputType="phone"
+					        android:textColor="#000000"
+					        android:textSize="14dp"
+					        android:background="@null"
+					        android:singleLine="true"
+					        />
+	    		</LinearLayout>
+	    		</LinearLayout>
+	    	
+	 			<Button android:layout_width="wrap_content"
+	 			    android:layout_height="wrap_content"
+	 			    android:id="@+id/affirmBtn"
+	 			    android:background="@drawable/btn_bg"
+	 			    android:text="确认兑换"
+	 			    android:textColor="#FFFFFF"
+	 			    android:textSize="16dp"
+	 			    android:layout_marginTop="15dp"
+	 			    android:layout_gravity="center_horizontal"
+	 			    android:paddingLeft="25dp"
+	 			    android:layout_weight="3"
+	 			    android:paddingRight="25dp"/>
+	 			</LinearLayout>
+	 				
+	</LinearLayout>
+	</ScrollView>
+	</RelativeLayout>

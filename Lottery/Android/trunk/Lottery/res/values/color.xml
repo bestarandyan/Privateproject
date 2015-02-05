@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources >
+    <color name="menu_bg1">#3A967D</color>
+    <color name="menu_bg2">#3A967D</color>
+    <color name="menu_bg3">#3A967D</color>
+    <color name="menu_bg4">#3A967D</color>
+    <color name="menu_bg5">#3A967D</color>
+    <color name="kuaisan_xuanbtn_bg">#345E3A</color>
+    <color name="santong_btntext_color">#ffffff</color>
+</resources>

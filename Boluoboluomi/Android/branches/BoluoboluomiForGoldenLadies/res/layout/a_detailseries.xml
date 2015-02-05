@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:drawablePadding="0dip"
+    android:ellipsize="marquee"
+    android:fadingEdge="horizontal"
+    android:gravity="top|center_horizontal"
+    android:maxLines="2"
+    android:id="@+id/parent"
+    android:background="@color/bg_color"
+    android:textColor="#000000" >
+<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:gravity="center"
+	    android:id="@+id/bottomLinear"
+	    android:background="@drawable/id_photo_bottom_bg"
+	    android:paddingTop="6dp"
+	    android:paddingBottom="6dp"
+	    android:orientation="horizontal">
+	        <Button android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:id="@+id/bottomBackBtn"
+		        android:layout_weight="1"
+		        android:layout_marginLeft="10dp"
+		        android:drawableTop="@drawable/id_meitu_ico1"
+		        android:text="返回"
+		        android:textColor="#ffffff"
+		        android:background="@null"
+		        android:textSize="14sp"
+		        android:drawablePadding="2dp"/>
+	        <Button android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:id="@+id/zixunBtn"
+		        android:layout_weight="1"
+		        android:layout_marginLeft="10dp"
+		        android:drawableTop="@drawable/id_meitu_ico2"
+		        android:text="咨询"
+		        android:textColor="#ffffff"
+		        android:background="@null"
+		        android:textSize="14sp"
+		        android:drawablePadding="2dp"/>
+	        <Button android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:id="@+id/ShareBtn"
+		        android:layout_weight="1"
+		        android:drawableTop="@drawable/id_photo_ico5"
+		        android:text="分享"
+		        android:textColor="#ffffff"
+		        android:background="@null"
+		        android:textSize="14sp"
+		        android:drawablePadding="2dp"/>
+	</LinearLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/photo_bottom_bg"
+	    android:orientation="horizontal"
+	    android:layout_alignParentTop="true"
+	    android:id="@+id/top_linear"
+	    android:gravity="center_vertical">
+	    <Button android:layout_width="55dp"
+	        android:layout_height="35dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="返回"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:layout_centerVertical="true"
+	        android:textSize="14dp"
+	        android:paddingLeft="10dp"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/btn01"/>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="推荐套系详情"
+	        android:layout_centerInParent="true"
+	        android:textColor="#ffffff"
+	        android:textSize="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:id="@+id/titleTv"
+	        android:textStyle="bold"/>
+	</RelativeLayout> 
+	<ScrollView android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@id/top_linear"
+		android:layout_above="@id/bottomLinear"
+		android:scrollbars="none"
+		android:fadingEdge="none"
+		android:background="#ffffff"
+	    >
+	<LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center_horizontal"
+		>			
+				<LinearLayout 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:gravity="center"
+				android:id="@+id/topImgLayout"
+				>			
+					<ImageView android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:id="@+id/tuijianImg"
+					    android:background="@null"
+					    />
+				</LinearLayout>
+		<LinearLayout 
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:background="#f5f5f5"
+			>		
+			<LinearLayout 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:background="#f5f5f5"
+				android:layout_weight="1"
+				android:padding="10dp"
+				>		
+				<TextView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+				    android:textColor="#000000"
+				    android:textSize="14sp"
+				    android:text="三周年庆典特惠A套系"
+			        android:id="@+id/itemTitle"/>
+			    <TextView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+				    android:textColor="#888888"
+				    android:textSize="14sp"
+				    android:text="原价：9099元"
+				    android:layout_marginTop="10dp"
+			        android:id="@+id/itemOldMoney"/>
+			    <TextView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+				    android:textColor="#D23232"
+				    android:textSize="14sp"
+				    android:layout_marginTop="10dp"
+				    android:text="限时特价：4998元"
+			        android:id="@+id/itemNowMoney"/>
+			</LinearLayout>	
+			<View android:layout_width="1dp"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/id_tanchu_line"
+	            />
+			<LinearLayout 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:background="#f5f5f5"
+				android:layout_weight="1"
+				android:padding="10dp"
+				android:gravity="center_horizontal"
+				>		
+				<TextView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+				    android:textColor="#000000"
+				    android:textSize="12sp"
+				    android:text="企业咨询《绝无隐形消费》"
+			        android:id="@+id/zixun1"/>
+				<LinearLayout 
+					android:layout_width="match_parent"
+					android:layout_height="30dp"
+					android:orientation="horizontal"
+					android:background="@drawable/btn_bg"
+					android:gravity="center_vertical"
+					android:layout_marginTop="5dp"
+					android:id="@+id/telLayout"
+					>		
+					<ImageView android:layout_width="25dp"
+				        android:layout_height="25dp"
+					    android:src="@drawable/id_dianjia_tel"
+				        />
+					<TextView android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="400-8820-021"
+				        android:textColor="#ffffff"
+				        android:textSize="12sp"
+				        android:id="@+id/phoneNumber"
+				        />
+			</LinearLayout>		
+			<TextView android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+				    android:textColor="#000000"
+				    android:textSize="12sp"
+				    android:text="QQ咨询：4006820021"
+				    android:layout_marginTop="5dp"
+				    android:id="@+id/zixun2"
+			        />
+			</LinearLayout>		
+		</LinearLayout>		
+		<View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/soso_zc_line"
+            />
+	 		<LinearLayout 
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:background="#ffffff"
+				android:padding="10dp"
+				>		
+				<TextView android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="优惠套系包含以下"
+				    android:textColor="#000000"
+				    />
+				<TextView android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="\t\ti-D定制式拍摄服务："
+				    android:textColor="#000000"
+				    android:id="@+id/tuijianContent"
+				    />
+			</LinearLayout>
+	</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

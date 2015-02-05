@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources >
+    <string name="menu_to_top">290</string>
+    <dimen name="integral_1_totop">5dp</dimen>
+    <dimen name="integral_2_totop">10dp</dimen>
+    <dimen name="integral_3_totop">20dp</dimen>
+    <dimen name="integral_4_totop">15dp</dimen>
+    <string name="feddback_text_width">150</string>
+    <dimen name="city_zimu_size">10dp</dimen>
+  	<dimen name="city_zimu_height">14.5dp</dimen>
+</resources>

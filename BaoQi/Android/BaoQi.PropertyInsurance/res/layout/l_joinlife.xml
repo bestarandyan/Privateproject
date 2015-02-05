@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+      <include layout="@layout/head_title_layout" />   
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/body_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/h_backHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/map" 
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="10dip" />
+
+            <Button
+                android:id="@+id/h_backhomebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/leftbuttonbg"
+                android:layout_marginTop="7dip"
+                android:layout_marginRight="10dip"
+                android:textSize="18sp"
+                android:text="首页"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="7dip"
+                android:text=">"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/query_hospitalBtn"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="7dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/leftbuttonbg"
+                android:layout_marginRight="10dip"
+                android:textSize="18sp"
+                android:text="加盟国寿"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        </LinearLayout>
+        
+
+            <LinearLayout
+                android:orientation="vertical"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginBottom="20dip"
+            android:layout_marginRight="20dip"
+            android:background="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        
+                <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="#02AF5F"
+        android:orientation="horizontal" >
+
+        <Button
+            android:textColor="@color/black"
+            android:id="@+id/btn_1"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/single_tag01_on"
+            android:gravity="center"
+            android:text="事业前景"
+            android:textSize="18sp" />
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/btn_2"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/single_tag01"
+            android:gravity="center"
+            android:text="辉煌国寿"
+            android:textSize="18sp" />
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/btn_3"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/single_tag01"
+            android:gravity="center"
+            android:text="精彩每一天"
+            android:textSize="18sp" />
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/btn_4"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/single_tag01"
+            android:gravity="center"
+            android:text="晋升机制"
+            android:textSize="18sp" />
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/btn_5"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/single_tag01"
+            android:gravity="center"
+            android:text="培育体系"
+            android:textSize="18sp" />
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/btn_6"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/single_tag01"
+            android:gravity="center"
+            android:text="荣誉体系"
+            android:textSize="18sp" />
+    </LinearLayout>  
+                    
+                    <ScrollView android:layout_width="fill_parent"
+          				android:layout_height="fill_parent">
+    
+                <LinearLayout android:id="@+id/linear"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:layout_height="fill_parent"
+                    >
+                  
+                    <ImageView 
+                        android:id="@+id/image1"
+                        android:visibility="visible"
+                        android:background="@drawable/joinlifeimage1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView 
+                        android:visibility="gone"
+                        android:id="@+id/image2"
+                        android:background="@drawable/joinlifeimage2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView 
+                        android:visibility="gone"
+                        android:id="@+id/image3"
+                        android:background="@drawable/joinlifeimage3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView 
+                        android:visibility="gone"
+                        android:id="@+id/image4"
+                        android:background="@drawable/joinlifeimage4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    
+                	<ImageView 
+                        android:visibility="gone"
+                        android:id="@+id/image5"
+                        android:background="@drawable/joinlifeimage5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                	<ImageView 
+                        android:visibility="gone"
+                        android:id="@+id/image6"
+                        android:background="@drawable/joinlifeimage6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    </ScrollView>
+                    
+                
+                
+        </LinearLayout>
+   
+        
+    </LinearLayout>
+
+</LinearLayout>

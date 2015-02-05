@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginTop="20dip"
+        android:background="@drawable/book_tag"
+        android:gravity="center"
+        android:text="收银台"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+<LinearLayout 
+    android:layout_width="fill_parent" android:layout_marginLeft="18dip"
+    android:layout_height="fill_parent" android:layout_marginTop="20dip"
+    android:gravity="center"
+     >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dukaqi" />
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:layout_marginLeft="10dip"
+     android:orientation="vertical"
+     >
+    <TextView android:layout_marginTop="60dip"
+        android:layout_width="wrap_content" android:textColor="#000000"
+                    android:textSize="20sp" 
+        android:layout_height="wrap_content"
+        android:text="刷卡帮助" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  android:textColor="#000000"
+                    android:textSize="20sp" 
+        android:layout_marginTop="10dip"
+        android:text="1.支持借记卡,信用卡支付" />
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dip" android:textColor="#000000"
+                    android:textSize="20sp" 
+        android:text="2.银行卡磁条向下,卡面和刷卡器正面保持一致" />
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  android:textColor="#000000"
+                    android:textSize="20sp"
+        android:layout_marginTop="10dip"
+        android:text="3.用左手拇指稳住刷卡器,右手刷卡" />
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  android:textColor="#000000"
+                    android:textSize="20sp" 
+        android:layout_marginTop="10dip"
+        android:text="4.如果没有刷卡成功,请尝试不同的刷卡速度" />
+</LinearLayout>
+</LinearLayout>
+<TextView
+        android:layout_width="200dip" android:id="@+id/ka"
+        android:layout_height="150dip"      android:layout_marginLeft="10dip"
+        android:layout_marginTop="30dip"
+        android:text="" />
+</LinearLayout>

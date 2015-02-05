@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+        <Button
+            android:id="@+id/zhifu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dip"    android:layout_marginLeft="250dip"
+            android:background="@drawable/btn01"
+            android:text="刷卡支付" />
+
+        <Button
+            android:id="@+id/nzhifu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="100dip"
+            android:background="@drawable/btn01"
+            android:text="其它支付" />
+
+
+</LinearLayout>

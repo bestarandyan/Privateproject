@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:gravity="center_horizontal"
+    android:paddingTop="30dp"
+    android:orientation="vertical" >
+    <ImageView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/welcome1"
+	    />
+ <!--<TextView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="还在手写请柬"
+	    android:textColor="#FCCD00"
+	    android:textSize="25sp"
+	    android:layout_marginLeft="50dp"
+	    />
+	<TextView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="告知亲朋好友？"
+	    android:textColor="#FCCD00"
+	    android:textSize="25sp"
+	    android:layout_marginLeft="50dp"
+	    android:layout_marginTop="10dp"
+	    />
+	<TextView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="在这里只需编辑发送"
+	    android:textColor="#FCCD00"
+	    android:textSize="25sp"
+	    android:layout_marginLeft="50dp"
+	    android:layout_marginTop="10dp"
+	    />
+	<TextView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="...  ..."
+	    android:textColor="#FCCD00"
+	    android:textSize="65sp"
+	    android:gravity="top"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="-40dp"
+	    /> -->
+    </LinearLayout>

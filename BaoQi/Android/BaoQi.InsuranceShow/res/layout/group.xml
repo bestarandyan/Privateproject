@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:background="@drawable/personal_nav_bg"
+    >
+    <RelativeLayout android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:orientation="horizontal">
+<ImageView 
+  android:layout_gravity = "center_vertical" 
+  android:id = "@+id/groupimageView" 
+  android:layout_width = "wrap_content" 
+  android:layout_height = "fill_parent" 
+  android:paddingLeft = "5px" 
+  android:paddingTop = "5px" 
+  android:paddingBottom = "5px"
+  android:src = "@drawable/jh"/> 
+<TextView  android:id="@+id/groupTo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:layout_toRightOf="@id/groupimageView"
+    android:layout_marginLeft="8px"
+    android:paddingTop="8px"
+    android:paddingBottom="8px"
+    android:text="No data"
+    android:textColor="@color/black"
+    android:textSize="15px"
+    />
+    </RelativeLayout>
+</LinearLayout>

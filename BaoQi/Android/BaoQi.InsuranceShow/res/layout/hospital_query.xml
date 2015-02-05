@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/body_bg">
+    <include layout="@layout/head_title_layout"/>
+   
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/map" />
+
+        <Button android:background="@drawable/leftbuttonbg"
+            android:text="@string/shouye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/h_backhomebtn"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            />
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+	        android:textColor="@color/white"
+	        android:text=">"/>
+	    <Button android:background="@drawable/leftbuttonbg"
+            android:text="@string/yiliaojigouchaxun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/query_hospitalBtn"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/hospital_green"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        >
+	    <RelativeLayout android:layout_width="fill_parent"
+	        android:layout_height="fill_parent">
+	         <Spinner android:id="@+id/h_spinner1"
+		        android:layout_width="wrap_content"
+		        android:background="@drawable/xl_text"
+		        android:layout_marginRight="20dp"
+		        android:layout_height="wrap_content"/>
+		    <Spinner android:id="@+id/h_spinner2"
+		        android:background="@drawable/xl_text"
+		        android:layout_width="wrap_content"
+		        android:layout_toRightOf="@id/h_spinner1"
+		        android:layout_marginRight="20dp"
+		        android:layout_height="wrap_content"/>
+		    <Spinner android:id="@+id/h_spinner3"
+		        android:background="@drawable/xl_text"
+		        android:layout_width="wrap_content"
+		         android:layout_toRightOf="@id/h_spinner2"
+		        android:layout_marginRight="20dp"
+		        android:layout_height="wrap_content"/>
+	        
+	    </RelativeLayout>
+	   
+            </LinearLayout>
+        <com.baidu.mapapi.MapView android:id="@+id/bmapView"
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent" 
+				android:clickable="true"     
+		/>
+    </LinearLayout>
+    </LinearLayout>

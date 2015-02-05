@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:id="@+id/parent"
+    android:background="@color/bg_color">
+    <RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/babe_top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/top_linear"
+	    >
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="14dp"
+	        android:id="@+id/backBtn"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/babe_fh_btn"/>
+	    <ImageView android:layout_width="1.5dp"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/babe_top_line"
+	        android:layout_toRightOf="@id/backBtn"
+	        android:layout_marginLeft="10dp"
+	        />
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="美图欣赏"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:textColor="#ffffff"
+	        android:textSize="20dp"
+	        android:id="@+id/title"
+	        android:textStyle="bold"/>
+	    <ImageButton android:background="@null"
+	        android:src="@drawable/id_paizhao_ico"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentRight="true"
+	        android:id="@+id/takePhoto"
+	        android:layout_centerVertical="true"
+	        android:padding="10dp"
+	        android:visibility="invisible"
+	        />
+	    <ImageView android:layout_width="1.5dp"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/babe_top_line"
+	        android:layout_toLeftOf="@id/takePhoto"
+	        android:layout_marginLeft="15dp"
+	        android:id="@+id/photoLine"
+	        android:visibility="invisible"
+	        />
+	</RelativeLayout>
+	<ScrollView android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:scrollbars="none"
+    	    android:fadingEdge="none"
+    	    >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+
+    	<LinearLayout android:layout_width="match_parent"
+    	    android:layout_height="match_parent"
+    	    android:orientation="vertical"
+    	    >
+	    	    <RelativeLayout android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/firstImgLayout"
+			    android:layout_weight="1"
+			    android:background="#ffffff"
+			    android:layout_margin="2dp"
+			    >
+				<ImageView android:layout_width="match_parent"
+	    	        android:layout_height="wrap_content"
+	    	        android:id="@+id/datuImg"
+	    	        android:src="@drawable/datu"
+	    	        android:layout_alignParentTop="true"
+	    	        android:adjustViewBounds="true"
+	    	        
+	    	        />
+				<ProgressBar  
+					android:id="@+id/progressBar" 
+					android:layout_width="match_parent"  
+					android:layout_height="match_parent"  
+					android:max="100" 
+					android:progress="0" 
+					android:indeterminate="false"
+				    android:indeterminateOnly="false"
+					android:secondaryProgress="0" 
+					android:layout_alignTop="@id/datuImg"
+					android:layout_alignLeft="@id/datuImg"
+					android:layout_alignRight="@id/datuImg"
+					android:layout_alignBottom="@id/datuImg"
+					android:progressDrawable="@drawable/progress_style"
+					android:alpha="200"
+					
+				/>
+				<TextView android:layout_width="wrap_content"
+			          android:layout_height="wrap_content"
+			          android:text="100%"
+			          android:textColor="#000000"
+			          android:textSize="30sp"
+			          android:layout_centerInParent="true"
+			          android:visibility="gone"
+			          android:id="@+id/currentProText"
+			          />
+			</RelativeLayout>
+    	   <GridView
+    	       android:id="@+id/bottomgv"
+    	       android:layout_width="match_parent"
+    	       android:layout_height="match_parent"
+    	       android:gravity="center"
+    	       android:horizontalSpacing="2dp"
+    	       android:numColumns="3"
+    	       android:stretchMode="columnWidth"
+    	       android:verticalSpacing="2dp" >
+		</GridView>
+    	    
+    	</LinearLayout>
+	     
+    
+	</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

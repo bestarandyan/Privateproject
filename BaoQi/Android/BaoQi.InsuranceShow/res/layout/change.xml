@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    					android:layout_width="fill_parent"
+                       android:layout_height="fill_parent"
+                       android:background="@drawable/border"
+                       >
+                       <RelativeLayout android:layout_width="fill_parent"
+                           android:layout_height="50px"
+                           android:background="@drawable/nav_title_bg"
+                           android:layout_alignParentTop="true"
+                           android:orientation="horizontal"
+                           android:paddingRight="10px"
+                           android:paddingLeft="20px"
+                           android:id="@+id/righttopview"
+                           >
+                           <TextView android:text="申请改派"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_alignParentLeft="true"
+                               android:textSize="20px"
+                               android:layout_centerVertical="true"
+                               android:textColor="@color/red"/>
+                           <Button android:background="@drawable/close"
+                               android:layout_width="30px"
+                               android:layout_height="30px"
+                               android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:id="@+id/changeviewclosebutton"
+                                />
+                       </RelativeLayout>
+                       
+                       <LinearLayout android:layout_width="fill_parent"
+                           android:layout_height="fill_parent"
+                           android:layout_below="@id/righttopview"
+                           android:padding="30px"
+                           android:orientation="vertical"
+                           >
+                          
+                           <LinearLayout android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:orientation="horizontal"
+                               android:paddingTop="20px"
+                               android:paddingBottom="20px">
+                               <TextView android:text="改派原因:"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:textColor="@color/black"
+                                   />
+                               <Spinner 
+                                   android:layout_width="400px"
+                                   android:layout_height="wrap_content"
+                                   android:background="@drawable/spinnerbg"
+                                   android:id="@+id/changeSpinner"
+                                   />
+                           </LinearLayout>
+                           
+                 			 <LinearLayout android:layout_width="fill_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="horizontal"
+                               android:paddingTop="20px"
+                               android:paddingBottom="20px">
+                               <TextView android:text="备注信息："
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:gravity="top"
+                                   />
+                               <EditText android:layout_width="300px"
+                                   android:layout_height="200px"
+                                   android:id="@+id/editinfo"
+                                   android:textScaleX="0"
+                                
+                                   android:text="我在另外一个地方处理事情，没时间去处理此事。。。。"/>
+                           </LinearLayout>
+                           <RelativeLayout android:layout_width="fill_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="horizontal"
+                               android:layout_marginLeft="50px">
+                               <Button android:background="@drawable/btn03"
+                                   android:text="提交"
+                                   android:textColor="@color/white"
+                                   android:layout_width="140dp"
+                               	   android:layout_height="100dp"
+                               	   android:textSize="20px"
+                                   android:id="@+id/changesubmitbutton"/>
+                               <Button android:background="@drawable/btn03"
+                                   android:id="@+id/changecanclebutton"
+                                   android:text="返回"
+                                   android:textColor="@color/white"
+                                   android:layout_toRightOf="@id/changesubmitbutton"
+                                   android:layout_marginLeft="20px"
+                                   android:textSize="20px"
+                                   android:layout_width="140dp"
+                              	   android:layout_height="100dp"/>
+                           </RelativeLayout>
+                           
+                       </LinearLayout>
+                      
+                   </RelativeLayout>

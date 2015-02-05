@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical"
+    android:id="@+id/mytaskmainLinearLayout"
+    >
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/mytaskTop"
+        >
+<include layout="@layout/head_title_layout"/>
+   </LinearLayout>
+   <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/titleinfo"
+        android:layout_below="@id/mytaskTop"
+        >
+         <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/map" />
+        <Button android:background="@drawable/leftbuttonbg"
+            android:text="@string/shouye"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p_backhome_btn"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            />
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+	        android:textColor="@color/white"
+	        android:text=">"/>
+	    <Button android:background="@drawable/leftbuttonbg"
+            android:text="车险"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/geren_info_btn"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            />
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+	        android:textColor="@color/white"
+	        android:text=">"/>
+	    <Button android:background="@drawable/leftbuttonbg"
+            android:text="车险移动报价平台"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/geren_info_btn"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            />
+        </LinearLayout>
+       
+      
+    </LinearLayout>
+ 
+  <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:orientation="vertical"
+       android:background="@color/white"
+       android:paddingLeft="20dp"
+       android:paddingTop="4dp"
+       android:paddingRight="20dp"
+       android:paddingBottom="20dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="6dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginBottom="20dp"
+       
+       >
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="车险移动报价平台" android:textColor="@color/red"
+              android:textSize="20dp"/>
+     <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginTop="8dp"
+         android:background="@drawable/bj_tag_bg">
+        <Button android:paddingLeft="2dip"
+                    android:paddingRight="2dip" android:id="@+id/tab1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:background="@drawable/bj_tag2" android:text="1     保费试算"
+            android:textColor="@color/white" android:textSize="20dp" android:textStyle="bold"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/bj_ico" android:layout_marginLeft="10dp"/>
+      	<Button
+                    android:paddingRight="2dip" android:id="@+id/tab2"  android:layout_width="wrap_content" android:layout_height="fill_parent"  android:background="@drawable/leftbuttonbg" android:text="2     转成保单"
+             android:textStyle="bold" android:textColor="@color/gray" android:textSize="20dp" android:layout_marginLeft="10dp" android:paddingLeft="5dp"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/bj_ico" android:layout_marginLeft="10dp"/>
+        <Button android:paddingLeft="2dip"
+                    android:paddingRight="2dip" android:id="@+id/tab3"  android:layout_width="wrap_content" android:layout_height="fill_parent" android:background="@drawable/leftbuttonbg" android:text="3     填写保单信息"
+             android:textStyle="bold" android:textColor="@color/gray" android:textSize="20dp" android:layout_marginLeft="10dp" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/bj_ico" android:layout_marginLeft="10dp"/>
+      	<Button android:paddingLeft="2dip"
+                    android:paddingRight="2dip" android:id="@+id/tab4"  android:layout_width="wrap_content" android:layout_height="fill_parent" android:background="@drawable/leftbuttonbg" android:text="4     后台核保"
+             android:textStyle="bold" android:textColor="@color/gray" android:textSize="20dp" android:layout_marginLeft="10dp"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/bj_ico" android:layout_marginLeft="10dp"/>
+        <Button android:paddingLeft="2dip"
+                    android:paddingRight="2dip" android:id="@+id/tab5"  android:layout_width="wrap_content" android:layout_height="fill_parent" android:background="@drawable/leftbuttonbg" android:text="5     刷卡收费"
+             android:textStyle="bold" android:textColor="@color/gray" android:textSize="20dp" android:layout_marginLeft="10dp"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/bj_ico" android:layout_marginLeft="10dp"/>
+        <Button android:paddingLeft="2dip"
+                    android:paddingRight="2dip" android:id="@+id/tab6"  android:layout_width="wrap_content" android:layout_height="fill_parent" android:background="@drawable/leftbuttonbg" android:text="6     生成电子保单"
+             android:textStyle="bold" android:textColor="@color/gray" android:textSize="20dp" android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/no1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+    </LinearLayout>
+    
+    </LinearLayout>
+</LinearLayout>

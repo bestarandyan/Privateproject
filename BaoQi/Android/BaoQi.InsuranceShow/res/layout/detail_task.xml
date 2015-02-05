@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    					android:layout_width="fill_parent"
+                       android:layout_height="fill_parent"
+                       android:background="@drawable/border"
+                       >
+                       <RelativeLayout android:layout_width="fill_parent"
+                           android:layout_height="50px"
+                           android:background="@drawable/nav_title_bg"
+                           android:layout_alignParentTop="true"
+                           android:orientation="horizontal"
+                           android:paddingRight="10px"
+                           android:paddingLeft="20px"
+                           android:id="@+id/righttopview"
+                           >
+                           <TextView android:text="任务详情"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_alignParentLeft="true"
+                               android:textSize="20px"
+                               android:layout_centerVertical="true"
+                               android:textColor="@color/red"/>
+                           <Button android:background="@drawable/close"
+                               android:layout_width="30px"
+                               android:layout_height="30px"
+                               android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:id="@+id/buttoncloseview"
+                                />
+                       </RelativeLayout>
+                       <LinearLayout android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_below="@id/righttopview"
+                           android:padding="30px"
+                           android:orientation="vertical"
+                           >
+                           
+                            <LinearLayout android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal"
+                           android:paddingTop="10px"
+                           android:paddingBottom="10px"
+                           >
+                           <TextView android:text="事件时间："
+                               
+                               android:textColor="@color/gray"
+                               android:textSize="15px"
+                               android:textStyle="normal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                            <TextView android:id="@+id/rightdetailtime"
+                                android:textColor="@color/black"
+                               android:textSize="15px"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                       </LinearLayout>
+                        <LinearLayout android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           android:paddingTop="10px"
+                           android:paddingBottom="10px"
+                           android:orientation="horizontal"
+                           >
+                           <TextView android:text="事件地点："
+                               android:textColor="@color/gray"
+                               android:textSize="15px"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                            <TextView android:id="@+id/rightdetailaddress"
+                                android:textColor="@color/black"
+                               android:textSize="15px"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                             <Button android:text="查看地图"
+                               android:textColor="@color/blue"
+                               android:id="@+id/lookmap"
+                               android:textSize="20px"
+                               android:paddingLeft="45px"
+                               android:background="@drawable/leftbuttonbg"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"/>
+                       </LinearLayout>
+                        <LinearLayout android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                          android:paddingTop="10px"
+                           android:paddingBottom="10px"
+                           android:orientation="horizontal"
+                           >
+                           <TextView android:text="报案人员："
+                               android:textColor="@color/gray"
+                               android:textSize="15px"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                            <TextView android:id="@+id/rightdetailperson"
+                                android:textColor="@color/black"
+                               android:textSize="15px"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                       </LinearLayout>
+                        <LinearLayout android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                          android:paddingTop="10px"
+                           android:paddingBottom="10px"
+                           android:orientation="horizontal"
+                           >
+                           <TextView android:text="手机号码："
+                               android:textColor="@color/gray"
+                               android:textSize="15px"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                            <TextView android:id="@+id/rightdetailphone"
+                                android:textColor="@color/black"
+                               android:textSize="15px"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                       </LinearLayout>
+                        <LinearLayout android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                            android:paddingTop="10px"
+                           android:paddingBottom="10px"
+                           android:orientation="horizontal"
+                           >
+                           <TextView android:text="备注信息："
+                               android:textColor="@color/gray"
+                               android:textSize="15px"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                            <TextView android:id="@+id/rightdetailinfo"
+                                android:textColor="@color/black"
+                               android:textSize="15px"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                       </LinearLayout>
+                  
+                       </LinearLayout>
+                       <RelativeLayout android:layout_width="fill_parent"
+                           android:layout_height="70px"
+                           android:background="@drawable/nav_title_bg"
+                           android:layout_alignParentBottom="true"
+                           android:orientation="horizontal"
+                           android:paddingLeft="40px"
+                           >
+                           <Button android:background="@drawable/btn03"
+                               android:text="接受"
+                               android:layout_width="140dp"
+                               android:layout_height="100dp"
+                               android:layout_centerVertical="true"
+                               android:id="@+id/buttonaccept"
+                               android:textColor="@color/white"
+                               android:textSize="20px"
+                               />
+                            <Button android:background="@drawable/btn03"
+                               android:text="申请改派"
+                                android:layout_width="140dp"
+                               android:layout_height="100dp"
+                               android:layout_toRightOf="@id/buttonaccept"
+                               android:layout_centerVertical="true"
+                               android:id="@+id/buttonchange"
+                      		   android:layout_marginLeft="20px"
+                      		   android:textSize="20px"
+                      		   android:textColor="@color/white"
+                               />
+                             <Button android:background="@drawable/btn03"
+                               android:text="关闭"
+                               android:layout_width="140dp"
+                               android:layout_height="100dp"
+                               android:layout_marginLeft="20px"
+                               android:layout_centerVertical="true"
+                               android:id="@+id/buttonclose"
+                               android:textSize="20px"
+                               android:textColor="@color/white"
+                               android:layout_toRightOf="@id/buttonchange"
+                               />
+                             
+                       </RelativeLayout>
+                   </RelativeLayout>

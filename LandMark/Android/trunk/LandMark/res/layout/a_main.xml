@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		>
+	
+		<RelativeLayout android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    >
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomLayout"
+        >
+ <HorizontalScrollView android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:scrollbars="none"
+    android:fadingEdge="none"
+    android:id="@+id/scrollView"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/bottom_bg"
+    >
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bottom_bg"
+        >
+<!-- <RadioGroup android:orientation="horizontal"
+     android:id="@+id/main_radio"
+      android:gravity="center_vertical"
+       android:background="@drawable/bottom_bg"
+         android:layout_width="fill_parent"
+         android:layout_gravity="bottom" 
+          android:layout_height="match_parent"> -->
+	<Button android:id="@+id/radio_button0" 
+		    android:text="@string/tab_home" 
+		    android:drawableTop="@drawable/top_ico3" 
+		    style="@style/main_tab_bottom" 
+		    />
+		<ImageView android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/bottom_line"
+				        />
+		<Button android:id="@+id/radio_button1" 
+		    android:text="@string/tab_tab1" 
+		    android:drawableTop="@drawable/bottom_btn1" 
+		    style="@style/main_tab_bottom" 
+		    />
+		<ImageView android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/bottom_line"
+				        />
+		<Button android:id="@+id/radio_button2" 
+		    android:text="@string/tab_tab2" 
+		    android:drawableTop="@drawable/bottom_btn2" 
+		    style="@style/main_tab_bottom" 
+		    />
+		<ImageView android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/bottom_line"
+				        />
+		<Button android:id="@+id/radio_button3" 
+		    android:text="@string/tab_tab3" 
+		    android:drawableTop="@drawable/bottom_btn3" 
+		    style="@style/main_tab_bottom" 
+		    />
+		<ImageView android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/bottom_line"
+				        />
+		<Button android:id="@+id/radio_button4" 
+		    android:text="@string/tab_tab4" 
+		    android:drawableTop="@drawable/bottom_btn4" 
+		    style="@style/main_tab_bottom" 
+		    />
+		<ImageView android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/bottom_line"
+				        />
+		<Button android:id="@+id/radio_button5" 
+		    android:text="@string/tab_tab5" 
+		    android:drawableTop="@drawable/bottom_btn5" 
+		    style="@style/main_tab_bottom" 
+		    />
+		 <ImageView android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/bottom_line"
+				        />
+		<Button android:id="@+id/radio_button6" 
+		    android:text="@string/tab_tab6" 
+		    android:drawableTop="@drawable/bottom_btn7" 
+		    style="@style/main_tab_bottom" 
+		    />
+<!-- </RadioGroup> -->
+ </LinearLayout>
+ </HorizontalScrollView>
+ <ImageView android:layout_width="wrap_content"
+     android:layout_height="match_parent"
+     android:layout_alignTop="@id/scrollView"
+     android:src="@drawable/zd_left_sj"
+     android:background="#000000"
+     android:id="@+id/leftImg"
+     android:visibility="invisible"
+     />
+  <ImageView android:layout_width="wrap_content"
+     android:layout_height="match_parent"
+     android:layout_alignTop="@id/scrollView"
+     android:src="@drawable/zd_right_sj"
+     android:background="#000000"
+     android:layout_alignParentRight="true"
+     android:id="@+id/rightImg"
+     android:visibility="visible"
+     />
+  </RelativeLayout>
+    <TabHost 
+		android:id="@android:id/tabhost"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_above="@id/bottomLayout"
+		>
+  		<FrameLayout android:id="@android:id/tabcontent" 
+			     android:layout_width="match_parent" 
+			     android:layout_height="match_parent" 
+			     />
+		<TabWidget android:id="@android:id/tabs" 
+			    android:visibility="gone" 
+			    android:layout_width="fill_parent" 
+			    android:layout_height="0dip"
+			   />
+		 </TabHost>
+  </RelativeLayout>
+
+
+ 
+</LinearLayout>

@@ -1,0 +1,419 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#007B5C"
+              >
+              <LinearLayout
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:orientation="horizontal"
+		     android:background="#5F7B41"
+		     android:gravity="bottom|center_horizontal"
+		     android:id="@+id/infoLayout1"
+		  	>
+		 	<LinearLayout
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:orientation="vertical"
+		     android:background="#5F7B41"
+		     android:paddingBottom="10dp"
+		     android:paddingLeft="5dp"
+		     android:paddingRight="5dp"
+		     android:gravity="bottom|center_horizontal"
+			 >
+			 	<LinearLayout
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:orientation="horizontal"
+			     android:background="#5F7B41"
+			  	>
+			  	<TextView android:layout_width="wrap_content"
+			  	    android:layout_height="wrap_content"
+			  	    android:text="014"
+			  	    android:id="@+id/currentQiTv"
+			  	    android:textColor="#EE9D5B"
+			  	    android:textSize="12sp"
+			  	    />
+			  	<TextView android:layout_width="wrap_content"
+			  	    android:layout_height="wrap_content"
+			  	    android:text="期开奖:"
+			  	    android:textColor="#eeeeee"
+			  	    android:textSize="12sp"
+			  	    />
+			  	<TextView android:layout_width="wrap_content"
+			  	    android:layout_height="wrap_content"
+			  	    android:text="3 4 5"
+			  	    android:id="@+id/kaijiangNumberTv"
+			  	    android:textColor="#EE9D5B"
+			  	    android:textSize="14sp"
+			  	    />
+			  	</LinearLayout>
+			  	<LinearLayout
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:orientation="horizontal"
+			     android:background="#5F7B41"
+			     android:layout_marginTop="5dp"
+			  	>
+			  	<ImageView android:layout_width="@dimen/sz_small_size"
+			  	    android:layout_height="@dimen/sz_small_size"
+			  	    android:src="@drawable/cai_sz3"
+			  	    android:id="@+id/sz1"
+			  	    android:textColor="#EE9D5B"
+			  	    android:textSize="14sp"
+			  	    />
+			  	<ImageView android:layout_width="@dimen/sz_small_size"
+			  	    android:layout_height="@dimen/sz_small_size"
+			  	    android:src="@drawable/cai_sz4"
+			  	    android:textColor="#eeeeee"
+			  	    android:textSize="14sp"
+			  	    android:id="@+id/sz2"
+			  	    android:layout_marginLeft="5dp"
+			  	    />
+			  	<ImageView android:layout_width="@dimen/sz_small_size"
+			  	    android:layout_height="@dimen/sz_small_size"
+			  	    android:src="@drawable/cai_sz5"
+			  	    android:id="@+id/sz3"
+			  	    android:textColor="#EE9D5B"
+			  	    android:textSize="14sp"
+			  	    android:layout_marginLeft="5dp"
+			  	    />
+			  	</LinearLayout>
+			 </LinearLayout>
+			 <LinearLayout
+		     android:layout_width="match_parent"
+		     android:layout_height="match_parent"
+		     android:orientation="horizontal"
+		     android:background="#5F7B41"
+		  	>
+			 <LinearLayout
+			     android:layout_width="wrap_content"
+			     android:layout_height="match_parent"
+			     android:orientation="horizontal"
+			     android:background="#357B45"
+			     android:gravity="bottom|center_horizontal"
+			     android:paddingBottom="10dp"
+			     android:paddingLeft="5dp"
+			     android:paddingRight="5dp"
+			     android:layout_weight="1"
+			  	>
+			  	<ImageView android:layout_width="@dimen/sz_small_size"
+			  	    android:layout_height="@dimen/sz_small_size"
+			  	    android:src="@drawable/cai_sz3"
+			  	    android:id="@+id/sz21"
+			  	    />
+			  	<ImageView android:layout_width="@dimen/sz_small_size"
+			  	    android:layout_height="@dimen/sz_small_size"
+			  	    android:src="@drawable/cai_sz4"
+			  	    android:id="@+id/sz22"
+			  	    android:layout_marginLeft="5dp"
+			  	    />
+			  	</LinearLayout>
+			  	<LinearLayout
+			     android:layout_width="wrap_content"
+			     android:layout_height="match_parent"
+			     android:orientation="horizontal"
+			     android:background="@null"
+			     android:gravity="bottom|center_horizontal"
+			     android:paddingBottom="10dp"
+			     android:paddingLeft="5dp"
+			     android:paddingRight="5dp"
+			     android:layout_weight="1"
+			  	>
+			  	<ImageView android:layout_width="@dimen/sz_small_size"
+			  	    android:layout_height="@dimen/sz_small_size"
+			  	    android:src="@drawable/cai_sz3"
+			  	    android:id="@+id/sz31"
+			  	    />
+			  	<ImageView android:layout_width="@dimen/sz_small_size"
+			  	    android:layout_height="@dimen/sz_small_size"
+			  	    android:src="@drawable/cai_sz5"
+			  	    android:id="@+id/sz32"
+			  	    android:layout_marginLeft="5dp"
+			  	    />
+			  	</LinearLayout>
+			  	<LinearLayout
+			     android:layout_width="wrap_content"
+			     android:layout_height="match_parent"
+			     android:orientation="horizontal"
+			     android:background="#357B45"
+			     android:gravity="bottom|center_horizontal"
+			     android:paddingBottom="10dp"
+			     android:paddingLeft="5dp"
+			     android:paddingRight="5dp"
+			     android:layout_weight="1"
+			  	>
+			  	<ImageView android:layout_width="@dimen/sz_small_size"
+			  	    android:layout_height="@dimen/sz_small_size"
+			  	    android:src="@drawable/cai_sz4"
+			  	    android:id="@+id/sz41"
+			  	    />
+			  	<ImageView android:layout_width="@dimen/sz_small_size"
+			  	    android:layout_height="@dimen/sz_small_size"
+			  	    android:src="@drawable/cai_sz5"
+			  	    android:id="@+id/sz42"
+			  	    android:layout_marginLeft="5dp"
+			  	    />
+			  	</LinearLayout>
+			  	<LinearLayout
+			     android:layout_width="wrap_content"
+			     android:layout_height="match_parent"
+			     android:orientation="vertical"
+			     android:background="@null"
+			     android:gravity="bottom|center_horizontal"
+			     android:paddingBottom="10dp"
+			     android:paddingLeft="5dp"
+			     android:paddingRight="5dp"
+			     android:layout_weight="1"
+			  	>
+			  	<TextView android:layout_width="wrap_content"
+			  	    android:layout_height="wrap_content"
+			  	    android:text="双  大"
+			  	    android:id="@+id/typeTv"
+			  	    android:textColor="#eeeeee"
+			  	    android:textSize="12sp"
+			  	    />
+			  	<TextView android:layout_width="wrap_content"
+			  	    android:layout_height="wrap_content"
+			  	    android:text="和值12"
+			  	    android:id="@+id/hezhiTv"
+			  	    android:textColor="#eeeeee"
+			  	    android:textSize="12sp"
+			  	    android:layout_marginTop="5dp"
+			  	    />
+			  	</LinearLayout>
+			  	</LinearLayout>
+		  </LinearLayout>
+		  <RelativeLayout android:layout_width="match_parent"
+		      android:layout_height="@dimen/main_info_layout_height"
+		      android:background="#2C5B37"
+		      android:layout_below="@id/infoLayout1"
+		      android:id="@+id/infoLayout2"
+		      >
+		      <LinearLayout
+			     android:layout_width="wrap_content"
+			     android:layout_height="match_parent"
+			     android:orientation="vertical"
+			     android:background="#547040"
+			     android:gravity="center"
+			     android:padding="5dp"
+			     android:layout_alignParentRight="true"
+			     android:id="@+id/rightLayout"
+			  	>
+			  	<TextView android:layout_width="wrap_content"
+			  	    android:layout_height="wrap_content"
+			  	    android:text="热号"
+			  	    android:textColor="#eeeeee"
+			  	    android:textSize="14sp"
+			  	    />
+			  	<LinearLayout
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:orientation="horizontal"
+			     android:background="#547040"
+			     android:gravity="center"
+			     android:layout_marginTop="5dp"
+			  	>
+			  	<TextView android:layout_width="wrap_content"
+			  	    android:layout_height="wrap_content"
+			  	    android:text="6"
+			  	    android:id="@+id/hezhiTv"
+			  	    android:textColor="#CA72C9"
+			  	    android:textSize="18sp"
+			  	    android:layout_marginLeft="5dp"
+			  	    />
+			  	<TextView android:layout_width="wrap_content"
+			  	    android:layout_height="wrap_content"
+			  	    android:text="2"
+			  	    android:id="@+id/hezhiTv"
+			  	    android:textColor="#F99114"
+			  	    android:textSize="18sp"
+			  	    android:layout_marginLeft="5dp"
+			  	    />
+			  	<TextView android:layout_width="wrap_content"
+			  	    android:layout_height="wrap_content"
+			  	    android:text="4"
+			  	    android:id="@+id/hezhiTv"
+			  	    android:textColor="#CB0000"
+			  	    android:textSize="18sp"
+			  	    android:layout_marginLeft="5dp"
+			  	    android:layout_marginRight="5dp"
+			  	    />
+			  	</LinearLayout>
+			  	</LinearLayout>
+			  	<LinearLayout
+			     android:layout_width="wrap_content"
+			     android:layout_height="match_parent"
+			     android:orientation="vertical"
+			     android:background="#377448"
+			     android:gravity="center"
+			     android:padding="5dp"
+			     android:layout_toLeftOf="@id/rightLayout"
+			     android:id="@+id/centerlayout"
+			  	>
+			  	<TextView android:layout_width="wrap_content"
+			  	    android:layout_height="wrap_content"
+			  	    android:text="冷号"
+			  	    android:textColor="#eeeeee"
+			  	    android:textSize="14sp"
+			  	    />
+			  	<LinearLayout
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:orientation="horizontal"
+			     android:background="#377448"
+			     android:gravity="center"
+			     android:layout_marginTop="5dp"
+			  	>
+			  	<TextView android:layout_width="wrap_content"
+			  	    android:layout_height="wrap_content"
+			  	    android:text="5"
+			  	    android:id="@+id/hezhiTv"
+			  	    android:textColor="#4FC5EB"
+			  	    android:textSize="18sp"
+			  	    android:layout_marginLeft="5dp"
+			  	    />
+			  	<TextView android:layout_width="wrap_content"
+			  	    android:layout_height="wrap_content"
+			  	    android:text="3"
+			  	    android:id="@+id/hezhiTv"
+			  	    android:textColor="#114497"
+			  	    android:textSize="18sp"
+			  	    android:layout_marginLeft="5dp"
+			  	    />
+			  	<TextView android:layout_width="wrap_content"
+			  	    android:layout_height="wrap_content"
+			  	    android:text="1"
+			  	    android:id="@+id/hezhiTv"
+			  	    android:textColor="#25BE4C"
+			  	    android:textSize="18sp"
+			  	    android:layout_marginLeft="5dp"
+			  	    android:layout_marginRight="5dp"
+			  	    />
+			  	</LinearLayout>
+			  	</LinearLayout>
+			  	<LinearLayout
+			     android:layout_width="match_parent"
+			     android:layout_height="match_parent"
+			     android:orientation="vertical"
+			     android:background="@null"
+			     android:gravity="center"
+			     android:padding="5dp"
+			     android:layout_toLeftOf="@id/centerlayout"
+			  	>
+			  	
+			  	<LinearLayout
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:orientation="horizontal"
+			     android:background="@null"
+			     android:gravity="center|center_vertical"
+			     android:layout_marginTop="5dp"
+			  	>
+			  	<TextView android:layout_width="wrap_content"
+			  	    android:layout_height="wrap_content"
+			  	    android:text="距离"
+			  	    android:textColor="#eeeeee"
+			  	    android:textSize="14sp"
+			  	    android:gravity="center|center_vertical"
+			  	    />
+			  	<TextView android:layout_width="wrap_content"
+			  	    android:layout_height="wrap_content"
+			  	    android:text="20140103015"
+			  	    android:id="@+id/currentQiTv1"
+			  	    android:textColor="#EE9D5B"
+			  	    android:textSize="14sp"
+			  	    android:gravity="center|center_vertical"
+			  	    />
+			  	<TextView android:layout_width="wrap_content"
+			  	    android:layout_height="wrap_content"
+			  	    android:text="期投注截止:"
+			  	    android:textColor="#eeeeee"
+			  	    android:textSize="14sp"
+			  	    android:singleLine="true"
+			  	    android:gravity="center|center_vertical"
+			  	    />
+			  	</LinearLayout>
+			  	<LinearLayout
+			     android:layout_width="100dp"
+			     android:layout_height="wrap_content"
+			     android:orientation="horizontal"
+			     android:background="#284936"
+			     android:gravity="center"
+			     android:layout_marginTop="3dp"
+			     android:paddingBottom="3dp"
+			  	>
+			  	<TextView android:layout_width="wrap_content"
+			  	    android:layout_height="wrap_content"
+			  	    android:text="04:28"
+			  	    android:textColor="#ffffff"
+			  	    android:textSize="20sp"
+			  	    android:clickable="true"
+			  	    android:id="@+id/timeTv"
+			  	    />
+			  	</LinearLayout>
+			  	</LinearLayout>
+		  </RelativeLayout>
+              <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="8dp"
+                  android:id="@+id/bottomLayout"
+                  android:background="#000000"
+                  android:layout_alignParentBottom="true"
+                  >
+                  <Button android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="快3投注"
+                      android:background="@drawable/cai_btn1"
+                      android:textColor="#ffffff"
+                      android:textSize="18sp"
+                      android:id="@+id/touzhuBtn"
+                      android:gravity="center"
+                      android:padding="6dp"
+                      />
+              </LinearLayout>
+              <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+	      		  android:layout_above="@id/bottomLayout"
+	      		  android:layout_below="@id/infoLayout2"
+	      		  android:orientation="vertical"
+	      		  android:background="@null"
+                  >
+			      <com.qingfengweb.lottery.view.XListView android:layout_width="match_parent"
+				      android:layout_height="match_parent"
+				      android:id="@+id/listView"
+				      android:divider="@null"
+				      android:dividerHeight="0dp"
+				      android:cacheColorHint="@null"
+				      android:background="@null"
+				      android:fadingEdge="none"
+			      ></com.qingfengweb.lottery.view.XListView>
+     			 </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

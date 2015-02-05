@@ -1,0 +1,449 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.boluomi.children"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- ************************************* -->
+    <!-- 定位相关权限 -->
+    <!-- ************************************* -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name = "android.permission.SET_WALLPAPER"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/home_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.boluomi.children.activity.LoadingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.TakePhotoActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+ 			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.CitySelectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.GrowUpPhotoSendActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.CustomCameraActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.ShareActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.HelpActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.HelpListActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.GrowUpPhotoGVActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.FeedbackForPingdaiActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.FeedbackMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden"  >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.FeedbackSubmitSuccessActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.BeautyPhotosListActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.DetailSelectPhotoActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.AlbumMainActivity"
+            android:screenOrientation="portrait" 
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.PhotoListActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.MerchantListActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.DetailProductActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.CustomMainActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.SelectMyCustomActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.MyCustomActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.DetailActiveActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.InvitationTemplateActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.GrowUpPhotoPreviewActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.InvitationExplainActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.TemplateImagePreviewActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.TemplateInfoActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.TreasureChestActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        
+        <activity
+            android:name="com.boluomi.children.activity.IntegralStoreMainActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.WeiXinActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden"  >
+        </activity>
+        
+         <activity
+            android:name="com.boluomi.children.activity.SelectPhotoActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.CommentMainActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        
+        <activity
+            android:name="com.boluomi.children.activity.CommentListActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        
+        <activity
+            android:name="com.boluomi.children.activity.CommentActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        
+        <activity
+            android:name="com.boluomi.children.activity.CommentSuccessActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.WeiXinSuccessActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.RecommendFriendActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.MyIntegralActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.IntegralRuleActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+         <activity
+            android:name="com.boluomi.children.activity.ImagePreViewActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.EcshopActiveActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.StoreSelectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.IntegralExchangeActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.SuccessRegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden"  >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.DianJiaMainActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.WelcomeActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.CompanyJianJieActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.BeautyPhotoAdmireActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.ImageSwitcher"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.CompanyConnectWayActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+		<activity
+            android:name="com.boluomi.children.activity.DetailBeautyActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.DetailIntegralActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.TuiJianActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.RecommendSeriesActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.DetailSeriesActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.ActiveShareActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.boluomi.children.activity.GrowupMsgActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent801386579" />
+            </intent-filter>
+        </activity>
+        <meta-data   
+            android:name="BaiduMobAd_CHANNEL" 
+            android:value="weteam_android" />	
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+    </application>
+
+</manifest>

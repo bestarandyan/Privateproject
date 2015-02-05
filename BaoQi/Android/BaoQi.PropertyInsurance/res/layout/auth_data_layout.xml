@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/you1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- 右边板块 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="vertical" >
+
+            <!-- 选择被保险人 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/book_tag"
+                    android:gravity="center"
+                    android:text="授权(一)保险费付账户授权"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.4dip"
+                    android:background="@color/green" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="账户所有人身份:"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/rg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radiobtn1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dip"
+                            android:text="投保人 "
+                            android:textColor="@color/black"
+                            android:textSize="20dip" />
+                    </RadioGroup>
+                </LinearLayout>
+                <!-- 1 -->
+
+                          <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="账户类型 "
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/rg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radiobtn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                           
+                            android:text="借记卡 "
+                            android:textColor="@color/black"
+                            android:textSize="20dip" />
+
+                        <RadioButton
+                            android:id="@+id/radiobtn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            
+                            android:text="活期存折 "
+                            android:textColor="@color/black"
+                            android:textSize="20dip" />
+                    </RadioGroup>
+
+                       <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6" android:layout_marginLeft="30dip"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="开户银行:"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/s1"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:text="" />
+                </LinearLayout>
+
+                <!-- add1 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="账号:"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/sp"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:text="6225881220390999" />
+
+                   
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6"
+                        android:gravity="center"  android:layout_marginLeft="50dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="账户所有人姓名 :"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/s7"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip" android:text="李国辉"
+                        android:layout_marginTop="5dip" />
+                </LinearLayout>
+                    
+
+                <!-- add2 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="证件类型 :"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/s2"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:text="" />
+    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6"    android:layout_marginLeft="50dip"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="证件号码 :"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/s7"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:text="610429198710042765" />
+                    
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- frame 2 -->
+
+
+            <!-- 险种信息设置 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/book_tag"
+                    android:gravity="center"
+                    android:text="授权(二)满期金,生存金,年金等保险金额领取账户授权"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.4dip"
+                    android:background="@color/green" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radiobtn1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50dip"
+                        android:text="同授权(一)"
+                        android:textColor="@color/black"
+                        android:textSize="20dip" />
+
+                    <RadioButton
+                        android:id="@+id/radiobtn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50dip"
+                        android:text="授权如下账户领取"
+                        android:textColor="@color/black"
+                        android:textSize="20dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="账户所有人身份:"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/rg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radiobtn1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dip"
+                            android:text="投保人 "
+                            android:textColor="@color/black"
+                            android:textSize="20dip" />
+
+                        <RadioButton
+                            android:id="@+id/radiobtn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dip"
+                            android:text="被保险人 "
+                            android:textColor="@color/black"
+                            android:textSize="20dip" />
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="领取款项:"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dip"
+                        android:text="领取款项:"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                              <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="账户类型 "
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/rg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radiobtn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                           
+                            android:text="借记卡 "
+                            android:textColor="@color/black"
+                            android:textSize="20dip" />
+
+                        <RadioButton
+                            android:id="@+id/radiobtn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            
+                            android:text="活期存折 "
+                            android:textColor="@color/black"
+                            android:textSize="20dip" />
+                    </RadioGroup>
+
+                       <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6" android:layout_marginLeft="30dip"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="开户银行:"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/s3"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" >
+                    
+                    
+                     <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="账号:"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/sp1"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:text="6225881220390999" />
+                    
+              
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6"  android:layout_marginLeft="50dip"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="账户所有人姓名 :"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/s7"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip" android:text="李国辉"
+                        android:layout_marginTop="5dip" />
+                </LinearLayout>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                 
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="证件类型:"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/s4"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip" />
+
+                      <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6"    android:layout_marginLeft="50dip"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="证件号码 :"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/s7"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:text="610429198710042765" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- frame3 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/book_tag"
+                    android:gravity="center"
+                    android:text="授权(三)红利,利差款项领取账户授权"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.4dip"
+                    android:background="@color/green" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radiobtn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50dip"
+                        android:text="同授权(一)"
+                        android:textColor="@color/black"
+                        android:textSize="20dip" />
+
+                    <RadioButton
+                        android:id="@+id/radiobtn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50dip"
+                        android:text="授权如下账户领取 "
+                        android:textColor="@color/black"
+                        android:textSize="20dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="账户所有人身份:"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/rg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radiobtn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dip"
+                            android:text="投保人 "
+                            android:textColor="@color/black"
+                            android:textSize="20dip" />
+
+                        <RadioButton
+                            android:id="@+id/radiobtn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dip"
+                            android:text="被保险人 "
+                            android:textColor="@color/black"
+                            android:textSize="20dip" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="账户类型 "
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/rg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radiobtn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                           
+                            android:text="借记卡 "
+                            android:textColor="@color/black"
+                            android:textSize="20dip" />
+
+                        <RadioButton
+                            android:id="@+id/radiobtn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            
+                            android:text="活期存折 "
+                            android:textColor="@color/black"
+                            android:textSize="20dip" />
+                    </RadioGroup>
+
+                       <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6" android:layout_marginLeft="40dip"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="开户银行:"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/s5"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" >
+ <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="账号:"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/sp2"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:text="6225881220390999" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"   android:layout_marginLeft="60dip"
+                        android:background="#B0E0E6"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="账户所有人姓名 :"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/s7"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip" android:text="李国辉"
+                        android:layout_marginTop="5dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/sq"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dip"
+                            android:gravity="right"
+                            android:text="证件类型 :"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/s6"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dip"
+                        android:background="#B0E0E6"    android:layout_marginLeft="60dip"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/search_2"
+                            android:layout_width="200dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:layout_marginRight="15dip"
+                            android:text="证件号码 :"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/s7"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:text="610429198710042765" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 已选险种 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical" >
+
+                <!-- last layout -->
+
+
+                <!-- last layout -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/liyi_btn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/btn01"
+                        android:text="下一步"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/parent"
+    android:focusable="true" 
+    android:focusableInTouchMode="true"
+    android:background="@drawable/body_bg">
+    <RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/top_linear"
+	    >
+	    <Button android:layout_width="55dp"
+	        android:layout_height="35dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="返回"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="14dp"
+	        android:layout_centerVertical="true"
+	        android:paddingLeft="10dp"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/btn01"/>
+	    <Button android:layout_width="85dp"
+	        android:layout_height="35dp"
+	        android:layout_alignParentRight="true"
+	        android:text="创建请帖"
+	        android:textColor="#ffffff"
+	        android:id="@+id/createBtn"
+	        android:textStyle="bold"
+	        android:textSize="14dp"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="10dp"
+	        android:background="@drawable/btn02"/>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="请帖设置"
+	        android:layout_centerHorizontal="true"
+	        android:textColor="#ffffff"
+	        android:textSize="20dp"
+	        android:layout_centerVertical="true"
+	        android:textStyle="bold"/>
+	</RelativeLayout>
+	<ScrollView  
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:paddingLeft="15dp"
+	    android:paddingRight="15dp"
+	    android:paddingBottom="15dp"
+	    >
+	    <LinearLayout android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="vertical"
+					     android:id="@+id/shouyaorenLinear"
+					     android:layout_marginTop="15dp"
+			    >
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#4c566c"
+		        android:shadowColor="#ffffff"
+		        android:shadowDx="10"
+		        android:shadowRadius="10"
+		        android:textSize="16sp"
+		        android:text="受邀人"/>
+		    <LinearLayout android:layout_width="fill_parent"
+							    android:layout_height="wrap_content"
+							    android:background="@drawable/et_bg"
+							    android:orientation="vertical"
+							    android:layout_marginTop="6dp"
+					    >
+			    		    <LinearLayout android:layout_width="fill_parent"
+							    android:layout_height="wrap_content"
+							    android:orientation="horizontal"
+							    android:gravity="center_vertical"
+							    android:padding="10dp"
+					    >
+			    		    <TextView android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:text="受邀者姓名："
+							        android:textColor="#000000"
+							        android:textSize="14sp"
+							        />
+			    		    <EditText android:layout_width="fill_parent"
+							        android:layout_height="30dp"
+							        android:id="@+id/shouyao"
+							        android:textColor="#000000"
+							        android:textSize="14sp"
+							        android:background="@drawable/qingtie_et"
+							        android:singleLine="true"
+							        android:paddingLeft="8dp"
+							        
+							        />
+			    		</LinearLayout>
+			    		</LinearLayout>
+	    	</LinearLayout>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#4c566c"
+        android:textSize="16sp"
+        android:text="新人"/>
+    <LinearLayout android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_marginTop="6dp"
+					    android:background="@drawable/et_bg"
+					    android:orientation="vertical"
+			    >
+	    		    <LinearLayout android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="center_vertical"
+					    android:padding="10dp"
+			    >
+	    		    <TextView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="新郎名字："
+					        android:textColor="#000000"
+					        android:textSize="14sp"
+					        />
+	    		    <EditText android:layout_width="fill_parent"
+					        android:layout_height="30dp"
+					        android:id="@+id/xinlang"
+					        android:textColor="#000000"
+					        android:textSize="14sp"
+					        android:background="@drawable/qingtie_et"
+					        android:singleLine="true"
+					        />
+	    		</LinearLayout>
+	    		    <TextView android:layout_width="fill_parent"
+					        android:layout_height="1dp"
+					        android:background="#AAAD9C"/>
+	    		     <LinearLayout android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="center_vertical"
+					    android:padding="10dp"
+			    >
+	    		    <TextView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="新娘名字："
+					        android:textColor="#000000"
+					        android:textSize="14sp"
+					        />
+	    		    <EditText android:layout_width="fill_parent"
+					        android:layout_height="30dp"
+					        android:id="@+id/xinniang"
+					        android:textColor="#000000"
+					        android:textSize="14sp"
+					        android:background="@drawable/qingtie_et"
+					        android:singleLine="true"
+					        />
+	    		</LinearLayout>
+	    		</LinearLayout>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:textColor="#4c566c"
+        android:textSize="16dp"
+        android:text="赴宴时间"/>
+    <LinearLayout android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:background="@drawable/et_bg"
+					    android:orientation="vertical"
+					    android:layout_marginTop="6dp"
+			    >
+	    		    <LinearLayout android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="center_vertical"
+					    android:padding="10dp"
+					    android:id="@+id/dateSelectLayout"
+			    		>
+	    		    <TextView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="日期："
+					        android:textColor="#000000"
+					        android:textSize="14sp"
+					        />
+	    		    <TextView android:layout_width="100dp"
+					        android:layout_height="30dp"
+					        android:id="@+id/year"
+					        android:textColor="#000000"
+					        android:textSize="14dp"
+					        android:background="@drawable/qingtie_et"
+					        android:singleLine="true"
+					        android:hint="如：2012"
+					        android:gravity="center_vertical"
+					        />
+	    		    <TextView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="年"
+					        android:textColor="#000000"
+					        android:textSize="14sp"
+					        />
+	    		    <TextView android:layout_width="40dp"
+					        android:layout_height="30dp"
+					        android:id="@+id/month"
+					        android:textColor="#000000"
+					        android:textSize="14sp"
+					        android:background="@drawable/qingtie_et"
+					        android:singleLine="true"
+					        android:hint="12"
+					        android:gravity="center_vertical"
+					        />
+	    		    <TextView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="月"
+					        android:textColor="#000000"
+					        android:textSize="14sp"
+					        />
+	    		    <TextView android:layout_width="40dp"
+					        android:layout_height="30dp"
+					        android:id="@+id/ri"
+					        android:textColor="#000000"
+					        android:textSize="14sp"
+					        android:background="@drawable/qingtie_et"
+					        android:singleLine="true"
+					        android:hint="31"
+					        android:gravity="center_vertical"
+					        android:textIsSelectable="false"
+					        />
+	    		    <TextView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="日"
+					        android:textColor="#000000"
+					        android:textSize="14sp"
+					        />
+	    		 
+	    		</LinearLayout>
+	    		    <TextView android:layout_width="fill_parent"
+					        android:layout_height="1dp"
+					        android:id="@+id/line1"
+					        android:background="#AAAD9C"/>
+	    		     <LinearLayout android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="center_vertical"
+					    android:padding="10dp"
+					    android:id="@+id/xingqiLinear"
+			    >
+	    		    <TextView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="星期："
+					        android:textColor="#000000"
+					        android:textSize="14sp"
+					        />
+	    		    <TextView android:layout_width="fill_parent"
+					        android:layout_height="30dp"
+					        android:id="@+id/week"
+					        android:textColor="#000000"
+					        android:textSize="14sp"
+					        android:background="@drawable/qingtie_et"
+					        android:singleLine="true"
+					        android:hint="如：三"
+					        />
+	    		</LinearLayout>
+	    		    <TextView android:layout_width="fill_parent"
+					        android:layout_height="1dp"
+					        android:id="@+id/line2"
+					        android:background="#AAAD9C"/>
+	    		
+	    		 <LinearLayout android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="center_vertical"
+					    android:padding="10dp"
+					    android:id="@+id/longliLinear"
+			    >
+	    		    <TextView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="农历："
+					        android:textColor="#000000"
+					        android:textSize="14dp"
+					        />
+
+	    		    <TextView
+	    		        android:id="@+id/longliyue"
+	    		        android:layout_width="80dp"
+	    		        android:layout_height="30dp"
+	    		        android:background="@drawable/qingtie_et"
+	    		        android:singleLine="true"
+	    		        android:textColor="#000000"
+	    		        android:hint="如：十一"
+	    		        android:textSize="14sp" >
+	    		        </TextView>
+	    		        <TextView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="月"
+					        android:textColor="#000000"
+					        android:textSize="14dp"
+					        />
+	    		    <TextView
+	    		        android:id="@+id/longliri"
+	    		        android:layout_width="60dp"
+	    		        android:layout_height="30dp"
+	    		        android:background="@drawable/qingtie_et"
+	    		        android:singleLine="true"
+	    		        android:textColor="#000000"
+	    		        android:hint="二"
+	    		        android:textSize="14sp" >
+	    		        </TextView>
+	    		        <TextView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="号"
+					        android:textColor="#000000"
+					        android:textSize="14dp"
+					        />
+	    		</LinearLayout>
+	    		<TextView android:layout_width="fill_parent"
+					        android:layout_height="1dp"
+					        android:id="@+id/line3"
+					        android:background="#AAAD9C"/>
+	    		<LinearLayout android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="center_vertical"
+					    android:padding="10dp"
+					    android:id="@+id/shijianLinear"
+			    >
+	    		    <TextView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="时间："
+					        android:textColor="#000000"
+					        android:textSize="14dp"
+					        />
+	    		    <TextView android:layout_width="fill_parent"
+					        android:layout_height="30dp"
+					        android:id="@+id/shijian"
+					        android:textColor="#000000"
+					        android:textSize="14dp"
+					        android:background="@drawable/qingtie_et"
+					        android:singleLine="true"
+					        android:hint="如：14:20"
+					        />
+	    		</LinearLayout>
+	    		</LinearLayout>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4c566c"
+        android:textSize="16dp"
+         android:layout_marginTop="20dp"
+        android:text="赴宴地址"/>
+    <LinearLayout android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:background="@drawable/et_bg"
+					    android:orientation="vertical"
+					    android:layout_marginTop="6dp"
+			    >
+	    		    <LinearLayout android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="center_vertical"
+					    android:padding="10dp"
+					    android:id="@+id/xisheLinear"
+			   		 >
+	    		    <TextView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="席设："
+					        android:textColor="#000000"
+					        android:textSize="14dp"
+					        />
+	    		    <EditText android:layout_width="fill_parent"
+					        android:layout_height="30dp"
+					        android:id="@+id/dianming"
+					        android:textColor="#000000"
+					        android:textSize="14dp"
+					        android:background="@drawable/qingtie_et"
+					        android:singleLine="true"
+					        android:hint="如：香格里拉大酒店"
+					        />
+	    		</LinearLayout>
+	    		<TextView android:layout_width="fill_parent"
+					        android:layout_height="1dp"
+					        android:id="@+id/line4"
+					        android:background="#AAAD9C"/>
+	    		     <LinearLayout android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="center_vertical"
+					    android:padding="10dp"
+					    android:id="@+id/addressLinear"
+			   		 >
+	    		    <TextView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="地址："
+					        android:textColor="#000000"
+					        android:textSize="14dp"
+					        />
+	    		    <EditText android:layout_width="fill_parent"
+					        android:layout_height="30dp"
+					        android:id="@+id/address"
+					        android:textColor="#000000"
+					        android:textSize="14dp"
+					        android:background="@drawable/qingtie_et"
+					        android:singleLine="true"
+					        android:hint="如：上海市浦东新区富城路33号"
+					        />
+	    		</LinearLayout>
+	    		<TextView android:layout_width="fill_parent"
+					        android:layout_height="1dp"
+					        android:id="@+id/line5"
+					        android:background="#AAAD9C"/>
+	    		     <LinearLayout android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="center_vertical"
+					    android:padding="10dp"
+					    android:id="@+id/phoneLinear"
+			   		 >
+	    		    <TextView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="电话："
+					        android:textColor="#000000"
+					        android:textSize="14dp"
+					        />
+	    		    <EditText android:layout_width="fill_parent"
+					        android:layout_height="30dp"
+					        android:id="@+id/phone"
+					        android:textColor="#000000"
+					        android:textSize="14dp"
+					        android:background="@drawable/qingtie_et"
+					        android:singleLine="true"
+					        android:inputType="phone"
+					        android:hint="如：13888888888"
+					        />
+	    		</LinearLayout>
+	    		</LinearLayout>
+			<RelativeLayout android:layout_width="fill_parent"
+			    android:layout_height="200dp"
+			    android:id="@+id/bottomLinear"
+			    android:background="@drawable/image_border"
+			    android:layout_marginTop="20dp"
+			    >
+			    <LinearLayout android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:background="#d9d7d9"
+				    android:layout_margin="2dp"
+				    android:orientation="vertical"
+				    android:gravity="center"
+				    >
+	    		    <LinearLayout android:layout_width="fill_parent"
+						    android:layout_height="fill_parent"
+						    android:id="@+id/bottomLinearText"
+						    android:orientation="vertical"
+						    android:gravity="center"
+						    >
+					    <TextView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="点击选择照片"
+					        android:textColor="#bf8b8b"
+					        android:textSize="30dp"
+					        android:textStyle="bold"
+					        />
+					    <TextView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="从相册中选择照片合成到请帖中"
+					        android:textColor="#bf8b8b"
+					        android:textSize="16dp"
+					        />
+					    </LinearLayout>
+					    <ImageView android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:id="@+id/image"
+					        android:layout_gravity="center"/>
+					</LinearLayout>
+			</RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+       </LinearLayout>

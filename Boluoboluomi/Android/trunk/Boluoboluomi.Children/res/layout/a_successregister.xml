@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+  <!--   <ImageView android:src="@color/bg_color_hua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        /> -->
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/babe_top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/top_linear"
+	    >
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="14dp"
+	        android:id="@+id/backBtn"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/babe_fh_btn"/>
+	    <ImageView android:layout_width="1.5dp"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/babe_top_line"
+	        android:layout_toRightOf="@id/backBtn"
+	        android:layout_marginLeft="10dp"
+	        />
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="注册成功"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:textColor="#ffffff"
+	        android:textSize="20dp"
+	        android:id="@+id/title"
+	        android:textStyle="bold"/>
+	</RelativeLayout>
+			<RelativeLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/top_linear"
+			    >
+			    <ImageView android:src="@drawable/logo"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="40dp"
+			        android:layout_centerHorizontal="true"
+			        android:id="@+id/centerlinear1"
+			        />
+			    <LinearLayout android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@id/centerlinear1"
+			        android:layout_centerHorizontal="true"
+			        android:id="@+id/textLinear"
+			        android:layout_marginTop="30dp"
+			        android:orientation="horizontal">
+			      <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:gravity="right|center_vertical"
+				            android:textColor="#333333"
+				            android:text="恭喜您已成为"
+			           		android:textSize="16dp" />
+			      <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:gravity="right|center_vertical"
+				            android:textColor="#FF0000"
+				            android:text=" i-D摄影 "
+				            android:textStyle="bold"
+			           		android:textSize="22dp" />
+			      <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:textColor="#333333"
+				            android:text="尊荣贵宾会员"
+			           		android:textSize="16dp" />  
+			    </LinearLayout>
+				<LinearLayout android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@id/textLinear"
+			        android:layout_alignLeft="@id/textLinear"
+			        android:id="@+id/textLinear2"
+			        android:orientation="horizontal">
+			      <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:gravity="right|center_vertical"
+				            android:textColor="#333333"
+				            android:text="并享注册赠送积分"
+			           		android:textSize="16dp" />
+			      <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:gravity="right|center_vertical"
+				            android:textColor="#FF0000"
+				            android:text=" 500  "
+				            android:textStyle="bold"
+			           		android:textSize="22dp" />
+			      <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:gravity="right|center_vertical"
+				            android:textColor="#333333"
+				            android:text="分。"
+			           		android:textSize="16dp" />  
+			    </LinearLayout>   
+			    <Button android:layout_width="140dp"
+			        android:layout_height="wrap_content"
+			        android:id="@+id/loginBtn"
+			        android:layout_below="@id/textLinear2"
+			        android:background="@drawable/btn_bg"
+			        android:text="立即登录"
+			        android:textSize="18dp"
+			        android:layout_marginTop="40dp"
+			        android:layout_centerHorizontal="true"
+			        android:textColor="#ffffff"/>     
+			</RelativeLayout>
+</RelativeLayout>

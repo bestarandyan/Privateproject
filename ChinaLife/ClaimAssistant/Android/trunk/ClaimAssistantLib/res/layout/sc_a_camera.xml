@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <SurfaceView
+            android:id="@+id/surface_camera"
+            android:layout_width="460dip"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true" >
+        </SurfaceView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/legendimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+            <TextView android:id="@+id/legendtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:shadowColor="#FF0000"
+                android:shadowDx="1.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="20"
+                android:layout_marginTop="40dp"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sc_camera" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"  
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:drawablePadding="0dip"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:gravity="top|center_horizontal"
+        android:maxLines="2"
+        android:padding="2dip" >
+
+        
+
+        <!-- 底部按钮 -->
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#000000"
+            android:gravity="center"
+            android:orientation="vertical" >
+			<Button
+                android:id="@+id/zoomOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sc_aj_btn2"
+                android:text="放大"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/zoomIn"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sc_aj_btn2"
+                android:text="缩小"
+                android:textColor="#FFFFFF" />
+            <Button
+                android:id="@+id/keepphoto"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sc_aj_btn2"
+                android:text="保存"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/retake"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sc_aj_btn2"
+                android:text="重拍"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+        <com.chinaLife.claimAssistant.Sc_ZoomImageView
+            android:id="@+id/zoomview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/linear2"
+            android:layout_centerInParent="true" />
+        
+
+        <!--  <ZoomControls
+            android:id="@+id/zoomcontrol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+      
+        <ImageButton
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/camera" />
+        <ImageButton
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/btn1"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/camera" />
+        -->
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sc_body_bg01"
+    android:orientation="vertical" >
+
+    <!-- head -->
+<include layout="@layout/sc_a_head"
+    android:id="@+id/top_image"
+    ></include>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sc_body_bg01"
+    android:id="@+id/centerLayout"
+    android:layout_below="@id/top_image"
+    android:orientation="vertical" >
+    <!--  <com.chinaLife.claimAssistant.view.MyCircleView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myCircle"
+        /> -->
+    </RelativeLayout>
+        <ImageView android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/sc_body_bg_bottom"/>
+</RelativeLayout>

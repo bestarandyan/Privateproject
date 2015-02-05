@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+    <RelativeLayout android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:background="@drawable/top_bg"
+    	android:id="@+id/topLinear"
+    	>
+       <Button android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:background="@drawable/fh_btn"
+    	android:text="返回"
+    	android:textColor="#ffffff"
+    	android:textSize="18dp"
+    	android:layout_centerVertical="true"
+    	android:layout_marginLeft="10dp"
+    	android:id="@+id/back"
+    	/>
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal"
+    	android:layout_marginTop="20dp"
+    	android:layout_marginLeft="20dp"
+    	android:layout_below="@id/topLinear"
+    	android:id="@+id/inputLinear"
+    	>
+       <EditText android:layout_width="400dp"
+    	android:layout_height="wrap_content" 
+    	android:background="@drawable/text1"
+    	android:textColor="#333333"
+    	android:layout_marginLeft="20dp"
+    	android:id="@+id/et1"
+    	android:paddingRight="10dp"
+    	android:hint="请输入订单号、手机号或身份证号码"
+    	android:paddingLeft="10dp"
+    	/>
+       <Button android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:background="@drawable/btn1"
+    	android:textColor="#333333"
+    	android:layout_marginLeft="10dp"
+    	android:id="@+id/search"
+    	/>
+    </LinearLayout>
+    
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/inputLinear"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/his_top">
+            <TextView android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:paddingLeft="15dp"
+                android:textSize="14px"
+                android:text="订单号"/>
+            <TextView android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                 android:textColor="#ffffff"
+                android:textSize="14px"
+                android:text="姓名"/>
+            <TextView android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                 android:textColor="#ffffff"
+                android:textSize="14px"
+                android:text="手机号码"/>
+            <TextView android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                 android:textColor="#ffffff"
+                android:textSize="14px"
+                android:text="预定时间"/>
+            <TextView android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                 android:textColor="#ffffff"
+                android:textSize="14px"
+                android:text="验证时间"/>
+            <TextView android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                 android:textColor="#ffffff"
+                android:textSize="14px"
+                android:text="状态"/>
+            <TextView android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                 android:textColor="#ffffff"
+                android:textSize="14px"
+                android:text="操作"/>
+        </LinearLayout>
+        <ImageView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/his_top"
+            android:id="@+id/iv1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/line"/>
+        <TextView android:text="电  子  票  券  验  证  系  统"
+		        android:textColor="#FFFFFF"
+		        android:textSize="25dp"
+		        android:id="@+id/view9"
+		        android:layout_marginBottom="10dp"
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv1"
+            android:layout_above="@id/view9"
+            android:layout_marginBottom="20dp"
+            >
+        <ListView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/line"
+            android:id="@+id/his_listview">
+            
+        </ListView>
+        </LinearLayout>
+ 		
+</RelativeLayout>

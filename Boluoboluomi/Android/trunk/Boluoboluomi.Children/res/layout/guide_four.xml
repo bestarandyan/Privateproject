@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:gravity="center_horizontal"
+    android:paddingTop="30dp"
+    android:orientation="vertical" >
+     <ImageView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/welcome4"
+	    />
+	<!--<TextView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="超值换购"
+	    android:textColor="#FCCD00"
+	    android:textSize="25sp"
+	    android:layout_marginLeft="50dp"
+	    android:layout_marginTop="20dp"
+	    />
+	<TextView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="注册即送积分"
+	    android:textColor="#FCCD00"
+	    android:textSize="25sp"
+	    android:layout_marginLeft="50dp"
+	    android:layout_marginTop="10dp"
+	    />
+	<TextView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="...  ..."
+	    android:textColor="#FCCD00"
+	    android:textSize="65sp"
+	    android:gravity="top"
+	    android:layout_marginLeft="50dp"
+	    android:layout_marginTop="-40dp"
+	    /> -->
+    </LinearLayout>

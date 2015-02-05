@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="20dp" >
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="总行："
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/bankZong"
+            android:layout_width="@dimen/bank_width"
+            android:layout_height="35dp"
+            android:background="@drawable/sc_bank_border"
+            android:hint="如：建设银行"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="开户行："
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/bank"
+            android:layout_width="@dimen/bank_width"
+            android:layout_height="35dp"
+            android:background="@drawable/sc_bank_border"
+            android:hint="如：建设银行北京分行"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="姓名："
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="@dimen/bank_width"
+            android:layout_height="35dp"
+            android:background="@drawable/sc_bank_border"
+            android:hint="如：张晓枫"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+    </LinearLayout>
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="手机号码："
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="@dimen/bank_width"
+            android:layout_height="35dp"
+            android:background="@drawable/sc_bank_border"
+            android:hint="如：13888888888"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:inputType="phone"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="银行账号："
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/banknumer"
+            android:layout_width="@dimen/bank_width"
+            android:layout_height="35dp"
+            android:background="@drawable/sc_bank_border"
+            android:hint="如：6222 0123 1234 2344"
+            android:inputType="number"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text=""
+            android:textColor="#000000"
+            ></TextView>
+        <CheckBox
+            android:id="@+id/cb1"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:button="@drawable/sc_qq_btn_check1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本人同意将本事故赔款划入上述账户"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

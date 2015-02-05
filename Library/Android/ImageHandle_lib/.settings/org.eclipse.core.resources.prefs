@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//src/com/qingfengweb/FileUpLoad/FileHandler.java=UTF-8
+encoding//src/com/qingfengweb/FileUpLoad/FormFile.java=UTF-8
+encoding//src/com/qingfengweb/FileUpLoad/HttpPostUploadFile.java=UTF-8
+encoding//src/com/qingfengweb/FileUpLoad/SocketHttpRequester.java=UTF-8
+encoding//src/com/qingfengweb/filedownload/FileUtils.java=UTF-8
+encoding//src/com/qingfengweb/filedownload/ImageLoadFromUrlOrId.java=UTF-8
+encoding//src/com/qingfengweb/imagehandle/PicHandler.java=UTF-8

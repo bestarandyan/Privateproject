@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_title_layout" />
+    <!-- title 首页条目 -->
+
+    <LinearLayout android:layout_marginLeft="15dip"   android:layout_marginRight="15dip"   android:layout_marginTop="5dip" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/map" />
+
+        <TextView
+            android:id="@+id/top1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="首页"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" > 保单信息查询"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_marginLeft="15dip"   android:layout_marginRight="15dip" 
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/guobg1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/search_1" 
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"  android:layout_marginTop="7dip" android:layout_marginBottom="0dip"
+            android:background="@drawable/single_tag01"
+            android:gravity="center"
+            android:text="保单查询"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/search_2"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"  android:layout_marginTop="7dip"  android:layout_marginBottom="0dip"
+            android:background="@drawable/single_tag01"
+            android:gravity="center"
+            android:text="新契约状态查询"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/search_3"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"  android:layout_marginTop="7dip"  android:layout_marginBottom="0dip"
+            android:background="@drawable/single_tag01"
+            android:gravity="center"
+            android:text="理赔状态查询"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_marginLeft="15dip"   android:layout_marginRight="15dip"
+        android:layout_width="fill_parent"     
+        android:layout_height="wrap_content" android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <ImageView  android:layout_marginTop="5dip" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/search_tu"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/search_23"  android:layout_marginTop="5dip" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:text="保单查询"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/search_2"  android:layout_marginTop="5dip" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:text="(查询条件--按照要求输入一项或者多项条件可以查询出符合条件的客户)"
+            android:textColor="#66CC33"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <!-- sfdsa -->
+
+    <ScrollView  android:layout_marginLeft="15dip"   android:layout_marginRight="15dip"
+        android:layout_width="fill_parent" android:background="#FFFFFF"  
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"  
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"  android:gravity="center"
+                    android:background="#B0E0E6"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dip"
+                        android:gravity="right"
+                        android:text="保单号:" android:textColor="#000000"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="500dip"  android:layout_marginLeft="5dip"  android:layout_marginTop="5dip" 
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:background="#B0E0E6"  android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip" android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                      android:layout_marginRight="15dip"
+                        android:gravity="right"
+                        android:text="险种:"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <Spinner android:layout_marginLeft="5dip" android:prompt="@string/choice"     android:id="@+id/s1"
+                    android:layout_width="500dip"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:background="#B0E0E6"  android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2" android:textColor="#000000"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dip"
+                        android:gravity="right"
+                        android:text="交费时间:"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <Spinner  android:id="@+id/s2"
+                    android:layout_width="500dip" android:layout_marginLeft="5dip" android:layout_marginTop="5dip" 
+                    android:layout_height="wrap_content" android:prompt="@string/choice"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:background="#B0E0E6"  android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="right" android:textColor="#000000"
+                        android:text="生效日范围:"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <EditText android:layout_marginLeft="5dip"
+                    android:layout_width="150dip" android:layout_marginTop="5dip" 
+                    android:layout_height="wrap_content"
+                    android:text="2012-03-24" />
+                     <TextView
+                     
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right" android:textColor="#000000"
+                        android:text="到"
+                        android:textSize="20sp" />
+                          <EditText android:layout_marginLeft="5dip"
+                    android:layout_width="150dip" android:layout_marginTop="5dip" 
+                    android:layout_height="wrap_content"
+                    android:text="2012-03-25" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"  android:gravity="center"
+                    android:background="#B0E0E6"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip" android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dip"
+                        android:gravity="right"
+                        android:text="合同满期范围:"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="150dip" android:layout_marginLeft="5dip"
+                    android:layout_height="wrap_content" android:layout_marginTop="5dip" 
+                    android:text="2012-03-25" />
+                 <TextView
+                     
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right" android:textColor="#000000"
+                        android:text="到"
+                        android:textSize="20sp" />
+                          <EditText android:layout_marginLeft="5dip"
+                    android:layout_width="150dip" android:layout_marginTop="5dip" 
+                    android:layout_height="wrap_content"
+                    android:text="2012-03-25" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:background="#B0E0E6"  android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip" android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                      android:layout_marginRight="15dip"
+                        android:gravity="right"
+                        android:text="投保人年龄范围:"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <Spinner     android:id="@+id/s3"
+                    android:layout_width="150dip" android:layout_marginLeft="5dip" android:prompt="@string/choice"
+                    android:layout_height="wrap_content" android:layout_marginTop="5dip" 
+                    android:text="" />
+                 <TextView
+                     
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"  android:layout_marginTop="8dip" 
+                        android:gravity="right" android:textColor="#000000"
+                        android:text="到"
+                        android:textSize="20sp" />
+                          <Spinner android:layout_marginLeft="5dip" android:prompt="@string/choice"
+                    android:layout_width="150dip" android:layout_marginTop="5dip"   android:id="@+id/s4"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:background="#B0E0E6"  android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                     android:layout_marginRight="15dip"
+                        android:gravity="right" android:textColor="#000000"
+                        android:text="投保人证件号码:"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="500dip" android:layout_marginLeft="5dip"
+                    android:layout_height="wrap_content" android:layout_marginTop="5dip" 
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:background="#B0E0E6"  android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip" android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dip"
+                        android:gravity="right"
+                        android:text="投保人姓名:"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="500dip" android:layout_marginLeft="5dip"
+                    android:layout_height="wrap_content" android:layout_marginTop="5dip" 
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:background="#B0E0E6"  android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip" android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="right"
+                        android:text="被保险人年龄范围:"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <Spinner  android:id="@+id/s5"
+                    android:layout_width="150dip" android:layout_marginLeft="5dip" android:prompt="@string/choice"
+                    android:layout_height="wrap_content" android:layout_marginTop="5dip" 
+                    android:text="" />
+                 <TextView                    
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_marginTop="8dip" 
+                        android:gravity="center_vertical" android:textColor="#000000"
+                        android:text="到"
+                        android:textSize="20sp" /> 
+                          <Spinner android:layout_marginLeft="5dip" android:prompt="@string/choice"
+                    android:layout_width="150dip" android:layout_marginTop="5dip" 
+                    android:layout_height="wrap_content" android:id="@+id/s6"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:background="#B0E0E6"  android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2" android:textColor="#000000"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dip"
+                        android:gravity="right"
+                        android:text="被保人证件号码:"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="500dip" android:layout_marginLeft="5dip"
+                    android:layout_height="wrap_content" android:layout_marginTop="5dip" 
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:background="#B0E0E6" android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/search_2"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content" android:layout_marginRight="15dip"
+                        android:gravity="right"
+                         android:textColor="#000000"
+                        android:text="被保人姓名:"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="500dip" android:layout_marginLeft="5dip"
+                    android:layout_height="wrap_content" android:layout_marginTop="5dip" 
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout android:layout_marginLeft="15dip"   android:layout_marginRight="15dip"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:gravity="center" android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="150dip" android:id="@+id/confirm"  android:textColor="#FFFFFF"
+            android:layout_height="wrap_content" android:background="@drawable/btn02" android:textSize="20sp"
+            android:text="确定" />
+
+        <Button
+            android:layout_width="150dip" android:textColor="#FFFFFF"
+            android:layout_height="wrap_content" android:background="@drawable/btn02" android:textSize="20sp"
+            android:text="取消" />
+    </LinearLayout>
+
+</LinearLayout>

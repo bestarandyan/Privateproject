@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_title_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/map" />
+
+        <TextView
+            android:id="@+id/top1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="首页"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" > "
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工作日历"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" > "
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="高级查询"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="5dip"
+        android:background="#02AF5F"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/search_tu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:layout_marginLeft="5dip"
+            android:gravity="center_vertical"
+            android:text="高级查询"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/bgtu"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客户姓名:"
+                    android:textColor="#80FFFF"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#80FFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dip"
+                    android:text="优先级别:"
+                    android:textColor="#80FFFF"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/s1"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/choice"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dip"
+                    android:text="活动主题:"
+                    android:textColor="#80FFFF"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/s2"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/choice"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout  android:layout_marginTop="10dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="生效起止日:"
+                    android:textColor="#80FFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:background="#E0E0E0"
+                    android:text="2012-01-05"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="到"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:background="#E0E0E0"
+                    android:text="2012-01-05"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dip"
+                    android:text="状态:"
+                    android:textColor="#80FFFF"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/s3"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/choice"
+                    android:text="" />
+                
+                
+            <Button  android:layout_marginLeft="150dip"
+                android:id="@+id/squery"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn04"
+                android:text="查询"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/sclear"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn04"
+                android:text="清除"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/addcustomer"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn04"
+                android:text="新增"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/update" 
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn04"
+                android:text="修改"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn04"
+                android:text="删除"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+         <!-- title -->
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"  android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip" android:background="@drawable/single_title_bg" 
+            android:orientation="horizontal" >
+            <TextView
+                     android:layout_width="wrap_content" android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"   android:textColor="#000000" android:textSize="20sp"
+                android:text="序号" /> 
+            <TextView
+                       android:layout_width="wrap_content"    android:layout_marginLeft="80dip" android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"   android:textColor="#000000" android:textSize="20sp"
+                android:text="选择" />
+            <TextView
+                     android:layout_width="wrap_content" android:layout_marginLeft="80dip" android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"   android:textColor="#000000" android:textSize="20sp"
+                android:text="活动主题" />
+            <TextView
+                      android:layout_width="wrap_content" android:layout_marginLeft="60dip" android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"   android:textColor="#000000" android:textSize="20sp"
+                android:text="客户姓名" />
+            <TextView
+                      android:layout_width="wrap_content" android:layout_marginLeft="60dip" android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"   android:textColor="#000000" android:textSize="20sp"
+                android:text="客户类型" />
+            <TextView
+                      android:layout_width="wrap_content" android:layout_marginLeft="60dip" android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"   android:textColor="#000000" android:textSize="20sp"
+                android:text="客户电话" />
+            <TextView
+                      android:layout_width="wrap_content" android:layout_marginLeft="80dip" android:gravity="center_vertical"
+            android:layout_height="wrap_content"   android:textColor="#000000" android:textSize="20sp"
+                android:text="客户地址" />
+            <TextView
+                     android:layout_width="wrap_content" android:layout_marginLeft="120dip" android:gravity="center_vertical"
+            android:layout_height="wrap_content"   android:textColor="#000000"  android:textSize="20sp"
+                android:text="来源" />
+            <TextView
+                     android:layout_width="wrap_content" android:layout_marginLeft="80dip" android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"   android:textColor="#000000" android:textSize="20sp"
+                android:text="状态" />
+        </LinearLayout>
+        <ListView   android:background="#FFFFFF"
+            android:id="@+id/list"   android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"></ListView>
+    </LinearLayout>
+
+</LinearLayout>

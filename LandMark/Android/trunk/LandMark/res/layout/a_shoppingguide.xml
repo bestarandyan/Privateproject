@@ -1,0 +1,128 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#124785"
+              android:orientation="vertical">
+        <RelativeLayout android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="visible"
+        android:background="@drawable/top_bg" >
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/top_ico1"
+           />
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="购物指南"
+		    android:textSize="20sp"
+		    android:layout_centerInParent="true"
+		    android:textColor="#ffffff"
+		    android:id="@+id/titleTv"
+		    />
+		<ImageButton
+            android:id="@+id/rightBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/top_ico3"
+            android:visibility="gone"
+           />
+    </RelativeLayout>
+		    <RelativeLayout android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/zl_top_bg"
+		        android:id="@+id/TopImg"
+		        android:layout_below="@id/topLayout"
+		        >
+		         <TextView android:layout_width="wrap_content"
+			        android:layout_height="40dp"
+			        android:text="品牌罗列"
+			        android:textColor="#ffffff"
+			        android:layout_centerVertical="true"
+			        android:layout_marginLeft="5dp"
+			        android:textSize="14dp"
+			        android:gravity="center_vertical"
+			        android:id="@+id/pinpaiTv"
+			        />
+		         <TextView android:layout_width="wrap_content"
+			        android:layout_height="40dp"
+			        android:text="楼层列表"
+			        android:textColor="#AAAAAA"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentRight="true"
+			        android:layout_marginRight="5dp"
+			        android:textSize="14dp"
+			        android:id="@+id/loucengTv"
+			        android:gravity="center_vertical"
+			        />
+		    </RelativeLayout>
+		   
+    		<ImageView android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/zl_bottom_bg1"
+		        android:layout_alignParentBottom="true"
+		        android:id="@+id/bottomImg"
+		        />
+    		
+    		<LinearLayout android:layout_width="fill_parent"
+    		    android:layout_height="fill_parent"
+    		    android:id="@+id/centerLayout"
+    		    android:background="#124785"
+    		    android:layout_below="@id/TopImg"
+    		    android:layout_above="@id/bottomImg"
+    		    android:padding="8dp"
+    		    
+    		    >
+    		    <ListView android:layout_width="fill_parent"
+    		        android:layout_height="fill_parent"
+    		        android:id="@+id/centerLv"
+    		        android:divider="@drawable/shopping_guide_dashed"
+    		        android:cacheColorHint="@null"
+    		        android:scrollbars="none"
+    		        ></ListView>
+    		</LinearLayout>
+    		<LinearLayout android:layout_width="fill_parent"
+    		    android:layout_height="wrap_content"
+    		    android:orientation="horizontal"
+    		    android:gravity="center"
+    		    android:layout_below="@id/TopImg"
+    		    android:id="@+id/proLayout"
+    		    android:paddingTop="10dp"
+    		    >
+
+    			<ProgressBar
+    			    android:id="@+id/progressBar1"
+    			    style="?android:attr/progressBarStyleSmall"
+    			    android:layout_width="wrap_content"
+    			    android:layout_height="wrap_content" />
+    			
+    		    <TextView android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:text="正在更新数据..."
+    		        android:textColor="#ffffff"
+    		        android:textSize="14sp"
+    		        android:layout_marginLeft="15dp"
+    		        android:id="@+id/stateText"
+    		        />
+    		</LinearLayout>
+    		<TextView android:layout_width="match_parent"
+    		        android:layout_height="match_parent"
+    		        android:text="连接服务器失败，请检查网络或点击屏幕刷新！"
+    		        android:textColor="#ffffff"
+    		        android:textSize="14sp"
+    		        android:gravity="center"
+    		        android:id="@+id/connectFailText"
+    		        android:visibility="gone"
+    		        android:layout_below="@id/TopImg"
+    		        
+    		        />
+</RelativeLayout>

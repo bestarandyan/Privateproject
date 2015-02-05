@@ -1,0 +1,404 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/bg_color"
+              >
+              
+    	<FrameLayout android:layout_width="match_parent"
+   		    android:layout_height="wrap_content"
+   		    android:orientation="vertical"
+   		    android:id="@+id/bottomLayout"
+   		    android:layout_alignParentBottom="true"
+   		    >
+   		    <ImageView  android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/babe_home_bottom_bg"
+			        android:adjustViewBounds="true"
+			        />
+   		    <RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="40dp"
+		    android:layout_gravity="bottom"
+		    android:padding="6dp"
+		    android:id="@+id/bottomLinear"
+		    android:gravity="center_vertical"
+		    android:background="#6C6C6C">
+		    <TextView android:id="@+id/company"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:text="上海i-D偶像摄影荣誉出品"
+		        android:textColor="#ffffff"
+		        android:layout_centerVertical="true"
+		        android:gravity="center_vertical"
+		        android:textSize="12sp"
+		        />
+		    <LinearLayout android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentRight="true"
+			    android:layout_centerVertical="true"
+			    android:gravity="center_vertical"
+			    android:id="@+id/userInfoLayout"
+			    android:orientation="horizontal">
+		      <TextView android:id="@+id/phone"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="13888888888"
+		        android:textColor="#ffffff"
+		        android:textSize="12sp"
+		        
+		        />  
+			       <Button android:layout_height="38dp"
+			           android:layout_width="wrap_content"
+			           android:id="@+id/cancleUser"
+			           android:text="【注销】"
+			           android:textColor="#ffffff"
+			           android:textSize="12sp"
+			           android:background="@null"/>
+		    </LinearLayout>
+		</RelativeLayout>
+
+		 <ImageView
+		     android:id="@+id/explainIv"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_gravity="right"
+		     android:adjustViewBounds="true"
+		     android:src="@drawable/explain" />
+
+   		</FrameLayout>
+   		
+   		<ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:layout_above="@id/bottomLayout"
+        >           
+			    <LinearLayout android:layout_width="match_parent"
+			       android:layout_height="match_parent"
+			       android:orientation="vertical"
+			       >
+		     <LinearLayout android:layout_width="match_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="vertical"
+			       >
+			   <ImageView android:layout_width="match_parent"
+			       android:layout_height="wrap_content"
+			       android:src="@drawable/babe_home_logo"
+			       android:id="@+id/topImg"
+			       android:adjustViewBounds="true"
+			       /> 
+			 </LinearLayout>
+			   <LinearLayout android:layout_width="match_parent"
+			       android:layout_height="match_parent"
+			       android:padding="10dp"
+			       android:orientation="vertical"
+			       android:layout_marginTop="10dp"
+			       >
+			       <LinearLayout android:layout_width="match_parent"
+				       android:layout_height="wrap_content"
+				       android:orientation="horizontal"
+				       >
+				       <LinearLayout android:layout_width="match_parent"
+					       android:layout_height="wrap_content"
+					       android:orientation="vertical"
+					       android:gravity="center_horizontal"
+					       android:id="@+id/btnLayout1"
+					       android:layout_weight="1"
+					       >
+					       <LinearLayout android:layout_width="wrap_content"
+					           android:layout_height="wrap_content"
+					           android:background="@drawable/babe_home_btn1"
+					           android:gravity="right|top"
+					           >
+						       <Button android:layout_width="23dp"
+						           android:layout_height="23dp"
+						           android:background="@drawable/id_home_xinxi"
+						           android:text="18"
+						           android:textColor="#ffffff"
+						           android:textSize="10sp"
+						           android:id="@+id/layout1Dot"
+						           android:clickable="false"
+						           android:visibility="gone"
+						           />
+					       </LinearLayout>
+					       <TextView android:layout_width="wrap_content"
+					           android:layout_height="wrap_content"
+					           android:text="店家首页"
+					           android:textColor="#000000"
+					           android:textSize="14sp"
+					           android:gravity="center"
+					           android:layout_marginTop="3dp"
+					           />
+					   </LinearLayout>
+					   <LinearLayout android:layout_width="match_parent"
+					       android:layout_height="wrap_content"
+					       android:orientation="vertical"
+					       android:gravity="center_horizontal"
+					       android:id="@+id/btnLayout2"
+					       android:layout_weight="1"
+					       >
+					       <LinearLayout android:layout_width="wrap_content"
+					           android:layout_height="wrap_content"
+					           android:background="@drawable/babe_home_btn2"
+					           android:gravity="right|top"
+					           >
+						       <Button android:layout_width="23dp"
+						           android:layout_height="23dp"
+						           android:background="@drawable/id_home_xinxi"
+						           android:text="18"
+						           android:textColor="#ffffff"
+						           android:textSize="10sp"
+						           android:id="@+id/layout2Dot"
+						           android:clickable="false"
+						           android:visibility="gone"
+						           />
+					       </LinearLayout>
+					       <TextView android:layout_width="wrap_content"
+					           android:layout_height="wrap_content"
+					           android:text="@string/my_photo_albums"
+					           android:textColor="#000000"
+					           android:textSize="14sp"
+					           android:gravity="center"
+					           android:layout_marginTop="3dp"
+					           />
+					   </LinearLayout>    
+					   <LinearLayout android:layout_width="match_parent"
+					       android:layout_height="wrap_content"
+					       android:orientation="vertical"
+					       android:gravity="center_horizontal"
+					       android:id="@+id/btnLayout10"
+					       android:layout_weight="1"
+					       >
+					       <LinearLayout android:layout_width="wrap_content"
+					           android:layout_height="wrap_content"
+					           android:background="@drawable/babe_home_btn3"
+					           android:gravity="right|top"
+					           >
+						       <Button android:layout_width="23dp"
+						           android:layout_height="23dp"
+						           android:background="@drawable/id_home_xinxi"
+						           android:text="11"
+						           android:textColor="#ffffff"
+						           android:textSize="10sp"
+						           android:id="@+id/layout10Dot"
+						           android:clickable="false"
+						           android:visibility="gone"
+						           />
+					       </LinearLayout>
+					       <TextView android:layout_width="match_parent"
+					           android:layout_height="wrap_content"
+					           android:text="百宝箱"
+					           android:textColor="#000000"
+					           android:textSize="14sp"
+					           android:gravity="center"
+					           android:layout_marginTop="3dp"
+					           android:layout_marginLeft="12dp"
+					           android:layout_marginRight="12dp"
+					           />
+					   </LinearLayout>    
+					   <LinearLayout android:layout_width="match_parent"
+					       android:layout_height="wrap_content"
+					       android:orientation="vertical"
+					       android:gravity="center_horizontal"
+					       android:id="@+id/btnLayout7"
+					       android:layout_weight="1"
+					       >
+					       <LinearLayout android:layout_width="wrap_content"
+					           android:layout_height="wrap_content"
+					           android:background="@drawable/babe_home_btn4"
+					           android:gravity="right|top"
+					           >
+						       <Button android:layout_width="23dp"
+						           android:layout_height="23dp"
+						           android:background="@drawable/id_home_xinxi"
+						           android:text="18"
+						           android:textColor="#ffffff"
+						           android:textSize="10sp"
+						           android:id="@+id/layout7Dot"
+						           android:clickable="false"
+						           android:visibility="gone"
+						           />
+					       </LinearLayout>
+					       <TextView android:layout_width="wrap_content"
+					           android:layout_height="wrap_content"
+					           android:text="明信片"
+					           android:textColor="#000000"
+					           android:textSize="14sp"
+					           android:gravity="center"
+					           android:layout_marginTop="3dp"
+					           />
+					   </LinearLayout>      
+					   <!-- <LinearLayout android:layout_width="match_parent"
+					       android:layout_height="wrap_content"
+					       android:orientation="vertical"
+					       android:gravity="center_horizontal"
+					       android:id="@+id/btnLayout4"
+					       android:layout_weight="1"
+					       >
+					       <LinearLayout android:layout_width="wrap_content"
+					           android:layout_height="wrap_content"
+					           android:background="@drawable/id_home_btn4"
+					           android:gravity="right|top"
+					           >
+						       <Button android:layout_width="23dp"
+						           android:layout_height="23dp"
+						           android:background="@drawable/id_home_xinxi"
+						           android:text="1"
+						           android:textColor="#ffffff"
+						           android:textSize="10sp"
+						           android:id="@+id/layout4Dot"
+						           android:clickable="false"
+						           android:visibility="gone"
+						           />
+					       </LinearLayout>
+					       <TextView android:layout_width="wrap_content"
+					           android:layout_height="wrap_content"
+					           android:background="@drawable/main_btn_bg"
+					           android:text="推荐套系"
+					           android:textColor="#ffffff"
+					           android:textSize="12sp"
+					           android:paddingLeft="5dp"
+					           android:paddingRight="5dp"
+					           android:paddingTop="2dp"
+					           android:paddingBottom="2dp"
+					           android:layout_marginTop="3dp"
+					           />
+					   </LinearLayout>         -->
+				   </LinearLayout> 
+				   <LinearLayout android:layout_width="match_parent"
+				       android:layout_height="wrap_content"
+				       android:orientation="horizontal"
+				       android:layout_marginTop="20dp"
+				       >
+					   <LinearLayout android:layout_width="match_parent"
+					       android:layout_height="wrap_content"
+					       android:orientation="vertical"
+					       android:gravity="center_horizontal"
+					       android:id="@+id/btnLayout3"
+					       android:layout_weight="1"
+					       >
+					       <LinearLayout android:layout_width="wrap_content"
+					           android:layout_height="wrap_content"
+					           android:background="@drawable/babe_home_btn5"
+					           android:gravity="right|top"
+					           >
+						       <Button android:layout_width="23dp"
+						           android:layout_height="23dp"
+						           android:background="@drawable/id_home_xinxi"
+						           android:text="18"
+						           android:textColor="#ffffff"
+						           android:textSize="10sp"
+						           android:id="@+id/layout3Dot"
+						           android:clickable="false"
+						           android:visibility="gone"
+						           />
+					       </LinearLayout>
+					       <TextView android:layout_width="wrap_content"
+					           android:layout_height="wrap_content"
+					           android:text="样照欣赏"
+					           android:textColor="#000000"
+					           android:textSize="14sp"
+					           android:gravity="center"
+					           android:layout_marginTop="3dp"
+					           />
+					   </LinearLayout>  
+					    <LinearLayout android:layout_width="match_parent"
+					       android:layout_height="wrap_content"
+					       android:orientation="vertical"
+					       android:gravity="center_horizontal"
+					       android:visibility="invisible"
+					       android:layout_weight="1"
+					       >
+					       <LinearLayout android:layout_width="wrap_content"
+					           android:layout_height="wrap_content"
+					           android:background="@drawable/babe_home_btn5"
+					           android:gravity="right|top"
+					           >
+						       <Button android:layout_width="23dp"
+						           android:layout_height="23dp"
+						           android:background="@drawable/id_home_xinxi"
+						           android:text="18"
+						           android:textColor="#ffffff"
+						           android:textSize="10sp"
+						           android:clickable="false"
+						           android:visibility="gone"
+						           />
+					       </LinearLayout>
+					       <TextView android:layout_width="wrap_content"
+					           android:layout_height="wrap_content"
+					           android:text="样照欣赏"
+					           android:textColor="#000000"
+					           android:textSize="14sp"
+					           android:gravity="center"
+					           android:layout_marginTop="3dp"
+					           />
+					   </LinearLayout>  
+					    <LinearLayout android:layout_width="match_parent"
+					       android:layout_height="wrap_content"
+					       android:orientation="vertical"
+					       android:gravity="center_horizontal"
+					       android:visibility="invisible"
+					       android:layout_weight="1"
+					       >
+					       <LinearLayout android:layout_width="wrap_content"
+					           android:layout_height="wrap_content"
+					           android:background="@drawable/babe_home_btn5"
+					           android:gravity="right|top"
+					           >
+						       <Button android:layout_width="23dp"
+						           android:layout_height="23dp"
+						           android:background="@drawable/id_home_xinxi"
+						           android:text="18"
+						           android:textColor="#ffffff"
+						           android:textSize="10sp"
+						           android:clickable="false"
+						           android:visibility="gone"
+						           />
+					       </LinearLayout>
+					       <TextView android:layout_width="wrap_content"
+					           android:layout_height="wrap_content"
+					           android:text="样照欣赏"
+					           android:textColor="#000000"
+					           android:textSize="14sp"
+					           android:gravity="center"
+					           android:layout_marginTop="3dp"
+					           />
+					   </LinearLayout>  
+					    <LinearLayout android:layout_width="match_parent"
+					       android:layout_height="wrap_content"
+					       android:orientation="vertical"
+					       android:gravity="center_horizontal"
+					       android:visibility="invisible"
+					       android:layout_weight="1"
+					       >
+					       <LinearLayout android:layout_width="wrap_content"
+					           android:layout_height="wrap_content"
+					           android:background="@drawable/babe_home_btn5"
+					           android:gravity="right|top"
+					           >
+						       <Button android:layout_width="23dp"
+						           android:layout_height="23dp"
+						           android:background="@drawable/id_home_xinxi"
+						           android:text="18"
+						           android:textColor="#ffffff"
+						           android:textSize="10sp"
+						           android:clickable="false"
+						           android:visibility="gone"
+						           />
+					       </LinearLayout>
+					       <TextView android:layout_width="wrap_content"
+					           android:layout_height="wrap_content"
+					           android:text="样照欣赏"
+					           android:textColor="#000000"
+					           android:textSize="14sp"
+					           android:gravity="center"
+					           android:layout_marginTop="3dp"
+					           />
+					   </LinearLayout>  
+			   </LinearLayout>   
+			   </LinearLayout>
+			   
+			   </LinearLayout>
+   </ScrollView>   
+</RelativeLayout>

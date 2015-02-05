@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sp_body_bg"
+    android:orientation="vertical"
+    >
+ <ImageView android:background="@drawable/sp_top_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv"
+       />
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="180dip"
+            android:gravity="center"
+            android:numColumns="1"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="63dip"
+            android:paddingRight="63dip"
+            android:layout_centerVertical="true"
+            android:stretchMode="columnWidth" >
+        </GridView>
+	<TextView android:text="电  子  票  券  验  证  系  统"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/topText"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

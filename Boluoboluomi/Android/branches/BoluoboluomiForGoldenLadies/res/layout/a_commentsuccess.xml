@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+   <!--  <ImageView android:src="@color/bg_color_hua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        /> -->
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/top_linear"
+	    >
+	    <Button android:layout_width="55dp"
+	        android:layout_height="35dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="返回"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="14dp"
+	        android:layout_centerVertical="true"
+	        android:paddingLeft="10dp"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/btn01"/>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="点评成功"
+	        android:layout_centerHorizontal="true"
+	        android:textColor="#ffffff"
+	        android:textSize="20dp"
+	        android:layout_centerVertical="true"
+	        android:textStyle="bold"/>
+	</RelativeLayout>
+			<RelativeLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/top_linear"
+			    >
+			    <ImageView android:src="@drawable/logo"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="40dp"
+			        android:layout_centerHorizontal="true"
+			        android:id="@+id/centerlinear1"
+			        />
+			    <LinearLayout android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@id/centerlinear1"
+			        android:layout_centerHorizontal="true"
+			        android:id="@+id/textLinear"
+			        android:layout_margin="30dp"
+			        android:background="@color/bg_color"
+			        android:orientation="horizontal">
+			  			<WebView android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:id="@+id/wv"
+						        android:background="@color/bg_color"
+						        />
+			    </LinearLayout>   
+			    <LinearLayout android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@id/textLinear"
+			        android:layout_centerHorizontal="true"
+			        android:orientation="horizontal">
+				    <Button android:layout_width="140dp"
+				        android:layout_height="wrap_content"
+				        android:id="@+id/dianping"
+				        android:background="@drawable/btn_bg"
+				        android:text="点评化妆师"
+				        android:textSize="18dp"
+				        android:layout_centerHorizontal="true"
+				        android:textColor="#ffffff"/>     
+				        <Button android:layout_width="140dp"
+				        android:layout_height="wrap_content"
+				        android:id="@+id/helpBtn"
+				        android:background="@drawable/btn_bg"
+				        android:text="积分如何使用"
+				        android:textSize="18dp"
+				        android:layout_marginLeft="10dp"
+				        android:layout_centerHorizontal="true"
+				        android:textColor="#ffffff"/>     
+			        </LinearLayout>
+			</RelativeLayout>
+</RelativeLayout>

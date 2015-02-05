@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/mall_home_bg1"
+    >
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:textColor="#000000"
+	    android:textSize="14sp"
+	    android:background="@null"
+	    android:textStyle="bold"
+	    android:text="电器类"
+	    android:layout_margin="6dp"
+        android:id="@+id/title"/>
+    <LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="match_parent"
+			    android:gravity="bottom"
+			    android:background="@null"
+			    android:orientation="horizontal">
+	    	<ImageView android:src="@drawable/integral11"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="1"
+	    	    android:id="@+id/img1"
+	    	    />
+	    	<ImageView android:src="@drawable/integral12"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	     android:id="@+id/img2"
+	    	     android:layout_weight="1"
+	    	    />
+	    	<ImageView android:src="@drawable/integral13"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	     android:layout_weight="1"
+	    	      android:id="@+id/img3"
+	    	    />
+	    	<ImageView android:src="@drawable/integral14"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	     android:layout_weight="1"
+	    	      android:id="@+id/img4"
+	    	    />
+	     </LinearLayout>
+</LinearLayout>

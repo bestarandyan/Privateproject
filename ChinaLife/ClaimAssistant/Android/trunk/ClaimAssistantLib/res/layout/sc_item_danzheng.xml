@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+    <GridView
+        android:id="@+id/listDanzhengView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:numColumns="2"
+        android:columnWidth="200dp"
+        android:layout_marginTop="20dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:paddingTop="10dp"
+        android:fadingEdge="none"
+        android:visibility="visible" >
+    </GridView>
+</LinearLayout>

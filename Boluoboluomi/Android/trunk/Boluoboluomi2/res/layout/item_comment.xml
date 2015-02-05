@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:id="@+id/parent"
+    >
+    <ImageView android:layout_width="90dp"
+	    android:layout_height="90dp"
+	    android:id="@+id/image"
+	    android:layout_alignParentLeft="true"
+	    android:layout_centerVertical="true"
+        />
+     <ImageView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/id_dianjia_ico"
+        android:layout_alignParentRight="true"
+        android:id="@+id/right"
+        android:layout_centerVertical="true"
+        />
+    <LinearLayout android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="14dp"
+    	android:layout_marginRight="5dp"
+    	android:layout_toRightOf="@id/image"
+    	android:layout_toLeftOf="@id/right"
+    	android:layout_centerVertical="true"
+    	>
+        <LinearLayout android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+    		>
+        <LinearLayout android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	>
+        <LinearLayout android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	>
+	        <TextView android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:textColor="#000000"
+		    	android:textSize="14dp"
+		    	android:text="工号："/>
+	        <TextView android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:id="@+id/gonghao"
+		    	android:textColor="#000000"
+		    	android:textSize="14dp"
+		    	android:text="001"/>
+    	</LinearLayout>
+    	<LinearLayout android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	>
+	        <TextView android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:textColor="#000000"
+		    	android:textSize="14dp"
+		    	android:text="姓名："/>
+	        <TextView android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:id="@+id/name"
+		    	android:textColor="#000000"
+		    	android:textSize="14dp"
+		    	android:text="刘星星"/>
+    	</LinearLayout>
+    	<LinearLayout android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	>
+	        <TextView android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:textColor="#000000"
+		    	android:textSize="14dp"
+		    	android:text="等级："/>
+	        <TextView android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:id="@+id/dengji"
+		    	android:textSize="14dp"
+		    	android:textColor="#000000"
+		    	android:text="首席摄影师"/>
+    	</LinearLayout>
+    	<LinearLayout android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	>
+	        <TextView android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:textColor="#000000"
+		    	android:textSize="14dp"
+		    	android:text="风格："/>
+	        <TextView android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:id="@+id/takePicStyle"
+		    	android:textColor="#000000"
+		    	android:textSize="14dp"
+		    	android:text="刘叉叉"/>
+    	</LinearLayout>
+    	</LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	>
+	        <TextView android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:textColor="#000000"
+		    	android:textSize="14dp"
+		    	android:text="服务宣言："/>
+	        <TextView android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:id="@+id/serviceXuanYan"
+		    	android:textSize="14dp"
+		    	android:paddingLeft="10dp"
+		    	android:textColor="#000000"
+		    	android:text="为人民服务"/>
+    	</LinearLayout>
+    </LinearLayout>
+   
+    </RelativeLayout>

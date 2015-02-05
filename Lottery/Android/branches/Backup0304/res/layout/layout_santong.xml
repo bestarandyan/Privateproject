@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:background="@null"
+     android:padding="5dp"
+     >
+ <ScrollView android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@null"
+         android:id="@+id/scrollView"
+         android:fadingEdge="none"
+         >
+         <LinearLayout android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:background="@null"
+             >
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+         android:orientation="horizontal" >
+
+         <ImageView
+             android:id="@+id/leftImg"
+             android:layout_width="70dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:src="@drawable/touzhu_title2" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@id/leftImg"
+             android:layout_centerHorizontal="true"
+             android:gravity="bottom"
+             android:text="三同号单选：奖金240元"
+             android:textColor="#ffffff"
+             android:layout_marginBottom="5dp"
+             android:textSize="14sp" />
+     </RelativeLayout>
+<LinearLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="vertical"
+	     android:background="#1F3D23"
+	     android:layout_marginTop="5dp"
+	     android:padding="1px"
+	     >
+     <LinearLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="horizontal"
+	     android:background="@null"
+	     >
+		 <TextView android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:text="111"
+		         android:textColor="#ffffff"
+		         android:textSize="22sp"
+		         android:gravity="center_horizontal"
+		     	 android:id="@+id/santongLayout1"
+		         android:layout_weight="1"
+		         android:background="#29915D"
+		         android:padding="10dp"
+		         />
+		 <TextView android:layout_width="match_parent"
+		         android:layout_height="match_parent"
+		         android:text="222"
+		         android:textColor="#ffffff"
+		         android:textSize="22sp"
+		     	 android:id="@+id/santongLayout2"
+		         android:layout_weight="1"
+		         android:background="#29915D"
+		         android:layout_marginLeft="1px"
+		         android:gravity="center"
+		         />
+		 <TextView android:layout_width="match_parent"
+		         android:layout_height="match_parent"
+		         android:text="333"
+		         android:textColor="#ffffff"
+		         android:textSize="22sp"
+		     	 android:id="@+id/santongLayout3"
+		         android:layout_weight="1"
+		         android:background="#29915D"
+		         android:layout_marginLeft="1px"
+		         android:gravity="center"
+		         />
+	</LinearLayout>
+	
+     <LinearLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="horizontal"
+	     android:background="@null"
+	     android:layout_marginTop="1px"
+	     >
+	     <TextView android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:text="444"
+		         android:textColor="#ffffff"
+		         android:textSize="22sp"
+		         android:gravity="center_horizontal"
+		     	 android:id="@+id/santongLayout4"
+		         android:layout_weight="1"
+		         android:background="#29915D"
+		         android:padding="10dp"
+		         />
+	     <TextView android:layout_width="match_parent"
+		         android:layout_height="match_parent"
+		         android:text="555"
+		         android:textColor="#ffffff"
+		         android:textSize="22sp"
+		     	 android:id="@+id/santongLayout5"
+		         android:layout_weight="1"
+		         android:background="#29915D"
+		         android:layout_marginLeft="1px"
+		         android:gravity="center"
+		         />
+	     <TextView android:layout_width="match_parent"
+		         android:layout_height="match_parent"
+		         android:text="666"
+		         android:textColor="#ffffff"
+		         android:textSize="22sp"
+		     	 android:id="@+id/santongLayout6"
+		         android:layout_weight="1"
+		         android:background="#29915D"
+		         android:layout_marginLeft="1px"
+		         android:gravity="center"
+		         />
+		 
+	</LinearLayout>
+	</LinearLayout>
+	<TextView android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:text="三同号通选"
+		         android:textColor="@color/santong_btntext_color"
+		         android:textSize="14sp"
+		         android:gravity="center_horizontal"
+		         android:layout_marginTop="15dp"
+		         />
+     <LinearLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="vertical"
+	     android:background="#1F3D23"
+	     android:layout_marginTop="3dp"
+	     android:padding="1px"
+	     >
+     <LinearLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="vertical"
+	     android:background="#29915E"
+	     android:padding="10dp"
+	     android:id="@+id/tongxuanLayout"
+	     >
+	     <TextView android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:text="111、222、333、444、555、666"
+		         android:textColor="#ffffff"
+		         android:textSize="20sp"
+		         android:gravity="center_horizontal"
+		         />
+	     <TextView android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:text="任一开出即中40元"
+		         android:textColor="#0C523A"
+		         android:textSize="14sp"
+		         android:gravity="center_horizontal"
+		         android:layout_marginTop="5dp"
+		         />
+	</LinearLayout>
+	</LinearLayout>
+    </LinearLayout></ScrollView>
+</LinearLayout>

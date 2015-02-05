@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root name="rootname">
+  <icon id="1" url="babe_baoxiang_ico1.png" />
+  <icon id="2" url="babe_baoxiang_ico2.png" />
+  <icon id="3" url="babe_baoxiang_ico3.png" />
+  <icon id="4" url="babe_baoxiang_ico4.png" />
+  <icon id="5" url="babe_baoxiang_ico5.png" />
+  <icon id="6" url="babe_baoxiang_ico6.png" />
+  <icon id="7" url="babe_baoxiang_ico7.png" />
+  <icon id="8" url="id_baoxiang_ico8.png" />
+  <icon id="9" url="id_baoxiang_ico9.png" />
+  <icon id="10" url="id_baoxiang_ico10.png" />
+</root>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sc_body_bg01"
+    android:orientation="vertical" >
+
+    <!-- head -->
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/sc_title_bg" >
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:text="返回"
+            style="@style/sc_title_btn_style"
+           />
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="主界面"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+<ImageView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+    <GridView
+        android:id="@+id/gv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:numColumns="3"
+        android:verticalSpacing="50dp" >
+    </GridView>
+<!-- <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        >
+        <ImageView android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:background="@drawable/body_bg_bottom"/>
+    </RelativeLayout> -->
+</LinearLayout>

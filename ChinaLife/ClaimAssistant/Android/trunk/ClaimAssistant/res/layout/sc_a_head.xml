@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/sc_head_height"
+    android:background="@drawable/sc_head_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+   <ImageView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/sc_head_logo"
+    android:layout_marginLeft="15dp"
+    /> 
+    <ImageView android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:background="@drawable/sc_head_line"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+    /> 
+     <LinearLayout android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/betaImage"
+            android:layout_gravity="right"
+            android:visibility="visible"
+            android:layout_marginRight="-10dp"
+            android:src="@drawable/sc_beta"/>
+        <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="一路行车险理赔助手"
+	        android:textColor="#ffffff"
+	        android:layout_marginTop="-10dp"
+	        android:textSize="@dimen/sc_head_text_size"
+	        android:layout_marginLeft="10dp"
+	        android:textStyle="bold"/>
+    <!--  <LinearLayout android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/betaImage"
+            android:layout_gravity="right"
+            android:visibility="gone"
+            android:layout_marginRight="-10dp"
+            android:src="@drawable/beta"/>
+        <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="一路行车险理赔助手"
+	        android:textColor="#ffffff"
+	        android:textSize="@dimen/head_text_size"
+	        android:layout_marginLeft="10dp"
+	        android:textStyle="bold"/>  -->
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">上海置地广场</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+<!--首页标签-->
+    <string name="tab_home">首页</string>
+    <string name="tab_tab1">促销活动</string>
+    <string name="tab_tab2">特惠商品</string>
+    <string name="tab_tab3">购物指南</string>
+    <string name="tab_tab4">美食速递</string>
+    <string name="tab_tab5">会员专区</string>
+    <string name="tab_tab6">新浪微博</string>
+</resources>

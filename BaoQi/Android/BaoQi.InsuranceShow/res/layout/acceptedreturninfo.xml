@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+<TextView  android:id="@+id/returnreason"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_marginLeft="20px"
+    android:text=""
+    android:textColor="@color/black"
+    android:textSize="20px"
+    />
+<TextView  android:id="@+id/returnperson"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_toRightOf="@id/returnreason"
+    android:layout_marginLeft="20px"
+    android:text="谢国梁"
+    android:textColor="@color/black"
+    android:textSize="20px"
+    />
+<TextView  android:id="@+id/returnphone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_toRightOf="@id/returnperson"
+    android:layout_marginLeft="20px"
+    android:text="12291012240"
+    android:textColor="@color/black"
+    android:textSize="20px"
+    />
+<TextView  android:id="@+id/returnJobNumber"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_toRightOf="@id/returnphone"
+    android:layout_marginLeft="20px"
+    android:text="工号：007"
+    android:textColor="@color/black"
+    android:textSize="20px"
+    />
+    </RelativeLayout>
+</LinearLayout>

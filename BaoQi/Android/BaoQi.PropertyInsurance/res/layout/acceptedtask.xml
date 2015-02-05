@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    					android:layout_width="fill_parent"
+                       android:layout_height="fill_parent"
+                       android:background="@drawable/border"
+                       >
+                       <RelativeLayout android:layout_width="fill_parent"
+                           android:layout_height="50px"
+                           android:background="@drawable/nav_title_bg"
+                           android:layout_alignParentTop="true"
+                           android:orientation="horizontal"
+                           android:paddingRight="10px"
+                           android:paddingLeft="20px"
+                           android:id="@+id/righttopview"
+                           >
+                           <TextView android:text="任务详情"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_alignParentLeft="true"
+                               android:textSize="20px"
+                               android:layout_centerVertical="true"
+                               android:textColor="@color/red"/>
+                           <Button android:background="@drawable/close"
+                              android:layout_width="30px"
+                               android:layout_height="30px"
+                               android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:id="@+id/acceptedCloseButton"
+                                />
+                       </RelativeLayout>
+                       <LinearLayout android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_below="@id/righttopview"
+                           android:padding="50px"
+                           android:orientation="vertical"
+                            android:id="@+id/taskInfo11"
+                           >
+                           
+                            <LinearLayout android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal"
+                           android:paddingTop="5px"
+                           android:paddingBottom="5px"
+                          
+                           >
+                           <TextView android:text="事件时间："
+                               
+                               android:textColor="@color/gray"
+                               android:textSize="15px"
+                               android:textStyle="normal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                            <TextView android:id="@+id/acceptedtime"
+                                android:textColor="@color/black"
+                               android:textSize="15px"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                       </LinearLayout>
+                        <LinearLayout android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           android:paddingTop="5px"
+                           android:paddingBottom="5px"
+                           android:orientation="horizontal"
+                           >
+                           <TextView android:text="事件地点："
+                               android:textColor="@color/gray"
+                               android:textSize="15px"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                            <TextView android:id="@+id/acceptedaddress"
+                                android:textColor="@color/black"
+                               android:textSize="15px"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                       </LinearLayout>
+                        <LinearLayout android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                          android:paddingTop="5px"
+                           android:paddingBottom="5px"
+                           android:orientation="horizontal"
+                           >
+                           <TextView android:text="报案人员："
+                               android:textColor="@color/gray"
+                               android:textSize="15px"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                            <TextView android:id="@+id/acceptedperson"
+                                android:textColor="@color/black"
+                               android:textSize="15px"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                       </LinearLayout>
+                        <LinearLayout android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                          android:paddingTop="5px"
+                           android:paddingBottom="5px"
+                           android:orientation="horizontal"
+                           >
+                           <TextView android:text="手机号码："
+                               android:textColor="@color/gray"
+                               android:textSize="15px"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                            <TextView android:id="@+id/acceptedphone"
+                                android:textColor="@color/black"
+                               android:textSize="15px"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                       </LinearLayout>
+                        <LinearLayout android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                            android:paddingTop="5px"
+                           android:paddingBottom="5px"
+                           android:orientation="horizontal"
+                           >
+                           <TextView android:text="备注信息："
+                               android:textColor="@color/gray"
+                               android:textSize="15px"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                            <TextView android:id="@+id/acceptedinfo"
+                                android:textColor="@color/black"
+                               android:textSize="15px"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"/>
+                       </LinearLayout>                      
+                     </LinearLayout>
+                       <LinearLayout  
+                           android:layout_width="fill_parent"
+                            android:layout_height="50px"
+                           android:background="@drawable/nav_title_bg"
+                           android:layout_below="@id/taskInfo11"
+                           android:paddingLeft="20px"
+                           android:id="@+id/returnjilu"
+                           >
+                           <TextView android:text="反馈记录"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_alignParentLeft="true"
+                               android:textSize="15px"
+                               android:layout_centerVertical="true"
+                               android:textColor="@color/red"/>
+                       </LinearLayout>
+                       <LinearLayout android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/lis"
+                           android:layout_below="@id/returnjilu"
+                           android:paddingTop="20px">
+                           <ListView android:layout_width="fill_parent"
+                               android:layout_height="wrap_content"
+                               android:id="@+id/returnjiluText"
+                                >
+                           </ListView>
+                       </LinearLayout>
+                       <RelativeLayout android:layout_width="fill_parent"
+                           android:layout_height="70px"
+                           android:background="@drawable/nav_title_bg"
+                           android:layout_alignParentBottom="true"
+                           android:orientation="horizontal"
+                           android:paddingLeft="40px"
+                           >
+                            <Button android:background="@drawable/btn03"
+                               android:text="关闭"
+                               android:textColor="@color/white"
+                               android:layout_width="140dp"
+                               android:layout_height="100dp"
+                               android:layout_centerVertical="true"
+                               android:textSize="15px"
+                               android:id="@+id/rightacceptedcloseButton"
+                      		   android:layout_marginLeft="20px"
+                               />
+                             
+                             
+                       </RelativeLayout>
+                   </RelativeLayout>

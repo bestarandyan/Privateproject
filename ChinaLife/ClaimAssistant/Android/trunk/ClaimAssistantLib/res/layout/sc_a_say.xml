@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:focusable="true" 
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+<ImageView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+    <!-- title信息 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/sc_title_bg" >
+
+        <Button
+            android:id="@+id/fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:text="返回"
+            style="@style/sc_title_btn_style"
+            />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="消息中心"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- 底部按钮 -->
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/sc_ly_bottom_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/ed2"
+                android:hint="我有话要对自助理赔专员说"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:maxHeight="58dp"
+                android:layout_width="@dimen/sc_sayEtWidth"
+                android:paddingBottom="5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sc_shou_text" />
+
+            <Button
+                android:id="@+id/fasong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/sc_shou_btn"
+                android:text="发送"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/itemlist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@null"
+            android:divider="@null"
+            android:layout_above="@id/linear1"
+            android:dividerHeight="@null" />
+        
+        
+    </RelativeLayout>
+
+</LinearLayout>

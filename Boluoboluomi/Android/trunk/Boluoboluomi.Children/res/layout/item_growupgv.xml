@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent" 
+		android:layout_height="match_parent"
+		android:background="#ffffff">
+			<ImageView android:layout_width="match_parent" 
+				android:layout_height="match_parent" 
+				android:id="@+id/imageView"
+				android:contentDescription="这是一张图片！"
+				android:adjustViewBounds="true"
+				/>
+			<TextView android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:text="可爱小妞"
+		          android:textColor="#ffffff"
+		          android:textSize="11sp"
+		          android:gravity="center"
+		          android:layout_alignParentBottom="true"
+		          android:id="@+id/photoInfo"
+		          android:background="#000000"
+		          android:paddingTop="4dp"
+		          android:paddingBottom="4dp"
+		          android:alpha="100"
+		          android:singleLine="true"
+		          android:ellipsize="middle"
+		          />
+	</RelativeLayout>

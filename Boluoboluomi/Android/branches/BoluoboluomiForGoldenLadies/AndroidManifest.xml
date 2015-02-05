@@ -1,0 +1,424 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qingfengweb.id.blm_goldenLadies"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- ************************************* -->
+    <!-- 定位相关权限 -->
+    <!-- ************************************* -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name = "android.permission.SET_WALLPAPER"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/home_logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Translucent" > 
+        <activity 
+            android:name="com.qingfengweb.id.blm_goldenLadies.LoadingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.CitySelectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.ShareActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.HelpActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.HelpListActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.FeedbackForPingdaiActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.FeedbackMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden"  >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.FeedbackSubmitSuccessActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.BeautyPhotosListActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.DetailSelectPhotoActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.AlbumMainActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.PhotoListActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.MerchantListActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.ProductListActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.DetailProductActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.CustomMainActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.SelectMyCustomActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.MyCustomActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.DetailActiveActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.InvitationTemplateActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.InvitationExplainActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.TemplateImagePreviewActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.TemplateInfoActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.TreasureChestActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.IntegralStoreMainActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.WeiXinActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden"  >
+        </activity>
+        
+         <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.SelectPhotoActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.CommentMainActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.CommentListActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.CommentActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.CommentSuccessActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.WeiXinSuccessActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.RecommendFriendActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.MyIntegralActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.IntegralRuleActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+         <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.ImagePreViewActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.EcshopActiveActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.StoreSelectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.IntegralExchangeActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.SuccessRegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden"  >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.DianJiaMainActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.WelcomeActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.CompanyJianJieActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.BeautyPhotoAdmireActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.ImageSwitcher"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.CompanyConnectWayActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+		<activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.DetailBeautyActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.DetailIntegralActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.TuiJianActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.RecommendSeriesActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.DetailSeriesActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.qingfengweb.id.blm_goldenLadies.ActiveShareActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+         <!--  辅助Activity  加上方向 防止横竖屏切换listener 丢失-->
+   		<activity android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+             android:screenOrientation="portrait" />
+        <activity android:name="com.tencent.plus.ImageActivity" />
+        <activity
+            android:name="com.tencent.sample.activitys.DataProviderActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <data android:scheme="tencent222222.data" />
+            </intent-filter>
+        </activity>  
+         <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent222222" /><!-- 100380359 100381104 222222 -->
+            </intent-filter>
+        </activity>
+        <meta-data   
+            android:name="BaiduMobAd_CHANNEL" 
+            android:value="weteam_android" />	
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+    </application>
+
+</manifest>

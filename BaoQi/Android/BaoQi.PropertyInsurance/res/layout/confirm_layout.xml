@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginTop="20dip"
+        android:text="为了确保您的信用卡安全，第一次刷卡我们会进行持卡人身份认证。下次刷卡不需在认证"
+        android:textSize="20sp" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"  android:layout_marginTop="20dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dip"
+            android:background="#B0E0E6"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/search_2"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dip"
+                android:gravity="right"
+                android:text="卡号:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/sx"
+            android:layout_width="500dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:text="436724578542742" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dip"
+            android:background="#B0E0E6"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/search_2"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dip"
+                android:gravity="right"
+                android:text="卡类型:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/s1"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dip"
+            android:background="#B0E0E6"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/search_2"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dip"
+                android:gravity="right"
+                android:text="银行:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Spinner  
+            android:id="@+id/s2"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:gravity="right" />
+    </LinearLayout>
+  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dip"
+            android:background="#B0E0E6"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/search_2"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dip"
+                android:gravity="right"
+                android:text="持卡人:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/sw"
+            android:layout_width="500dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:text="刘国庆" />
+    </LinearLayout>
+    
+  
+  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dip"
+            android:background="#B0E0E6"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/search_2"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dip"
+                android:gravity="right"
+                android:text="CVV:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/si"
+            android:layout_width="500dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip" 
+            android:text="589" />
+    </LinearLayout>
+    
+  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dip"
+            android:background="#B0E0E6"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/search_2"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dip"
+                android:gravity="right"
+                android:text="有效期:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/si"
+            android:layout_width="500dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip" 
+            android:text="2012-06-14" />
+    </LinearLayout>
+    
+    
+  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dip"
+            android:background="#B0E0E6"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/search_2"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dip"
+                android:gravity="right"
+                android:text="身份证号:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/si"
+            android:layout_width="500dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip" 
+            android:text="610429198710042987" />
+    </LinearLayout>
+    
+    
+  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dip"
+            android:background="#B0E0E6"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/search_2"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dip"
+                android:gravity="right"
+                android:text="手机号码:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/si"
+            android:layout_width="500dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip" 
+            android:text="13464864965" />
+    </LinearLayout>
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.4dip"
+        android:background="@color/green" />
+        <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/confirm"
+                        android:layout_width="100dip"
+                        android:layout_height="50dip"
+                        android:background="@drawable/btn01"
+                        android:text="确认"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StopSelectActivity" 
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+	<LinearLayout android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="horizontal"
+	    android:layout_centerInParent="true"
+	    >
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="距下期开售：" 
+	        android:textSize="30sp"
+	        android:textColor="#B3B3B3"
+	        />
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="03:00" 
+	        android:textSize="30sp"
+	        android:textColor="#F19B2E"
+	        android:id="@+id/timeTv"
+	        />
+	</LinearLayout>
+	<ImageView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/time"
+	    android:layout_marginTop="60dp"
+	    />
+	<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="第056期销售截止" 
+	        android:textSize="30sp"
+	        android:textColor="#CFCFCF"
+	        android:id="@+id/shangQiTv"
+	        android:layout_marginTop="50dp"
+	        />
+</LinearLayout>

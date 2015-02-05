@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:background="@null"
+     android:padding="10dp"
+     >
+ <ScrollView android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@null"
+         android:id="@+id/scrollView"
+         android:fadingEdge="none"
+         >
+         <LinearLayout android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:background="@null"
+             >
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+         android:orientation="horizontal" >
+
+         <ImageView
+             android:id="@+id/leftImg"
+             android:layout_width="70dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:src="@drawable/touzhu_title4" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@id/leftImg"
+             android:layout_centerHorizontal="true"
+             android:gravity="bottom"
+             android:text="三连号通选"
+             android:textColor="#ffffff"
+             android:layout_marginBottom="5dp"
+             android:textSize="14sp" />
+     </RelativeLayout>
+     
+     <LinearLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="vertical"
+	     android:background="#1F3D23"
+	     android:layout_marginTop="3dp"
+	     android:padding="1px"
+	     >
+     <LinearLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="vertical"
+	     android:background="#29915E"
+	     android:padding="10dp"
+	     android:id="@+id/slianLayout1"
+	     >
+	     <TextView android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:text="123、234、345、456"
+		         android:textColor="#ffffff"
+		         android:textSize="20sp"
+		         android:gravity="center_horizontal"
+		         />
+	     <TextView android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:text="任一开出即中10元"
+		         android:textColor="#0C523A"
+		         android:textSize="14sp"
+		         android:gravity="center_horizontal"
+		         android:layout_marginTop="5dp"
+		         />
+	</LinearLayout>
+	</LinearLayout>
+	<TextView android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:text="三连号单选:  奖金40元"
+		         android:textColor="@color/santong_btntext_color"
+		         android:textSize="14sp"
+		         android:gravity="center_horizontal"
+		         android:layout_marginTop="15dp"
+		         />
+<LinearLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="vertical"
+	     android:background="#1F3D23"
+	     android:layout_marginTop="5dp"
+	     android:padding="1px"
+	     >
+     <LinearLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="horizontal"
+	     android:background="@null"
+	     >
+		 <TextView android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:text="123"
+		         android:textColor="#ffffff"
+		         android:textSize="22sp"
+		         android:gravity="center_horizontal"
+		     	 android:id="@+id/slianLayout2"
+		         android:layout_weight="1"
+		         android:background="#29915D"
+		         android:padding="10dp"
+		         />
+		 <TextView android:layout_width="match_parent"
+		         android:layout_height="match_parent"
+		         android:text="234"
+		         android:textColor="#ffffff"
+		         android:textSize="22sp"
+		     	 android:id="@+id/slianLayout3"
+		         android:layout_weight="1"
+		         android:background="#29915D"
+		         android:layout_marginLeft="1px"
+		         android:gravity="center"
+		         />
+		 <TextView android:layout_width="match_parent"
+		         android:layout_height="match_parent"
+		         android:text="345"
+		         android:textColor="#ffffff"
+		         android:textSize="22sp"
+		     	 android:id="@+id/slianLayout4"
+		         android:layout_weight="1"
+		         android:background="#29915D"
+		         android:layout_marginLeft="1px"
+		         android:gravity="center"
+		         />
+		 <TextView android:layout_width="match_parent"
+		         android:layout_height="match_parent"
+		         android:text="456"
+		         android:textColor="#ffffff"
+		         android:textSize="22sp"
+		     	 android:id="@+id/slianLayout5"
+		         android:layout_weight="1"
+		         android:background="#29915D"
+		         android:layout_marginLeft="1px"
+		         android:gravity="center"
+		         />
+	</LinearLayout>
+	</LinearLayout>
+	</LinearLayout></ScrollView>
+    
+</LinearLayout>

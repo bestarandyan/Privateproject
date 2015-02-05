@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dip"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/t1"
+                        android:layout_width="50dip"
+                        style="@style/MyCheckBox"
+                        android:layout_marginLeft="15dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/t2"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="险种代码"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t3"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="客户姓名"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t4"
+                        android:layout_width="50dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="性别"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t5"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="出生年月"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t6"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="职业类别"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t7"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="基本保额"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t8"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="交费金额"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t9"
+                        android:layout_width="120dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="保险期间单位"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t10"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="保险期间"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t11"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="交费方式"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t12"
+                        android:layout_width="170dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="交费期间期间单位"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t13"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="交费期间"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t14"
+                        android:layout_width="150dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="生存金领取方式"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t15"
+                        android:layout_width="120dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="起领期间单位"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t16"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="起领期间"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t17"
+                        android:layout_width="120dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="主附险标记"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t18"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="关联标记"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t19"
+                        android:layout_width="120dip"
+                        android:layout_height="wrap_content"
+                       android:layout_marginRight="15dip"
+                        android:gravity="center" android:textColor="#000000"
+                        android:text="主险险种编码"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+</LinearLayout>

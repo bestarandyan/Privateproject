@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:background="#D4E9E4"
+     >
+    <RelativeLayout android:layout_width="fill_parent"
+      android:layout_height="50dp"
+      android:background="@drawable/cai_top_bg"
+      android:id="@+id/topLayout"
+      >
+      <ImageButton android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/cai_login_top_ico"
+          android:layout_centerVertical="true"
+          android:id="@+id/backBtn"
+          android:padding="10dp"
+          android:background="@null"
+          />
+      <View android:layout_width="1dp"
+          android:layout_height="fill_parent"
+          android:background="@drawable/cai_top_line"
+          android:layout_toRightOf="@id/backBtn"
+          android:layout_marginBottom="2dp"
+          />
+      <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="登  录"
+          android:layout_centerInParent="true"
+          android:textColor="#ffffff"
+          android:textSize="20sp"
+          android:id="@+id/titleTv"
+          />
+      <Button android:layout_width="60dp"
+          android:layout_height="35dp"
+          android:background="@drawable/cai_top_btn"
+          android:layout_centerVertical="true"
+          android:id="@+id/registerBtn"
+          android:layout_alignParentRight="true"
+          android:text="注册"
+          android:textColor="#ffffff"
+          android:textSize="16sp"
+          android:layout_marginRight="10dp"
+          android:gravity="center"
+          />
+  </RelativeLayout>
+  <ScrollView android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+  <LinearLayout  android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:background="@drawable/border_login_bg"
+      android:layout_marginTop="30dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginBottom="10dp"
+      >
+      <LinearLayout  android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:orientation="horizontal"
+	      android:layout_margin="10dp"
+	      >
+	      <TextView android:layout_width="60dp"
+	          android:layout_height="wrap_content"
+	          android:text="用户名:"
+	          android:textColor="#666666"
+	          android:textSize="16sp"
+	          android:gravity="right"
+	          />
+	      <EditText android:layout_width="match_parent"
+	          android:layout_height="30dp"
+	          android:hint="请输入邮箱地址/手机号码"
+	          android:gravity="center_vertical"
+	          android:paddingLeft="5dp"
+	          android:textCursorDrawable="@null"
+	          android:id="@+id/userNameEt"
+	          android:textColor="#666666"
+	          android:textSize="16sp"
+	          android:inputType="textEmailAddress"
+	          android:background="@null"
+	          android:textColorHint="#aaaaaa"
+	          android:singleLine="true"
+	          />
+	  </LinearLayout>
+	  <View android:layout_width="match_parent"
+	      android:layout_height="1px"
+	      android:background="#CBCBCB"
+	      />
+	  <LinearLayout  android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:orientation="horizontal"
+	      android:layout_margin="10dp"
+	      >
+	      <TextView android:layout_width="60dp"
+	          android:layout_height="wrap_content"
+	          android:text="密   码:"
+	          android:textColor="#666666"
+	          android:textSize="16sp"
+	          android:gravity="right"
+	          />
+	      <EditText android:layout_width="match_parent"
+	          android:layout_height="30dp"
+	          android:hint="请输入密码"
+	          android:gravity="center_vertical"
+	          android:paddingLeft="5dp"
+	          android:textCursorDrawable="@null"
+	          android:id="@+id/passwordEt"
+	          android:textColor="#666666"
+	          android:textSize="16sp"
+	          android:inputType="textPassword"
+	          android:background="@null"
+	          android:textColorHint="#aaaaaa"
+	          android:singleLine="true"
+	          />
+	  </LinearLayout>
+  </LinearLayout>
+    <Button android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cai_login_btn"
+        android:text="登  录"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:id="@+id/LoginBtn"
+        />
+   
+    </LinearLayout></ScrollView>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        >
+  <View android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="#CBCBCB"
+      />
+     <LinearLayout android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+	     <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal"
+	         android:layout_weight="1"
+	         android:gravity="center"
+	        >
+	  		<ImageView android:layout_width="wrap_content"
+	  		    android:layout_height="wrap_content"
+	  		    android:src="@drawable/cai_guanlian_logo1"
+	  		    />
+        	<TextView android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:text="使用新浪微博登录"
+        	    android:textSize="12sp"
+        	    android:textColor="#956511"
+        	    android:id="@+id/sinaLogin"
+        	    android:layout_marginLeft="5dp"
+        	    />
+        	</LinearLayout>
+        	<View android:layout_width="1px"
+		      android:layout_height="match_parent"
+		      android:background="#CBCBCB"
+		      />
+        	<LinearLayout android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:orientation="horizontal"
+		        android:layout_weight="1"
+		        android:gravity="center"
+	        >
+        	<ImageView android:layout_width="wrap_content"
+	  		    android:layout_height="wrap_content"
+	  		    android:src="@drawable/cai_guanlian_logo2"
+	  		    />
+        	<TextView android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:text="使用腾讯QQ登录"
+        	    android:textSize="12sp"
+        	    android:textColor="#956511"
+        	    android:id="@+id/tengLogin"
+        	    android:layout_marginLeft="5dp"
+        	    />
+        	</LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

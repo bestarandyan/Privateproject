@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+  <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+		    android:textColor="#576A92"
+		    android:textSize="16sp"
+		    android:textStyle="bold"
+		    android:text="东风之神："
+	        android:id="@+id/userName"/>
+     <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+		    android:textColor="#000000"
+		    android:textSize="14sp"
+		    android:visibility="visible"
+		    android:maxLines="3"
+		    android:text="可爱的宝宝。。。。"
+		    android:layout_marginLeft="10dp"
+	        android:id="@+id/content"/>
+</LinearLayout>

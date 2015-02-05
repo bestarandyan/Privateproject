@@ -1,0 +1,81 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              >
+              <RelativeLayout android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="visible"
+        android:background="@drawable/top_bg" >
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/top_ico1"
+           />
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="上海置地广场商厦"
+		    android:textSize="20sp"
+		    android:layout_centerInParent="true"
+		    android:textColor="#ffffff"
+		    android:id="@+id/titleTv"
+		    />
+		<ImageButton
+            android:id="@+id/rightBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/top_ico3"
+            android:visibility="gone"
+           />
+    </RelativeLayout>
+            <WebView android:layout_width="match_parent"
+    		    android:layout_height="match_parent"
+    		    android:id="@+id/homeWebView"
+    		    android:background="#000000"
+    		    android:layout_below="@id/topLayout"
+    		    />
+            
+             <LinearLayout android:layout_width="fill_parent"
+    		    android:layout_height="fill_parent"
+    		    android:orientation="horizontal"
+    		    android:gravity="center"
+    		    android:id="@+id/proLayout1"
+    		    android:padding="10dp"
+    		    android:layout_below="@id/topLayout"
+    		    >
+
+    			<ProgressBar
+    			    android:id="@+id/progressBar2"
+    			    style="?android:attr/progressBarStyleSmall"
+    			    android:layout_width="wrap_content"
+    			    android:layout_height="wrap_content" />
+    			
+    		    <TextView android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:text="正在加载首页，请稍候..."
+    		        android:textColor="#000000"
+    		        android:textSize="14sp"
+    		        android:layout_marginLeft="15dp"
+    		        android:id="@+id/stateText1"
+    		        />
+    		</LinearLayout>
+    			<TextView android:layout_width="match_parent"
+    		        android:layout_height="match_parent"
+    		        android:text="连接服务器失败，请检查网络或点击屏幕刷新！"
+    		        android:textColor="#000000"
+    		        android:textSize="14sp"
+    		        android:gravity="center"
+    		        android:id="@+id/connectFailText"
+    		        android:visibility="gone"
+    		        android:layout_below="@id/topLayout"
+    		        />
+    </RelativeLayout>

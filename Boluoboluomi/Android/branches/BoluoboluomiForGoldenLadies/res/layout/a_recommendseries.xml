@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    >
+   <RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/top_linear"
+	    >
+	    <Button android:layout_width="55dp"
+	        android:layout_height="35dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="返回"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="14dp"
+	        android:paddingLeft="10dp"
+	        android:id="@+id/backBtn"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/btn01"/>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="推荐套系"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:textColor="#ffffff"
+	        android:textSize="20dp"
+	        android:id="@+id/title"
+	        android:textStyle="bold"/>
+	</RelativeLayout>
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center_horizontal"
+	    android:layout_marginTop="15dp"
+	    android:id="@+id/refreshLayout"
+	    >
+	     <ProgressBar
+	       android:id="@+id/progressBar1"
+	       style="?android:attr/progressBarStyleSmall"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content" />
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/refreshDataTv"
+		    android:text="加载数据中，请稍候... ..."
+		    android:textColor="#000000"
+		    android:textSize="14sp"
+		    android:gravity="center_horizontal"
+		    android:layout_marginLeft="10dp"
+		    />
+	</LinearLayout>
+    <ListView android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:divider="#CBCBCB"
+        android:dividerHeight="1dp"
+        android:background="@null"
+        android:id="@+id/recommendseriesList">
+        
+    </ListView>
+    <TextView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="暂无数据！"
+        android:id="@+id/noDataTv"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:background="#ffffff"
+        />
+    </LinearLayout>

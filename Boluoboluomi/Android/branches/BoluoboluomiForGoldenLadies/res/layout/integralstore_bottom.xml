@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  
+     	xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="@drawable/top_bg"
+	    >
+	    <LinearLayout  android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_weight="1"
+			   android:id="@+id/tab1"
+			    android:gravity="center"
+			    >
+			    <Button  android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:background="@drawable/mall_ico01_on"
+				    android:clickable="false"
+				    android:id="@+id/tab1Btn"
+				    />
+			    <TextView  android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textColor="#ffffff"
+				    android:textSize="12dp"
+				    android:clickable="false"
+				    android:text="积分商城"/>
+	    </LinearLayout>
+	    <LinearLayout  android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_weight="1"
+			    android:id="@+id/tab2"
+			    android:gravity="center"
+			    >
+			    <Button  android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:background="@drawable/mall_ico02"
+				    android:clickable="false"
+				     android:id="@+id/tab2Btn"
+				    />
+			    <TextView  android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textColor="#ffffff"
+				     android:textSize="12dp"
+				      android:clickable="false"
+				    android:text="推荐好友"/>
+	    </LinearLayout>
+	    <LinearLayout  android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_weight="1"
+			    android:id="@+id/tab3"
+			    android:gravity="center"
+			    >
+			    <Button  android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:background="@drawable/mall_ico03"
+				    android:clickable="false"
+				     android:id="@+id/tab3Btn"
+				    />
+			    <TextView  android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textColor="#ffffff"
+				     android:textSize="12dp"
+				      android:clickable="false"
+				    android:text="我的积分"/>
+	    </LinearLayout>
+	    <LinearLayout  android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_weight="1"
+			   android:id="@+id/tab4"
+			    android:gravity="center"
+			    >
+			    <Button  android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:background="@drawable/mall_ico04"
+				     android:clickable="false"
+				      android:id="@+id/tab4Btn"
+				    />
+			    <TextView  android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textColor="#ffffff"
+				     android:textSize="12dp"
+				      android:clickable="false"
+				    android:text="积分规则"/>
+	    </LinearLayout>
+	    <LinearLayout  android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_weight="1"
+			    android:id="@+id/tab5"
+			    android:gravity="center"
+			    >
+			    <Button  android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				     android:clickable="false"
+				    android:background="@drawable/mall_ico05"
+				     android:id="@+id/tab5Btn"
+				    />
+			    <TextView  android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textColor="#ffffff"
+				     android:textSize="12dp"
+				     android:clickable="false"
+				    android:text="商城活动"/>
+	    </LinearLayout>
+	</LinearLayout>

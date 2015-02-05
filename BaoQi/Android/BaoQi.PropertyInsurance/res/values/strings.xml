@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, InsuranceShowActivity!</string>
+    <string name="app_name">展业通产险</string>
+	<string name="user_name">用户名:</string>
+	<string name="address_ip">IP地址：</string>
+	<string name="user_password">密     码：</string>
+	<string name="shouye">首页</string>
+	<string name="yiliaojigouchaxun">定点医疗机构查询</string>
+	<string name="gereninfo">个人业务信息</string>
+	<string name="new_success_info">新单成交信息表</string>
+	<string name="jiacaixian">"家财宝"综合保障计划</string>
+	<string-array name="guanxi">
+	    <item>妻子</item>
+	    <item>儿子</item>
+	    <item>女儿</item>
+	    <item>父亲</item>
+	    <item>母亲</item>
+	    <item>岳父</item>
+	    <item>岳母</item>
+	</string-array>
+	<string-array name="h_shen">
+	    <item>---选择省---</item>
+	    <item>山东省</item>
+	</string-array>
+	<string-array name="h_shi_jinan">
+	    <item>---选择市---</item>
+	    <item>济南市</item>
+	</string-array>
+	<string-array name="h_shi_hunan">
+	    <item>---选择市---</item>
+	    <item>娄底市</item>
+	    <item>邵阳市</item>
+	    <item>长沙市</item>
+	</string-array>
+	<string-array name="h_qu_hunan">
+	    <item>---选择县---</item>
+	    <item>新化</item>
+	    <item>涟源市</item>
+	    <item>冷水江市</item>
+	</string-array>
+	<string-array name="h_qu_jinan">
+	    <item>---选择区---</item>
+	    <item>市中区</item>
+	    <item>历下区</item>
+	    <item>天桥区</item>
+	    <item>槐荫区</item>
+	    <item>历城区</item>
+	    <item>长清区</item>
+	    <item>平阴县</item>
+	    <item>济阳县</item>
+	    <item>商河县</item>
+	    <item>章丘市</item>
+	</string-array>
+	<string-array name="nian">
+	    <item>2012</item>
+	    <item>2000</item>
+	    <item>2001</item>
+	    <item>2002</item>
+	    <item>2003</item>
+	    <item>2004</item>
+	    <item>2005</item>
+	    <item>2006</item>
+	    <item>2007</item>
+	    <item>2008</item>
+	    <item>2009</item>
+	    <item>2010</item>
+	    <item>2011</item>
+	    
+	</string-array>
+	<string-array name="yue">
+	    <item>1</item>
+	    <item>2</item>
+	    <item>3</item>
+	    <item>4</item>
+	    <item>5</item>
+	    <item>6</item>
+	    <item>7</item>
+	    <item>8</item>
+	    <item>9</item>
+	    <item>10</item>
+	    <item>11</item>
+	    <item>12</item>
+	</string-array>
+	<string-array name="qijian">
+	    <item>全部</item>
+	    <item>5</item>
+	    <item>6</item>
+	    <item>7</item>
+	    <item>8</item>
+	    <item>9</item>
+	    <item>10</item>
+	    <item>20</item>
+	    <item>30</item>
+	</string-array>
+<string-array name="guoji">
+    <item >中国</item>
+    <item >美国</item>
+    <item >英国</item>
+    <item >俄国</item>
+    <item >法国</item>
+    <item >意大利</item>
+    <item >加拿大</item>
+</string-array>
+	<string name="choice">请选择</string>
+<string name="choice1">a.健康保险</string>  
+   <string name="choice2">b.人身意外伤害保险</string>  
+    <string name="choice3">c.人寿保险</string>  
+   <string name="choice4">d.万能保险</string>  
+   
+   <string name="choice1_1">a.追朔期限</string>  
+   <string name="choice1_2">b.责任期限</string>  
+    <string name="choice1_3">c.扩展期限</string>  
+   <string name="choice1_4">d.保障期限</string> 
+   
+   <string name="choice2_1">a.补偿保险</string>  
+   <string name="choice2_2">b.给付保险</string>  
+    <string name="choice2_3">c.医疗保险</string>  
+   <string name="choice2_4">d.收入保险</string> 
+   
+    <string name="choice3_1">a.年龄</string>  
+   <string name="choice3_2">b.性别</string>  
+    <string name="choice3_3">c.职业</string>  
+   <string name="choice3_4">d.体格</string> 
+	
+   
+    <string name="choice5_1">a.现金价值与纯保险金额之和</string>  
+   <string name="choice5_2">b.现金价值与纯保险金额之差</string>  
+    <string name="choice5_3">c.现金价值和纯保险金额两者中较大的</string>  
+   <string name="choice5_4"> d.现金价值和纯保险金额两者中较小的</string> 
+   
+     <string name="choice6_1">a.老年保险和成人保险 </string>  
+   <string name="choice6_2">b.健体保险和标体保险</string>  
+    <string name="choice6_3">c.儿童保险和成人保险</string>  
+   <string name="choice6_4"> d.社会保险和商业保险</string> 
+   
+       <string name="choice7_1">a.立即失效 </string>  
+   <string name="choice7_2">b.自动解除 </string>  
+    <string name="choice7_3">c.继续有效 </string>  
+   <string name="choice7_4"> d.中止效力</string> 
+   
+       <string name="choice8_1">a.具有被约束性</string>  
+   <string name="choice8_2">b.具有强约束性</string>  
+    <string name="choice8_3">c.具有弱约束性</string>  
+   <string name="choice8_4"> d.具有非约束性</string> 
+   
+        <string name="choice9_1">a.投保人的陈述</string>  
+   <string name="choice9_2">b.保险人的调查</string>  
+    <string name="choice9_3">c.被保险人的陈述 </string>  
+   <string name="choice9_4"> d.被保险人的病历</string> 
+   
+        <string name="choice10_1">a．“生存价值”理论 </string>  
+   <string name="choice10_2">b.“生命价值”理论</string>  
+    <string name="choice10_3">c.“生活成本”理论</string>  
+   <string name="choice10_4"> d.“生命意义”理论</string> 
+   
+        <string name="choice11_1">a.一月</string>  
+   <string name="choice11_2">b.一季 </string>  
+    <string name="choice11_3">c.半年</string>  
+   <string name="choice11_4"> d.一年</string> 
+   
+        <string name="choice12_1">a.疾病</string>  
+   <string name="choice12_2">b.失衡</string>  
+    <string name="choice12_3">c.缺陷</string>  
+   <string name="choice12_4"> d.伤 害</string> 
+   
+        <string name="choice13_1">a.宣告死亡</string>  
+   <string name="choice13_2">b.推断死亡 </string>  
+    <string name="choice13_3">c.生理死亡</string>  
+   <string name="choice13_4"> d.心理死亡</string> 
+   
+        <string name="choice14_1">a.封闭性</string>  
+   <string name="choice14_2">b.透明性</string>  
+    <string name="choice14_3">c.可靠性</string>  
+   <string name="choice14_4"> d.单一性 </string> 
+   
+        <string name="choice15_1">a.人寿保险</string>  
+   <string name="choice15_2">b.医疗费用保险</string>  
+    <string name="choice15_3">c.建筑安装工程保险 </string>  
+   <string name="choice15_4"> d.机动车第三者责任保险 </string> 
+</resources>

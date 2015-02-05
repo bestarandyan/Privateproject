@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/com/qingfengweb/activity/CuXiaoActivity.java=UTF-8
+encoding//src/com/qingfengweb/activity/FoodsActivity.java=UTF-8
+encoding//src/com/qingfengweb/activity/MemberAreaActivity.java=UTF-8
+encoding//src/com/qingfengweb/activity/ShoppingGuideActivity.java=UTF-8
+encoding//src/com/qingfengweb/activity/SpecialGoodsActivity.java=UTF-8
+encoding//src/com/qingfengweb/adapter/SpecialGoodsAdapter.java=GBK
+encoding//src/com/qingfengweb/database/DBHelper.java=UTF-8
+encoding//src/com/qingfengweb/network/GetData.java=UTF-8
+encoding/<project>=GBK

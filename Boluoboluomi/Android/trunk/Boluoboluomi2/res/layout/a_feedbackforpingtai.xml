@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+   <!--  <ImageView android:src="@color/bg_color_hua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        /> -->
+     <RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/top_linear"
+	    >
+	    <Button android:layout_width="55dp"
+	        android:layout_height="35dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="返回"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="14dp"
+	        android:paddingLeft="10dp"
+	        android:id="@+id/backBtn"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/btn01"/>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="平台类意见反馈"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:textColor="#ffffff"
+	        android:textSize="20dp"
+	        android:id="@+id/title"
+	        android:textStyle="bold"/>
+	</RelativeLayout>
+	
+     <ScrollView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_below="@id/top_linear"
+	    android:scrollbars="vertical"
+	    android:background="@null" >
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_marginLeft="15dp"
+	    android:paddingBottom="20dp"
+	    android:background="@null" >
+	    <ImageView android:src="@drawable/logo"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="20dp"
+			        android:layout_centerHorizontal="true"
+			        android:id="@+id/centerlinear1"
+			        android:layout_gravity="center_horizontal"
+			        />
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingLeft="20dp"
+	    	android:paddingRight="20dp"
+	    	android:paddingTop="30dp"
+			android:background="@null" >
+	    	<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center_vertical"
+				android:background="@null" >
+				    		<TextView
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:textColor="#000000"
+							    android:textSize="16dp"
+							    android:textStyle="bold"
+							    android:id="@+id/text1"
+							    android:text="积分服务"/>
+				    		<RatingBar
+				    		    android:id="@+id/room_ratingbar1"
+				    		    style="@style/ratingBar_da"
+				    		    android:numStars="5"
+				    		    android:layout_width="wrap_content"
+				    		    android:layout_height="25dp"
+				    		    android:stepSize="1"
+				    		    android:layout_marginLeft="10dip" >
+
+						    </RatingBar>
+				    		
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center_vertical"
+				android:layout_marginTop="20dp"
+				android:background="@null" >
+				    		<TextView
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:textColor="#000000"
+							    android:textSize="16dp"
+							    android:textStyle="bold"
+							     android:id="@+id/text2"
+							    android:text="查件定制服务"/>
+				    		<RatingBar
+						        android:id="@+id/room_ratingbar2"
+						        style="@style/ratingBar_da"
+						        android:layout_width="wrap_content"
+						        android:layout_height="25dp"
+						         android:stepSize="1"
+						        android:layout_marginLeft="10dip" >
+						    </RatingBar>
+				    		
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center_vertical"
+				android:layout_marginTop="20dp"
+				android:background="@null" >
+				    		<TextView
+							    android:layout_width="wrap_content"
+							   android:layout_height="wrap_content"
+							    android:textColor="#000000"
+							    android:textSize="16dp"
+							    android:textStyle="bold"
+							     android:id="@+id/text3"
+							    android:text="百宝箱服务"/>
+
+				    		<RatingBar
+						        android:id="@+id/room_ratingbar3"
+						        style="@style/ratingBar_da"
+						         android:layout_width="wrap_content"
+						        android:layout_height="25dp"
+						         android:stepSize="1"
+						        android:layout_marginLeft="10dip" >
+						    </RatingBar>
+				    		
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center_vertical"
+				android:layout_marginTop="20dp"
+				android:id="@+id/text4Linear"
+				android:background="@null" >
+				    		<TextView
+							    android:layout_width="wrap_content"
+							   android:layout_height="wrap_content"
+							    android:textColor="#000000"
+							    android:textSize="16dp"
+							    android:textStyle="bold"
+							     android:id="@+id/text4"
+							    android:text="点评服务"/>
+
+				    		<RatingBar
+						        android:id="@+id/room_ratingbar4"
+						        style="@style/ratingBar_da"
+						         android:layout_width="wrap_content"
+						        android:layout_height="25dp"
+						         android:stepSize="1"
+						        android:layout_marginLeft="10dip" >
+						    </RatingBar>
+				    		
+			</LinearLayout>
+		</LinearLayout>			    				
+	<TextView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="28dp"
+	    android:layout_marginTop="10dp"
+	    android:text="意见反馈："
+	    android:textColor="#000000"
+	    android:textSize="16dp"
+	    android:textStyle="bold"
+	    android:visibility="gone"
+	    />
+	<EditText android:layout_width="fill_parent"
+	    android:layout_height="90dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="28dp"
+	    android:layout_marginTop="30dp"
+	    android:hint="其他建议："
+	    android:textColor="#000000"
+	    android:textSize="16dp"
+	    android:gravity="top|left"
+	    android:background="@drawable/et_bg"
+	    android:textStyle="bold"
+	    android:padding="5dp"
+	    android:id="@+id/et"
+	    />
+	<Button android:layout_width="200dp"
+	    android:layout_height="wrap_content"
+	    android:text="确认提交"
+	    android:textColor="#ffffff"
+	    android:textSize="20dp"
+	    android:gravity="center"
+	    android:layout_marginTop="25dp"
+	    android:background="@drawable/btn_bg"
+	    android:layout_gravity="center_horizontal"
+	    android:id="@+id/affirmSubmitBtn"
+	    />
+	   
+	    </LinearLayout>
+	    </ScrollView>
+		</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="#FFFFFF"
+    android:orientation="horizontal" >
+     <TextView android:id="@+id/id"
+                     android:layout_width="20dip" android:layout_gravity="center_vertical"  android:layout_marginLeft="20dip"
+            android:layout_height="wrap_content"   android:textColor="#000000" android:textSize="18sp"
+                android:text="" /> 
+            <RadioButton  android:id="@+id/choice"
+                       android:layout_width="wrap_content"    android:layout_marginLeft="100dip" android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"   android:textColor="#000000" android:textSize="18sp"
+                android:text="" />
+            <TextView android:id="@+id/topic"
+                     android:layout_width="wrap_content" android:layout_marginLeft="80dip" android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"   android:textColor="#000000" android:textSize="18sp"
+                android:text="" />
+            <TextView android:id="@+id/name"
+                      android:layout_width="wrap_content" android:layout_marginLeft="80dip" android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"   android:textColor="#000000" android:textSize="18sp"
+                android:text="" />
+            <TextView android:id="@+id/type"
+                      android:layout_width="wrap_content" android:layout_marginLeft="80dip" android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"   android:textColor="#000000" android:textSize="18sp"
+                android:text="" />
+            <TextView  android:id="@+id/tele"
+                      android:layout_width="wrap_content" android:layout_marginLeft="90dip" android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"   android:textColor="#000000" android:textSize="18sp"
+                android:text="" />
+            <TextView android:id="@+id/address"
+                      android:layout_width="wrap_content" android:layout_marginLeft="70dip" android:gravity="center_vertical"
+            android:layout_height="wrap_content"   android:textColor="#000000" android:textSize="18sp"
+                android:text="" />
+            <TextView android:id="@+id/source"
+                     android:layout_width="wrap_content" android:layout_marginLeft="60dip" android:gravity="center_vertical"
+            android:layout_height="wrap_content"   android:textColor="#000000"  android:textSize="18sp"
+                android:text="" />
+            <TextView android:id="@+id/state"
+                     android:layout_width="wrap_content" android:layout_marginLeft="80dip" android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"   android:textColor="#000000" android:textSize="20sp"
+                android:text="" />
+
+</LinearLayout>

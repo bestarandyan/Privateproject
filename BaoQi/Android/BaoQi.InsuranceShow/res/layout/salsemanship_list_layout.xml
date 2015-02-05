@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_title_layout" />
+    <!-- title 首页条目 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/body_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/explain_map_bg"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/h_backHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/map" />
+
+            <Button
+                android:id="@+id/h_backhomebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="7dip"
+                android:background="@drawable/leftbuttonbg"
+                android:text="首页"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="7dip"
+                android:text=">"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/query_hospitalBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="7dip"
+                android:background="@drawable/leftbuttonbg"
+                android:text="销售能力考核"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:columnWidth="205dip"
+            android:gravity="center"
+            android:horizontalSpacing="15dip"
+            android:numColumns="auto_fit"
+            android:paddingLeft="63dip"
+            android:paddingRight="63dip"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="35dip" >
+        </GridView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/linearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="550dip"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="20dip"
+                        android:text="2011中国人寿保险资格考试模拟真题2套(第一套)"
+                        android:textColor="#EA0000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="5dip"
+                        android:text="一、单选题(共100题 ,每小题0.5分,共50分.每题的备选答案中，只有一个正确的,选对得0.5分,多选、不选或错选得0分)"
+                        android:textColor="#02DF82"
+                        android:textSize="20sp" />
+                    <!-- 1 -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="5dip"
+                        android:text="1、从我国人身保险经营的实际情况来看,人身保险业务中占据主要和基本险种地位的险种是:"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_x="3px"
+                        android:layout_y="54px"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/RadioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/choice1"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice2"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice3"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice4"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+                    </RadioGroup>
+                    <!-- 2 -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="5dip"
+                        android:text="2、在人身意外伤害保险合同有效期间,被保险人遭受意外伤害后的一定时期(如180天或90天等)被称为:"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_x="3px"
+                        android:layout_y="54px"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/RadioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/choice1_1"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice1_2"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice1_3"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice1_4"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+                    </RadioGroup>
+
+                    <!-- 3 -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="5dip"
+                        android:text="3、在健康保险中,专门向被保险人提供医疗费用保障的保险被称为:"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_x="3px"
+                        android:layout_y="54px"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/RadioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/choice2_1"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice2_2"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice2_3"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice2_4"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+                    </RadioGroup>
+
+                    <!-- 4 -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="5dip"
+                        android:text="4、保险人厘定人身意外伤害保险费率时考虑的主要因素是:"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_x="3px"
+                        android:layout_y="54px"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/RadioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/choice3_1"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice3_2"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice3_3"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice3_4"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+                    </RadioGroup>
+                    <!-- 5 -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="5dip"
+                        android:text="5、当万能寿险的被保险人遭受保险事故死亡时,保险人支付的全部死亡给付额是:"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_x="3px"
+                        android:layout_y="54px"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/RadioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/choice5_1"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice5_2"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice5_3"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice5_4"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+                    </RadioGroup>
+                    <!-- 6 -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="5dip"
+                        android:text="6、按被保险人的年龄分类，人身保险的种类包括（ ）等:"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_x="3px"
+                        android:layout_y="54px"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/RadioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/choice6_1"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice6_2"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice6_3"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice6_4"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+                    </RadioGroup>
+                    <!-- 7 -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="5dip"
+                        android:text="7、丈夫为妻子投保死亡保险一份，五年后夫妻离婚，则离婚后保险合同的效力状况是:"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_x="3px"
+                        android:layout_y="54px"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/RadioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/choice7_1"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice7_2"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice7_3"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice7_4"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+                    </RadioGroup>
+                    <!-- 8 -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="5dip"
+                        android:text="8、在万能寿险中，其保险单的现金价值与纯保险金额是分别计算的。这种做法所体现的万能寿险的特征之一是:"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_x="3px"
+                        android:layout_y="54px"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/RadioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/choice8_1"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice8_2"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice8_3"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice8_4"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+                    </RadioGroup>
+                    <!-- 9 -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="5dip"
+                        android:text="9、健康保险的承保条件比人寿保险的承保条件严格的多，对被保险人要进行严格的投保审查。通常，保险人审查被保险人所依据的资料是:"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_x="3px"
+                        android:layout_y="54px"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/RadioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/choice9_1"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice9_2"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice9_3"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice9_4"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+                    </RadioGroup>
+                    <!-- 10 -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="5dip"
+                        android:text="10、在人身保险中，可以用来测定对人身保险需求程度的方法之一是:"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_x="3px"
+                        android:layout_y="54px"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/RadioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/choice10_1"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice10_2"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice10_3"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice10_4"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+                    </RadioGroup>
+                    <!-- 11 -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="5dip"
+                        android:text="11、在万能寿险的经营过程中，保险人定期给保单持有人寄去类似年报一样的报告。通常，这种报告的寄送周期为:"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_x="3px"
+                        android:layout_y="54px"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/RadioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/choice11_1"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice11_2"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice11_3"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice11_4"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+                    </RadioGroup>
+                    <!-- 12 -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="5dip"
+                        android:text="12、在人身保险中，人们通常将由于人体内在的原因而造成精神上或肉体上的痛苦或不健全称为:"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_x="3px"
+                        android:layout_y="54px"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/RadioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/choice12_1"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice12_2"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice12_3"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice12_4"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+                    </RadioGroup>
+                    <!-- 13 -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="5dip"
+                        android:text="13、在法律上发生效力的死亡有多种情况，其中，未订有失踪条款的人身意外伤害保险的保险人应该承担保险责任的死亡是:"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_x="3px"
+                        android:layout_y="54px"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/RadioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/choice13_1"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice13_2"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice13_3"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice13_4"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+                    </RadioGroup>
+                    <!-- 14 -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="5dip"
+                        android:text="14、与传统人寿保险相比，万能寿险在经营管理方面所具有的特征是:"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_x="3px"
+                        android:layout_y="54px"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/RadioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/choice14_1"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice14_2"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice14_3"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice14_4"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+                    </RadioGroup>
+                    <!-- 15 -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="5dip"
+                        android:text="15、当意外伤害保险作为附加条款投保时，须附加于主险之上。最为普遍的主险是:"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_x="3px"
+                        android:layout_y="54px"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/RadioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/choice15_1"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice15_2"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice15_3"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:text="@string/choice15_4"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </ScrollView>
+             <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:visibility="gone"
+        android:layout_alignParentBottom="true"  android:layout_marginLeft="15dip"  android:layout_marginTop="5dip"
+        android:id="@+id/bottom_layout"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:text="提交考核"
+            android:textColor="#000000" android:background="@drawable/btn04"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:text="暂存" android:background="@drawable/btn04"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:text="返回" android:background="@drawable/btn04"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="car_city">
+        <item >上海</item>
+        <item >北京</item>
+        <item >深圳</item>
+        <item >广州</item>
+    </string-array>
+    <string-array name="if_toubao">
+        <item >不投保</item>
+        <item >投保</item>
+    </string-array>
+    <string-array name="step2_cunshi">
+        <item>3.5万</item>
+        <item >2.4万</item>
+        <item >3.9万</item>
+        <item >30万</item>
+        <item >9.1万</item>
+        <item >25万</item>
+        <item >5.0万</item>
+        <item >20万</item>
+    </string-array>
+    <string-array name="car_pinpai">
+        <item >红旗</item>
+        <item >东风</item>
+        <item >昌河</item>
+        <item>长城</item>
+        <item >华普</item>
+        <item >法拉利</item>
+        <item >福特</item>
+        <item >GAZ</item>
+        <item >Horch</item>
+        <item >Hummer</item>
+    </string-array>
+    <string-array name="car_xinghao">
+        <item >法拉利125S </item>
+        <item >法拉利250 GTO </item>
+        <item >法拉利288 GTO </item>
+        <item>法拉利F40 </item>
+        
+    </string-array>
+    <string-array name="car_xing">
+        <item >F1 125 </item>
+        <item >F1 555 </item>
+        <item >F2007 </item>
+        <item>F2 553 </item>
+        
+    </string-array>
+    <string-array name="car_xingshilicheng">
+        <item >少于3.5万</item>
+        <item >3.5到6万</item>
+        <item >6到10万</item>
+        <item>大于10万</item>
+        
+    </string-array>
+    <string-array name="city">
+        <item >上海</item>
+        <item >湖南</item>
+        <item >北京</item>
+        <item>深圳</item>
+        <item>广州</item>
+        <item>浙江</item>
+        
+        
+    </string-array>
+    <string-array name="city2">
+        <item >上海</item>
+        <item >长沙</item>
+        <item >中关村</item>
+        <item>娄底</item>
+        <item>宁波</item>
+        <item>邵阳</item>
+        
+        
+    </string-array>
+</resources>

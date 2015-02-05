@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    >
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="8dp"
+    android:background="@drawable/et_bg">
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/text"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:text="地址1："/>
+     <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btn"
+        android:background="@drawable/email_delete"
+        />
+    <EditText android:layout_height="30dp"
+        android:layout_width="fill_parent"
+        android:layout_toRightOf="@id/text"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/btn"
+        android:background="@null"
+        android:singleLine="true"
+        android:id="@+id/et"
+        />
+    </RelativeLayout>
+    </LinearLayout>

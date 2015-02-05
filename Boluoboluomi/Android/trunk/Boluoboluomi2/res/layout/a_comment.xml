@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color" >
+    
+     <RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/top_linear"
+	    >
+	    <Button android:layout_width="55dp"
+	        android:layout_height="35dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="返回"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="14dp"
+	        android:paddingLeft="10dp"
+	        android:id="@+id/backBtn"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/btn01"/>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="我要点评"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:textColor="#ffffff"
+	        android:textSize="20sp"
+	        android:id="@+id/title"
+	        android:textStyle="bold"/>
+	</RelativeLayout>
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center_horizontal"
+	    android:layout_marginTop="15dp"
+	    android:id="@+id/refreshLayout"
+	    >
+	     <ProgressBar
+	       android:id="@+id/progressBar1"
+	       style="?android:attr/progressBarStyleSmall"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content" />
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/refreshDataTv"
+		    android:text="加载数据中，请稍候... ..."
+		    android:textColor="#000000"
+		    android:textSize="14sp"
+		    android:gravity="center_horizontal"
+		    android:layout_marginLeft="10dp"
+		    />
+	</LinearLayout>
+	<ScrollView android:layout_height="fill_parent"
+	    android:layout_width="fill_parent"
+	    android:id="@+id/scrollViewLayout"
+	    >
+	<LinearLayout android:layout_height="fill_parent"
+	    android:layout_width="fill_parent"
+	    android:padding="10dp"
+	    android:orientation="vertical">
+   		<GridView android:layout_width="fill_parent"
+   		    android:layout_height="wrap_content"
+   		    android:id="@+id/gv1"
+   		    android:numColumns="4"
+   		    android:verticalSpacing="5dp"
+   		    android:horizontalSpacing="5dp"
+   		   >
+   		    
+   		</GridView>
+    <Button 
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn1"
+        android:background="@drawable/btn_bg"
+         android:text="点评摄影师"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+       />
+    <GridView android:layout_width="fill_parent"
+   		    android:layout_height="wrap_content"
+   		    android:id="@+id/gv2"
+   		    android:numColumns="4"
+   		    android:verticalSpacing="5dp"
+   		    android:horizontalSpacing="5dp"
+   		    android:layout_marginTop="20dp"
+   		    >
+   		</GridView>
+   <Button 
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn2"
+        android:background="@drawable/btn_bg"
+        android:text="点评化妆师"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+       />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="说明:欢迎进入金夫人摄影APP点评系统，您的点评将对我们工作最大的支持与督促，点评确认提交后您将会获得相应的点评积分，详情请点击使用说明。 "
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:padding="8dp"
+        android:id="@+id/tv"
+        android:layout_marginTop="4dp"
+         />
+</LinearLayout>
+	</ScrollView>
+	<TextView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="暂无数据！"
+        android:id="@+id/noDataTv"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:background="#ffffff"
+        />
+</LinearLayout>

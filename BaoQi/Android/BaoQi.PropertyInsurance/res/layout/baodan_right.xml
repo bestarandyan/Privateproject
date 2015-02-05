@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" 
+    android:id="@+id/right_1"
+    >
+ <LinearLayout android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+        	>        
+        	 <ImageView android:src="@drawable/ico02"
+        	     android:layout_width="wrap_content"
+        	     android:layout_gravity="center_vertical"
+        	     android:layout_height="wrap_content"/>
+        	 <TextView android:layout_width="wrap_content"
+        	     android:layout_height="wrap_content"
+        	     android:layout_marginLeft="20dp"
+        	     android:textSize="20dp"
+        	     android:id="@+id/leixing_text"
+        	     android:textColor="@color/red"
+        	     android:text="新单成交信息表"/>
+	        </LinearLayout> 
+	        <LinearLayout android:layout_width="fill_parent"
+		        android:layout_height="100dp"
+		        android:orientation="vertical"
+		        android:background="@drawable/border"
+		        android:padding="20dp"
+        	>   
+        	   <LinearLayout android:layout_width="fill_parent"
+        	       android:layout_height="wrap_content"
+        	       android:orientation="horizontal"
+        	       >
+        	       <TextView android:text="生效时间:"
+        	           android:textColor="#57C3E9"
+        	           android:textSize="15px"
+        	           android:layout_width="wrap_content"
+        	           android:layout_height="wrap_content"/>
+        	       <Spinner android:layout_width="wrap_content"
+        	           android:layout_height="wrap_content"
+        	           android:layout_marginLeft="6dp"
+        	           android:background="@drawable/yy_xl"
+        	           android:id="@+id/spinner1"
+        	           />
+        	       <TextView android:layout_height="wrap_content"
+        	           android:layout_width="wrap_content"
+        	           android:layout_marginLeft="6dp"
+        	           android:text="年"/>
+        	        <Spinner android:layout_width="wrap_content"
+        	            android:layout_marginLeft="6dp"
+        	           android:layout_height="wrap_content"
+        	           android:background="@drawable/yy_xl"
+        	           android:id="@+id/spinner2"
+        	           />
+        	         <TextView android:layout_height="wrap_content"
+        	           android:layout_width="wrap_content"
+        	           android:layout_marginLeft="6dp"
+        	           android:text="月~"/>
+        	         <Spinner android:layout_width="wrap_content"
+        	           android:layout_height="wrap_content"
+        	           android:layout_marginLeft="6dp"
+        	           android:id="@+id/spinner3"
+        	           android:background="@drawable/yy_xl"
+        	           />
+        	         <TextView android:layout_height="wrap_content"
+        	           android:layout_width="wrap_content"
+        	           android:layout_marginLeft="6dp"
+        	           android:text="年"/>
+        	        <Spinner android:layout_width="wrap_content"
+        	           android:layout_height="wrap_content"
+        	           android:layout_marginLeft="6dp"
+        	           android:id="@+id/spinner4"
+        	           android:background="@drawable/yy_xl"
+        	           />
+        	         <TextView android:layout_height="wrap_content"
+        	           android:layout_width="wrap_content"
+        	           android:layout_marginLeft="6dp"
+        	           android:text="月"/>
+        	           <TextView android:text="交费期间:"
+        	           android:textColor="#57C3E9"
+        	           android:textSize="15px"
+        	           android:layout_marginLeft="30dp"
+        	           android:layout_width="wrap_content"
+        	           android:layout_height="wrap_content"/>
+        	       	 <Spinner android:layout_width="wrap_content"
+        	           android:layout_height="wrap_content"
+        	           android:layout_marginLeft="10dp"
+        	           android:id="@+id/spinner5"
+        	           android:background="@drawable/dd_xl"
+        	           />
+        	       	 <Button android:background="@drawable/btn03"
+        	           android:layout_width="wrap_content"
+        	           android:layout_height="wrap_content"
+        	           android:id="@+id/query_privateInfo"
+        	           android:textColor="@color/white"
+        	           android:textSize="15px"
+        	           android:layout_marginLeft="10dp"
+        	           android:textStyle="bold"
+        	           android:text="查询"/>
+        	       <Button android:background="@drawable/btn03"
+        	           android:layout_width="wrap_content"
+        	           android:layout_height="wrap_content"
+        	           android:id="@+id/clear_privateInfo"
+        	           android:layout_marginLeft="17dp"
+        	           android:textColor="@color/white"
+        	           android:textSize="15px"
+        	           android:textStyle="bold"
+        	           android:text="清空"/>
+        	   </LinearLayout>
+        	  
+        	</LinearLayout>
+        	<LinearLayout android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		       	android:layout_marginTop="14dp"
+		       	android:id="@+id/baodanxinxi_view"
+        	>   
+        	<LinearLayout android:layout_width="fill_parent"
+        	    android:layout_height="fill_parent"
+        	    android:orientation="horizontal"
+        	    android:id="@+id/list_null"
+        	    android:gravity="center">
+        	    <ImageView android:src="@drawable/th"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        />
+        	    <TextView 
+        	        android:text="请输入查询条件并点击“查询”按钮！！！"
+        	        android:layout_marginLeft="20dp"
+        	        android:textSize="30px"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        />
+        	</LinearLayout>
+        	</LinearLayout>	 
+        </LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f5f5f5"
+    android:id="@+id/parent"
+    android:orientation="vertical" >
+ 
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/babe_top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/top_linear"
+	    >
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="14dp"
+	        android:id="@+id/backBtn"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/babe_fh_btn"/>
+	    <ImageView android:layout_width="1.5dp"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/babe_top_line"
+	        android:layout_toRightOf="@id/backBtn"
+	        android:layout_marginLeft="10dp"
+	        />
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="发布新的成长经历"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:textColor="#ffffff"
+	        android:textSize="20dp"
+	        android:id="@+id/title"
+	        android:textStyle="bold"/>
+	</RelativeLayout>
+	<ScrollView android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    >
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#f5f5f5"
+	    android:orientation="vertical" 
+	    android:padding="15dp"
+	    >
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="宝宝昵称:"
+		    android:textColor="#444444"
+		    android:textSize="16sp"
+		    ></TextView>
+		<EditText android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:textColor="#333333"
+		    android:textSize="14sp"
+		    android:text="快乐天使"
+		    android:id="@+id/nicheng"
+		    android:layout_marginTop="5dp"
+		    android:background="@drawable/border_growupitem"
+		    android:padding="5dp"
+		    />
+		
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="宝宝年龄:"
+		    android:textColor="#444444"
+		    android:layout_marginTop="20dp"
+		    android:textSize="16sp"
+		    ></TextView>
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="#f5f5f5"
+		    android:orientation="horizontal" 
+		    android:gravity="center_vertical"
+		    android:layout_marginTop="5dp"
+		    >
+			<EditText android:layout_width="120dp"
+			    android:layout_height="wrap_content"
+			    android:textColor="#333333"
+			    android:textSize="16sp"
+			    android:text="3"
+			    android:id="@+id/ageTV"
+			    android:background="@drawable/border_growupitem"
+			    android:padding="5dp"
+			    />
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="岁"
+			    android:textColor="#444444"
+			    android:textSize="16sp"
+			    android:layout_marginLeft="10dp"
+			    ></TextView>
+		</LinearLayout>
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="宝宝照片:"
+		    android:textColor="#444444"
+		    android:layout_marginTop="20dp"
+		    android:textSize="16sp"
+		    ></TextView>
+		<LinearLayout 
+			android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:id="@+id/imageLinear"
+		    android:gravity="left"
+		 >
+		    <com.boluomi.children.view.HorizontalImageGallery android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:id="@+id/gallery"
+		          android:unselectedAlpha="1"
+		          android:spacing="5dp"
+		          android:gravity="left"
+		     />
+		</LinearLayout>  
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="说点什么:"
+		    android:textColor="#444444"
+		    android:layout_marginTop="20dp"
+		    android:textSize="16sp"
+		    ></TextView>    
+		    <EditText android:layout_width="match_parent"
+			    android:layout_height="100dp"
+			    android:textColor="#333333"
+			    android:textSize="14sp"
+			    android:hint="写点什么吧！便于回忆哦..."
+			    android:id="@+id/saySomethingEt"
+			    android:background="@drawable/border_growupitem"
+			    android:padding="5dp"
+			    android:gravity="top|left"
+			    />      
+		<Button
+			android:id="@+id/sendBtn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/btn_bg"
+			android:text="立 即 发 布"
+			android:textColor="#ffffff"
+			android:layout_marginTop="20dp"
+			android:textSize="20sp" />    	    
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>

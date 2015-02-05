@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+    <dimen name="sc_icon_toleft">100dp</dimen>
+    <dimen name="sc_step2_toleft">140dp</dimen>
+    <dimen name="sc_step3_toleft">70dp</dimen>
+    <dimen name="sc_image_padding">20dp</dimen>
+    <dimen name="sc_gang_width">90dp</dimen>
+    <dimen name="sc_casemanager_totop">20dp</dimen>
+    <dimen name="sc_sayEtWidth">250dp</dimen>
+    <dimen name="sc_bank_width">250dp</dimen>
+    <dimen name="sc_text_toleft">10dp</dimen>
+    <dimen name="sc_step1left">20dp</dimen>
+    <dimen name="sc_step2left">65dp</dimen>
+    <dimen name="sc_step3left">35dp</dimen>
+    <dimen name="sc_step4left">65dp</dimen>
+    <dimen name="sc_step5left">72dp</dimen>
+    <dimen name="sc_xx_text_toleft">24dp</dimen>
+    <dimen name="sc_xx_text_size">14dp</dimen>
+    <dimen name="sc_xx_text_totop">20dp</dimen>
+    <dimen name="sc_select_san_to_left">20dp</dimen>
+    <dimen name="sc_head_text_size">18dp</dimen>
+    <dimen name="sc_head_height">50dp</dimen>
+    <dimen name="sc_main_xx_toleft">20dp</dimen>
+    <dimen name="sc_line_to_left">20dp</dimen>
+    <string name="sc_imageListView_height">250</string>
+    <string name="sc_home_radius">180</string>
+    <dimen name="guide_text_to_top">40dp</dimen>
+   	<dimen name="guide_text_size">18sp</dimen>
+   	<dimen name="guide_center_totop">5dp</dimen>
+   	<dimen name="guide_bottomtext_totop">0dp</dimen>
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sc_body_bg01"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+  
+	 <!-- head 
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_bg"
+    android:orientation="vertical" >
+</LinearLayout>
+-->
+<include layout="@layout/sc_a_head"
+    android:id="@+id/top_image"></include>
+<ImageView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+    <RelativeLayout
+        android:id="@+id/secondLinear"
+        android:layout_below="@id/top_image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sc_title_bg" >
+
+        <Button
+            android:id="@+id/fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/sc_fh_btn"
+            android:text="返回"
+            android:paddingLeft="5dp"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="自助查勘"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+        <LinearLayout android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            
+		    >
+		    <RelativeLayout android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/sc_xx_btn"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:gravity="right|top"
+            android:text=""
+            android:layout_alignParentRight="true"
+            android:id="@+id/notifiBtn"
+            android:textSize="10sp" />
+        <Button
+            android:id="@+id/notication"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/sc_home_dot"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text=""
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            android:textSize="10sp" />
+        </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+        <!-- 底部按钮 -->
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/sc_ly_bottom_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sc_aj_btn2"
+                android:text="上传"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/sc_aj_btn2"
+                android:text="返回"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+<GridView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/sc_body_bg01"
+   		android:layout_below="@id/secondLinear"
+   		android:layout_above="@id/linear2"
+        android:divider="@null"
+        android:numColumns="2"
+        android:layout_marginTop="20dp"
+        android:columnWidth="200dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:paddingTop="10dp"
+        android:fadingEdge="none"
+        android:visibility="visible" >
+    </GridView>
+
+</RelativeLayout>

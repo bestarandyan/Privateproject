@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 我的彩票订单类型按钮背景 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+	<stroke android:color="#224839" 
+	    android:width="0dp"></stroke>
+    <solid android:color="#007B5C" >
+    </solid>
+    <corners android:radius="5dp"></corners>
+    <padding android:left="3dp" android:top="4dp" android:right="3dp" android:bottom="4dp"></padding>
+</shape>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:background="@null"
+     >
+     <LinearLayout 
+    	android:layout_width="match_parent"
+     	android:layout_height="wrap_content"
+     	android:orientation="horizontal"
+     	android:background="@null"
+     	android:gravity="center_vertical"
+     	android:id="@+id/layout1"
+     	android:layout_marginLeft="10dp"
+     	>
+		 <CheckBox
+			android:id="@+id/radioBtn1"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:button="@drawable/radiobutton"
+			android:checked="false"
+			android:gravity="center_vertical"
+			android:clickable="false"
+			android:visibility="invisible"
+		/>	
+		<TextView android:layout_width="wrap_content"
+			android:textSize="18sp"
+			android:textColor="#ffffff"
+		    android:layout_height="wrap_content"
+		    android:text="用户余额支付"
+		    />
+	</LinearLayout>
+	<View android:layout_width="match_parent"
+	    android:layout_height="0.3dp"
+	    android:background="#777777"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    />
+     <LinearLayout 
+    	android:layout_width="match_parent"
+     	android:layout_height="wrap_content"
+     	android:orientation="horizontal"
+     	android:background="@null"
+     	android:gravity="center_vertical"
+     	android:id="@+id/layout2"
+     	android:layout_marginLeft="10dp"
+     	>
+		 <CheckBox
+			android:id="@+id/radioBtn2"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:button="@drawable/radiobutton"
+			android:checked="false"
+			android:gravity="center_vertical"
+			android:clickable="false"
+			android:visibility="visible"
+			
+		/> 
+		<TextView android:layout_width="wrap_content"
+			android:textSize="18sp"
+			android:textColor="#ffffff"
+		    android:layout_height="wrap_content"
+		    android:text="支付宝客户端支付"
+		    />
+	</LinearLayout>
+	<!-- <Button android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/cai_btn1"
+          android:text="立即支付"
+          android:textColor="#ffffff"
+          android:textSize="20sp"
+          android:gravity="center"
+          android:paddingLeft="40dp"
+          android:paddingRight="40dp"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          android:layout_margin="10dp"
+          /> -->
+</LinearLayout>				

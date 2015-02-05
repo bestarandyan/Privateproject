@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20px" >
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+<LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:orientation="vertical">
+   
+<LinearLayout android:id="@+id/lin1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <AbsoluteLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+       
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_y="30px"
+            android:orientation="vertical"
+            android:layout_marginTop="20px"
+            android:background="@drawable/border_kehuinfo">
+             <LinearLayout android:layout_width="fill_parent"
+                 android:gravity="right"
+                 android:orientation="horizontal"
+                 android:layout_height="wrap_content">
+                 <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/insure_btn02" android:text="清空重置" android:textColor="#FFFFFF"/>
+                 
+             </LinearLayout>
+             <LinearLayout  android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" android:background="#CAF7CE">
+
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:text="姓    名"
+                     android:textColor="#333333" />
+
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001" />
+                 <EditText android:layout_marginLeft="28dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="证件类型"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001"/>
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="证件号码"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001"/>
+                 <EditText android:layout_marginLeft="10dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="140dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="有效期限"/>
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <CheckBox android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                 <TextView android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="长期"/>
+                
+             </LinearLayout>
+             <LinearLayout  android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" >
+                <TextView android:textColor="#333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="性    别"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001" />
+                <RadioGroup android:id="@+id/radiogroup1"  android:layout_width="wrap_content"  
+        				android:layout_height="wrap_content"  android:orientation="horizontal" android:layout_x="3px">   
+			     <RadioButton android:text="男" android:textColor="#333333" android:layout_marginLeft="28dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                 <RadioButton android:text="女" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </RadioGroup>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="出生日期"/>
+                 <EditText android:text="1989-6-8" android:layout_marginLeft="20dp" android:layout_width="100dip" android:layout_height="wrap_content" />
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="国籍"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001" />
+
+                 <Spinner
+                     android:layout_width="100dip"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="30dp"
+                     android:id="@+id/guoji1"
+                     android:background="@drawable/cz_text"
+                     android:layout_gravity="center"
+                     />
+                 
+             </LinearLayout>
+             <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" >
+                 <TextView android:textColor="#333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="职业代码"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001" />
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="职业名称"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001"/>
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="职业类别"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001"/>
+                 <EditText android:layout_marginLeft="6dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="136dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="婚姻状况"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001"/>
+                 <RadioGroup android:id="@+id/radiogroup1"  android:layout_width="wrap_content"  
+        				android:layout_height="wrap_content"  android:orientation="horizontal" android:layout_x="3px">   
+			     <RadioButton android:text="已婚" android:textColor="#333333" android:layout_marginLeft="28dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                 <RadioButton android:text="未婚" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </RadioGroup>
+                
+                 
+             </LinearLayout>
+             <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" >
+                <TextView android:textColor="#333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="兼职代码"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textColor="#E50001" />
+                 <EditText android:layout_marginLeft="28dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView  android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="兼职名称"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textColor="#E50001"/>
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="110dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="兼职类别"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textColor="#E50001"/>
+                 <EditText android:layout_marginLeft="12dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="140dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="移动电话"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001"/>
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <CheckBox android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                 <TextView android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="长期"/>
+                 
+             </LinearLayout>
+             <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" >
+                <TextView android:textColor="#333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="工作单位"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001" />
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="300dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="办工电话"/>
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="60dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:layout_marginLeft="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:textSize="30px"/>
+                 <EditText android:layout_marginLeft="0dp" android:layout_width="160dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 
+             </LinearLayout>
+             <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" >
+                <TextView android:textColor="#333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="通讯地址"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001" />
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="300dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="家庭电话"/>
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="60dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:layout_marginLeft="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:textSize="30px"/>
+                 <EditText android:layout_width="160dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邮政编码"/>
+                 <TextView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001" />
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="160dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 
+             </LinearLayout>
+             <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" >
+                <TextView  android:textColor="#333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电子邮箱"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textColor="#E50001" />
+                 <EditText android:layout_marginLeft="28dp" android:layout_width="200dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(推荐填写)"/>
+                 <CheckBox android:layout_marginLeft="46dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                 <TextView android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否更新以往联系信息"/>
+                 
+             </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_y="15px"
+            android:layout_x="15px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投保人"
+            android:background="@drawable/insure_btn01" />
+
+    </AbsoluteLayout>
+    <AbsoluteLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_y="30px"
+            android:orientation="vertical"
+            android:paddingTop="30px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/border_kehuinfo">
+
+
+              <RelativeLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:orientation="horizontal" >
+
+                  <Button
+                      android:id="@+id/button1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentRight="true"
+                      android:background="@drawable/insure_btn02"
+                      android:text="清空重置"
+                      android:textColor="#FFFFFF" />
+
+                  <TextView android:gravity="center"
+                      android:id="@+id/textView1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentLeft="true"
+                      android:layout_marginLeft="51dp"
+                      android:textColor="#333333"
+                      android:text="是投保人的" />
+
+                  <Spinner
+                      android:layout_width="100px"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/cz_text"
+                      android:id="@+id/spinner3"
+                      android:layout_toRightOf="@+id/textView1" />
+
+              </RelativeLayout>
+
+
+
+             <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:background="#CAF7CE"
+                 android:orientation="horizontal" >
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="姓    名"
+                     android:textColor="#333333" />
+
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001" />
+                 <EditText android:layout_marginLeft="28dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="证件类型"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001"/>
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="证件号码"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001"/>
+                 <EditText android:layout_marginLeft="10dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="140dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="有效期限"/>
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <CheckBox android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="长期"
+                     android:textColor="#333333" />
+                
+             </LinearLayout>
+             <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" >
+                <TextView android:textColor="#333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="性    别"/>
+
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="*"
+                     android:textColor="#E50001" />
+				 <RadioGroup android:id="@+id/radiogroup1"  android:layout_width="wrap_content"  
+        				android:layout_height="wrap_content"  android:orientation="horizontal" android:layout_x="3px">   
+			     <RadioButton android:text="男" android:textColor="#333333" android:layout_marginLeft="28dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                 <RadioButton android:text="女" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                  </RadioGroup>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="出生日期"/>
+                 <EditText  android:layout_marginLeft="20dp" android:layout_width="100dip" android:layout_height="wrap_content" />
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="国籍"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001" />
+                 <Spinner  android:id="@+id/guoji_spinner2" android:background="@drawable/cz_text" android:layout_marginLeft="30dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 
+                 
+             </LinearLayout>
+             <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" >
+                 <TextView android:textColor="#333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="职业代码"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001" />
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="职业名称"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001"/>
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="职业类别"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001"/>
+                 <EditText android:layout_marginLeft="6dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="136dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="婚姻状况"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001"/>
+                 <RadioGroup android:id="@+id/radiogroup1"  android:layout_width="wrap_content"  
+        				android:layout_height="wrap_content"  android:orientation="horizontal" android:layout_x="3px">   
+			     <RadioButton android:text="已婚" android:textColor="#333333" android:layout_marginLeft="28dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                 <RadioButton android:text="未婚" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </RadioGroup>
+                
+                 
+             </LinearLayout>
+             <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" >
+                <TextView android:textColor="#333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="兼职代码"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textColor="#E50001" />
+                 <EditText android:layout_marginLeft="28dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView  android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="兼职名称"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textColor="#E50001"/>
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="110dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="兼职类别"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textColor="#E50001"/>
+                 <EditText android:layout_marginLeft="12dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="140dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="移动电话"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001"/>
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="100dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <CheckBox android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                 <TextView android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="长期"/>
+                 
+             </LinearLayout>
+             <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" >
+                <TextView android:textColor="#333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="工作单位"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001" />
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="300dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="办工电话"/>
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="60dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:layout_marginLeft="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:textSize="30px"/>
+                 <EditText android:layout_marginLeft="0dp" android:layout_width="160dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 
+             </LinearLayout>
+             <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" >
+                <TextView android:textColor="#333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="通讯地址"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001" />
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="300dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="家庭电话"/>
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="60dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:layout_marginLeft="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:textSize="30px"/>
+                 <EditText android:layout_width="160dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邮政编码"/>
+                 <TextView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:textColor="#E50001" />
+                 <EditText android:layout_marginLeft="20dp" android:layout_width="160dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 
+             </LinearLayout>
+             <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" >
+                <TextView  android:textColor="#333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电子邮箱"/>
+                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textColor="#E50001" />
+                 <EditText android:layout_marginLeft="28dp" android:layout_width="200dip" android:layout_height="wrap_content" android:singleLine="true"/>
+                 <TextView android:textColor="#333333" android:layout_marginLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(推荐填写)"/>
+                 <CheckBox android:layout_marginLeft="46dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                 <TextView android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否更新以往联系信息"/>
+                 
+             </LinearLayout>
+        </LinearLayout>
+        <Button android:layout_x="15px"
+            android:layout_y="15px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="被保人"
+            android:background="@drawable/insure_btn01" />
+
+    </AbsoluteLayout>
+    <AbsoluteLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_y="30px"
+            android:orientation="vertical"
+            android:layout_marginTop="80px"
+            android:background="@drawable/border_kehuinfo">
+             <LinearLayout android:layout_width="fill_parent"
+                 android:gravity="right"
+                 android:orientation="horizontal"
+                 android:layout_height="wrap_content">
+                 <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/insure_btn02" android:text="新增受益人" android:textColor="#FFFFFF"/>
+                 <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/insure_btn02" android:text="修改受益人" android:textColor="#FFFFFF"/>
+                 <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/insure_btn02" android:text="删除受益人" android:textColor="#FFFFFF"/>
+             </LinearLayout>
+             <LinearLayout android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                 <TextView android:layout_width="40dp" android:layout_height="wrap_content" android:text="选择" android:background="@drawable/border_tab_info"/>
+             	 <TextView android:layout_width="80dp" android:layout_height="wrap_content" android:text="受益顺序" android:background="@drawable/border_tab_info"/>
+             	 <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="姓名" android:background="@drawable/border_tab_info"/>
+             	 <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:text="性别" android:background="@drawable/border_tab_info"/>
+
+             	 <TextView
+             	     android:layout_width="123dp"
+             	     android:layout_height="wrap_content"
+             	     android:background="@drawable/border_tab_info"
+             	     android:text="出生日期(年/月/日)" />
+
+             	 <TextView
+             	     android:layout_width="80dp"
+             	     android:layout_height="wrap_content"
+             	     android:background="@drawable/border_tab_info"
+             	     android:text="是被保人的" />
+
+             	 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="受益份额" android:background="@drawable/border_tab_info"/>
+             	 <TextView
+             	     android:layout_width="wrap_content"
+             	     android:layout_height="wrap_content"
+             	     android:background="@drawable/border_tab_info"
+             	     android:text="证件名称" />
+
+
+             	 <TextView
+             	     android:layout_width="102dp"
+             	     android:layout_height="wrap_content"
+             	     android:background="@drawable/border_tab_info"
+             	     android:text="证件号码" />
+
+             </LinearLayout>
+             
+             <TextView android:layout_marginTop="60px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0px"
+                 android:text="          1.同一顺序受益人受益份额合计为100%。 2.同一顺序受益人超过2人的，应填写受益份额，3.除身故保险金以外其他保险金受益人以条款约定为准，如需另外制定的请在备注栏中按要求要素填写4.未填写身故保险金受益人信息的，我公司将依据《中华人民共和国保障法》第42条规定履行给付保险金的义务"/>
+             
+        </LinearLayout>
+        
+        <Button android:text="身故保险金受益人"
+            android:layout_y="15px"
+            android:layout_x="15px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/insure_btn01" />
+
+    </AbsoluteLayout>
+     <LinearLayout android:layout_width="fill_parent"
+                 android:gravity="right"
+                 android:layout_marginTop="20dp"
+                 android:orientation="horizontal"
+                 android:layout_height="wrap_content">
+                 <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/insure_btn02" android:text="保存" android:textColor="#FFFFFF" android:id="@+id/new_baocun"/>
+                 <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/insure_btn02" android:text="下一步" android:textColor="#FFFFFF" android:id="@+id/new_next"/>
+             </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:background="@null"
+     >
+	<TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="666"
+              android:textColor="#D37400"
+              android:textSize="14sp"
+              android:id="@+id/numberTv"
+              />
+    <LinearLayout android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="3dp"
+          >
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="三同号单选"
+              android:textColor="#555555"
+              android:textSize="14sp"
+              android:id="@+id/typeTv"
+              />
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="1注"
+              android:textColor="#555555"
+              android:textSize="14sp"
+              android:id="@+id/number"
+              android:layout_marginLeft="10dp"
+              />
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="￥2.00"
+              android:textColor="#555555"
+              android:textSize="14sp"
+              android:layout_marginLeft="10dp"
+              android:id="@+id/payMoneyTv"
+              />
+      </LinearLayout>
+      <com.qingfengweb.lottery.view.DashedLine android:layout_width="wrap_content"
+          android:layout_height="2dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          />
+</LinearLayout>

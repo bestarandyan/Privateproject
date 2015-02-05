@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_title_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/map" />
+
+        <TextView
+            android:id="@+id/top1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="首页"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" > 工作日历"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/addviews"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="850dip"
+            android:background="@drawable/btn04"
+            android:text="新增提醒"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/hquery"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn04"
+            android:text="高级查询"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/guobg1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:gravity="center_vertical|center"
+            android:text="工作日历"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical" >
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="#FFFFFF"
+ >
+   <TextView
+            android:layout_width="wrap_content" android:layout_marginTop="25dip"
+            android:layout_height="45dip"   android:layout_marginLeft="15dip"    android:textColor="#000000"      
+            android:text="2012年3月"
+            android:textSize="25sp" />
+ </LinearLayout>
+        <!--
+      <CalendarView
+    android:id="@+id/calendarView1"  android:weekSeparatorLineColor="#d0d0d0" android:unfocusedMonthDateColor ="#F0F0F0" android:weekNumberColor="#F0F0F0" 
+    android:layout_width="fill_parent"  android:textColor="#000000"
+    android:layout_height="fill_parent" />
+        -->
+        <LinearLayout    android:layout_marginLeft="45dip" android:layout_marginTop="40dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+                        <!-- 1 -->
+        <LinearLayout    android:layout_marginLeft="15dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           >   
+
+            <LinearLayout  android:id="@+id/layout1"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                 >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="26日周日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>
+            
+            
+             <LinearLayout  android:id="@+id/layout2"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="27日周一"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text="出访客户"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            
+            
+             <LinearLayout  android:id="@+id/layout3"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="28日周二"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text="走访事故"
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout  android:id="@+id/layout4"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="29日周三"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text="查勘事故"
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout android:id="@+id/layout5"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="30日周四"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text="客户生日"
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout android:id="@+id/layout6"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="1日周日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text="客户生日"
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout android:id="@+id/layout7"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="3日周日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text="公司新产品推荐会" android:textColor="#01814A"
+                    android:textSize="15sp" />
+            </LinearLayout>                       
+            </LinearLayout>
+            
+        
+                        <!-- 2 -->
+        <LinearLayout    android:layout_marginLeft="15dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           >   
+
+            <LinearLayout android:id="@+id/layout8"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                 >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="4日"
+                    android:textSize="15sp" />
+
+                <TextView  android:id="@+id/v8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text="销售会议" android:textColor="#01814A"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            
+            
+             <LinearLayout android:id="@+id/layout9"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="5日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text="新产品话术培训通知" android:textColor="#01814A"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            
+            
+             <LinearLayout android:id="@+id/layout10"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="6日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text="李刚合同到期" android:textColor="#EA0000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout android:id="@+id/layout11"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="7日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text="张三生日" android:textColor="#EA0000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout android:id="@+id/layout12"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="8日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text="李四生日" android:textColor="#EA0000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout android:id="@+id/layout13"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="9日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text="张利续保费"  android:textColor="#EA0000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout android:id="@+id/layout14"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="10日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text="拜访 山东大学教授" android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>                       
+            </LinearLayout>
+        
+        
+                        <!-- 3 -->
+        <LinearLayout    android:layout_marginLeft="15dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           >   
+
+            <LinearLayout android:id="@+id/layout15"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                 >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="11日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text="拜访阳光小区李小姐"  android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            
+            
+             <LinearLayout android:id="@+id/layout16"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="12日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text="参加月度评比会议" android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            
+            
+             <LinearLayout android:id="@+id/layout17"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="13日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout android:id="@+id/layout18"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="14日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout android:id="@+id/layout19"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="15日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout android:id="@+id/layout20"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="16日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout android:id="@+id/layout21"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="17日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>                       
+            </LinearLayout>
+        
+                        <!-- 4 -->
+        <LinearLayout    android:layout_marginLeft="15dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           >   
+
+            <LinearLayout android:id="@+id/layout22"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                 >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="18日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>
+            
+            
+             <LinearLayout android:id="@+id/layout23"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="19日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>
+            
+            
+             <LinearLayout android:id="@+id/layout24"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="20日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout android:id="@+id/layout25"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="21日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout android:id="@+id/layout26"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="22日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout android:id="@+id/layout27"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="23日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout android:id="@+id/layout28"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="24日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>                       
+            </LinearLayout>
+        
+                        <!-- 5 -->
+        <LinearLayout    android:layout_marginLeft="15dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           >   
+
+            <LinearLayout
+                android:layout_width="150dip" android:id="@+id/layout29"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                 >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="25日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>
+            
+            
+             <LinearLayout android:id="@+id/layout30"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="26日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>
+            
+            
+             <LinearLayout android:id="@+id/layout31"
+                android:layout_width="150dip"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="27日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout
+                android:layout_width="150dip" android:id="@+id/layout32"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="28日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout
+                android:layout_width="150dip" android:id="@+id/layout33"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="29日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout
+                android:layout_width="150dip" android:id="@+id/layout34"
+                android:layout_height="80dip"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="30日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>
+               <LinearLayout
+                android:layout_width="150dip"
+                android:layout_height="80dip" android:id="@+id/layout35"
+                android:background="@drawable/day_bg3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="31日"
+                    android:textSize="15sp" />
+
+                <TextView android:id="@+id/v35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:text=""
+                    android:textSize="15sp" />
+            </LinearLayout>                       
+            </LinearLayout>
+        
+        
+        
+        
+        <!-- last -->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

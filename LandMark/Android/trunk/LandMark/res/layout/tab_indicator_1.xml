@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/tabitem_layout_bg_sel"
+        >
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="主页"
+              android:focusable="true"
+              android:drawableTop="@drawable/tabitem_home_img_sel"
+              android:textColor="@drawable/tabitem_textcolor_sel"
+              android:id="@+id/tabTextView"
+              android:textSize="12sp"
+              android:layout_centerInParent="true"
+            ></TextView>
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/bottom_line"
+        android:layout_alignParentRight="true"
+        android:id="@+id/tabLine"
+        />
+</RelativeLayout>

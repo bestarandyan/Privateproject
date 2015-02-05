@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" 
+    >
+    <LinearLayout android:layout_width="wrap_content"
+        android:id="@+id/lin1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="wrap_content"
+        android:id="@+id/lin1"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+                <TextView android:text="请输入/选择查询条件："
+                    android:padding="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="right"/>
+                <TextView android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"/>
+                 <TextView android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"/>
+                  <TextView android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"/>
+              </LinearLayout>
+               <LinearLayout android:layout_width="wrap_content"
+			        android:id="@+id/lin1"
+			        android:orientation="horizontal"
+			        android:layout_height="wrap_content">
+                <TextView android:text="投保申请日期"
+                    android:layout_gravity="center|right"
+                    android:textColor="@color/black"
+                    android:padding="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   />
+                <EditText android:text="2012"
+                    android:singleLine="true"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                   />
+                 <TextView android:text="年"
+                    android:layout_gravity="center|right"
+                    android:textColor="@color/black"
+                    android:padding="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   />
+                <EditText android:text="3"
+                    android:singleLine="true"
+                    android:id="@+id/name_jihuashu"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                   />
+                <TextView android:text="月"
+                    android:layout_gravity="center|right"
+                    android:textColor="@color/black"
+                    android:padding="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   />
+                </LinearLayout>
+        		<LinearLayout android:layout_width="wrap_content"
+			        android:id="@+id/lin1"
+			        android:orientation="horizontal"
+			        android:layout_height="wrap_content">
+                <TextView android:text="投保人姓名"
+                     android:textColor="@color/black"
+                     android:padding="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_gravity="center|right"/>
+                <EditText android:text=""
+                    android:singleLine="true"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                   />
+
+         </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:id="@+id/lin2"
+        android:layout_below="@id/lin1"
+        android:layout_marginBottom="50px"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/jieguolist" />
+
+            <Button
+                android:id="@+id/query_jihua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/insure_btn02"
+                android:text="查询" />
+
+            <Button
+                android:id="@+id/shuaxin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="20px"
+                android:layout_toLeftOf="@id/query_jihua"
+                android:background="@drawable/insure_btn02"
+                android:text="状态刷新" />
+
+        </RelativeLayout>
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+           <TableLayout android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:baselineAligned="true"
+              >  
+               <TableRow android:layout_width="fill_parent"
+                   android:background="#B0E0E6"
+                   android:layout_margin="2dip"
+                   android:layout_height="80dip">
+                <TextView android:text="选择"
+                     android:textColor="@color/black"
+                     
+                    
+                    android:layout_width="50px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                    <TextView android:text="序号"
+                     android:textColor="@color/black"
+                      
+                     
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                    <TextView android:text="投保单号码"
+                     android:textColor="@color/black"
+                      
+                     
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                    <TextView android:text="投保人姓名 "
+                     android:textColor="@color/black"
+                       
+                    
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                    <TextView android:text="被保人姓名 "
+                     android:textColor="@color/black"
+                      
+                    
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                    <TextView android:text="投保申请日期 "
+                     android:textColor="@color/black"
+                      
+                    
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                    <TextView android:text="保费 "
+                     android:textColor="@color/black"
+                    
+                     
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                    <TextView android:text="生效日期 "
+                     android:textColor="@color/black"
+                    
+                     
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                     <TextView android:text="投保单状态  "
+                     android:textColor="@color/black"
+                    
+                     
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                   
+               </TableRow>
+                
+           </TableLayout> 
+            
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:visibility="gone"
+            android:text="没有查询到满足条件的数据" android:textColor="#333333"/>
+        <LinearLayout android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:id="@+id/xiamian">
+             <ListView android:id="@+id/tab_list"
+                android:layout_width="fill_parent"
+                android:layout_height="400px">
+                
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/protect_bottom"
+        android:layout_width="fill_parent"
+        android:gravity="right"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jiaofei"
+            android:text="确认交费"
+            android:textColor="@color/white"
+            android:textSize="20px"
+            android:background="@drawable/insure_btn02"/>
+     
+    </LinearLayout>
+    </RelativeLayout>
+    
+
+
+
+

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/parent"
+    android:background="@color/bg_color">
+	<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+ <!--    <ImageView android:src="@color/bg_color_hua"
+        android:layout_width="wrap_content"
+        android:id="@+id/topImg"
+        android:layout_height="wrap_content"
+        /> -->
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/babe_top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/top_linear"
+	    >
+	    <Button android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="14dp"
+	        android:id="@+id/backBtn"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/babe_fh_btn"/>
+	    <ImageView android:layout_width="1.5dp"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/babe_top_line"
+	        android:layout_toRightOf="@id/backBtn"
+	        android:layout_marginLeft="10dp"
+	        />
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="意见反馈"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:textColor="#ffffff"
+	        android:textSize="20dp"
+	        android:id="@+id/title"
+	        android:textStyle="bold"/>
+	</RelativeLayout>
+	<ImageView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/logo"
+	    android:layout_below="@id/top_linear"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="30dp"
+	   />
+	</RelativeLayout>
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="您的意见已提交成功！"
+		    android:layout_marginTop="50dp"
+		    android:layout_gravity="center_horizontal"
+		    android:textColor="#000000"
+		    android:textSize="20dp"
+		    android:id="@+id/content"
+		    />
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="衷心感谢您对菠萝菠萝蜜的支持与厚爱！"
+		    android:layout_marginTop="10dp"
+		    android:layout_gravity="center_horizontal"
+		    android:textColor="#000000"
+		    android:textSize="20dp"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"
+		    android:id="@+id/content"
+		    />
+	</LinearLayout>

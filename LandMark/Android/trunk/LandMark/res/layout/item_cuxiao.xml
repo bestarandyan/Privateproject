@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity">
+  <!--   <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img"
+        android:src="@drawable/zx_qiang"
+        android:layout_marginLeft="10dp"
+        /> -->
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:background="#262161"
+        android:text="8F"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/floor"
+        />
+   <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="5dp"
+   >
+    <TextView android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:text="哈利波特"
+        android:id="@+id/brand"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_marginLeft="6dp"
+        android:text="7/17"
+        android:id="@+id/data"
+        android:layout_alignParentRight="true"
+        />
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_marginLeft="6dp"
+        android:text="部分满99元立减55元"
+        android:id="@+id/text"
+        android:layout_toRightOf="@id/brand"
+        android:layout_toLeftOf="@id/data"
+        />
+    
+     </RelativeLayout>
+</LinearLayout>

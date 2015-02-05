@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	     android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+		<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/top_bg"
+	    android:orientation="horizontal"
+	    android:id="@+id/top_linear"
+	    >
+	    <Button android:layout_width="55dp"
+	        android:layout_height="35dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="返回"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="14dp"
+	        android:layout_centerVertical="true"
+	        android:paddingLeft="10dp"
+	        android:id="@+id/backBtn"
+	        android:background="@drawable/btn01"/>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="积分商城"
+	        android:layout_centerHorizontal="true"
+	        android:id="@+id/title"
+	        android:textColor="#ffffff"
+	        android:layout_centerVertical="true"
+	        android:textSize="20dp"
+	        android:textStyle="bold"/>
+	</RelativeLayout>
+	<LinearLayout  
+    	android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:orientation="horizontal"
+	    android:id="@+id/bottomlayout"
+	    >
+	    <include layout="@layout/integralstore_bottom"
+	        android:layout_width="fill_parent"
+	   	 	android:layout_height="wrap_content"/>
+	    </LinearLayout>
+	    	<ListView android:layout_width="match_parent"
+	    	    android:layout_height="match_parent"
+	    	    android:id="@+id/listView"
+	    	    android:divider="@null"
+	    	    android:layout_below="@id/top_linear"
+			    android:layout_above="@id/bottomlayout"
+	    	    ></ListView>
+	   <!--  <RelativeLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@null"
+			    android:id="@+id/linear1"
+			    android:gravity="bottom"
+			    android:layout_marginTop="@dimen/integral_1_totop"
+			    >
+	    	 <LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@null"
+				android:layout_marginTop="10dp"
+			    android:orientation="horizontal">
+	    	<ImageView android:src="@drawable/integral11"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="1"
+	    	    />
+	    	<ImageView android:src="@drawable/integral12"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	     android:layout_weight="1"
+	    	    />
+	    	<ImageView android:src="@drawable/integral13"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	     android:layout_weight="1"
+	    	    />
+	    	<ImageView android:src="@drawable/integral14"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	     android:layout_weight="1"
+	    	    />
+	     </LinearLayout>
+	     <TextView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="电器类"
+	    	    android:textColor="#000000"
+	    	    />
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+			    android:layout_height="80dp"
+			    android:background="@null"
+			     android:id="@+id/linear2"
+			     android:gravity="bottom"
+			      android:layout_marginTop="@dimen/integral_2_totop"
+			    >
+	    	
+	    	<LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@null"
+			    android:layout_marginTop="10dp"
+			    android:orientation="horizontal">
+	    	<ImageView android:src="@drawable/integral21"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="1"
+	    	    />
+	    	<ImageView android:src="@drawable/integral22"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_weight="1"
+	    	    android:layout_height="wrap_content"
+	    	    />
+	    	<ImageView android:src="@drawable/integral23"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="1"
+	    	    />
+	    	<ImageView android:src="@drawable/integral24"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="1"
+	    	    />
+	    	</LinearLayout>
+	    	<TextView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="生活类"
+	    	    android:textColor="#000000"
+	    	    />
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@null"
+			    android:id="@+id/linear3"
+			     android:layout_marginTop="@dimen/integral_3_totop"
+			    android:orientation="vertical">
+	    	<LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@null"
+			    android:layout_marginTop="10dp"
+			    android:orientation="horizontal">
+	    	<ImageView android:src="@drawable/integral31"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="1"
+	    	    />
+	    	<ImageView android:src="@drawable/integral32"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="1"
+	    	    />
+	    	<ImageView android:src="@drawable/integral33"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="1"
+	    	    />
+	    	<ImageView android:src="@drawable/integral34"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="1"
+	    	    />
+	    	</LinearLayout>
+	    	<TextView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="产品类"
+	    	    android:textColor="#000000"
+	    	    />
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@null"
+			    android:id="@+id/linear4"
+			     android:layout_marginTop="@dimen/integral_4_totop"
+			    android:orientation="vertical">
+	    	
+	    	<LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@null"
+			    android:orientation="horizontal">
+	    	<ImageView android:src="@drawable/integral41"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="1"
+	    	    />
+	    	<ImageView android:src="@drawable/integral42"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="1"
+	    	    />
+	    	<ImageView android:src="@drawable/integral43"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="1"
+	    	    />
+	    	<ImageView android:src="@drawable/integral44"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_weight="1"
+	    	    android:layout_height="wrap_content"
+	    	    />
+	    	</LinearLayout>
+	    	<TextView android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="其他类"
+	    	    android:textColor="#000000"
+	    	    />
+	</RelativeLayout> -->
+	</RelativeLayout>

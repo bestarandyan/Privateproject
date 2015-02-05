@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:background="@drawable/body_bg"
+	 android:orientation="vertical"
+	>
+	<include layout="@layout/head_title_layout"/>
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:padding="20dp">
+	    
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@drawable/corner_round"
+	    android:gravity="center">
+     <TableLayout android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         >
+         <TableRow android:padding="20dp">
+             <Button android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/file_btn01"
+                 android:textColor="@color/white"
+                 android:textStyle="bold"
+                 android:text="住院医疗"
+                 android:textSize="20dp"
+                 android:padding="20dp"
+                 android:id="@+id/qicai1"></Button>
+             <Button android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="意外医疗"
+                 android:padding="20dp"
+                 android:textSize="20dp"
+                 android:textColor="@color/white"
+                 android:textStyle="bold"
+                 android:background="@drawable/file_btn01"
+                 android:layout_marginLeft="30dp"
+                 android:id="@+id/qicai2"></Button>
+         </TableRow>
+          <TableRow android:padding="20dp">
+             <Button android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="日额津贴"
+                 android:textSize="20dp"
+                 android:padding="20dp"
+                 android:textColor="@color/white"
+                 android:textStyle="bold"
+                 android:background="@drawable/file_btn01"
+                 android:id="@+id/qicai3"></Button>
+             <Button android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="重大疾病"
+                 android:padding="20dp"
+                 android:textSize="20dp"
+                 android:textColor="@color/white"
+                 android:textStyle="bold"
+                 android:layout_marginLeft="30dp"
+                 android:background="@drawable/file_btn01"
+                 android:id="@+id/qicai4"></Button>
+         </TableRow>
+         
+     </TableLayout>     
+     </LinearLayout></LinearLayout>
+</LinearLayout>

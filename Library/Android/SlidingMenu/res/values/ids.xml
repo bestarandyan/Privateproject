@@ -1,0 +1,4 @@
+<resources>
+
+     <item name="selected_view" type="id"/>
+</resources>

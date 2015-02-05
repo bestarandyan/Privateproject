@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/step4"
+    android:padding="40dp"
+    >
+    <TextView  android:paddingTop="10dp" android:paddingBottom="10dp"   android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="保费合计"  android:textColor="@color/red"
+            android:textSize="30dp" android:id="@+id/text1" android:layout_marginLeft="160dp"/>
+    <LinearLayout android:layout_marginTop="15dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView  android:layout_width="200dp" android:layout_height="wrap_content"  android:text="商业险："  android:textColor="#4297B4"
+            android:textSize="20dp" android:id="@+id/text1" android:gravity="right|center_vertical"/>
+        <TextView  android:layout_width="200dp" android:layout_height="wrap_content"  android:text="￥00"  android:textColor="@color/red"
+            android:textSize="20dp" android:id="@+id/value_step4_shang" />
+    </LinearLayout>   
+    
+   <LinearLayout android:layout_marginTop="15dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView  android:layout_width="200dp"  android:gravity="right|center_vertical" android:layout_height="wrap_content"  android:text="交强险："  android:textColor="#4297B4"
+            android:textSize="20dp" android:id="@+id/text1" />
+        <TextView  android:layout_width="200dp" android:layout_height="wrap_content"  android:text="￥00"  android:textColor="@color/red"
+            android:textSize="20dp" android:id="@+id/value_step4_jiaoqiang" />
+    </LinearLayout>   
+    
+    <LinearLayout android:layout_marginTop="15dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView  android:layout_width="200dp"  android:gravity="right|center_vertical" android:layout_height="wrap_content"  android:text="车船税："  android:textColor="#4297B4"
+            android:textSize="20dp" android:id="@+id/text1" />
+        <TextView  android:layout_width="200dp" android:layout_height="wrap_content"  android:text="￥00"  android:textColor="@color/red"
+            android:textSize="20dp" android:id="@+id/value_step4_chechuanshui" />
+    </LinearLayout>   
+      <LinearLayout android:layout_marginTop="15dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView  android:layout_width="200dp"  android:gravity="right|center_vertical" android:layout_height="wrap_content"  android:text="保费合计："  android:textColor="#4297B4"
+            android:textSize="20dp" android:id="@+id/text1" />
+        <TextView  android:layout_width="200dp" android:layout_height="wrap_content"  android:text="￥00"  android:textColor="@color/red"
+            android:textSize="20dp" android:id="@+id/value_step4_count" />
+    </LinearLayout>   
+     <LinearLayout android:layout_marginTop="15dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView  android:layout_width="200dp"  android:gravity="right|center_vertical" android:layout_height="wrap_content"  android:text="原价："  android:textColor="#4297B4"
+            android:textSize="20dp" android:id="@+id/text1" />
+        <TextView  android:layout_width="200dp" android:layout_height="wrap_content"  android:text="￥00"  android:textColor="@color/red"
+            android:textSize="20dp" android:id="@+id/value_step4_yuan" />
+        
+    </LinearLayout> 
+    <LinearLayout android:layout_marginTop="15dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+      
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:text="为您节省:"
+        android:textColor="#4297B4"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/value_step4_jieshen"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="￥00"
+        android:paddingLeft="10dp"
+        android:textColor="@color/red"
+        android:textSize="20dp" />
+
+        <TextView  android:layout_width="200dp" android:layout_height="wrap_content"  android:text="元"  android:textColor="#4297B4"
+            android:textSize="20dp" android:id="@+id/text1" />    
+            </LinearLayout>
+       <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:layout_gravity="center_horizontal">
+   <Button  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上一步" android:background="@drawable/bj_tag2" android:textColor="@color/white"
+        android:textSize="18sp"  android:id="@+id/backBtn"/>
+    <Button android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确认" android:background="@drawable/bj_tag2" android:textColor="@color/white"
+        android:textSize="18sp" android:layout_gravity="center_horizontal" android:id="@+id/nextBtn"/>
+    </LinearLayout>
+    </LinearLayout>

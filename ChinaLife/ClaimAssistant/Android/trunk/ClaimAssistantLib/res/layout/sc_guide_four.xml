@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@null"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+	<TextView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="赔案处理"
+	    android:textColor="#ffffff"
+	    android:textSize="25sp"
+	    />
+	<TextView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="如果您选择“查勘定损”，在完成索赔资料上传并经审核通过后，我司将即时向您支付保险赔款。"
+	    android:textColor="#000000"
+	    android:textSize="@dimen/guide_text_size"
+	    android:layout_marginTop="@dimen/guide_text_to_top"
+	    />
+	<ImageView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/sc_china_yd_tu4"
+	    android:layout_marginTop="@dimen/guide_center_totop"
+	    />
+	<ImageView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/sc_china_yd_btn"
+	    android:layout_gravity="right"
+	    android:id="@+id/enjoyMain"
+	    android:layout_marginTop="@dimen/guide_center_totop"
+	    />
+    </LinearLayout>
